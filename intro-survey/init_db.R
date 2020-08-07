@@ -1,30 +1,29 @@
-# # https://trr266.wiwi.hu-berlin.de/shiny/sposm_survey/
-# # https://github.com/joachim-gassen/sposm/tree/master/code/intro_survey
+# https://db.rstudio.com/best-practices/run-queries-safely/
 #
-# library(DBI)
-# library(RSQLite)
-# DB_PATH <- "data/h4sci.sqlite3"
-# con <- dbConnect(RSQLite::SQLite(), DB_PATH)
-#
-# test_items <- c(
-#   "Interpreter", "Compiler", "Breakpoint", "Shell (not the animal)",
-#   "Debugger", "Version Control System", "Race condition", "RDBMS",
-#   "Docker container", "API", "Call stack", "Exception", "Scope"
-# )
-#
-# vars <- c(
-#   "time" = "integer",
-#   "language_1" = "text", "language_2" = "text", "language_3" = "text",
-#   "usability_1" = "integer", "usability_2" = "integer", "usability_3" = "integer",
-#   "ease_1" = "integer", "ease_2" = "integer", "ease_3" = "integer",
-#   "overall" = "integer"
-# )
-#
-# vars <- c(vars, rep("integer", length(test_items)))
-# names(vars)[12:(11 + length(test_items))]  <-
-#   tolower(str_replace_all(test_items, "[^[:alnum:]]", ""))
-# vars <- c(vars, "learning_objectives" = "text", "name" = "text")
+library(DBI)
+library(RSQLite)
+DB_PATH <- "data/h4sci.sqlite3"
+con <- dbConnect(RSQLite::SQLite(), DB_PATH)
+dbExecute(con,
+          "CREATE TABLE responses(
+           id text PRIMARY KEY,
+           general text,
+           r integer,
+           python integer,
+           matlab integer,
+           sql integer,
+           cpp integer,
+           js integer)"
+          )
+
+
+dbDisconnect(con)
+
+# might need those for checking results / behavior
+# dbExecute(con, "DROP TABLE responses")
+# dbListTables(con)
 #
 #
-# dbCreateTable(con, "answers", vars)
-# dbDisconnect(con)
+# dbGetQuery(con, "SELECT * FROM responses")
+
+
