@@ -1,5 +1,6 @@
 library(shiny)
 library(shinyjs)
+library(DBI)
 
 shinyServer(function(input, output, session){
 

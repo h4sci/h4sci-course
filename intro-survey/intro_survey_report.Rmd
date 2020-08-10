@@ -21,14 +21,34 @@ dbDisconnect(con)
 
 
 
-## General 
+## General Understanding 
 
 ```{r}
+library(ggplot2)
 g <- gsub(",,",",",paste(response$general,collapse=","))
-wc <- quanteda::dfm(unlist(strsplit(g,",")))
-quanteda::textplot_wordcloud(wc,min_count = 1,color = rev(viridisLite::viridis(5)))
+d <- data.frame(language = unlist(strsplit(g,",")))
+gg <- ggplot(d, aes(language))
+gg + geom_bar()
+
+
+# wc <- quanteda::dfm()
+# quanteda::textplot_wordcloud(wc,min_count = 1,color = rev(viridisLite::viridis(5)))
 
 ```
+
+## Programming Languages
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

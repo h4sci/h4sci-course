@@ -1,0 +1,16 @@
+- Reproducible Example (reprexr package)
+- Regular Expression
+- OSS
+- IDE
+- deployment
+- compiled language
+- interpreted language
+- Version Control
+- relational database (RDBMS, SQL)
+- non-relational database (NOSQL)
+- docker
+- virtual machine
+- pull request (merge request)
+- commit
+- stack
+- Continous Integration 

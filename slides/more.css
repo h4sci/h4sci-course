@@ -1,0 +1,114 @@
+body {
+    font-family: 'Open Sans', 'Avenir Next', 'Helvetica Neue', 'Helvetica', sans-serif;
+    font-weight: 400;
+    color: #003052;
+}
+.remark-slide-number {
+  display: none;
+}
+
+.title-slide  {
+  background-color:#fff;
+  color:#f1f1f1;
+  text-align: left !important;
+  background-image: url(cover.jpg);
+  background-size:46%;
+  background-position:640px 98px;
+}
+
+
+h1, h2, h3{
+
+  color:#525f7f;
+}
+
+
+.title-slide h1{
+  color:#525f7f;
+}
+
+
+.title-slide h2 {
+    color:#525f7f;
+}
+
+.title-slide h3 {
+  color:#525f7f;
+}
+
+
+footer {
+  font-size: 0.6em;
+}
+
+.center2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.prod {
+  background-image: url(colored_factory.jpg);
+  background-size:46%;
+  background-position:640px 98px;
+}
+
+.thanks {
+  background-image: url(thanks.jpg);
+  background-size:35%;
+  background-position:640px 98px;
+}
+
+
+.airflow {
+  background-image: url(captainairflow.jpg);
+  background-size:12%;
+  background-position:25px 245px;
+}
+
+
+.dockers {
+  background-image: url(dockers.jpg);
+  background-size:46%;
+  background-position:580px 100px;
+}
+
+
+
+.python {
+  font-size:0.5em;
+}
+
+.py-large{
+  font-size:2em;
+}
+
+.remark-slide-content h3 {
+    font-size: 24px;
+}
+
+
+.remark-slide-content h2 {
+    font-size: 37px;
+}
+
+
+
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+.pull-right ~ p {
+  clear: both;
+}
+
+
+
+
