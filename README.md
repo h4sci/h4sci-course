@@ -22,18 +22,22 @@ _Hacking for Social Sciences is a course taught within the PhD program of **ETH 
 This course was originated with the concepts and tricks that I thought I knew but now that I didn't just wish that I did when I started my own PhD (back in 2012). While some of the concepts became only more inevitable, other things may not apply. Hence, it is up to you to bring your questions and problems and help create the most useful course experience. The course will always be centered around the open source data science stack, but its blocks will be adapated according to popular demand. 
 
 **Block 1: General Overview, How to Git**
+
 October 1,  10:00 a.m. - 1:00 p.m. CEST	(online)
 October 2,  10:00 a.m. - 2:00 p.m. CEST	(online)
 
 **Block 2**
+
 October 22,  10:00 a.m. - 1:00 p.m. CEST	(online)
 October 23,  10:00 a.m. - 2:00 p.m. CEST	(online)
 
 **Block 3**
+
 November 19,  10:00 a.m. - 1:00 p.m. CEST	(online)
 November 20,  10:00 a.m. - 2:00 p.m. CEST	(online)
 
 **Block 4**
+
 December 3,  10:00 a.m. - 1:00 p.m. CEST	(online)
 November 4,  10:00 a.m. - 2:00 p.m. CEST	(online)
 
