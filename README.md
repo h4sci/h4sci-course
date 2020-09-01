@@ -17,9 +17,18 @@ Hacking for Social Sciences is not a Statistics, Econometrics or Machine Learnin
 
 _Hacking for Social Sciences is a course taught within the PhD program of **ETH Zurich**'s D-MTEC Department. It's first taught in 2020 fall semester._
 
+## Resources 
+
+- GitHub Organization and Repositories
+- Hacking for Social Sciences Online Book
+- Slides
+- Videos
+- Slack Workspace
+
+
 ## Schedule
 
-This course was originated with the concepts and tricks that I thought I knew but now that I didn't just wish that I did when I started my own PhD (back in 2012). While some of the concepts became only more inevitable, other things may not apply. Hence, it is up to you to bring your questions and problems and help create the most useful course experience. The course will always be centered around the open source data science stack, but its blocks will be adapated according to popular demand. 
+This course was originated with the concepts and tricks in mind that I thought I knew but now that I didn't just wish that I did when I started my own PhD (back in 2012). While some of the concepts became only more inevitable, other things may not apply today. Hence, it is up to you to bring your questions and problems and help create the most useful course experience. The course will always be centered around the open source data science stack, but its blocks will be adapated according to popular demand. 
 
 **Block 1: General Overview, How to Git**
 
@@ -47,4 +56,22 @@ November 20,  10:00 a.m. - 2:00 p.m. CEST	(online)
 December 3,  10:00 a.m. - 1:00 p.m. CEST	(online)
 
 November 4,  10:00 a.m. - 2:00 p.m. CEST	(online)
+
+
+## Format
+
+The 4 blocks of the course contain 
+
+- short live sessions 
+- interactive questionnaires / apps
+- pre-recorded videos
+- own reading / research
+- programming or setup tasks
+
+All 4 blocks will contain most of these elements if not all. 
+
+## Exam (Leistungsnachweis)
+
+Ungraded programming tasks, active participation in class. The final programming task will be to create a production ready CI/CD pipeline in a group. This could be a regular data update (ETL process) or automated build/testing of a package. Group size will depend on course registrations. 
+
 
