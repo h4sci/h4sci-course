@@ -24,20 +24,27 @@ This course was originated with the concepts and tricks that I thought I knew bu
 **Block 1: General Overview, How to Git**
 
 October 1,  10:00 a.m. - 1:00 p.m. CEST	(online)
+
 October 2,  10:00 a.m. - 2:00 p.m. CEST	(online)
+
 
 **Block 2**
 
 October 22,  10:00 a.m. - 1:00 p.m. CEST	(online)
+
 October 23,  10:00 a.m. - 2:00 p.m. CEST	(online)
+
 
 **Block 3**
 
 November 19,  10:00 a.m. - 1:00 p.m. CEST	(online)
+
 November 20,  10:00 a.m. - 2:00 p.m. CEST	(online)
+
 
 **Block 4**
 
 December 3,  10:00 a.m. - 1:00 p.m. CEST	(online)
+
 November 4,  10:00 a.m. - 2:00 p.m. CEST	(online)
 
