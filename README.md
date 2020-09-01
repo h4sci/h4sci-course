@@ -21,6 +21,7 @@ _Hacking for Social Sciences is a course taught within the PhD program of **ETH 
 
 - GitHub Organization and Repositories
 - Hacking for Social Sciences Online Book
+- R Studio Server
 - Slides
 - Videos
 - Slack Workspace
@@ -29,6 +30,11 @@ _Hacking for Social Sciences is a course taught within the PhD program of **ETH 
 ## Schedule
 
 This course was originated with the concepts and tricks in mind that I thought I knew but now that I didn't just wish that I did when I started my own PhD (back in 2012). While some of the concepts became only more inevitable, other things may not apply today. Hence, it is up to you to bring your questions and problems and help create the most useful course experience. The course will always be centered around the open source data science stack, but its blocks will be adapated according to popular demand. 
+
+**REQUIRED BEFORE THE START OF THE COURSE: Make sure you have checked out the course's R Studio server. It is greatly appreciated if users with R and git experience installed git and R locally in advance of the course. Please also make sure everyone has a free, working github.com account before the start of the course.**
+
+
+
 
 **Block 1: General Overview, How to Git**
 
