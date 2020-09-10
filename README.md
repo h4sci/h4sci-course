@@ -2,13 +2,13 @@
 
 The vast majority of data has been created within the last decade. As a result, more and more fields of research start to consider and embrace programming to process and analyse data. This course teaches applied programming with data and aims to leverage the open source tech stack to deal with this new wealth and complexity of data.
 
-The idea behind Hacking for Social Sciences is to build a solid understanding of core technologies and concepts to help researchers develop a data processing strategy and increase your possibilities when working with data. The course approach is to single out those concepts stemming from software development that are easy to adopt and useful to social scientists. The course has three major learning objectives:
+The idea behind Hacking for Social Sciences is to build a solid understanding of core technologies and concepts to help researchers develop a data processing strategy and increase your possibilities when working with data. The course approach is to single out those concepts stemming from software development that are easy to adopt and useful to social scientists. **The course has three major learning objectives**:
 
-- Understand the role of focal components in a data science tech toolbox.
+- **Understand** the role of focal components in a data science tech toolbox.
 Learn how technologies like R, Python, Git Version Control, docker or Cloud Computing could play together in your research project.
-- Learn how to manage and version control source code.
+- Learn how to **manage** and version control source code.
 Hacking for Social Sciences teaches how to use git version control to collaborate professionally, make your research reproducible and your code base persistent.
-- Applied data sourcing and data transformation
+- **Applied** data sourcing and data transformation
 Learn how to communicate with SQL databases. Learn how to consume data from different sources using machine to machine communication interfaces (APIs) such as the OpenStreetMap geocoding API / Routing Engine or the KOF data API for macroeconomic time series.
 
 Non-Goals:
