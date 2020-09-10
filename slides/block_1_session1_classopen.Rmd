@@ -1,7 +1,7 @@
 ---
 title: |
   Hacking for Social Sciences
-subtitle: "Course Outline"
+subtitle: "Class Is Open. C'mon in."
 author: "@whatsgoodio"
 institute: "KOF, ETH Zurich"
 date: "2020-10-01"
@@ -17,25 +17,23 @@ output:
       beforeInit: "https://platform.twitter.com/widgets.js"
 ---
 
-## whoami
+class: center,middle
 
-- programming for more than 20 years
-- studied / PhD economics 
-- architect for KOF data processing landscape
+## markdown, github, swissdata
+
+---
+
+class: center,middle
+
+## Background Survey
+
+
+---
 
 
 ## Overall Course Outline
 
-<!-- 
-Why git first? Cause reading other people's code is very good input
-and github is the largest resource of open source code. 
-
-git seems to be the common denominator useful for everyone in 
-a quite heterogeneous group... 
-
--->
-	
-01.10.	10-13	Intro & Git Preview
+01.10.	10-13	The Big Picture
 02.10.	10-14	Git & Workflows
 
 22.10.	10-13	R Programming Crash Course
@@ -51,32 +49,73 @@ a quite heterogeneous group...
 
 ## Course Resources
 
-- github
-- bookdown
-- teaching.kof.ethz.ch 
-- slack
+- Course Repository: [https://github.com/h4sci/h4sci-course](https://github.com/h4sci/h4sci-course)
+- Hacking for Social Sciences and the Humanities Free Online Book: [https://github.com/h4sci/h4sci-book](https://github.com/h4sci/h4sci-book)
+- Tasks & Exercises: [https://github.com/h4sci/h4sci-tasks](https://github.com/h4sci/h4sci-tasks)
+- [R Studio Server](https://teaching.kof.ethz.ch/auth-sign-in) (only available during semester to ETH students enrolled to the course) 
+- Slack Workspace (invite only, only available to enrolled ETH students): https://h4sci.slack.com/
+- Zoom Live Sessions (only available through ETH acocunts)
+
 
 ---
+
+class: center,middle
 
 ## Course Objectives
 
-Be able to create a production pipeline
+
+---
+
+class: center,middle
+
+## 1. Understand the Role of Components in the Tech Stack
+
+---
+
+class: center,middle
+
+## 2. Carpentry Level Version Control + Dev Workflows
+
+---
+
+class: center,middle
+
+## 3. Applied Data Handling /w Programming Language
+
+---
+
+class: center,middle
+
+## Benchmark: Create a Production Pipeline
+
+---
+
+class: center,middle
+
+## Survey Results
+
+---
+
+## Survey Results
+
+some ggplot shizzle I
 
 
 ---
 
-## Block 1 Objectives
+
+## Survey Results
+
+some ggplot shizzle II
+
 
 ---
 
-## Block 1 Outline 
 
-1. James-Bond-Start (live session)
-2. Introductory Survey (async)
-3. Personal Introduction & Forming Groups (live session)
-4. Input Video on Git (async)
-5. Group Tasks and Quizzes on Git (async)
-6. Debriefing (live)
+## Survey Results
+
+some ggplot shizzle III
+
 
 ---
 
@@ -127,7 +166,7 @@ class: center,middle
 
 class: center,middle
 
-## Introductory Survey
+## What About You ? 
 
 ---
 
