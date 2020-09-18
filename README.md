@@ -1,8 +1,11 @@
 # About this Course
 
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+
 The vast majority of data has been created within the last decade. As a result, more and more fields of research start to consider and embrace programming to process and analyse data. This course teaches applied programming with data and aims to leverage the open source tech stack to deal with this new wealth and complexity of data.
 
-The idea behind Hacking for Social Sciences is to build a solid understanding of core technologies and concepts to help researchers develop a data processing strategy and increase your possibilities when working with data. The course approach is to single out those concepts stemming from software development that are easy to adopt and useful to social scientists. The course has three major learning objectives:
+The idea behind Hacking for Social Sciences is to build a solid understanding of core technologies and concepts to help researchers develop a data processing strategy and increase your possibilities when working with data. The course approach is to single out those concepts stemming from software development that are easy to adopt and useful to social scientists. **The course has three major learning objectives**:
+
 
 - Be able to **evaluate** the role of focal components in a data science tech toolbox and pick problems suitable for the problem.
 Learn how technologies like R, Python, Git Version Control, docker or Cloud Computing could play together in your research project.
@@ -83,7 +86,7 @@ Ungraded programming tasks, active participation in class. The final programming
 
 ## License
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work by Dr. Matthias Bannert is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. This includes all illustrations unless stated otherwise.
+This work by Dr. Matthias Bannert is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. This includes all illustrations unless stated otherwise.
 
 
 
