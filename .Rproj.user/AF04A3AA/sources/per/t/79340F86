@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1599547800092.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2403782292",
+    "id" : "79340F86",
+    "lastKnownWriteTime" : 1599631448,
+    "last_content_update" : 1599631448674,
+    "path" : "~/repositories/h4sci/h4sci-course/slides/block_1_session_2_bigpicture.Rmd",
+    "project_path" : "slides/block_1_session_2_bigpicture.Rmd",
+    "properties" : {
+        "cursorPosition" : "168,18",
+        "scrollLine" : "135"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
