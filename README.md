@@ -26,6 +26,7 @@ _Hacking for Social Sciences is a course taught within the PhD program of **ETH 
 - Online Book: [Source Code of the Book](https://github.com/h4sci/h4sci-book)
 - [R Studio Server](https://teaching.kof.ethz.ch/auth-sign-in) (ETH Zurich Students only)
 - [Slack Workspace (inoffical)](http://h4sci.slack.com/)
+- [ETH Zurich Course Catalog](http://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=143159&semkez=2020W&ansicht=KATALOGDATEN&lang=en)
 
 
 ## Schedule
