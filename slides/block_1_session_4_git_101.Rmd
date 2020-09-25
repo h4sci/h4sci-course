@@ -1,0 +1,78 @@
+---
+title: |
+  Hacking for Social Sciences
+subtitle: "Git 101"
+author: "@whatsgoodio"
+institute: "KOF, ETH Zurich"
+date: "2020-10-02"
+output:
+  xaringan::moon_reader:
+    css: ["robot-fonts","more.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+      beforeInit: "https://platform.twitter.com/widgets.js"
+---
+
+class: center, middle
+
+## What is Git 
+
+---
+
+class: center, middle
+
+> Git is a decentralized version control system.  
+
+---
+
+class: center, middle
+
+## Basic Git Workflow 
+
+--- 
+
+class: center, middle
+
+## Basic Git Workflow: Add, Commit 
+
+--- 
+
+## Walk Through in Theory
+
+
+---
+
+## Walk Through That in Practice 
+
+1. init a repository (git init)
+2. create and edit three text files 
+3. add two files to the stage
+4. commit and write a commit message
+5. show git log. 
+
+
+
+## Adding a Remote Repository to the mix
+
+- show GitHub, create repo, clone
+- repeat the above tasks, add a push, check on GitHub
+- still no collab, everybody got their own sandbox
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

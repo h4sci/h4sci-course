@@ -1,21 +1,25 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Hacking for Social Sciences</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="@whatsgoodio" />
+    <meta name="date" content="2020-10-01" />
+    <link href="libs/remark-css/robot-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="more.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Hacking for Social Sciences
+## Class Is Open. C’mon in.
+### <span class="citation">@whatsgoodio</span>
+### KOF, ETH Zurich
+### 2020-10-01
+
 ---
-title: |
-  Hacking for Social Sciences
-subtitle: "Class Is Open. C'mon in."
-author: "@whatsgoodio"
-institute: "KOF, ETH Zurich"
-date: "2020-10-01"
-output:
-  xaringan::moon_reader:
-    css: ["robot-fonts","more.css"]
-    lib_dir: libs
-    nature:
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
-      ratio: '16:9'
-      beforeInit: "https://platform.twitter.com/widgets.js"
----
+
 
 class: center,middle
 
@@ -34,7 +38,7 @@ class: center,middle
 ## Overall Course Outline
 
 01.10.	10-13	The Big Picture
-02.10.	10-14	Git & Workflows
+02.10.	10-14	Git &amp; Workflows
 
 22.10.	10-13	R Programming Crash Course
 23.10.	10-14	Programming with Data
@@ -51,7 +55,7 @@ class: center,middle
 
 - Course Repository: [https://github.com/h4sci/h4sci-course](https://github.com/h4sci/h4sci-course)
 - Hacking for Social Sciences and the Humanities Free Online Book: [https://github.com/h4sci/h4sci-book](https://github.com/h4sci/h4sci-book)
-- Tasks & Exercises: [https://github.com/h4sci/h4sci-tasks](https://github.com/h4sci/h4sci-tasks)
+- Tasks &amp; Exercises: [https://github.com/h4sci/h4sci-tasks](https://github.com/h4sci/h4sci-tasks)
 - [R Studio Server](https://teaching.kof.ethz.ch/auth-sign-in) (only available during semester to ETH students enrolled to the course) 
 - Slack Workspace (invite only, only available to enrolled ETH students): https://h4sci.slack.com/
 - Zoom Live Sessions (only available through ETH acocunts)
@@ -68,7 +72,7 @@ class: center,middle
 
 class: center,middle
 
-## 1. Evaluate the Role of Components in the Tech Stack
+## 1. Understand the Role of Components in the Tech Stack
 
 ---
 
@@ -129,10 +133,10 @@ class: center,middle
 
 ## Automation
 
-<!--
+&lt;!--
 - APIs
 - functions
--->
+--&gt;
 
 
 ---
@@ -141,12 +145,12 @@ class: center,middle
 
 ## Data Visualization
 
-<!--
+&lt;!--
 - shiny
 - d3
 - coolest visualizations
 - argument againts tableau (decent viz, but niche, programming can be used more flexible)
--->
+--&gt;
 
 
 ---
@@ -155,12 +159,12 @@ class: center,middle
 
 ## Code as a Communication Channel
 
-<!--
+&lt;!--
 - reproducible research
 - github
 - reproducible example (damn to book needs a glossary)
 - OSS community, e.g., (Stack Overflow)
--->
+--&gt;
 
 ---
 
@@ -193,15 +197,15 @@ class: center, middle
 
 ## Why learn git? 
 
-<!-- 
+&lt;!-- 
 - used waaaaayyyy beyond academia (MS paid 7 billion for GitHub)
 - de facto standard for collaboration, proven workflows
-=> fits you right in. makes you a team player. Willing to dig into some overhead
-for the sake of smooth sailing for everybody -> strong signal on the job market. 
+=&gt; fits you right in. makes you a team player. Willing to dig into some overhead
+for the sake of smooth sailing for everybody -&gt; strong signal on the job market. 
 Personally I don't care to much about languages, you'd eventually learn them,
 but if you don't know git by now, it says something about your willingness. 
 
--->
+--&gt;
 
 --- 
 
@@ -213,11 +217,11 @@ but if you don't know git by now, it says something about your willingness.
 
 ## Git Basic Functionality
 
-<!-- 
+&lt;!-- 
 
 slides from h4n schema
 
--->
+--&gt;
 
 ---
 
@@ -227,9 +231,9 @@ basics
 - git init
 - git status
 - git log
-- git add <filename>
+- git add &lt;filename&gt;
 - git commit -m 'what changes were about'
-- git push origin <branch name>
+- git push origin &lt;branch name&gt;
 - git pull
 
 going back
@@ -237,9 +241,9 @@ going back
 
 branches
 - git branch
-- git checkout <filename>
-- git checkout <branch name>
-- git merge <some-branch> 
+- git checkout &lt;filename&gt;
+- git checkout &lt;branch name&gt;
+- git merge &lt;some-branch&gt; 
 
 --- 
 
@@ -262,7 +266,7 @@ branches
 - connect using an RSA Key
 - students need to register at GitHub for the course
 - create repository called 'sandbox'
-- create a file named <your_lastname> and say Hi to the world. (demonstrate ff)
+- create a file named &lt;your_lastname&gt; and say Hi to the world. (demonstrate ff)
 
 ## Resolving Merge Conflicts
 
@@ -344,7 +348,7 @@ Cause there are different needs. Luckily, we can transform data. This is what
 programming /w data is mostly about. 
 
 
-## Licenses & Open Data
+## Licenses &amp; Open Data
 
 
 ## Consuming data
@@ -367,20 +371,18 @@ class: prod
 
 .pull-left[
 
-</br>
-</br>
+&lt;/br&gt;
+&lt;/br&gt;
 
 
-> Repeated (regular) runs of the same task resulting in a pre-defined,
+&gt; Repeated (regular) runs of the same task resulting in a pre-defined,
 quality controlled result. 
->
-> `r tufte::quote_footer('--- KOF definition of production')`
+&gt;
+&gt; &lt;footer&gt;--- KOF definition of production&lt;/footer&gt;
 ]
 
 
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
-```
+
 
 ---
 
@@ -516,9 +518,7 @@ class: airflow
 .pull-right[
 
 
-```{r echo=FALSE, out.width=450}
-knitr::include_graphics("airflow_screenshot.png")
-```
+&lt;img src="airflow_screenshot.png" width="450" /&gt;
 
 
 
@@ -529,14 +529,14 @@ knitr::include_graphics("airflow_screenshot.png")
 
 ## An Example Workflow: Sourcing Data (ETL) 
 
-</br>
-</br>
+&lt;/br&gt;
+&lt;/br&gt;
 
 .center[
-> Gather data from various public sources, </br>
-> transform into homogeneous time series format, </br>
-> read into PostgreSQL database.</br>
-> `r tufte::quote_footer('--- the swissdata project in a nutshell.')`
+&gt; Gather data from various public sources, &lt;/br&gt;
+&gt; transform into homogeneous time series format, &lt;/br&gt;
+&gt; read into PostgreSQL database.&lt;/br&gt;
+&gt; &lt;footer&gt;--- the swissdata project in a nutshell.&lt;/footer&gt;
 
 ]
 
@@ -547,9 +547,7 @@ knitr::include_graphics("airflow_screenshot.png")
 
 .pull-left[
 
-```{r echo=FALSE, out.width=450}
-knitr::include_graphics("swissdata_af.png")
-```
+&lt;img src="swissdata_af.png" width="450" /&gt;
 
 ]
 
@@ -811,19 +809,128 @@ class: thanks
 - [miniCRAN](https://cran.r-project.org/web/packages/miniCRAN/index.html)
 - [gitlab CI](https://docs.gitlab.com/ee/ci/)
 - [@whatsgoodio (chirp, chirp)](https://twitter.com/whatsgoodio)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
 
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
 
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
