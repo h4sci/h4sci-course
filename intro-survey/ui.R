@@ -17,6 +17,7 @@ fluidPage(theme = shinytheme("superhero"),
           uiOutput("lang"),
           uiOutput("workflow"),
           uiOutput("infrastructure"),
+          uiOutput("expect"),
           uiOutput("submit"),
           uiOutput("thanks")
           )
