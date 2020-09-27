@@ -1,0 +1,215 @@
+---
+title: |
+  Hacking for Social Sciences
+subtitle: "Class Is Open. C'mon in."
+author: "@whatsgoodio"
+institute: "KOF, ETH Zurich"
+date: "2020-10-01"
+output:
+  xaringan::moon_reader:
+    css: ["robot-fonts","more.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+      beforeInit: "https://platform.twitter.com/widgets.js"
+---
+
+class: center,middle
+
+## markdown, github, swissdata
+
+---
+
+class: center,middle
+
+## [Background Survey](https://h4sci.shinyapps.io/intro-survey/)
+
+
+---
+
+class: center,middle
+
+## Overall Course Outline
+
+---
+
+## Schedule
+
+01.10.	10-13	The Big Picture
+02.10.	10-14	Git & Workflows
+
+22.10.	10-13	R Programming Crash Course
+23.10.	10-14	Programming with Data
+
+19.11.	10-13	Infrastructure
+20.11.	10-14	Infrastructure
+
+03.12.	10-13	Semester Projects
+04.12.	10-14	Semester Projects
+
+---
+
+## Course Resources
+
+**Read Online**
+
+- [h4sci Slides](https://h4sci.github.io/h4sci-course)
+- [h4sci free Online Book](https://h4sci.github.io/h4sci-book)
+- [Tasks & Exercises](https://github.com/h4sci/h4sci-tasks)
+
+**Source**
+
+- [Slides: https://github.com/h4sci/h4sci-course](https://github.com/h4sci/h4sci-course)
+- [Book: https://github.com/h4sci/h4sci-book](https://github.com/h4sci/h4sci-book)
+
+**Community**
+- [R Studio Server](https://teaching.kof.ethz.ch/auth-sign-in) (only available to enrolled ETH students during semester) 
+- [Slack Workspace](https://h4sci.slack.com/) (invite only) 
+- Zoom Live Sessions (only available to ETH students)
+
+
+---
+
+class: center,middle
+
+## Course Objectives
+
+
+---
+
+class: center,middle
+
+## 1. Evaluate the Role of Components in the Tech Stack
+
+---
+
+class: center,middle
+
+## 2. Carpentry Level Version Control + Dev Workflows
+
+---
+
+class: center,middle
+
+## 3. Applied Data Handling /w Programming Language
+
+---
+
+class: center,middle
+
+## Benchmark: Create a Production Pipeline
+
+---
+
+class: center,middle
+
+## Survey Results
+
+```{r,echo=FALSE,warning=FALSE,message=FALSE}
+library(ggplot2)
+library(data.table)
+library(RPostgres)
+library(quanteda)
+
+preprocess <- function(df, pattern){
+  pattern_id <- paste0("id|group|",pattern)
+  subs <- df[,grepl(pattern_id, names(df))]
+  names(subs) <- gsub(pattern,"",names(subs))
+  dt <- as.data.table(subs)
+  m <- melt(dt, id.vars = c("id","cgroup"))
+  m
+}
+
+fcon <- file("../intro-survey/.pgpass","r")
+    con <-  dbConnect(drv = Postgres(), dbname = "postgres", user = "postgres",
+                       host = "34.65.173.162",
+                      password = readLines(fcon, warn = FALSE))
+o <- dbExecute(con,"SET SEARCH_PATH=h4sci")
+
+res <- dbGetQuery(con,"SELECT * FROM responses")
+
+dbDisconnect(con)
+
+```
+
+
+
+---
+
+## Survey Results: General
+
+```{r, echo=FALSE}
+
+words <- gsub(" vs. |,,", ",",paste(res$general,collapse = ","))
+
+quanteda::textplot_wordcloud(dfm(words,remove = ","),
+                             color = rev(viridis::viridis_pal()(6)),
+                             min_count = 1)
+
+
+```
+
+
+
+---
+
+
+## Survey Results: Languages
+
+```{r, echo=FALSE}
+
+lang <- preprocess(res, "l_")
+gg_lang <- ggplot(data = lang)
+gg_lang +
+  geom_bar(aes(x = as.factor(value), fill = variable)) +
+  facet_wrap("variable") +
+  theme_minimal() 
+
+
+```
+
+
+
+---
+
+
+## Survey Results: Workflow
+
+```{r, echo=FALSE}
+
+wf <- preprocess(res, "w_")
+gg_lang <- ggplot(data = wf)
+gg_lang +
+  geom_bar(aes(x = as.factor(value), fill = variable)) +
+  facet_wrap("variable") +
+  theme_minimal() +
+  scale_x_discrete(1:5)
+
+
+```
+
+
+---
+
+
+class: center,middle
+
+## Individual Introduction
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,199 @@
+---
+title: |
+  Hacking for Social Sciences
+subtitle: "The Big Picture"
+author: "@whatsgoodio"
+institute: "KOF, ETH Zurich"
+date: "2020-10-01"
+output:
+  xaringan::moon_reader:
+    css: ["robot-fonts","more.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+      beforeInit: "https://platform.twitter.com/widgets.js"
+---
+
+class: center, middle
+
+## Video URL: 
+## Slide URL:
+## Chapter URL: 
+
+
+
+---
+
+
+class: center, middle
+
+## Stack Logos + Wordcloud
+
+
+
+--- 
+
+
+## How to Compose the Right Toolbox ?
+
+- illustration (hammer, full set, caterpillar, dynamite)
+
+---
+
+## Programming Languages 
+
+compiled:
+
+- C++
+- FORTRAN
+
+interpreted:
+
+- R
+- Python
+
+(programs with macro languages)
+
+Extension Libraries (Packages)
+
+- PyPi
+- CRAN 
+
+read the choice that doesn't matter. 
+
+---
+
+
+
+## Editors and IDEs 
+
+- VS Code 
+- R Studio
+- IntelliJ
+
+- Atom
+- Sublime
+- Notepad++
+- Text Wrangler
+
+---
+
+
+## Code Management
+
+Version Control Systems
+
+- git
+- SVN
+- CVS
+- mercurial
+
+(see version control Eric Sink)
+
+Git Platforms (git + web GUI + PM tools)
+
+- GitHub
+- GitLab
+- Bitbucket
+
+gitea is a self-hosted service (run a platform on your own server). 
+
+
+---
+
+## Databases
+
+Relational Database Management Systems
+
+- Oracle
+- MySQL
+- PostgreSQL
+- MS SQL Server
+- sqlite 
+
+Non-Relational Databases
+
+- MongoDB
+- Redis
+- MongoDB
+
+---
+
+## Virtual Infrastructure
+
+Technology
+
+- VirtualBox
+- Docker
+
+Cloud Computing
+
+- AWS
+- GPC
+- Microsoft Azure
+- Exoscale
+
+---
+
+
+## Automation
+
+CI/CD Tools
+
+- Travis
+- Gitlab CI
+- GitHub Actions
+
+Infrastructure as Code
+
+- Terraform
+- Ansible
+
+You should have heard what a cronjob is ;) 
+
+---
+
+## Support 
+
+- Stackoverflow.com
+- Mailing lists
+- community groups: RLadies, WhyR, MiR, FoRwards, AfricaR
+- Documentation, Content Aggregators, e.g., CTV
+
+---
+
+
+class:center,middle
+
+> "Premature optimization is the root of all evil."
+
+-- Donald Knuth
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

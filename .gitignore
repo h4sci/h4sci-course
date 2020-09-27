@@ -1,0 +1,10 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.pgpass
+intro-survey/.pgpass
+notes/
+deploy_shinyappsio.R
+gc.json
+
