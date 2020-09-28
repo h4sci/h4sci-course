@@ -110,5 +110,19 @@ footer {
 }
 
 
+div.my-footer {
+    background-color: #f1f1f1;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 20px;
+    width: 100%;
+}
+
+
+.footer-text{
+  padding: 5px;
+  font-size: 10px;
+}
 
 
