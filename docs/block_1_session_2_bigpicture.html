@@ -23,10 +23,11 @@ class: center, middle, inverse, title-slide
 
 class: center, middle
 
-## Video URL: 
-## Slide URL:
-## Chapter URL: 
+## Slide URL: [https://h4sci.github.io/h4sci-course/block_1_session_2_bigpicture.html](https://h4sci.github.io/h4sci-course/block_1_session_2_bigpicture.html)
+## Chapter URL: [https://h4sci.github.io/h4sci-book/stack-a-developers-toolkit.html](https://h4sci.github.io/h4sci-book/stack-a-developers-toolkit.html)
 
+
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
 
 
 ---
@@ -34,68 +35,114 @@ class: center, middle
 
 class: center, middle
 
-## Stack Logos + Wordcloud
+&lt;div&gt;
+&lt;img src="logos/aws.png" width = "80px"&gt; &lt;img src="logos/azure.png" width = "80px"&gt; &lt;img src="logos/cassandra.png" width = "80px"&gt; &lt;img src="logos/d3.png" width = "80px"&gt; &lt;img src="logos/docker.png" width = "80px"&gt; &lt;img src="logos/git.png" width = "80px"&gt; &lt;img src="logos/github.png" width = "80px"&gt; &lt;img src="logos/hadoop.png" width = "80px"&gt; &lt;img src="logos/highcharts.png" width = "80px"&gt; &lt;img src="logos/julia.png" width = "80px"&gt; &lt;img src="logos/matlab.png" width = "80px"&gt; &lt;img src="logos/mongodb.png" width = "80px"&gt; &lt;img src="logos/pandas.png" width = "80px"&gt; &lt;img src="logos/postgresql.png" width = "80px"&gt; &lt;img src="logos/python.png" width = "80px"&gt; &lt;img src="logos/rstats.png" width = "80px"&gt; &lt;img src="logos/rstudio.png" width = "80px"&gt; &lt;img src="logos/spark.png" width = "80px"&gt; &lt;/div&lt;
+
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;All logos on this slide are taken from projects or products websites and are share for the sake of recognizing them. Logos are NOT redistributed under a Creative Commons license.&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
 
 
 
---- 
+---
+
+
 
 
 ## How to Compose the Right Toolbox ?
 
-- illustration (hammer, full set, caterpillar, dynamite)
+.pull-left[
+
+- Programming Languages
+- IDEs
+- Code Management
+- Databases
+- Infrastructure
+- Automation
+
+
+]
+
+.pull-right[
+
+&lt;img src="picktools.jpg"&gt;
+
+]
+
 
 ---
 
-## Programming Languages 
+
+## Programming Languages
+
+.pull-left[
 
 compiled:
 
-- C++
-- FORTRAN
+  - C++ 
+  - FORTRAN
+]
+
+.pull-right[
 
 interpreted:
 
-- R
-- Python
+  - R 
+  - Python (uses reticulate REPL within R Studio)
 
-(programs with macro languages)
+]
 
-Extension Libraries (Packages)
 
-- PyPi
-- CRAN 
+Note:
+- wrappers can help to use compiled functions inside interpreted languages.
+- Extension repositories such as CRAN or piPy provide a broad variety of libraries.
 
-read the choice that doesn't matter. 
 
 ---
 
 
+## Editors and IDEs
 
-## Editors and IDEs 
 
-- VS Code 
+.pull-left[
+
+  IDEs:
+
+- VS Code
 - R Studio
-- IntelliJ
+- pyCharm
+
+
+]
+
+.pull-right[
+  
+  Text Editors:
 
 - Atom
 - Sublime
 - Notepad++
 - Text Wrangler
 
+]
+
+
 ---
 
 
 ## Code Management
 
+
+.pull-left[
 Version Control Systems
 
-- git
+- **git**
 - SVN
 - CVS
 - mercurial
 
-(see version control Eric Sink)
+(see version control by example Eric Sink)
+]
+
+.pull-right[
 
 Git Platforms (git + web GUI + PM tools)
 
@@ -103,35 +150,54 @@ Git Platforms (git + web GUI + PM tools)
 - GitLab
 - Bitbucket
 
-gitea is a self-hosted service (run a platform on your own server). 
+gitea is a self-hosted service (run a platform on your own server).
+
+]
+
+
+
+
 
 
 ---
 
+
 ## Databases
 
-Relational Database Management Systems
+.pull-left[
 
+Relational Database Management Systems
 - Oracle
 - MySQL
 - PostgreSQL
 - MS SQL Server
-- sqlite 
+- sqlite
+]
+
+.pull-right[
 
 Non-Relational Databases
 
 - MongoDB
 - Redis
-- MongoDB
+- Amazon Redshift
+  
+]
 
 ---
 
+
 ## Virtual Infrastructure
+
+.pull-left[
 
 Technology
 
 - VirtualBox
 - Docker
+]
+
+.pull-right[
 
 Cloud Computing
 
@@ -139,28 +205,43 @@ Cloud Computing
 - GPC
 - Microsoft Azure
 - Exoscale
+]
+
 
 ---
 
 
 ## Automation
 
+
+.pull-right[
+
 CI/CD Tools
 
 - Travis
 - Gitlab CI
 - GitHub Actions
+]
+
+.pull-right[
 
 Infrastructure as Code
 
 - Terraform
 - Ansible
 
-You should have heard what a cronjob is ;) 
+Scheduler
+
+- Cronjobs
+- Apache Airflow
+
+]
+
 
 ---
 
-## Support 
+
+## Support
 
 - Stackoverflow.com
 - Mailing lists
