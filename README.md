@@ -74,7 +74,7 @@ November 20,  10:00 a.m. - 2:00 p.m. CEST	(online): Infrastructure
 
 December 3,  10:00 a.m. - 1:00 p.m. CEST (online): Semester Projects
 
-November 4,  10:00 a.m. - 2:00 p.m. CEST (online): Semester Projects
+December 4,  10:00 a.m. - 2:00 p.m. CEST (online): Semester Projects
 
 
 ## Format
