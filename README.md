@@ -22,8 +22,19 @@ _Hacking for Social Sciences is a course taught within the PhD program of **ETH 
 
 ## Resources 
 
-- HQ: [h4sci GitHub Organization](https://github.com/h4sci)
-- Online Book: [Source Code of the Book](https://github.com/h4sci/h4sci-book)
+**Read Online**
+
+- [Read Slides Online](https://h4sci.github.io/h4sci-course)
+
+- [Read Book Online](https://h4sci.github.io/h4sci-book)
+
+**Source Code**
+
+- [Slides](https://github.com/h4sci/h4sci-course)
+- [Book](https://github.com/h4sci/h4sci-book)
+
+**Server & Community**
+
 - [R Studio Server](https://teaching.kof.ethz.ch/auth-sign-in) (ETH Zurich Students only)
 - [Slack Workspace (inoffical)](http://h4sci.slack.com/)
 - [ETH Zurich Course Catalog](http://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=143159&semkez=2020W&ansicht=KATALOGDATEN&lang=en)
@@ -63,7 +74,7 @@ November 20,  10:00 a.m. - 2:00 p.m. CEST	(online): Infrastructure
 
 December 3,  10:00 a.m. - 1:00 p.m. CEST (online): Semester Projects
 
-November 4,  10:00 a.m. - 2:00 p.m. CEST (online): Semester Projects
+December 4,  10:00 a.m. - 2:00 p.m. CEST (online): Semester Projects
 
 
 ## Format
