@@ -158,6 +158,7 @@ R Studio, pyCharm  **Text Editors**: Atom, [Sublime](https://www.sublimetext.com
 ]
 
 
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
 
 ---
@@ -185,6 +186,10 @@ Non-Relational Databases
   
 ]
 
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
 ---
 
 
@@ -207,6 +212,10 @@ Clouds
 - Microsoft Azure
 - Exoscale
 ]
+
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
 
 
 ---
@@ -246,6 +255,9 @@ Infrastructure Automation
 ]
 
 
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
 ---
 
 
@@ -255,6 +267,9 @@ Infrastructure Automation
 - Mailing lists
 - community groups: RLadies, WhyR, MiR, FoRwards, AfricaR
 - Documentation, Content Aggregators, e.g., [CTV](https://cran.r-project.org/web/views/), [Python Graph Gallery](https://python-graph-gallery.com/)
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
 
 ---
 
@@ -266,6 +281,7 @@ class:center,middle
 -- Donald Knuth
 
 
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
 
 
