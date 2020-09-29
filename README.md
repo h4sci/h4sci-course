@@ -96,7 +96,7 @@ Ungraded programming tasks, active participation in class. The final programming
 
 ## License
 
-This work by Dr. Matthias Bannert is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. This includes all illustrations unless stated otherwise.
+This work by Dr. Matthias Bannert is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. This includes all illustrations unless stated otherwise. Logos of software products or companies are just used to referenced to these very companies and products and are not shared under a CC license.
 
 
 
