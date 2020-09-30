@@ -184,14 +184,21 @@ quanteda::textplot_wordcloud(dfm(words,remove = ","),
 
 ## Survey Results: Languages
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, fig.width=14}
 
 lang <- preprocess(res, "l_")
 gg_lang <- ggplot(data = lang)
 gg_lang +
   geom_bar(aes(x = as.factor(value), fill = variable)) +
-  facet_wrap("variable") +
-  theme_minimal() 
+  facet_wrap("variable", nrow = 2) + 
+  theme_minimal() +
+  theme(panel.grid.major.x = element_blank(),
+        panel.spacing = unit(4, "lines"),
+        text = element_text(size=15)) +
+  scale_x_discrete(name ="Language",
+                   limits=factor(1:5)) +
+  scale_fill_viridis_d()
+
 
 
 ```
@@ -206,15 +213,21 @@ gg_lang +
 
 ## Survey Results: Workflow
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, fig.width=14}
 
 wf <- preprocess(res, "w_")
 gg_lang <- ggplot(data = wf)
 gg_lang +
   geom_bar(aes(x = as.factor(value), fill = variable)) +
-  facet_wrap("variable") +
+  facet_wrap("variable", nrow = 1) +
   theme_minimal() +
-  scale_x_discrete(1:5)
+  theme(panel.grid.major.x = element_blank(),
+        panel.spacing = unit(4, "lines"),
+        text = element_text(size=15)) +
+  scale_x_discrete(name ="Language",
+                   limits=factor(1:5)) +
+  scale_fill_viridis_d()
+
 
 
 ```
