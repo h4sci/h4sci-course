@@ -17,6 +17,9 @@ output:
       beforeInit: "https://platform.twitter.com/widgets.js"
 ---
 
+
+<!-- https://youtu.be/oLEhNj17vVI --> 
+
 class: center, middle
 
 ## What is Git 

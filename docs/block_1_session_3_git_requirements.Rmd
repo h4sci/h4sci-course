@@ -37,9 +37,15 @@ class: center, middle
 - if you loose the key, let the admin know to remove your lock -> keys is useless.
 - optional passphrase can buy you time to inform the admin
 
-for more context information read the [corresponding chapter in the online book]. 
+for more context information read the [corresponding chapter in the online book](https://h4sci.github.io/h4sci-book/developer-practices-workflows.html#rsa-key-pair-authentication). 
+
+
+
+
 
 ---
+
+
 
 class: center, middle
 
@@ -47,31 +53,23 @@ class: center, middle
 ## A) Use R Studio Server B) Create Key Pair Locally
 
 
---- 
 
+
+
+
+
+---
 
 ## R Studio Server: Login  (Option A)
 
-
-Go to [teaching.kof.ethz.ch](https://teaching.kof.ethz.ch) and log-in with the 
+- Go to [teaching.kof.ethz.ch](https://teaching.kof.ethz.ch) and log-in with the 
 password and username provided to you at the start of the course. 
 
----
+- Go to Tools -> Global Options -> Git/SVN and choose 'create RSA Key Pair'
 
-
-## R Studio Server: Create an RSA Key Pair   (Option A)
-
-
-Go to Tools -> Global Options -> Git/SVN and choose 'create RSA Key Pair'
-
-
----
-
-
-## R Studio Server: Passphrase   (Option A)
-
-Leave the optional passphrase empty. Click 'Create'. The subsequent random art 
+- Leave the optional passphrase empty. Click 'Create'. The subsequent random art 
 image just let's you know that you've been successful. Nerdy. Close the window.
+
 
 ---
 
