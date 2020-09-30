@@ -35,6 +35,7 @@ dbGetQuery(con,"SELECT * FROM responses")
 
 # dbExecute(con,"SET SEARCH_PATH=h4sci")
 # dbExecute(con,"DROP TABLE responses")
+# dbExecute(con,"TRUNCATE responses")
 
 dbDisconnect(con)
 
