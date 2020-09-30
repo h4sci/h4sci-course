@@ -18,64 +18,87 @@ output:
 ---
 
 
-<!-- https://youtu.be/oLEhNj17vVI --> 
 
-class: center, middle
 
-## What is Git 
+class:center,middle
+
+Today's goal: be able to clear [tasks 1-3](https://github.com/h4sci/h4sci-tasks/issues)
+
 
 ---
 
-class: center, middle
+
+
+
+
+class:center,middle
+
+## What is git ? 
+
+
+---
+
+
+class:center,middle
 
 > Git is a decentralized version control system.  
 
 ---
 
-class: center, middle
 
-## Basic Git Workflow 
+## Basic Git Workflow: init, pull, clone
 
---- 
 
-class: center, middle
-
-## Basic Git Workflow: Add, Commit 
-
---- 
-
-## Walk Through in Theory
+<img src="decentralized_1.png">
+</br>
 
 
 ---
 
-## Walk Through That in Practice 
-
-1. init a repository (git init)
-2. create and edit three text files 
-3. add two files to the stage
-4. commit and write a commit message
-5. show git log. 
-
-
-
-## Adding a Remote Repository to the mix
-
-- show GitHub, create repo, clone
-- repeat the above tasks, add a push, check on GitHub
-- still no collab, everybody got their own sandbox
 
 
 
 
 
+## Basic Git Workflow: checkout
+
+<img src="decentralized_2.png">
 
 
 
+---
+
+
+## Basic Git Workflow: add (staging)
+
+<img src="decentralized_3.png">
+
+
+---
 
 
 
+## Basic Git Workflow: commit
+
+<img src="decentralized_4.png">
 
 
+---
 
+
+## Basic Git Workflow: push
+
+<img src="decentralized.png">
+
+
+---
+
+class:center,middle
+
+**Wait.** </br>
+Are you able to set up a working RSA key pair based auth? </br>
+If yes, move on. </br>
+If not, watch [Connect to Remote Repository Using an RSA Key Pair](https://www.youtube.com/watch?v=oLEhNj17vVI)
+
+---
 
