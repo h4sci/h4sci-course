@@ -129,3 +129,60 @@ If not, watch [Connect to Remote Repository Using an RSA Key Pair](https://www.y
 
 ---
 
+class:center,middle
+
+## Feedback Results
+
+
+---
+
+
+```{r, echo=FALSE, fig.width=14, message=FALSE, warning=FALSE}
+library(RPostgres)
+library(data.table)
+library(ggplot2)
+fcon <- file("../intro-survey/.pgpass","r")
+con <-  dbConnect(drv = Postgres(), dbname = "postgres", user = "postgres",
+                  host = "34.65.173.162",
+                  password = readLines(fcon, warn = FALSE))
+o <- dbExecute(con,"SET SEARCH_PATH=h4sci")
+
+fb <- dbGetQuery(con, "SELECT * FROM feedback_1")
+
+preprocess <- function(df, pattern){
+  pattern_id <- paste0("id|",pattern)
+  subs <- df[,grepl(pattern_id, names(df))]
+  dt <- as.data.table(subs)
+  m <- melt(dt, id.vars = "id")
+  m
+}
+
+
+fbd <- preprocess(fb,"basic|team")
+levels(fbd$variable) <- c("individual","team")
+
+gg_fb <- ggplot(data = fbd)
+gg_fb +
+  geom_bar(aes(x = as.factor(value), fill = variable)) +
+  facet_wrap("variable",labeller = labeller(fbd)) + 
+  theme_minimal() +
+  theme(panel.grid.major.x = element_blank(),
+        panel.spacing = unit(4, "lines"),
+        text = element_text(size=15),
+        legend.position = 'none') +
+  scale_x_discrete(name ="Language",
+                   limits=factor(1:5)) +
+  scale_fill_viridis_d()
+
+```
+
+
+
+
+
+
+
+
+
+
+
