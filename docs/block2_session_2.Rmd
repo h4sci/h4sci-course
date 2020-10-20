@@ -1,0 +1,97 @@
+---
+title: |
+  Hacking for Social Sciences
+subtitle: "Programming with Data"
+author: "@whatsgoodio"
+institute: "KOF, ETH Zurich"
+date: "2020-10-02"
+output:
+  xaringan::moon_reader:
+    css: ["robot-fonts","more.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+      beforeInit: "https://platform.twitter.com/widgets.js"
+---
+
+class: center,middle
+
+## Data & Data Formats in Social Sciences
+
+---
+
+## Data Generating Processes: Simulation
+
+
+---
+
+
+## Data Generating Processes: Logging / Tracking
+
+
+---
+
+
+## Data Generating Processes: Surveys
+
+
+---
+
+
+## Data Generating Processes: APIs, Downloads, Web Scraping
+
+
+---
+
+
+## Types of Datasets: Time Series
+
+
+---
+
+
+## Types of Datasets: Cross Sectional Data
+
+
+---
+
+
+## Types of Datasets: Panel Data
+
+
+---
+
+
+## Types of Datasets: Nested Data
+
+
+
+
+
+class: center,middle
+
+## R's Three Ecosystems to Handle Data
+
+--- 
+
+
+## base R
+
+
+---
+
+
+## data.table
+
+
+---
+
+
+## The Tidyverse
+
+
+
+
