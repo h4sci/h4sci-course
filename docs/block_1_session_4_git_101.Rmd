@@ -177,7 +177,19 @@ gg_fb +
 ```
 
 
+---
 
+class: center,middle
+
+## Break Out Session 1: Task 1 - Moving Around 
+
+
+---
+
+
+class: center,middle
+
+## Break Out Session 2: Task 2 & 3 - First Collab & Merge Conflict Drill
 
 
 

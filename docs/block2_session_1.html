@@ -13,7 +13,7 @@
 class: center, middle, inverse, title-slide
 
 # Hacking for Social Sciences
-## Git 101
+## R Programming 101
 ### <span class="citation">@whatsgoodio</span>
 ### KOF, ETH Zurich
 ### 2020-10-02
@@ -22,12 +22,143 @@ class: center, middle, inverse, title-slide
 
 
 
-
-
 class:center,middle
 
-Today's goal: be able to clear [tasks 1-3](https://github.com/h4sci/h4sci-tasks/issues)
 
+**Today's goals**:&lt;/br&gt;
+Take away a programming trick (or two),
+&lt;/br&gt; get a better idea of how to structure code 
+
+
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
+
+
+---
+
+
+## Most Popular Scripting Languages in Data Science
+
+.pull-left[
+&lt;img src="logos/R.png"&gt;
+
+- [R Language for Statistical Computing](https://r-project.org)
+- [Stackoverflow questions](https://stackoverflow.com/questions/tagged/r): 300K+
+- Recommended Editor: [R Studio IDE](https://rstudio.com/products/rstudio/)
+- Extensions
+  - [CRAN](https://cran.r-project.org/) Repository /w ~15K Extension packages
+  - [Shiny Web Framework](http://shiny.rstudio.com/)
+- Trend: from Domain Specific to General Purpose
+
+
+]
+
+.pull-right[
+&lt;img src="logos/python_sketch.png"&gt;
+
+- Python [2](https://www.python.org/downloads/release/python-272/) &amp; [3](https://www.python.org/)
+- [Stackoverflow questions](https://stackoverflow.com/questions/tagged/python): ~1.3M+
+- Recommended Editor: [Visual Studio Code /w Jupyter Notebooks](https://code.visualstudio.com/docs/python/jupyter-support)
+- Extensions
+  - [anaconda](https://www.anaconda.com/)
+  - [pandas](https://pandas.pydata.org/)
+  - [numpy](https://numpy.org/)
+  - [sciPy](https://www.scipy.org/)
+- Trend: General Purpose /w Scientific Extensions
+
+]
+
+
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
+
+
+---
+
+## Basic Object Types in R: vector
+
+&lt;!-- Go past "understand" in blooms Taxonomy: remember, understand, apply, analyze, evaluate, create --&gt; 
+
+
+
+```r
+a &lt;- 1
+b &lt;- c(1,2,6,20,30,40,100,200,300)
+d &lt;- 1:10
+a
+```
+
+```
+## [1] 1
+```
+
+```r
+b
+```
+
+```
+## [1]   1   2   6  20  30  40 100 200 300
+```
+
+```r
+d
+```
+
+```
+##  [1]  1  2  3  4  5  6  7  8  9 10
+```
+
+- scalar: vector of length one. 
+- all elements have the same data type -&gt; coercion to smallest common denominator.
+
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
+
+
+---
+
+## Basic Data Types in R: matrix
+
+
+```r
+m &lt;- matrix(b, nrow = 3)
+m
+```
+
+```
+##      [,1] [,2] [,3]
+## [1,]    1   20  100
+## [2,]    2   30  200
+## [3,]    6   40  300
+```
+
+- two dimensional.
+- all columns are of the *same length*.
+- all elements have the *same data type*.
+
+
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
+
+
+---
+
+## Basic Data Types in R: data.frame
+
+
+```r
+d &lt;- data.frame(col1 = b[1:3],
+                col2 = b[4:6],
+                col3 = letters[1:3])
+d
+```
+
+```
+##   col1 col2 col3
+## 1    1   20    a
+## 2    2   30    b
+## 3    6   40    c
+```
+
+- two dimensional.
+- all columns are of the *same length*.
+- elements may have *different data types*.
 
 
 &lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
@@ -36,127 +167,92 @@ Today's goal: be able to clear [tasks 1-3](https://github.com/h4sci/h4sci-tasks/
 ---
 
 
+## Basic Data Types in R: list
 
 
+```r
+l &lt;- list(element1 = a,
+          element2 = m, 
+          element3 = d)
+l
+```
 
-class:center,middle
+```
+## $element1
+## [1] 1
+## 
+## $element2
+##      [,1] [,2] [,3]
+## [1,]    1   20  100
+## [2,]    2   30  200
+## [3,]    6   40  300
+## 
+## $element3
+##   col1 col2 col3
+## 1    1   20    a
+## 2    2   30    b
+## 3    6   40    c
+```
 
-## What is git ? 
-
-
-
-&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
-
----
-
-
-class:center,middle
-
-&gt; Git is a decentralized version control system.  
-
-
-
-&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
-
----
-
-
-## Basic Git Workflow: init, pull, clone
-
-
-&lt;img src="decentralized_1.png"&gt;
-&lt;/br&gt;
-
-
-
-&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
-
----
-
-
-
-
-
-
-## Basic Git Workflow: checkout
-
-&lt;img src="decentralized_2.png"&gt;
-
+- may be nested
+- may have different data types
 
 
 &lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
 
+
 ---
 
+## Environments
 
-## Basic Git Workflow: add (staging)
 
-&lt;img src="decentralized_3.png"&gt;
 
+```r
+e &lt;- new.env()
+e$cow &lt;- "moooooo."
+e$duck &lt;- "quack."
+e$dog &lt;- "woof."
+
+ls(e)
+```
+
+```
+## [1] "cow"  "dog"  "duck"
+```
+
+```r
+get("dog", envir = e)
+```
+
+```
+## [1] "woof."
+```
+
+- The section on [environment basics in Hadley Wickham's Advanced R](http://adv-r.had.co.nz/Environments.html) is a good, 
+applied introduction.
+
+- [How R Searches and Finds Stuff](http://blog.obeautifulcode.com/R/How-R-Searches-And-Finds-Stuff/) goes much further down the rabbit hole. 
 
 
 &lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
 
+
+
+
 ---
 
 
+class: center, middle
 
-## Basic Git Workflow: commit
+## Where Are you at (in terms of Bloom's taxonomy)? 
 
-&lt;img src="decentralized_4.png"&gt;
+remember, understand, **apply**, **analyze**, **evaluate**, **create**
 
 
 &lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
 
----
-
-
-## Basic Git Workflow: push
-
-&lt;img src="decentralized.png"&gt;
-
-
-&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
 
 ---
-
-class:center,middle
-
-**Wait.** &lt;/br&gt;
-Are you able to set up a working RSA key pair based auth? &lt;/br&gt;
-If yes, move on. &lt;/br&gt;
-If not, watch [Connect to Remote Repository Using an RSA Key Pair](https://www.youtube.com/watch?v=oLEhNj17vVI)
-
-
-
-&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
-
----
-
-class:center,middle
-
-## Feedback Results
-
-
----
-
-
-![](block_1_session_4_git_101_files/figure-html/unnamed-chunk-1-1.png)&lt;!-- --&gt;
-
-
----
-
-class: center,middle
-
-## Break Out Session 1: Task 1 - Moving Around 
-
-
----
-
-
-class: center,middle
-
-## Break Out Session 2: Task 2 &amp; 3 - First Collab &amp; Merge Conflict Drill
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
