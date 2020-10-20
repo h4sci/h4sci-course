@@ -193,18 +193,101 @@ class: center, middle
 
 ## Structure Your Code
 
-1. Naming Conventions
-2. Think: Package / Library
-3. Document Before You Start
+Naming Conventions </br>
+Think: Package / Library </br>
+Document Before You Start
+
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
+---
+
+class: center, middle
+
+## Howdie, iAmACamel ! 
+
+
+frequently occurs in: class names (mostly UpperCamelCase).
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
+---
+
+class: center, middle
+
+## Whassssssup, i_am_a_snake!
+
+
+frequently occurs in: file and folder names, function names in R and Python.
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
+---
+
+
+class: center, middle
+
+## Hello, i-am-a-kebap! 
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/A_Berlin_style_D%C3%B6ner_with_a_glass_of_beer_on_side.jpg" width="400px">
+
+frequently occurs in: folder, file and repository names.
+
+
+<div class="my-footer"><span><div class="footer-text" align="right">Kebap Picture by Chemipanda, CC BY-SA 4.0, via Wikimedia Commons. "Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
+---
+
+
+class: center, middle
+
+# Think: Package / Library
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
+---
+
+
+## Script vs. Function -- Call vs. Definition
+
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
+---
+
+
+## Documentation of Functions (Reference)
+
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
 
 
+---
 
 
+## Folder Structure
+
+- **R** function definitions
+- **man** references (functions and datasets)
+- **docs** Articles for GitHub Pages
+- **vignettes** Articles' source, elaborate documentation source
+- **inst** additional material, installed with package, e.g., sql files
+- **src** source code that needs to be compiled, e.g., C++
+
+In addition every package needs DESCRIPTION and NAMESPACE file. 
 
 
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
 
+---
 
 
 
