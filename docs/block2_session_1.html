@@ -111,6 +111,8 @@ d
 
 &lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
 
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
+
 
 ---
 
@@ -228,6 +230,8 @@ get("dog", envir = e)
 ## [1] "woof."
 ```
 
+- Be aware of lexical scoping (look up of variables in parent environments when they can't be found in the current environment) when working with functions.
+
 - The section on [environment basics in Hadley Wickham's Advanced R](http://adv-r.had.co.nz/Environments.html) is a good, 
 applied introduction.
 
@@ -255,7 +259,9 @@ lapply(ds_list, summary)
 
 ```r
 lapply(ds_list, function(x){
-  sprintf("The dataset contains %d observations.", nrow(x))
+  sprintf(
+    "The dataset contains %d observations.",
+    nrow(x))
 })
 ```
 
@@ -295,6 +301,8 @@ lapply(ds_list, function(x){
 
 =&gt; for more elaborate examples, such as function factories, take a read the [Functional Programming Chapter](http://adv-r.had.co.nz/Functional-programming.html) of Hadley Wickham's book.
 
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
+
 
 ---
 
@@ -322,6 +330,8 @@ do_numeric_op(1,"a")
 
 
 ]
+
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
 
 
 ---
@@ -351,6 +361,9 @@ do_numeric_op(1,"a")
 
 
 ]
+
+
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
 
 
 ---
@@ -407,6 +420,9 @@ do_numeric_op &lt;- function(a,b){
 
 
 ]
+
+
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
 
 
 ---
@@ -467,6 +483,9 @@ do_numeric_op(2,1)
 
 
 ]
+
+
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
 
 
 ---
@@ -542,6 +561,9 @@ do_numeric_op(1,"a")
 ]
 
 
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
+
+
 ---
 
 
@@ -554,6 +576,9 @@ do_numeric_op(1,"a")
 - OS specific
 
 =&gt; Live Demo
+
+
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
 
 
 ---
@@ -853,12 +878,14 @@ create_basic_desc &lt;- function(distr){
 - Peer programming in the beginning (make sure to switch who's on the driver's seat)
 - Reproducible Research (include )
 
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
+
 
 ---
 
 class: center, middle
 
-## Where Are you at (in terms of Bloom's taxonomy)? 
+## Where Are You At (in Terms of Bloom's Taxonomy)? 
 
 remember, understand, **apply**, **analyze**, **evaluate**, **create**
 

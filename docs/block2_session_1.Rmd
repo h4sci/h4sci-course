@@ -88,6 +88,8 @@ d
 
 <div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
 
 ---
 
@@ -161,6 +163,8 @@ get("dog", envir = e)
 
 ```
 
+- Be aware of lexical scoping (look up of variables in parent environments when they can't be found in the current environment) when working with functions.
+
 - The section on [environment basics in Hadley Wickham's Advanced R](http://adv-r.had.co.nz/Environments.html) is a good, 
 applied introduction.
 
@@ -187,7 +191,9 @@ lapply(ds_list, summary)
 ```{r,eval=FALSE}
 
 lapply(ds_list, function(x){
-  sprintf("The dataset contains %d observations.", nrow(x))
+  sprintf(
+    "The dataset contains %d observations.",
+    nrow(x))
 })
 
 
@@ -230,6 +236,8 @@ lapply(ds_list, function(x){
 
 => for more elaborate examples, such as function factories, take a read the [Functional Programming Chapter](http://adv-r.had.co.nz/Functional-programming.html) of Hadley Wickham's book.
 
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
 
 ---
 
@@ -259,41 +267,10 @@ do_numeric_op(1,"a")
 
 ]
 
-
----
-
-## Try Catch
-
-
-.pull-left[
-
-### Without Safety Net
-
-```{r, eval=FALSE}
-
-do_numeric_op <- function(a,b){
-  out <- (a + b)*a
-  message(sprintf(
-    "'%s', '%s' were your inputs.",
-    a,b)
-    )
-  out
-}
-
-do_numeric_op(1,"a")
-
-```
-
-"Error in a + b : non-numeric argument to binary operator Calls: [...]"
-
-
-]
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
 
 ---
-
-
-
 
 ## Try Catch
 
@@ -323,34 +300,12 @@ do_numeric_op(1,"a")
 ]
 
 
-
-.pull-right[
-
-### Safety Net
-
-```{r}
-
-do_numeric_op <- function(a,b){
-  
-  tryCatch({
-    return((a + b)*a)
-  
-  }, error = function(e) message(
-    "Operation went wrong, but function is alive."
-    )
-  )
-  sprintf("'%s', '%s' were your inputs.", a,b)
-}
-
-
-
-```
-
-
-]
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
 
 ---
+
+
 
 
 ## Try Catch
@@ -400,7 +355,6 @@ do_numeric_op <- function(a,b){
   sprintf("'%s', '%s' were your inputs.", a,b)
 }
 
-do_numeric_op(2,1)
 
 
 ```
@@ -409,12 +363,14 @@ do_numeric_op(2,1)
 ]
 
 
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
 ---
 
 
-
-
 ## Try Catch
+
 
 .pull-left[
 
@@ -461,12 +417,78 @@ do_numeric_op <- function(a,b){
 }
 
 do_numeric_op(2,1)
+
+
+```
+
+
+]
+
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
+---
+
+
+
+
+## Try Catch
+
+.pull-left[
+
+### Without Safety Net
+
+```{r, eval=FALSE}
+
+do_numeric_op <- function(a,b){
+  out <- (a + b)*a
+  message(sprintf(
+    "'%s', '%s' were your inputs.",
+    a,b)
+    )
+  out
+}
+
+do_numeric_op(1,"a")
+
+```
+
+"Error in a + b : non-numeric argument to binary operator Calls: [...]"
+
+
+]
+
+
+
+.pull-right[
+
+### Safety Net
+
+```{r}
+
+do_numeric_op <- function(a,b){
+  
+  tryCatch({
+    return((a + b)*a)
+  
+  }, error = function(e) message(
+    "Operation went wrong, but function is alive."
+    )
+  )
+  sprintf("'%s', '%s' were your inputs.", a,b)
+}
+
+do_numeric_op(2,1)
 do_numeric_op(1,"a")
 
 ```
 
 
 ]
+
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
 
 ---
@@ -481,6 +503,9 @@ do_numeric_op(1,"a")
 - OS specific
 
 => Live Demo
+
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
 
 ---
@@ -779,6 +804,8 @@ create_basic_desc <- function(distr){
 - Peer programming in the beginning (make sure to switch who's on the driver's seat)
 - Reproducible Research (include )
 
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
 
 ---
 
@@ -789,7 +816,7 @@ class: center, middle
 remember, understand, **apply**, **analyze**, **evaluate**, **create**
 
 
- => Take the survey
+ => [Take the survey](https://h4sci.shinyapps.io/prog-feedback/)
 
 
 <div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
