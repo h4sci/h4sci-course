@@ -530,6 +530,7 @@ class: center, middle
 
 ## Howdie, iAmACamel ! 
 
+<img src="camel.png" width="300px">
 
 frequently occurs in: class names (mostly UpperCamelCase).
 
@@ -542,6 +543,7 @@ class: center, middle
 
 ## Whassssssup, i_am_a_snake!
 
+<img src="snake.png" width="500px">
 
 frequently occurs in: file and folder names, function names in R and Python.
 
@@ -555,7 +557,7 @@ class: center, middle
 
 ## Hello, i-am-a-kebap! 
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/A_Berlin_style_D%C3%B6ner_with_a_glass_of_beer_on_side.jpg" width="400px">
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/A_Berlin_style_D%C3%B6ner_with_a_glass_of_beer_on_side.jpg" width="350px">
 
 frequently occurs in: folder, file and repository names.
 
@@ -742,9 +744,11 @@ create_basic_desc(d1)
 
 #' Create Basic Descriptive Statistics
 #'
-#' Creates means, standard deviations and default quantiles from an numeric input vector. 
+#' Creates means, standard deviations and
+#' default quantiles from an numeric input vector. 
 #' 
-#' @param distr numeric vector drawn from an arbitraty distribution. 
+#' @param distr numeric vector drawn
+#' from an arbitraty distribution. 
 #' @export 
 create_basic_desc <- function(distr){
   out <- list(
