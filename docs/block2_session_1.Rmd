@@ -4,7 +4,7 @@ title: |
 subtitle: "R Programming 101"
 author: "@whatsgoodio"
 institute: "KOF, ETH Zurich"
-date: "2020-10-02"
+date: "2020-10-23"
 output:
   xaringan::moon_reader:
     css: ["robot-fonts","more.css"]
