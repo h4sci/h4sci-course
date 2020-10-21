@@ -2,7 +2,7 @@
 #
 library(RPostgres)
 con <-  dbConnect(drv = Postgres(), dbname = "postgres", user = "postgres",
-                  host = "34.65.173.162", password = "pglogc@@AA13!$" )
+                  host = "34.65.173.162", password = "" )
 dbExecute(con,
           "CREATE TABLE h4sci.responses(
            id text PRIMARY KEY,
