@@ -2,7 +2,8 @@ library(kofdata)
 library(seasonal)
 library(tstools)
 
-tsl <- get_time_series(c("ch.kof.barometer","ch.kof.indicator_surprise"))
+tsl <- get_time_series(c("ch.kof.barometer",
+                         "ch.kof.indicator_surprise"))
 tsl$ch.kof.indicator_surprise <- tstools::m_to_q(tsl$ch.kof.indicator_surprise)
 
 tstools::tsplot(m_baro$series$s12)
@@ -22,7 +23,9 @@ library(parallel)
 nr_cores <- detectCores()
 cat("mem_used in sa_parallel, before parLapply:", capture.output(print(pryr::mem_used())), "\n")
 cluster <- parallel::makeCluster(nr_cores, type = if (Sys.info()["sysname"] == "Windows") "PSOCK" else "PSOCK")
-parallel::clusterExport(cluster, varlist = "tsl", envir = environment())
+parallel::clusterExport(cluster,
+                        varlist = "tsl",
+                        envir = environment())
 worker_mems <- parallel::clusterEvalQ(cluster, capture.output(pryr::mem_used()))
 cat(paste0("Initial mem_used worker thread ", seq_along(worker_mems), ": ", unlist(worker_mems), "\n"), sep = "")
 sa_res <- parallel::parLapply(cluster, tsl, seas)

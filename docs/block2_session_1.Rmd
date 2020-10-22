@@ -806,7 +806,7 @@ create_basic_desc <- function(distr){
 - Document Before You Start, e.g., write a vignette outline
 - use pseudo code or comments to structure 
 - Peer programming in the beginning (make sure to switch who's on the driver's seat)
-- Reproducible Research (include )
+- Reproducible Research (include data)
 
 <div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
