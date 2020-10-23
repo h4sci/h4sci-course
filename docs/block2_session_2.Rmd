@@ -516,13 +516,22 @@ class:center,middle
 
 ## When to Use a Database? 
 
+
+### Passively
+
+- direct access 
+- no API
+- flexible queries needed
+
+
+### Actively (in the sense of setting it up, running it)
+
 - as a backend e.g., survey (transactional database)
 - in research projects when you want to share data inside your lab
 - when you need to restrict access at different levels
 - to expose data through an API (to external collaborators or the public)
 - need to [integrate with different systems / tools and programming languages](https://github.com/mbannert/timeseriesdb/blob/ca3939a5686f0e68bc3d5cb828d0891795a4eac3/inst/sql/create_functions_collections.sql#L63)
 - specific operations, e.g., spatial data
-
 
 
 <div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
@@ -685,6 +694,86 @@ con <-  dbConnect(drv = Postgres(),
 
 
 <div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
+
+---
+
+## Basic SQL Syntax
+
+.pull-left[
+
+### SQL
+
+```sql
+SELECT * FROM schema.table;
+
+INSERT INTO schema.table VALUES ('abc',2,3);
+
+SELECT name, salary FROM staff
+WHERE position = 'manager'
+ORDER BY salary DESC;
+
+
+
+
+```
+
+]
+
+.pull-right[
+
+### Explanation
+
+- '*' SELECTs all data from a given table
+- INSERTs values to a table while checking integrity (data types)
+- SELECTs name and salary from table staff for all managers and 
+orders the output by salary from highest to lowest
+
+]
+
+<br>
+<br>
+
+### Further Reads
+
+- [SQLite Tutorial](https://www.sqlitetutorial.net/)
+- [PostgreSQL 12 Documentation](https://www.postgresql.org/docs/12/index.html) (Jump in at 'table basics')
+- [Vignettes of the {dm} package](https://cran.r-project.org/web/packages/dm/index.html), in particular the [data.frame to dm part](https://cran.r-project.org/web/packages/dm/vignettes/howto-dm-df.html)
+
+---
+
+class:center,middle
+
+## Block 2, Task 3: [A Little SQL](https://github.com/h4sci/h4sci-tasks/issues/8)
+
+
+---
+
+## How to Work with an Application Programming Interface (API)
+
+1. RTFM
+
+2. Experiment 'per pedes'
+
+3. Write a Wrapper
+
+4. Use the Wrapper
+
+
+Here is [an R example]() to get `r emo::ji("umbrella") ` images from the 
+MET collection. 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
