@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Hacking for Social Sciences</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="@whatsgoodio" />
+    <meta name="date" content="2020-11-19" />
+    <link href="libs/remark-css-0.0.1/robot-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="more.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Hacking for Social Sciences
+## Infrastructure
+### <span class="citation">@whatsgoodio</span>
+### KOF, ETH Zurich
+### 2020-11-19
+
+---
+
+
+
+class:center,middle
+
+
+**Today's goals**:&lt;/br&gt;
+Classify approaches 
+&lt;/br&gt; 
+Get an idea of the infrastructure for team projects
+
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
+
+
+---
+
+
+class:center,middle
+
+
+&lt;img src="server-thinking.jpg" width="600px"&gt;
+
+Common thinking of servers... 
+
+
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
+
+
+---
+
+class:center,middle
+
+
+&lt;img src="listen.jpg" height="500px"&gt;
+
+A server is a program that listens.
+
+
+---
+
+
+## Common Servers 
+
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; server &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; common.ports &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Description &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Apache &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 80, 443 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Standard Webserver &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; nginx &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 80, 443 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Webserver, Reverse Project, often combined with other servers &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Postgres &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 5432 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Database Server for PostgreSQL &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; R Studio Server &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 3838 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; R Studio made available through a web browser &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Shiny Server &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 8787 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; A server to run shiny apps &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+Note: Many of these programs can be installed on your local computer easily and made 
+available through your _localhost_ (IP: 127.0.0.1).
+
+
+---
+
+class:center,middle
+
+## Basic Data Science Web Server Example
+
+
+&lt;img src="server-setup1.jpg" width="600px"&gt;
+
+
+---
+
+
+class:center,middle
+
+## Basic Data Science Web Server Example
+
+
+&lt;img src="server-setup2.jpg" width="600px"&gt;
+
+
+
+---
+
+
+class:center,middle
+
+## Basic Data Science Web Server Example
+
+
+&lt;img src="server-setup3.jpg" width="600px"&gt;
+
+
+---
+
+class:center,middle
+
+# Hosting Approaches
+
+Note: All of these approaches ask for a development environment.
+
+---
+
+
+class:center,middle
+
+## On Premise (in house)
+
+---
+
+## On Premise 
+
+### Examples
+
+- ETH Gitlab
+- Gitea
+- teaching.kof.ethz.ch
+- shiny server
+
+
+
+---
+
+class:center,middle
+
+## Software-as-a-Service (SaaS)
+
+
+---
+
+## SaaS 
+
+
+.pull-left[
+
+### Examples
+
+- Overleaf
+- shinyapps.io
+
+
+]
+
+.pull-right[
+
+### Advantages
+
+- Hassle free (Hosting)
+- Onboarding of non-hackers easier
+- transparent pricing models
+
+
+### Disadvantages
+
+- Blackbox
+- Vendor Lock-in depending on pricing model an software
+- Relatively Expensive per Unit
+
+
+]
+
+---
+
+class:center,middle
+
+## Cloud
+
+---
+
+
+## Common Cloud Products
+
+
+### Basic VMs
+
+e.g., Google Compute Engine, Microsoft Azure Cloud VMs
+
+
+### Single Purpose Environments
+
+Docker hosts, e.g., Google Kubernetes Engine, Azure Kubernetes Service (AKS)
+
+
+### Ready Made Services
+
+AI &amp; machine learning products, e.g., Google Cloud AutoML
+
+
+---
+
+class:center,middle
+
+# Docker: containerize environments
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
