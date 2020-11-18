@@ -1,7 +1,7 @@
 ---
 title: |
   Hacking for Social Sciences
-subtitle: "Infrastructure"
+subtitle: "Infrastructure: Terminology and Contextualization"
 author: "@whatsgoodio"
 institute: "KOF, ETH Zurich"
 date: "2020-11-19"
@@ -24,10 +24,40 @@ class:center,middle
 **Today's goals**:</br>
 Classify approaches 
 </br> 
-Get an idea of the infrastructure for team projects
+Get an idea of apt infrastructure for team projects
 
 <div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
+
+---
+
+
+class:center,middle
+
+<img src="overload.jpg" width="600px">
+
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+---
+
+
+class:center,middle
+
+<a href="https://twitter.com/thomasfuchs/status/928808041587314689"><img src="overkill.png" width="400px"></a>
+
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+---
+
+
+class:center,middle
+
+<a href="https://twitter.com/dexhorthy/status/856639005462417409"><img src="inefficient.png" width="400px"></a>
+
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
 ---
 
@@ -51,6 +81,8 @@ class:center,middle
 <img src="listen.jpg" height="500px">
 
 A server is a program that listens.
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
 
 ---
@@ -85,6 +117,8 @@ kable(d,"html",escape= FALSE)
 Note: Many of these programs can be installed on your local computer easily and made 
 available through your _localhost_ (IP: 127.0.0.1).
 
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
 
 ---
 
@@ -95,6 +129,7 @@ class:center,middle
 
 <img src="server-setup1.jpg" width="600px">
 
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
 ---
 
@@ -108,6 +143,8 @@ class:center,middle
 
 
 
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
 ---
 
 
@@ -119,6 +156,8 @@ class:center,middle
 <img src="server-setup3.jpg" width="600px">
 
 
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
 ---
 
 class:center,middle
@@ -127,6 +166,9 @@ class:center,middle
 
 Note: All of these approaches ask for a development environment.
 
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
 ---
 
 
@@ -134,18 +176,22 @@ class:center,middle
 
 ## On Premise (in house)
 
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
 ---
 
 ## On Premise 
 
 ### Examples
 
-- ETH Gitlab
-- Gitea
-- teaching.kof.ethz.ch
-- shiny server
+- [ETH Gitlab](https://gitlab.ethz.ch/)
+- [Gitea](https://gitea.io/en-us/)
+- [teaching.kof.ethz.ch](https://teaching.kof.ethz.ch/auth-sign-in)
+- [shiny server](https://rstudio.com/products/shiny/shiny-server/)
 
 
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
 ---
 
@@ -153,6 +199,8 @@ class:center,middle
 
 ## Software-as-a-Service (SaaS)
 
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
 ---
 
@@ -163,8 +211,8 @@ class:center,middle
 
 ### Examples
 
-- Overleaf
-- shinyapps.io
+- [Overleaf](https://www.overleaf.com/)
+- [shinyapps.io](https://www.shinyapps.io/)
 
 
 ]
@@ -187,11 +235,17 @@ class:center,middle
 
 ]
 
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
 ---
 
 class:center,middle
 
 ## Cloud
+
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
 ---
 
@@ -211,14 +265,164 @@ Docker hosts, e.g., Google Kubernetes Engine, Azure Kubernetes Service (AKS)
 
 ### Ready Made Services
 
-AI & machine learning products, e.g., Google Cloud AutoML
+AI & machine learning products, e.g., Google Cloud AutoML, SQL Cloud Hosting
 
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+---
+
+
+
+class:center,middle
+
+# Docker: containerize environments
+
+<img src="cover.jpg" width="300px">
+
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
 ---
 
 class:center,middle
 
-# Docker: containerize environments
+
+> A **container** is a **standard unit of software** that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another
+
+-- docker.com, what is a container ? 
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+---
+
+
+
+## Docker Basics
+
+
+**Dockerfiles** are **recipes** for **docker images**. 
+
+**Docker images** are **blueprints** for **containers**. 
+
+Docker images can be **stored locally**, **built from scratch** or be **pulled** from a **Docker Registry** such as Docker Hub. 
+
+Docker containers run on a Docker Host / Docker Desktop or in Docker Cluster like Docker Swarm or Kubernetes. 
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+---
+
+
+## A Basic Docker File Example
+
+
+```
+
+FROM rocker/r-ver:3.6.0 as deps
+# A postgres client is needed as well to make timeseriesdb work 
+# and connect remotely to the EXISTING KOF database
+# -> we are not looking for a docker compose type of Postgres here.
+RUN apt-get update && apt-get install -y \
+libpq-dev \
+libcurl4-openssl-dev \
+libxml2-dev \
+libssl1.0-dev \
+libssh-dev
+
+```
+
+
+---
+
+
+
+
+## Docker commands
+
+
+```{r,echo=FALSE}
+d <- data.frame(
+  command = c(
+    "docker ps",
+    "docker images",
+    "docker pull",
+    "docker run",
+    "docker kill"
+    ),
+  description = c(
+    "list containers",
+    "list docker images",
+    "pull docker image from registry",
+    "run docker container based on image",
+    "stop and remove container"
+  )
+  )
+
+kable(d)
+
+
+```
+
+
+---
+  
+## Two Docker Based Examples: PostgreSQL and Shiny Server
+
+### Shiny
+
+```
+ docker run --rm -p 1234:3838 rocker/shiny
+
+```
+  
+  
+
+
+---
+  
+
+## Two Docker Based Examples: PostgreSQL and Shiny Server
+
+### Shiny
+
+```
+ docker run --rm -p 1234:3838 rocker/shiny
+
+```
+  
+  
+### Postgres Server  
+  
+```
+docker run --rm  --name pg-docker -e POSTGRES_PASSWORD=postgres -d -p 1111:5432 
+-v local/path:/var/lib/postgresql/data  postgres:11
+
+```
+
+
+-d: run as daemon, i.e., terminal window available
+
+-e: pass on an environment parameter, in this case a password 
+
+-p: port forwarding: host port:docker port
+
+-v: Mount for persistent storage
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
 
 
 

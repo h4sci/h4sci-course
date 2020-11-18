@@ -24,3 +24,12 @@ output:
 [Block 1, Session 3: Git Requirements](block_1_session_3_git_requirements.html)
 
 [Block 1, Session 4: Git 101](block_1_session_4_git_101.html)
+
+
+[Block 2, Session 1: R Programming 101](block2_session_1.html)
+
+[Block 2, Session 2: Programming with data](block2_session_2.html)
+
+[Block 3, Session 1: Infrastructure: Terminology and Contextualization](block3_session_1.html)
+
+[Block 3, Session 2: Infrastructure for the Semester Projects]()
