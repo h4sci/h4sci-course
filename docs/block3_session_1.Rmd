@@ -204,7 +204,7 @@ class:center,middle
 
 ---
 
-## SaaS 
+## SaaS / Serverless 
 
 
 .pull-left[
@@ -213,6 +213,7 @@ class:center,middle
 
 - [Overleaf](https://www.overleaf.com/)
 - [shinyapps.io](https://www.shinyapps.io/)
+- [Google NLP](https://cloud.google.com/natural-language/)
 
 
 ]
@@ -333,6 +334,9 @@ libssh-dev
 ```
 
 
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
 ---
 
 
@@ -365,6 +369,8 @@ kable(d)
 ```
 
 
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
 ---
   
 ## Two Docker Based Examples: PostgreSQL and Shiny Server
@@ -377,7 +383,7 @@ kable(d)
 ```
   
   
-
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
 ---
   
@@ -410,7 +416,7 @@ docker run --rm  --name pg-docker -e POSTGRES_PASSWORD=postgres -d -p 1111:5432
 -v: Mount for persistent storage
 
 
-
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
   
 
 
