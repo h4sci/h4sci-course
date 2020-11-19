@@ -1,0 +1,182 @@
+---
+title: |
+  Hacking for Social Sciences
+subtitle: "Infrastructure for the Semester Projects"
+author: "@whatsgoodio"
+institute: "KOF, ETH Zurich"
+date: "2020-11-20"
+output:
+  xaringan::moon_reader:
+    css: ["robot-fonts","more.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+      beforeInit: "https://platform.twitter.com/widgets.js"
+---
+
+
+## Today's goal: Find an Infrastructure for Every Team Project
+
+### GitHub Actions
+
+- team web scraping
+- team OECD data processing
+- team R package creation
+
+### Shiny Server
+
+- team interactive data visualization
+- team survey
+
+### GitHub Pages
+
+- team website / bookdown
+- team wildfire data
+
+
+
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
+---
+
+
+class:center,middle
+
+# GitHub Actions
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+---
+
+## GitHub Actions (Live Demo)
+
+### What is GitHub Actions?
+
+Github Actions is a tool to automate and customize the software development workflow including 
+CI/CD. It's similar to *Gitlab CI/CD*. 
+
+
+### How Does Github Actions work? 
+
+1. Prepare a task you want to run, e.g., an R script.
+2. Configure an environment AND workflow in a simple .yaml text file
+3. Push the file to a hidden folder .github/workflows (this won't be necessary if you edited the file directly on github0
+4. Use the GitHub web GUI to monitor the process.
+
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+---
+
+class:center,middle
+
+## https://crontab.guru/
+
+cronjobs - execute on schedule. [GitHub Actions docs](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#onschedule)
+
+
+---
+
+class:center,middle
+
+## Github Pages 
+
+
+---
+
+## Github Pages in a Nutshell
+  
+- every github repository can opt to have a repository specific website
+- it is design to document and/or market the software developed in the repo
+- the URL pattern is: user.github.io/repository-name
+- GitHub Pages sites either reside on a separate _gh-pages_ branch or in 
+the _docs folder_ on the main branch. 
+- GitHub Pages can be activated through the Github GUI
+- GitHub Pages can host either .md files or .html webpages (including .js and .css)
+
+
+
+
+---
+  
+  
+class:center,middle
+
+## shiny
+
+
+
+---
+  
+  
+class:center,middle
+
+## server.R (Why Do I have to Do All the Work ?)
+
+
+<img src="overload.jpg" width="600px">
+  
+  
+  <div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+    
+
+
+--- 
+
+
+## ui.R (I may be late, but I look gooooooood.)
+  
+  <img src="johnny.jpg" width="400px">
+    
+    
+    <div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+      
+
+
+--- 
+
+## What does the shiny framework do for us?
+      
+      
+.pull-left[
+        
+- create HTML/CSS/Javascript code
+- start/run a (local) webserver
+- communication between the R session and the browser
+
+        ]
+    
+.pull-right[
+
+```{r,eval=FALSE,echo=TRUE}
+      library(shiny)
+      shinyUI(fluidPage(
+        titlePanel("A random normal"),
+        # Sidebar with a slider input for number of bins 
+        sidebarLayout(
+          sidebarPanel(
+            sliderInput("obs",
+                        "Number of obs:",
+                        min = 1,
+                        max = 1000,
+                        value = 100)
+          ),
+          mainPanel(
+            plotOutput("randomPlot")
+          )
+        )
+      ))
+```
+      
+      ]
+
+
+
+
+
+
