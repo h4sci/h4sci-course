@@ -84,12 +84,17 @@ class:center,middle
 cronjobs - execute on schedule. [GitHub Actions docs](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#onschedule)
 
 
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
+
+
 ---
 
 
 class:center,middle
 
 ## Github Pages 
+
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
 
 
 ---
@@ -105,6 +110,8 @@ the _docs folder_ on the main branch.
 - GitHub Pages can be activated through the Github GUI
 - GitHub Pages can host either .md files or .html webpages (including .js and .css)
 
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
+
 
 
 ---
@@ -114,6 +121,8 @@ the _docs folder_ on the main branch.
 class:center,middle
 
 ## shiny
+
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
 
 
 ---
@@ -155,6 +164,9 @@ class:center,middle
 
 
 
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
+
+
 ---
 
 
@@ -171,6 +183,49 @@ class:center,middle
 ```
 
 =&gt; shiny functions create these wraps for us.
+
+
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
+
+
+---
+
+
+## Breaking Down the Hello World App
+
+
+
+.pull-left[
+
+### ui.R
+
+
+
+```r
+library(shiny)
+shinyUI(fluidPage(
+  titlePanel("A random normal"),
+  # Sidebar with a slider input for number of bins 
+  sidebarLayout(
+    sidebarPanel(
+      sliderInput("obs",
+                  "Number of obs:",
+                  min = 1,
+                  max = 1000,
+                  value = 100)
+    ),
+    mainPanel(
+      plotOutput("randomPlot")
+    )
+  )
+))
+```
+
+]
+
+
+
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
 
 
 ---
@@ -228,7 +283,11 @@ shinyServer(function(input, output) {
 ]
 
 
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
+
+
 ---
+
 
 
 ## Planning the App
@@ -239,6 +298,9 @@ shinyServer(function(input, output) {
 - topbar
 - main panel
 - menu buttons / sub pages
+
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
+
 
 ---
 
@@ -258,6 +320,9 @@ dashboardPage(
 ```
 
 
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
+
+
 ---
 
 class:center,middle
@@ -265,6 +330,9 @@ class:center,middle
 ## Are you ready for to build a real app?
 
 [Take the official quiz by rstudio.com!](https://shiny.rstudio.com/tutorial/quiz/)
+
+
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
 
 
 ---
@@ -276,6 +344,9 @@ class:center,middle
 
 
 &lt;a href="https://twitter.com/hadleywickham/status/1329498817113321472"&gt;&lt;img src="hadley.png"&gt;&lt;/a&gt;
+
+
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
 
 
 ---
@@ -299,6 +370,9 @@ class:center,middle
 
 - [Mastering Shiny (Hadley Wickham)](https://mastering-shiny.org/)
 - [Engineering Shiny (Colin Fay et al.)](https://engineering-shiny.org/)
+
+
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

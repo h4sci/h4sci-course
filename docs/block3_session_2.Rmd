@@ -219,6 +219,45 @@ shinyUI(fluidPage(
 ]
 
 
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
+---
+
+
+## Breaking Down the Hello World App
+
+
+
+.pull-left[
+
+### ui.R
+
+
+```{r,eval=FALSE,echo=TRUE}
+library(shiny)
+shinyUI(fluidPage(
+  titlePanel("A random normal"),
+  # Sidebar with a slider input for number of bins 
+  sidebarLayout(
+    sidebarPanel(
+      sliderInput("obs",
+                  "Number of obs:",
+                  min = 1,
+                  max = 1000,
+                  value = 100)
+    ),
+    mainPanel(
+      plotOutput("randomPlot")
+    )
+  )
+))
+```
+
+]
+
+
 .pull-right[
 
 ### server.R
@@ -241,6 +280,7 @@ shinyServer(function(input, output) {
 
 
 ---
+
 
 
 ## Planning the App
