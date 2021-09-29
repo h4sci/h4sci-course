@@ -4,7 +4,7 @@ title: |
 subtitle: "Class Is Open. C'mon in."
 author: "@whatsgoodio"
 institute: "KOF, ETH Zurich"
-date: "2020-10-01"
+date: "2021-09-30"
 output:
   xaringan::moon_reader:
     css: ["robot-fonts","more.css"]
@@ -19,7 +19,12 @@ output:
 
 class: center,middle
 
-## live demo: </br> markdown, github, swissdata
+
+## Hi, I'm Matt. 
+
+<img src="matt.jpeg">
+
+
 
 <div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
@@ -28,7 +33,16 @@ class: center,middle
 
 class: center,middle
 
-## [Background Survey](https://h4sci.shinyapps.io/intro-survey/)
+<a href="https://giphy.com/gifs/starz-james-bond-1hCnI6vRRBYPiaosR4"><img src="bond.gif"></a>
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
+---
+
+class: center,middle
+
+## [Background Survey](https://graphs.kof.ethz.ch/h4sci-survey/)
 
 <div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
@@ -41,19 +55,37 @@ class: center,middle
 
 ---
 
+class: center,middle
+
+<img src="talk.gif">
+
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div> All animated images taken from GIPHY.</span></div> 
+
+---
+
+class: center,middle
+
+<img src="talk.gif"><img src="klopp.gif">
+
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div> All animated images taken from GIPHY.</span></div> 
+
+---
+
 ## Schedule
 
-01.10.	10-13	The Big Picture
-02.10.	10-14	Git & Workflows
+30.09.	10-13	The Big Picture
+01.10.	10-14	Git & Workflows
 
-22.10.	10-13	R Programming Crash Course
-23.10.	10-14	Programming with Data
+21.10.	10-13	R Programming Crash Course
+22.10.	10-14	Programming with Data
 
-19.11.	10-13	Infrastructure
-20.11.	10-14	Infrastructure
+18.11.	10-13	Infrastructure
+19.11.	10-14	Infrastructure
 
-03.12.	10-13	Semester Projects
-04.12.	10-14	Semester Projects
+02.12.	10-13	Semester Projects
+03.12.	10-14	Semester Projects
 
 <div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
@@ -148,10 +180,10 @@ preprocess <- function(df, pattern){
 }
 
 fcon <- file("../intro-survey/.pgpass","r")
-    con <-  dbConnect(drv = Postgres(), dbname = "postgres", user = "postgres",
-                       host = "34.65.173.162",
+    con <-  dbConnect(drv = Postgres(), dbname = "kofdb", user = "shiny",
+                       host = "archivedb.kof.ethz.ch",
                       password = readLines(fcon, warn = FALSE))
-o <- dbExecute(con,"SET SEARCH_PATH=h4sci")
+o <- dbExecute(con,"SET SEARCH_PATH=teaching")
 
 res <- dbGetQuery(con,"SELECT * FROM responses")
 

@@ -242,7 +242,6 @@ Process Automation
 
 Release Automation
 
-- Travis
 - Gitlab CI
 - GitHub Actions
 
