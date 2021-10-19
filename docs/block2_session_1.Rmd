@@ -2,9 +2,9 @@
 title: |
   Hacking for Social Sciences
 subtitle: "R Programming 101"
-author: "@whatsgoodio"
+author: "Matt Bannert (@whatsgoodio)"
 institute: "KOF, ETH Zurich"
-date: "2020-10-23"
+date: "2021-10-21"
 output:
   xaringan::moon_reader:
     css: ["robot-fonts","more.css"]
@@ -21,9 +21,9 @@ output:
 class:center,middle
 
 
-**Today's goals**:</br>
-Take away a programming trick (or two),
-</br> get a better idea of how to structure code 
+**Today's goal**:</br>
+Think of R as a 
+</br> *(programming) language* 
 
 
 <div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
@@ -38,7 +38,7 @@ Take away a programming trick (or two),
 <img src="logos/R.png">
 
 - [R Language for Statistical Computing](https://r-project.org)
-- [Stackoverflow questions](https://stackoverflow.com/questions/tagged/r): 300K+
+- [Stackoverflow questions](https://stackoverflow.com/questions/tagged/r): 420K+ (last year: 300K)
 - Recommended Editor: [R Studio IDE](https://rstudio.com/products/rstudio/)
 - Extensions
   - [CRAN](https://cran.r-project.org/) Repository /w ~15K Extension packages
@@ -52,7 +52,7 @@ Take away a programming trick (or two),
 <img src="logos/python_sketch.png">
 
 - Python [2](https://www.python.org/downloads/release/python-272/) & [3](https://www.python.org/)
-- [Stackoverflow questions](https://stackoverflow.com/questions/tagged/python): ~1.3M+
+- [Stackoverflow questions](https://stackoverflow.com/questions/tagged/python): ~1.8M+ (last year ~1.3M+)
 - Recommended Editor: [Visual Studio Code /w Jupyter Notebooks](https://code.visualstudio.com/docs/python/jupyter-support)
 - Extensions
   - [anaconda](https://www.anaconda.com/)
@@ -176,6 +176,96 @@ applied introduction.
 
 ---
 
+## Define a Function
+
+```{r, eval=FALSE}
+
+name_of_the_function <- function(parameter_1, parameter_2){
+  # function body 
+  
+  s <- parameter_1 + parameter_2
+  
+  # R does *need* a return statement
+  # it returns the last statement that is not
+  # assigned to a variable using the assignment operator `<-` 
+  return(s)
+  
+  # NOTE an R function can only return ONE object (!)
+}
+
+
+```
+
+---
+
+class: center, middle
+
+
+
+## me: "How to name things?"
+
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
+
+---
+
+class: center, middle
+
+
+## me: "How to name things?"
+
+## Google: "About 5’260’000’000 results (0.71 seconds)"
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
+---
+
+class: center, middle
+
+## Howdie, JeSuisUnChameau! 
+
+<img src="camel.png" width="300px">
+
+frequently occurs in: class names (mostly UpperCamelCase).
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
+---
+
+class: center, middle
+
+## Whassssssup, i_am_a_snake!
+
+<img src="snake.png" width="500px">
+
+frequently occurs in: file and folder names, function names in R and Python.
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
+---
+
+
+class: center, middle
+
+## Hello, i-am-a-kebap! 
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/A_Berlin_style_D%C3%B6ner_with_a_glass_of_beer_on_side.jpg" width="350px">
+
+frequently occurs in: folder, file and repository names.
+
+
+<div class="my-footer"><span><div class="footer-text" align="right">Kebap Picture by Chemipanda, CC BY-SA 4.0, via Wikimedia Commons. "Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
+---
+
+
+
 
 ## Functional Programming
 
@@ -236,6 +326,8 @@ lapply(ds_list, function(x){
 
 => for more elaborate examples, such as function factories, take a read the [Functional Programming Chapter](http://adv-r.had.co.nz/Functional-programming.html) of Hadley Wickham's book.
 
+=> Note how R is *dynamically typed*.
+
 <div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
 
@@ -494,15 +586,27 @@ do_numeric_op(1,"a")
 ---
 
 
-## Parallel Computing
+class: center, middle
 
-- throughput problem or not? 
-- profile & benchmark (performance not necessarily linear)
-- overhead vs. performance gain
-- memory
-- OS specific
+## Where Are You At (in Terms of Bloom's Taxonomy)? 
 
-=> Live Demo
+remember, understand, **apply**, **analyze**, **evaluate**, **create**
+
+
+ => [Take the survey](https://graphs.kof.ethz.ch/h4sci-feedback-2/)
+
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+---
+
+
+
+class: center, middle
+
+
+## Running Code
+
 
 
 <div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
@@ -510,72 +614,6 @@ do_numeric_op(1,"a")
 
 ---
 
-
-class: center, middle
-
-
-## Structure Your Code
-
-Naming Conventions </br>
-Think: Package / Library </br>
-Approaches
-
-
-<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
-
-
----
-
-class: center, middle
-
-## Howdie, iAmACamel ! 
-
-<img src="camel.png" width="300px">
-
-frequently occurs in: class names (mostly UpperCamelCase).
-
-<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
-
-
----
-
-class: center, middle
-
-## Whassssssup, i_am_a_snake!
-
-<img src="snake.png" width="500px">
-
-frequently occurs in: file and folder names, function names in R and Python.
-
-<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
-
-
----
-
-
-class: center, middle
-
-## Hello, i-am-a-kebap! 
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/A_Berlin_style_D%C3%B6ner_with_a_glass_of_beer_on_side.jpg" width="350px">
-
-frequently occurs in: folder, file and repository names.
-
-
-<div class="my-footer"><span><div class="footer-text" align="right">Kebap Picture by Chemipanda, CC BY-SA 4.0, via Wikimedia Commons. "Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
-
-
----
-
-
-class: center, middle
-
-# Think: Package / Library
-
-<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
-
-
----
 
 
 ## Script vs. Function -- Call vs. Definition
@@ -813,20 +851,8 @@ create_basic_desc <- function(distr){
 
 ---
 
-class: center, middle
-
-## Where Are You At (in Terms of Bloom's Taxonomy)? 
-
-remember, understand, **apply**, **analyze**, **evaluate**, **create**
 
 
- => [Take the survey](https://h4sci.shinyapps.io/prog-feedback/)
-
-
-<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
-
-
----
 
 
 

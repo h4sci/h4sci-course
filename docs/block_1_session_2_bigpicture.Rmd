@@ -1,10 +1,10 @@
 ---
 title: |
   Hacking for Social Sciences
-subtitle: "The Big Picture"
-author: "@whatsgoodio"
+subtitle: "Block 1, session 1<br>The Big Picture"
+author: "Matt Bannert (@whatsgoodio)"
 institute: "KOF, ETH Zurich"
-date: "2020-10-01"
+date: "2021-09-30"
 output:
   xaringan::moon_reader:
     css: ["robot-fonts","more.css"]
@@ -266,6 +266,7 @@ Infrastructure Automation
 - Mailing lists
 - community groups: RLadies, WhyR, MiR, FoRwards, AfricaR
 - Documentation, Content Aggregators, e.g., [CTV](https://cran.r-project.org/web/views/), [Python Graph Gallery](https://python-graph-gallery.com/)
+- [big book of R](https://www.bigbookofr.com/)
 
 <div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 

@@ -1,8 +1,7 @@
 ---
-title: |
-  Hacking for Social Sciences
-subtitle: "Class Is Open. C'mon in."
-author: "@whatsgoodio"
+title: "Hacking for Social Sciences"
+subtitle: "Block 1, Session 1<br>Class Is Open. C'mon in."
+author: "Matt Bannert (@whatsgoodio)"
 institute: "KOF, ETH Zurich"
 date: "2021-09-30"
 output:
@@ -37,8 +36,37 @@ class: center,middle
 
 <div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
+---
+
+class: center,middle
+
+## RMarkdown
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
 
 ---
+
+class: center,middle
+
+## git
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
+---
+
+
+class: center,middle
+
+## swissdata
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
+---
+
 
 class: center,middle
 
@@ -66,7 +94,7 @@ class: center,middle
 
 class: center,middle
 
-<img src="talk.gif"><img src="klopp.gif">
+<img src="klopp.gif">
 
 
 <div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div> All animated images taken from GIPHY.</span></div> 
