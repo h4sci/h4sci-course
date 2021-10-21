@@ -637,6 +637,32 @@ class: center, middle
 
 ---
 
+class: center, middle
+
+## `r emojifont::emoji("scroll")` Scripts (Experimental)
+
+
+---
+
+class: center, middle
+
+## `r emojifont::emoji("scroll")` Scripts (Experimental)
+## `r emojifont::emoji("arrow_down")` 
+## `r emojifont::emoji("recycle")` Functions (Reusable)
+
+---
+
+class: center, middle
+
+## `r emojifont::emoji("scroll")` Scripts (Experimental)
+## `r emojifont::emoji("arrow_down")` 
+## `r emojifont::emoji("recycle")` Functions (Reusable)
+## `r emojifont::emoji("arrow_down")`
+## `r emojifont::emoji("package")` Packages (Deployable)
+
+
+
+---
 
 
 ## Script vs. Function -- Call vs. Definition
