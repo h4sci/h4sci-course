@@ -18,6 +18,22 @@ output:
 ---
 
 
+
+
+
+class:center,middle
+
+## "Don't get bored by the process."
+
+> --Chris Bosh (11x NBA Allstar, 2x NBA champion) on The Knowledge Project podcast.
+
+
+
+
+
+---
+
+
 class:center,middle
 
 
@@ -31,8 +47,15 @@ Think of R as a
 
 ---
 
+class:center,middle
 
-## Most Popular Scripting Languages in Data Science
+<img src="communication.png" width=600>
+
+
+---
+
+
+## Context: Most Popular Scripting Languages in Data Science
 
 .pull-left[
 <img src="logos/R.png">
