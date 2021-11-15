@@ -3,8 +3,9 @@
   <head>
     <title>Hacking for Social Sciences</title>
     <meta charset="utf-8" />
-    <meta name="author" content="@whatsgoodio" />
-    <meta name="date" content="2020-10-23" />
+    <meta name="author" content="Matt Bannert (@whatsgoodio)" />
+    <meta name="date" content="2021-10-22" />
+    <script src="libs/header-attrs-2.11/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/robot-fonts.css" rel="stylesheet" />
     <link rel="stylesheet" href="more.css" type="text/css" />
   </head>
@@ -12,11 +13,11 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Hacking for Social Sciences
+# <p>Hacking for Social Sciences</p>
 ## Programming with Data
-### <span class="citation">@whatsgoodio</span>
+### Matt Bannert (<span class="citation">@whatsgoodio</span>)
 ### KOF, ETH Zurich
-### 2020-10-23
+### 2021-10-22
 
 ---
 
@@ -539,9 +540,8 @@ head(dt)
 - best documentation
 - fast
 - uses references, too
-- very good documentation
 - very popular for interactive use
-- pipe operator: %&gt;% 
+- pipe operator: %&gt;% (base R got a pipe in the meantime, too)
 - pretty printing
 
 
@@ -750,6 +750,9 @@ con &lt;- dbConnect(RSQLite::SQLite(),
 
 
 ```r
+# some little test setup for a local docker based db (using docker desktop)
+# docker run --rm -d -p 1111:5432 --name h4sci -e POSTGRES_PASSWORD=pgking  postgres:12.3
+# psql -p 1111 -h 'localhost' -d postgres -U postgres
 library(RPostgres)
 con &lt;-  dbConnect(drv = Postgres(),
                   dbname = "postgres",
@@ -843,8 +846,29 @@ class:center,middle
 4. Use the Wrapper
 
 
-Here is [an R example](https://github.com/h4sci/h4sci-course/blob/master/examples/met_api.R) to get ☂️ images from the 
-MET collection.
+Here is [an R example](https://github.com/h4sci/h4sci-course/blob/master/examples/met_api.R) to get ☔️ images from the 
+MET collection. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

@@ -2,9 +2,9 @@
 title: |
   Hacking for Social Sciences
 subtitle: "Infrastructure: Terminology and Contextualization"
-author: "@whatsgoodio"
+author: "Matt Bannert (@whatsgoodio)"
 institute: "KOF, ETH Zurich"
-date: "2020-11-19"
+date: "2021-11-18"
 output:
   xaringan::moon_reader:
     css: ["robot-fonts","more.css"]
@@ -22,9 +22,25 @@ class:center,middle
 
 
 **Today's goals**:</br>
-Classify approaches 
+Catch a Glimpse of DevOps</br>
+Terminology and Contextualization 
 </br> 
-Get an idea of apt infrastructure for team projects
+Get an idea of apt infrastructure for your team projects
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
+---
+
+
+
+class:center,middle
+
+
+## In Memory Representation of Data
+
+[base R vs. data.table vs. tidyverse](https://h4sci.github.io/h4sci-course/block2_session_2.html#13)
+
 
 <div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
@@ -33,28 +49,67 @@ Get an idea of apt infrastructure for team projects
 
 
 class:center,middle
+
+
+## Reasons to Go Beyond Memory
+
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
+---
+
+
+
+class:center,middle
+
+
+## Persistency
+
+```{r,echo=FALSE}
+knitr::include_graphics("quit_py.png")
+```
+
+```{r,echo=FALSE}
+knitr::include_graphics("quit_r.png")
+```
+
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
+---
+
+
+class:center,middle
+
+
+## Size
+
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
+---
+
+
+class:center,middle
+
+
 
 <img src="overload.jpg" width="600px">
 
 
 <div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
+
 ---
+
 
 
 class:center,middle
 
 <a href="https://twitter.com/thomasfuchs/status/928808041587314689"><img src="overkill.png" width="400px"></a>
-
-
-<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
-
----
-
-
-class:center,middle
-
-<a href="https://twitter.com/dexhorthy/status/856639005462417409"><img src="inefficient.png" width="400px"></a>
 
 
 <div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
@@ -77,12 +132,24 @@ Common thinking of servers...
 
 class:center,middle
 
+## Availability
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+
+
+---
+
+
+class:center,middle
+
 
 <img src="listen.jpg" height="500px">
 
 A server is a program that listens.
 
 <div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
 
 
 ---
@@ -105,7 +172,7 @@ d <- data.frame(
                      "3838",
                      "8787"),
   "Description" = c("Standard Webserver",
-                    "Webserver, Reverse Project, often combined with other servers",
+                    "Webserver, Reverse Proxy, often combined with other servers",
                     "Database Server for PostgreSQL",
                     "R Studio made available through a web browser",
                     "A server to run shiny apps"),
@@ -119,8 +186,8 @@ available through your _localhost_ (IP: 127.0.0.1).
 
 <div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
-
 ---
+
 
 class:center,middle
 
@@ -159,6 +226,20 @@ class:center,middle
 <div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
 
 ---
+
+
+class:center,middle
+
+## Reproducibility
+
+<div class="my-footer"><span><div class="footer-text" align="right">"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></div></span></div> 
+
+<img src="version_error.png">
+
+
+---
+
+
 
 class:center,middle
 

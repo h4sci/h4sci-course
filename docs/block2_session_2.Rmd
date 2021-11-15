@@ -2,9 +2,9 @@
 title: |
   Hacking for Social Sciences
 subtitle: "Programming with Data"
-author: "@whatsgoodio"
+author: "Matt Bannert (@whatsgoodio)"
 institute: "KOF, ETH Zurich"
-date: "2020-10-23"
+date: "2021-10-22"
 output:
   xaringan::moon_reader:
     css: ["robot-fonts","more.css"]
@@ -465,9 +465,8 @@ head(dt)
 - best documentation
 - fast
 - uses references, too
-- very good documentation
 - very popular for interactive use
-- pipe operator: %>% 
+- pipe operator: %>% (base R got a pipe in the meantime, too)
 - pretty printing
 
 
@@ -658,7 +657,9 @@ con <- dbConnect(RSQLite::SQLite(),
 ### Postgres
 
 ```{r,eval=FALSE}
-
+# some little test setup for a local docker based db (using docker desktop)
+# docker run --rm -d -p 1111:5432 --name h4sci -e POSTGRES_PASSWORD=pgking  postgres:12.3
+# psql -p 1111 -h 'localhost' -d postgres -U postgres
 library(RPostgres)
 con <-  dbConnect(drv = Postgres(),
                   dbname = "postgres",
@@ -754,7 +755,7 @@ class:center,middle
 4. Use the Wrapper
 
 
-Here is [an R example](https://github.com/h4sci/h4sci-course/blob/master/examples/met_api.R) to get `r emo::ji("umbrella") ` images from the 
+Here is [an R example](https://github.com/h4sci/h4sci-course/blob/master/examples/met_api.R) to get `r emojifont::emoji("umbrella") ` images from the 
 MET collection. 
 
 
