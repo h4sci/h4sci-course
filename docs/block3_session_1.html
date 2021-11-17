@@ -176,7 +176,7 @@ A server is a program that listens.
   &lt;tr&gt;
    &lt;td style="text-align:left;"&gt; nginx &lt;/td&gt;
    &lt;td style="text-align:left;"&gt; 80, 443 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Webserver, Reverse Project, often combined with other servers &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Webserver, Reverse Proxy, often combined with other servers &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:left;"&gt; Postgres &lt;/td&gt;
@@ -382,6 +382,38 @@ class:center,middle
 
 ---
 
+
+class:center,middle
+
+## What is Docker good for ? 
+
+
+---
+
+
+class:center,middle
+
+## Test Stack, Conserve Setups 
+
+e.g., [PostgreSQL version on docker hub](https://hub.docker.com/_/postgres) 
+
+---
+
+
+class:center,middle
+
+## Run Applications w/o Side Effects
+
+
+---
+
+class:center,middle
+
+## Develop @home, Run in the Cloud
+
+
+---
+
 class:center,middle
 
 
@@ -394,17 +426,22 @@ class:center,middle
 ---
 
 
+## Docker in one Slide
 
-## Docker Basics
+
+- Single purpose, application focused virtualization.
+
+- **Images**: **blueprints** for **containers**.
+
+- **Registries**: store images.
+
+- Docker files are text based configs from which images are created.
+
+- Images can be stacked, so we can build on existing images
+
+- Docker containers run on a Docker Host / Docker Desktop or in Docker Cluster like Docker Swarm or Kubernetes. 
 
 
-**Dockerfiles** are **recipes** for **docker images**. 
-
-**Docker images** are **blueprints** for **containers**. 
-
-Docker images can be **stored locally**, **built from scratch** or be **pulled** from a **Docker Registry** such as Docker Hub. 
-
-Docker containers run on a Docker Host / Docker Desktop or in Docker Cluster like Docker Swarm or Kubernetes. 
 
 &lt;div class="my-footer"&gt;&lt;span&gt;&lt;div class="footer-text" align="right"&gt;"Hacking for Social Sciences" by Dr. Matthias Bannert is licensed under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"&gt;CC BY-NC-SA 4.0&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt; 
 
