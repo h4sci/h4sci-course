@@ -2,9 +2,9 @@
 title: |
   Hacking for Social Sciences
 subtitle: "Infrastructure for the Semester Projects"
-author: "@whatsgoodio"
+author: "Matt Bannert (@whatsgoodio)"
 institute: "KOF, ETH Zurich"
-date: "2020-11-20"
+date: "2021-11-10"
 output:
   xaringan::moon_reader:
     css: ["robot-fonts","more.css"]
@@ -17,24 +17,12 @@ output:
       beforeInit: "https://platform.twitter.com/widgets.js"
 ---
 
+class:center,middle
+
 
 ## Today's goal: Find an Infrastructure for Every Team Project
 
-### GitHub Actions
-
-- team web scraping
-- team OECD data processing
-- team R package creation
-
-### Shiny Server
-
-- team interactive data visualization
-- team survey
-
-### GitHub Pages
-
-- team website / bookdown
-- team wildfire data
+---
 
 
 
