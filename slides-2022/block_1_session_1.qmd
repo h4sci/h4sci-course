@@ -1,0 +1,57 @@
+
+---
+title: "Hacking for Science"
+subtitle: "Block 1, Session 1: The Big Picture"
+author: "Matt Bannert (@whatsgoodio)"
+format: revealjs
+---
+
+## Hi, I'm Matt. 
+
+![](img/matt.jpeg)
+
+## James Bond Start
+
+<a href="https://giphy.com/gifs/starz-james-bond-1hCnI6vRRBYPiaosR4"><img src="img/bond.gif"></a>
+
+## Markdown / Quarto
+
+
+## git version control
+
+
+## Swissdata 1.0 
+
+
+## [Background Survey](https://graphs.kof.ethz.ch/h4sci-survey/)
+
+
+## Overall Course Outline
+
+
+## Talk, Talk, Talk
+
+
+## Schedule
+
+30.09.	10-13	The Big Picture
+01.10.	10-14	Git & Workflows
+
+21.10.	10-13	R Programming Crash Course
+22.10.	10-14	Programming with Data
+
+18.11.	10-13	Infrastructure
+19.11.	10-14	Infrastructure
+
+02.12.	10-13	Semester Projects
+03.12.	10-14	Semester Projects
+
+
+
+
+
+
+<!--
+recordings from 2021: https://ethz.zoom.us/recording/detail?meeting_id=ZdBWsHpgRk6urwzsBpZKOg%3D%3D
+
+ -->
