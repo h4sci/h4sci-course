@@ -1,0 +1,213 @@
+
+---
+title: "Hacking for Science"
+subtitle: "Block 1, Session 1: Class is Open. C'mon in."
+author: "Matt Bannert (@whatsgoodio)"
+format: revealjs
+footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)"
+---
+
+## Hi, I'm Matt.
+
+![](img/matt.jpeg){fig-align="center" height="600"}
+
+## James Bond Start 
+
+![](img/bond.gif){fig-align="center" height="600"}
+
+
+## Markdown / Quarto {.center}
+
+
+## git version control {.center}
+
+
+## Swissdata 1.0 {.center}
+
+
+## [Background Survey](https://graphs.kof.ethz.ch/h4sci-survey/) {.center}
+
+
+# Overall Course Outline
+
+
+## Talk, Talk, Talk
+
+![](img/talk.gif){fig-align="center" height="400"}
+
+## Coaching
+
+![](img/klopp.gif){fig-align="center" height="600"}
+
+## Schedule: Block 1 {.center}
+
+
+29.09.	10-13	The Big Picture
+
+30.9.	10-14	Git & Workflows
+
+## Schedule: Block 2 {.center}
+
+20.10.	10-13	R Programming Crash Course
+
+21.10.	10-14	Programming with Data
+
+## Schedule: Block 3 {.center}
+
+
+17.11.	10-13	Infrastructure
+
+18.11.	10-14	Infrastructure
+
+## Schedule: Block 4 {.center}
+
+01.12.	10-13	Semester Projects
+
+02.12.	10-14	Semester Projects
+
+
+# Course Resources
+
+
+## Read Online
+
+- [h4sci Slides](https://h4sci.github.io/h4sci-course)
+- [DevOps Carpentry free Online Book](https://h4sci.github.io/h4sci-book)
+- [Tasks & Exercises](https://github.com/h4sci/h4sci-tasks)
+
+## Source
+
+- [Slides: https://github.com/h4sci/h4sci-course](https://github.com/h4sci/h4sci-course)
+- [Book: https://github.com/devops-carpentry/book](https://github.com/devops-carpentry/book)
+
+## Community
+
+- [R Studio Server](https://teaching.kof.ethz.ch/auth-sign-in) (only available to enrolled ETH students during semester) 
+- [Slack Workspace](https://h4sci.slack.com/) (invite only) 
+- Zoom Live Sessions (only available to ETH students)
+
+
+# Survey Results: Our Starting Point(s)
+
+```{r,echo=FALSE,warning=FALSE,message=FALSE}
+library(ggplot2)
+library(data.table)
+library(RPostgres)
+library(quanteda)
+
+preprocess <- function(df, pattern){
+  pattern_id <- paste0("id|group|",pattern)
+  subs <- df[,grepl(pattern_id, names(df))]
+  names(subs) <- gsub(pattern,"",names(subs))
+  dt <- as.data.table(subs)
+  m <- melt(dt, id.vars = c("id","cgroup"))
+  m
+}
+
+fcon <- file("../../intro-survey/.pgpass","r")
+    con <-  dbConnect(drv = Postgres(), dbname = "kofdb", user = "shiny",
+                       host = "archivedb.kof.ethz.ch",
+                      password = readLines(fcon, warn = FALSE))
+o <- dbExecute(con,"SET SEARCH_PATH=teaching")
+
+res <- dbGetQuery(con,"SELECT * FROM responses WHERE year = 2022")
+
+dbDisconnect(con)
+
+```
+
+
+## Survey Results: General
+
+```{r, echo=FALSE}
+
+words <- gsub(" vs. |,,", ",",paste(res$general,collapse = ","))
+
+quanteda.textplots::textplot_wordcloud(dfm(words,remove = ","),
+                             color = rev(viridis::viridis_pal()(6)),
+                             min_count = 1)
+
+
+```
+
+
+
+
+## Survey Results: Languages
+
+```{r, echo=FALSE, fig.width=14}
+
+lang <- preprocess(res, "l_")
+gg_lang <- ggplot(data = lang)
+gg_lang +
+  geom_bar(aes(x = as.factor(value), fill = variable)) +
+  facet_wrap("variable", nrow = 2) + 
+  theme_minimal() +
+  theme(panel.grid.major.x = element_blank(),
+        panel.spacing = unit(4, "lines"),
+        text = element_text(size=15)) +
+  scale_x_discrete(name ="Language",
+                   limits=factor(1:5)) +
+  scale_fill_viridis_d()
+
+
+
+```
+
+
+
+## Survey Results: Workflow
+
+```{r, echo=FALSE, fig.width=14}
+
+wf <- preprocess(res, "w_")
+gg_lang <- ggplot(data = wf)
+gg_lang +
+  geom_bar(aes(x = as.factor(value), fill = variable)) +
+  facet_wrap("variable", nrow = 1) +
+  theme_minimal() +
+  theme(panel.grid.major.x = element_blank(),
+        panel.spacing = unit(4, "lines"),
+        text = element_text(size=15)) +
+  scale_x_discrete(name ="Language",
+                   limits=factor(1:5)) +
+  scale_fill_viridis_d()
+
+
+
+```
+
+
+
+
+
+
+# Course Objectives
+
+## 1. Evaluate the Role of Components in the Tech Stack {.center}
+
+
+## 2. Carpentry Level Version Control + Dev Workflows {.center}
+
+
+## 3. Applied Data Handling /w Programming Language {.center}
+
+
+## Example Benchmark: Create a Production Pipeline {.center}
+
+## Approach: Flipped Classroom
+
+<center><iframe src="https://giphy.com/embed/l0HlUND0GA3ehpj1K" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></center>
+
+::: footer
+[via GIPHY](https://giphy.com/gifs/southparkgifs-l0HlUND0GA3ehpj1K)
+:::
+
+## Invidual Introduction {.center}
+
+
+
+<!--
+recordings from 2021: https://ethz.zoom.us/recording/detail?meeting_id=ZdBWsHpgRk6urwzsBpZKOg%3D%3D
+
+ -->
