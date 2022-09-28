@@ -104,7 +104,7 @@ This work by Dr. Matthias Bannert is licensed under a <a rel="license" href="htt
 
 ## Contact
 
-Find my on [twitter @whatsgoodio](https://twitter.com/whatsgoodio),  send an e-mail to my ETH address or use the course community's Slack workspace. 
+Find me on [twitter @whatsgoodio](https://twitter.com/whatsgoodio),  send an e-mail to my ETH address or use the course community's Slack workspace. 
 
 Best
 
