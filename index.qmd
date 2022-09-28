@@ -8,7 +8,7 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 
 ## Table of Contents
 
-[Block 1, Session 1: Class Is Open. C'mon in.](block_1_session1_classopen.html)
+[Block 1, Session 1: Class Is Open. C'mon in.](block_1_session_1_classopen.html)
 
 [Block 1, Session 2: The Big Picture](block_1_session_2_bigpicture.html)
 

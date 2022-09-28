@@ -13,8 +13,11 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 
 ## James Bond Start 
 
-![](img/bond.gif){fig-align="center" height="600"}
+<iframe src="https://giphy.com/embed/Mz6oZpw81uKQg" width="480" height="363" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
+::: footer
+[via GIPHY (not CC-BY-NC-SA licensed)](https://giphy.com/gifs/james-bond-007-Mz6oZpw81uKQg)
+:::
 
 ## Markdown / Quarto {.center}
 
@@ -33,11 +36,25 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 
 ## Talk, Talk, Talk
 
-![](img/talk.gif){fig-align="center" height="400"}
+
+<iframe src="https://giphy.com/embed/l3q2V33TgyQ4hdfna" width="480" height="240" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+::: footer
+[via GIPHY (not CC-BY-NC-SA licensed)](<iframe src="https://giphy.com/embed/l3q2V33TgyQ4hdfna" width="480" height="240" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/apprenticenbc-television-talking-l3q2V33TgyQ4hdfna">via GIPHY</a></p>)
+:::
+
+
 
 ## Coaching
 
-![](img/klopp.gif){fig-align="center" height="600"}
+
+<iframe src="https://giphy.com/embed/1zkMbX7k4nd1AM4i4k" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+::: footer
+[via GIPHY (not CC-BY-NC-SA licensed)](https://giphy.com/gifs/lfc-friday-feeling-klopp-jrgen-1zkMbX7k4nd1AM4i4k)
+:::
+
+
 
 ## Schedule: Block 1 {.center}
 
@@ -104,7 +121,7 @@ preprocess <- function(df, pattern){
   m
 }
 
-fcon <- file("../cintro-survey/.pgpass","r")
+fcon <- file("../intro-survey/.pgpass","r")
     con <-  dbConnect(drv = Postgres(), dbname = "kofdb", user = "shiny",
                        host = "archivedb.kof.ethz.ch",
                       password = readLines(fcon, warn = FALSE))
