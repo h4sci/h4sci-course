@@ -8,3 +8,5 @@ notes/
 deploy_shinyappsio.R
 gc.json
 
+
+/.quarto/
