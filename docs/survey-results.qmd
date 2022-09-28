@@ -1,7 +1,0 @@
-
----
-title: "Hacking for Science"
-subtitle: "Survey Results"
-author: "Matt Bannert (@whatsgoodio)"
-format: revealjs
----

@@ -12,7 +12,7 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 
 [Block 1, Session 2: The Big Picture](block_1_session_2_bigpicture.html)
 
-```{=html}
+
 <!--
 
 [Block 1, Session 3: Git Requirements](block_1_session_3_git_requirements.html)
@@ -30,4 +30,4 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 
 
 -->
-```
+
