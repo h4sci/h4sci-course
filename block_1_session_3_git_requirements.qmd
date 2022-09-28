@@ -1,0 +1,23 @@
+---
+title: "Hacking for Science"
+subtitle: "Block 1, Session 3: Git Requirements"
+author: "Matt Bannert (@whatsgoodio)"
+format: revealjs
+chalkboard: true
+footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)"
+---
+
+
+## {.center}
+
+> 'With SSH keys, you can connect to remote git repositories without supplying your username or password at each visit'
+
+-- docs.github.com
+
+
+## [Connect to Remote Repositories<br> Like a Hacker (Youtube)](https://www.youtube.com/watch?v=oLEhNj17vVI) {.center}
+
+
+## [RSA Key Pair Authentication Case Study in DevOps Carpentry](https://devops-carpentry.github.io/book/case-studies.html#sec-rsa) {.center}
+
+
