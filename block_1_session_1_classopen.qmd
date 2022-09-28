@@ -104,7 +104,7 @@ preprocess <- function(df, pattern){
   m
 }
 
-fcon <- file("../intro-survey/.pgpass","r")
+fcon <- file("../cintro-survey/.pgpass","r")
     con <-  dbConnect(drv = Postgres(), dbname = "kofdb", user = "shiny",
                        host = "archivedb.kof.ethz.ch",
                       password = readLines(fcon, warn = FALSE))
