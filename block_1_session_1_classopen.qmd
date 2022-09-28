@@ -1,9 +1,9 @@
-
 ---
 title: "Hacking for Science"
 subtitle: "Block 1, Session 1: Class is Open. C'mon in."
 author: "Matt Bannert (@whatsgoodio)"
 format: revealjs
+chalkboard: true
 footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)"
 ---
 
@@ -34,13 +34,13 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 # Overall Course Outline
 
 
-## Talk, Talk, Talk
+## 
 
 
-<iframe src="https://giphy.com/embed/l3q2V33TgyQ4hdfna" width="480" height="240" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<center><iframe src="https://giphy.com/embed/l3q2V33TgyQ4hdfna" width="480" height="240" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></center>
 
 ::: footer
-[via GIPHY (not CC-BY-NC-SA licensed)](<iframe src="https://giphy.com/embed/l3q2V33TgyQ4hdfna" width="480" height="240" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/apprenticenbc-television-talking-l3q2V33TgyQ4hdfna">via GIPHY</a></p>)
+[via GIPHY (not CC-BY-NC-SA licensed)](https://giphy.com/gifs/apprenticenbc-television-talking-l3q2V33TgyQ4hdfna">via GIPHY)
 :::
 
 
@@ -48,7 +48,7 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 ## Coaching
 
 
-<iframe src="https://giphy.com/embed/1zkMbX7k4nd1AM4i4k" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<center><iframe src="https://giphy.com/embed/1zkMbX7k4nd1AM4i4k" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><center>
 
 ::: footer
 [via GIPHY (not CC-BY-NC-SA licensed)](https://giphy.com/gifs/lfc-friday-feeling-klopp-jrgen-1zkMbX7k4nd1AM4i4k)
