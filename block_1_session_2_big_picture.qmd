@@ -1,7 +1,7 @@
 ---
 title: "Hacking for Science"
 subtitle: "Block 1, Session 2: The Big Picture"
-author: "Matt Bannert (@whatsgoodio)"
+author: "Matt Bannert ([@whatsgoodio](https://twitter.com/whatsgoodio))"
 format: revealjs
 chalkboard: true
 footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)"
