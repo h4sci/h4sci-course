@@ -18,7 +18,7 @@ Non-Goals:
 Hacking for Sciences is not a Statistics, Econometrics or Machine Learning course. Though experience in these fields will help inasmuch that students will have an easier time to motivate invest into programming and to come up with their own application examples, profound methodological knowledge is not a prerequisite.
 
 
-_Hacking for Sciences is a course taught within the PhD program of **ETH Zurich**'s D-MTEC Department. It's first taught in 2022 fall semester._
+_Hacking for Sciences is a course taught within the PhD program of **ETH Zurich**'s D-MTEC Department. It's was first in taught in the 2020 fall semester._
 
 ## Resources 
 
@@ -29,12 +29,12 @@ the start of the course. Nevertheless, feel free to catch a glimpse / preview:
 
 - [Read Slides Online](https://h4sci.github.io/h4sci-course)
 
-- [Read Book Online](https://h4sci.github.io/h4sci-book) **soon to be replaced by a new version of the book**
+- [Read Book Online](https://devops-carpentry.github.io/book) **draft version**
 
 **Source Code**
 
 - [Slides](https://github.com/h4sci/h4sci-course)
-- [Book](https://github.com/h4sci/h4sci-book)
+- [Book](https://github.com/devops-carpentry)
 
 **Server & Community**
 
@@ -45,7 +45,7 @@ the start of the course. Nevertheless, feel free to catch a glimpse / preview:
 
 ## Schedule
 
-This course was originated with the concepts and tricks in mind that I wish I had know when I started my own PhD (back in 2012). While some of the concepts became only more inevitable, other things may not apply today. Hence, it is up to you to bring your questions and problems and help create the most useful course experience. The course will always be centered around the open source data science stack, but its blocks will be adapated according to popular demand. 
+This course was originated with the concepts and tricks in mind that I wish I had know when I started my own PhD (back in 2012). While some of the concepts became only more inevitable, other things may not apply today. Hence, it is up to you to bring your questions and problems and help create the most useful course experience. The course will always be centered around the open source data science stack, but its blocks will be adapted according to popular demand. 
 
 **REQUIRED BEFORE THE START OF THE COURSE: Make sure you have checked out the course's R Studio server. It is greatly appreciated if users with R and git experience installed git and R locally in advance of the course. Please also make sure everyone has a free, working github.com account before the start of the course.**
 
