@@ -1,0 +1,627 @@
+---
+title: "Hacking for Science"
+subtitle: "Block 2, Session 1: R Programming 101"
+author: "Matt Bannert ([@whatsgoodio](https://twitter.com/whatsgoodio))"
+format: revealjs
+chalkboard: true
+echo: true
+footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)"
+---
+
+
+## {.center}
+
+>"Don't get bored by the process." 
+
+-- Chris Bosh (11x NBA Allstar, 2x NBA champion) on The Knowledge Project podcast.
+
+
+## Today's Goal: See R as a Programming Language {.center}
+
+<!-- Go past "understand" in blooms Taxonomy: remember, understand, apply, analyze, evaluate, create --> 
+
+
+
+## {.center}
+
+`r emojifont::emoji("scroll")` Scripts (Experimental)
+
+##  {.center}
+
+`r emojifont::emoji("scroll")` Scripts (Experimental) 
+
+`r emojifont::emoji("arrow_down")` 
+
+`r emojifont::emoji("recycle")` Functions (Reusable)
+
+
+##  {.center}
+
+`r emojifont::emoji("scroll")` Scripts (Experimental) 
+
+`r emojifont::emoji("arrow_down")` 
+
+`r emojifont::emoji("recycle")` Functions (Reusable)
+
+`r emojifont::emoji("arrow_down")`
+
+`r emojifont::emoji("package")` Packages (Deployable)
+
+
+# R Building Blocks
+
+
+## Vector
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+```{r}
+a <- 1
+b <- c(1,2,6,20,30,40,100,200,300)
+d <- 1:10
+a
+b
+d
+```
+
+
+:::
+
+::: {.column width="50%"}
+
+- scalar: vector of length one. 
+- all elements have the same data type -> coercion to smallest common denominator.
+
+
+:::
+
+::::
+
+
+
+
+
+
+
+
+## Matrix
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+```{r}
+m <- matrix(b, nrow = 3)
+m
+```
+
+:::
+
+
+
+::: {.column width="50%"}
+
+
+
+- two dimensional.
+- all columns are of the *same length*.
+- all elements have the *same data type*.
+
+:::
+
+::::
+
+
+## Data.frames 
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+
+```{r}
+d <- data.frame(col1 = b[1:3],
+                col2 = b[4:6],
+                col3 = letters[1:3])
+d
+```
+
+:::
+
+
+::: {.column width="40%"}
+
+
+
+- two dimensional.
+- all columns are of the *same length*.
+- elements may have *different data types*.
+
+:::
+
+::::
+
+
+## Lists
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+```{r}
+l <- list(element1 = a,
+          element2 = m, 
+          element3 = d)
+l
+
+```
+
+:::
+
+
+
+::: {.column width="50%"}
+
+
+- may be nested
+- may contain different data types
+
+:::
+
+::::
+
+
+
+
+## Environments
+
+```{r}
+e <- new.env()
+e$cow <- "moooooo."
+e$duck <- "quack."
+e$dog <- "woof."
+
+ls()
+
+ls(e)
+
+get("dog", envir = e)
+
+```
+
+## Environments c'd
+
+- Be aware of lexical scoping (look up of variables in parent environments when they can't be found in the current environment) when working with functions.
+
+- The section on [environment basics in Hadley Wickham's Advanced R](http://adv-r.had.co.nz/Environments.html) is a good, 
+applied introduction.
+
+- [How R Searches and Finds Stuff](http://blog.obeautifulcode.com/R/How-R-Searches-And-Finds-Stuff/) goes much further down the rabbit hole. 
+
+
+## Functions
+
+```{r, eval=FALSE}
+
+name_of_the_function <- function(parameter_1, parameter_2){
+  # function body 
+  
+  s <- parameter_1 + parameter_2
+  
+  # R does *need* a return statement
+  # it returns the last statement that is not
+  # assigned to a variable using the assignment operator `<-` 
+  return(s)
+  
+  # NOTE an R function can only return ONE object (!)
+}
+
+```
+
+# Running Code
+
+
+## Script vs. Function -- Call vs. Definition
+
+
+:::: {.columns}
+
+
+::: {.column width="60%"}
+
+```{r}
+set.seed(123)
+d1 <- rnorm(1000)
+d2 <- rnorm(1000)
+
+d1_mean <- mean(d1)
+d1_sd <- sd(d1)
+d1_q <- quantile(d1)
+desc_stats_d1 <- 
+  list(d1_mean = d1_mean,
+       d1_sd = d1_sd,
+       d1_q = d1_q)
+
+d2_mean <- mean(d2)
+d2_sd <- sd(d2)
+d2_q <- quantile(d2)
+desc_stats_d2 <- 
+  list(d2_mean = d2_mean,
+       d2_sd = d2_sd,
+       d2_q = d2_q)
+
+
+```
+
+
+:::
+
+::: {.column width="40%"}
+
+
+:::
+
+::::
+
+
+
+## Script vs. Function -- Call vs. Definition
+
+
+:::: {.columns}
+
+
+::: {.column width="40%"}
+
+
+```{r}
+set.seed(123)
+d1 <- rnorm(1000)
+d2 <- rnorm(1000)
+
+d1_mean <- mean(d1)
+d1_sd <- sd(d1)
+d1_q <- quantile(d1)
+desc_stats_d1 <- 
+  list(d1_mean = d1_mean,
+       d1_sd = d1_sd,
+       d1_q = d1_q)
+
+d2_mean <- mean(d2)
+d2_sd <- sd(d2)
+d2_q <- quantile(d2)
+desc_stats_d2 <- 
+  list(d2_mean = d2_mean,
+       d2_sd = d2_sd,
+       d2_q = d2_q)
+
+
+```
+
+
+:::
+
+::: {.column width="60%"}
+
+```{r}
+
+create_basic_desc <- function(distr){
+  out <- list(
+    mean = mean(distr),
+    sd = sd(distr),
+    quantiles = quantile(distr)
+  )
+  out
+}
+
+
+```
+
+:::
+
+::::
+
+
+
+## Script vs. Function -- Call vs. Definition
+
+
+:::: {.columns}
+
+
+::: {.column width="40%"}
+
+
+```{r}
+set.seed(123)
+d1 <- rnorm(1000)
+d2 <- rnorm(1000)
+
+d1_mean <- mean(d1)
+d1_sd <- sd(d1)
+d1_q <- quantile(d1)
+desc_stats_d1 <- 
+  list(d1_mean = d1_mean,
+       d1_sd = d1_sd,
+       d1_q = d1_q)
+
+d2_mean <- mean(d2)
+d2_sd <- sd(d2)
+d2_q <- quantile(d2)
+desc_stats_d2 <- 
+  list(d2_mean = d2_mean,
+       d2_sd = d2_sd,
+       d2_q = d2_q)
+
+
+```
+
+
+:::
+
+::: {.column width="60%"}
+
+```{r}
+
+create_basic_desc <- function(distr){
+  out <- list(
+    mean = mean(distr),
+    sd = sd(distr),
+    quantiles = quantile(distr)
+  )
+  out
+}
+
+create_basic_desc(d1)
+
+```
+
+:::
+
+
+
+::::
+
+
+
+## Documentation of Functions
+
+
+:::: {.columns}
+
+
+::: {.column width="60%"}
+
+```{r}
+
+#' Create Basic Descriptive Statistics
+#'
+#' Creates means, standard deviations and
+#' default quantiles from an numeric input vector. 
+#' 
+#' @param distr numeric vector 
+#' @export 
+create_basic_desc <- function(distr){
+  out <- list(
+    mean = mean(distr),
+    sd = sd(distr),
+    quantiles = quantile(distr)
+  )
+  out
+}
+
+
+```
+
+
+:::
+
+::: {.column width="40%"}
+
+- Roxygen documentation can be rendered .Rd and .html
+- packages require documentation of every exported function
+
+
+:::
+
+::::
+
+
+# Naming
+
+
+## 
+
+>me: "How to name things?" 
+
+##
+
+>me: "How to name things?" 
+
+>Google: "About 5’260’000’000 results (0.71 seconds)"
+
+
+## Whassssssup, i_am_a_snake!
+
+![](img/snake.png)
+
+frequently occurs in: file and folder names, function names in R and Python.
+
+## Howdie, JeSuisUnChameau! 
+
+![](img/camel.png)
+
+frequently occurs in: class names (mostly UpperCamelCase).
+
+
+## Hello, i-am-a-kebap! 
+
+![](https://upload.wikimedia.org/wikipedia/commons/b/b2/A_Berlin_style_D%C3%B6ner_with_a_glass_of_beer_on_side.jpg)
+
+frequently occurs in: folder, file and repository names.
+
+
+## Functional Programming
+
+
+:::: {.columns}
+
+
+::: {.column width="60%"}
+
+
+```{r,eval=FALSE}
+ds_list <- list(iris = iris,
+                mtcars = mtcars)
+lapply(ds_list, summary)
+```
+
+Anonymous Functions
+
+```{r,eval=FALSE}
+
+lapply(ds_list, function(x){
+  sprintf(
+    "The dataset contains %d observations.",
+    nrow(x))
+})
+
+
+```
+
+
+:::
+
+::: {.column width="40%"}
+
+```{r,echo=FALSE}
+ds_list <- list(iris = iris,
+                mtcars = mtcars)
+lapply(ds_list, nrow)
+
+```
+
+
+Anonymous Functions
+
+```{r,echo=FALSE}
+
+lapply(ds_list, function(x){
+  sprintf(
+    "The dataset contains %d observations.",
+          nrow(x)
+    )
+})
+
+
+```
+
+:::
+
+
+
+::::
+
+
+## Functional Programming
+
+- for more elaborate examples, such as function factories, take a read the [Functional Programming Chapter](http://adv-r.had.co.nz/Functional-programming.html) of Hadley Wickham's book.
+
+- Note how R is *dynamically typed*.
+
+
+
+## TryCatch 
+
+Without Safety Net
+
+```{r, eval=FALSE}
+
+do_numeric_op <- function(a,b){
+  out <- (a + b)*a
+  message(sprintf(
+    "'%s', '%s' were your inputs.",
+    a,b)
+    )
+  out
+}
+
+
+do_numeric_op(1,"a")
+
+```
+
+"Error in a + b : non-numeric argument to binary operator Calls: [...]"
+
+
+## Try Catch
+
+
+
+With Safety Net
+
+```{r}
+
+do_numeric_op <- function(a,b){
+  
+  tryCatch({
+    return((a + b)*a)
+  
+  }, error = function(e) message(
+    "Operation went wrong, but function is alive."
+    )
+  )
+  sprintf("'%s', '%s' were your inputs.", a,b)
+}
+
+
+
+```
+
+
+
+
+## Tips
+
+- Document Before You Start, e.g., write a vignette outline
+- use pseudo code or comments to structure 
+- do not comment on WHAT you do but WHY you do it
+- Peer programming in the beginning (make sure to switch who's on the driver's seat)
+- Reproducible Research (include data)
+
+
+
+## [Hands on: The AKQJT task](https://github.com/h4sci/h4sci-tasks/issues/5) {.center}
+
+
+# Packaging
+
+
+## Folder Structure
+
+- **R** function definitions
+- **man** references (functions and datasets)
+- **docs** Articles for GitHub Pages
+- **vignettes** Articles' source, elaborate documentation source
+- **inst** additional material, installed with package, e.g., sql files
+- **src** source code that needs to be compiled, e.g., C++
+- **tests** automated tests ([basic idea in DevOps Carpentry](https://devops-carpentry.github.io/book/programming.html#testing)), often created with a testing framework such as [testthat](https://cran.r-project.org/web/packages/testthat/index.html) or [tinytest](https://cran.r-project.org/web/packages/tinytest/index.html)
+
+## Further Conventions & Ideas
+
+- In addition every package needs DESCRIPTION and NAMESPACE file. 
+- start with an _sandbox.R_ file in the root folder (may be moved to inst/ later on.). 
+- move functions to the R/ folder once they get more mature (documentation, tested)
+
+
+
+
+
+
+

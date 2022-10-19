@@ -16,6 +16,8 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 
 [Block 1, Session 4: Git 101](block_1_session_4_git_101.html)
 
+[Block 2, Session 1: R Programming 101](block_2_session_1_r_programming.html)
+
 <!--
 
 
