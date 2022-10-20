@@ -9,7 +9,7 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.1.251">
 
-  <meta name="author" content="@whatsgoodio">
+  <meta name="author" content="Matt Bannert (@whatsgoodio)">
   <title>Hacking for Science</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -33,6 +33,8 @@
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
@@ -325,40 +327,54 @@
 
 <section id="title-slide" class="center">
   <h1 class="title">Hacking for Science</h1>
-  <p class="subtitle">Course Slides, Table of Content, 2022</p>
-  <p class="author"><a href="https://twitter.com/whatsgoodio"><span class="citation" data-cites="whatsgoodio">@whatsgoodio</span></a></p>
+  <p class="subtitle">Block 2, Session 1: R Programming 101</p>
+  <p class="author">Matt Bannert (<a href="https://twitter.com/whatsgoodio"><span class="citation" data-cites="whatsgoodio">@whatsgoodio</span></a>)</p>
 </section>
 
-<section id="table-of-contents" class="slide level2">
-<h2>Table of Contents</h2>
-<p><a href="block_1_session_1_classopen.html">Block 1, Session 1: Class Is Open. C’mon in.</a></p>
-<p><a href="block_1_session_2_big_picture.html">Block 1, Session 2: The Big Picture</a></p>
-<p><a href="block_1_session_3_git_requirements.html">Block 1, Session 3: Git Requirements</a></p>
-<p><a href="block_1_session_4_git_101.html">Block 1, Session 4: Git 101</a></p>
-<p><a href="block_2_session_1_r_programming.html">Block 2, Session 1: R Programming 101</a></p>
-<p><a href="block_2_session_2_programming_w_data.html">Block 2, Session 2: Programming with Data</a></p>
-<!--
+<section>
+<section id="data-generating-processes-in-science" class="title-slide slide level1 center">
+<h1>Data Generating Processes in Science</h1>
 
+</section>
+<section id="simulation" class="slide level2">
+<h2>Simulation</h2>
+</section>
+<section id="logging-tracking" class="slide level2">
+<h2>Logging / Tracking</h2>
+</section>
+<section id="surveys" class="slide level2">
+<h2>Surveys</h2>
+</section>
+<section id="apis-web-scraping" class="slide level2">
+<h2>APIs &amp; Web Scraping</h2>
+</section>
+<section id="what-dgps-have-you-worked-with-what-dgps-do-you-expect-to-face-in-your-work" class="slide level2 center">
+<h2>What DGPs Have You Worked With? What DGPs Do You Expect to Face in Your Work?</h2>
+</section></section>
+<section>
+<section id="repesenting-data" class="title-slide slide level1 center">
+<h1>Repesenting Data</h1>
 
-
-
-
-
-[Block 2, Session 1: R Programming 101](block2_session_1.html)
-
-[Block 2, Session 2: Programming with data](block2_session_2.html)
-
-[Block 3, Session 1: Infrastructure: Terminology and Contextualization](block3_session_1.html)
-
-[Block 3, Session 2: Infrastructure for the Semester Projects](block3_session_2.html)
-
-
--->
+</section>
+<section id="data-management-memory-files-databases" class="slide level2">
+<h2>Data Management: Memory, Files, Databases</h2>
+</section>
+<section id="types-of-data-time-series" class="slide level2">
+<h2>Types of Data: Time Series</h2>
+</section>
+<section id="types-of-data-rectangular-datasets" class="slide level2">
+<h2>Types of Data: Rectangular Datasets</h2>
+</section>
+<section id="types-of-data-nested-data" class="slide level2">
+<h2>Types of Data: Nested Data</h2>
+</section>
+<section id="hands-on-block-2-task-2-trying-out-different-representations" class="slide level2 center">
+<h2>Hands on: <a href="https://github.com/h4sci/h4sci-tasks/issues/6">Block 2, Task 2 – Trying out different representations</a></h2>
 
 <div class="footer footer-default">
 <p>Hacking for Science by Dr.&nbsp;Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></p>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
@@ -369,6 +385,7 @@
   <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
   <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -390,7 +407,8 @@
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -561,7 +579,7 @@
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
           RevealMath,
           RevealNotes,
