@@ -1,0 +1,304 @@
+---
+title: "Hacking for Science"
+subtitle: "Block 2, Session 2: Programming with Data"
+author: "Matt Bannert ([@whatsgoodio](https://twitter.com/whatsgoodio))"
+format: revealjs
+chalkboard: true
+echo: true
+footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)"
+---
+
+
+# Data Generating Processes in Science
+
+
+## Simulation
+
+:::: {.columns}
+
+::: {.column width="40%" }
+
+### Why
+
+- Analyzing Complex Systems
+- Demos
+- Proposals / Grants
+- reproducible examples, [reprex R package](https://reprex.tidyverse.org/)
+
+
+:::
+
+::: {.column width="60%" }
+
+### Process
+
+
+```{r}
+set.seed(123)
+rnorm(3)
+
+set.seed(1)
+rnorm(3)
+
+set.seed(123)
+rnorm(3)
+
+```
+
+
+
+:::
+
+
+::::
+
+
+
+
+
+## Logging / Tracking
+
+
+:::: {.columns}
+
+::: {.column width="40%" }
+
+
+### Process
+
+- webservers,
+- mobile phones
+- IoT devices
+- tracking tools, e.g., Google Analytics
+
+
+
+:::
+
+::: {.column width="60%" }
+
+
+### Form of Resulting Data 
+
+- text files
+- granular
+- event based
+- biased (tracking)
+
+
+
+:::
+
+
+::::
+
+
+
+## Surveys
+
+
+:::: {.columns}
+
+::: {.column width="40%" }
+
+- multi mode surveys (paper / online forms)
+- Recordings
+
+
+
+:::
+
+::: {.column width="60%" }
+
+### Form of Resulting Data 
+
+- rectangular data (1-line-1-observation)
+- text 
+- cross sectional 
+- longitudinal data
+
+
+
+:::
+
+
+::::
+
+
+
+
+
+## APIs & Web Scraping 
+
+
+:::: {.columns}
+
+::: {.column width="40%" }
+
+### Process
+
+- Automated, regular updates
+- Transformation of structured data into analysis friendly datasets (regular expressions, DOM extraction)
+
+
+
+
+:::
+
+::: {.column width="60%" }
+
+
+### Form of Resulting Data 
+
+- text strings
+- nested data
+- standardized data
+
+
+
+:::
+
+
+::::
+
+
+
+
+## What DGPs Have You Worked With? What DGPs Do You Expect to Face in Your Work? {.center}
+
+
+# Repesenting Data
+
+## Data Management: Memory, Files, Databases {.center}
+
+## In Memory
+
+- vector
+- matrix
+- data.frame / data.table / tibble
+- list
+- environment
+
+
+## On Disk
+
+- .RData
+- .parquet
+- feather
+- .xlsx
+- .csv
+- .json
+- .xml
+
+
+
+## In a Database
+
+
+- interface
+- query language, e.g., SQL
+
+
+## Types of Data: Time Series
+
+<style>
+.smaller {
+  font-size: .55em
+}
+
+
+</style>
+
+:::: {.columns}
+
+::: {.column width="60%" }
+
+```{r, message=FALSE, warning=FALSE, fig.height=4}
+library(kofdata)
+library(tstools)
+
+tsl <- window(get_time_series("ch.kof.barometer"))
+tsplot("KOF Barometer" = 
+         window(tsl$ch.kof.barometer,
+                start = c(2010,1))
+       )
+
+```
+
+
+:::
+
+::: {.column width="40%" .smaller} 
+
+
+
+
+
+**in memory** 
+
+- ts
+- xts
+- tsibble
+- zoo
+
+> (!) Try out the `tsbox` R package to easily switch from one representation 
+to another.
+
+
+**on disk**
+
+- [.csv](https://github.com/swissdata/demo) (long format, wide format)
+- [.xml](https://www.nsdp.admin.ch/variable/72.xml)
+- .json
+- .RData
+
+
+:::
+
+
+::::
+
+
+
+## Types of Data: Rectangular Datasets
+
+:::: {.columns}
+
+::: {.column width="60%" }
+
+:::
+
+::: {.column width="40%" }
+
+:::
+
+
+::::
+
+
+
+## Types of Data: Nested Data
+
+
+:::: {.columns}
+
+::: {.column width="60%" }
+
+:::
+
+::: {.column width="40%" }
+
+:::
+
+
+::::
+
+
+## Hands on: [Block 2, Task 2 -- Trying out different representations](https://github.com/h4sci/h4sci-tasks/issues/6) {.center}
+
+
+
+
+
+
+
