@@ -329,276 +329,276 @@
     "text": "Break Out Session 2: Task 2 & 3 First Collab & Merge Conflict Drill\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
   },
   {
-    "objectID": "block_2_session_1_r_programming.html#simulation",
-    "href": "block_2_session_1_r_programming.html#simulation",
-    "title": "Hacking for Science",
-    "section": "Simulation",
-    "text": "Simulation"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#logging-tracking",
-    "href": "block_2_session_1_r_programming.html#logging-tracking",
-    "title": "Hacking for Science",
-    "section": "Logging / Tracking",
-    "text": "Logging / Tracking"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#surveys",
-    "href": "block_2_session_1_r_programming.html#surveys",
-    "title": "Hacking for Science",
-    "section": "Surveys",
-    "text": "Surveys"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#apis-web-scraping",
-    "href": "block_2_session_1_r_programming.html#apis-web-scraping",
-    "title": "Hacking for Science",
-    "section": "APIs & Web Scraping",
-    "text": "APIs & Web Scraping"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#what-dgps-have-you-worked-with-what-dgps-do-you-expect-to-face-in-your-work",
-    "href": "block_2_session_1_r_programming.html#what-dgps-have-you-worked-with-what-dgps-do-you-expect-to-face-in-your-work",
-    "title": "Hacking for Science",
-    "section": "What DGPs Have You Worked With? What DGPs Do You Expect to Face in Your Work?",
-    "text": "What DGPs Have You Worked With? What DGPs Do You Expect to Face in Your Work?"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#data-management-memory-files-databases",
-    "href": "block_2_session_1_r_programming.html#data-management-memory-files-databases",
-    "title": "Hacking for Science",
-    "section": "Data Management: Memory, Files, Databases",
-    "text": "Data Management: Memory, Files, Databases"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#types-of-data-time-series",
-    "href": "block_2_session_1_r_programming.html#types-of-data-time-series",
-    "title": "Hacking for Science",
-    "section": "Types of Data: Time Series",
-    "text": "Types of Data: Time Series"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#types-of-data-rectangular-datasets",
-    "href": "block_2_session_1_r_programming.html#types-of-data-rectangular-datasets",
-    "title": "Hacking for Science",
-    "section": "Types of Data: Rectangular Datasets",
-    "text": "Types of Data: Rectangular Datasets"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#types-of-data-nested-data",
-    "href": "block_2_session_1_r_programming.html#types-of-data-nested-data",
-    "title": "Hacking for Science",
-    "section": "Types of Data: Nested Data",
-    "text": "Types of Data: Nested Data"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#hands-on-block-2-task-2-trying-out-different-representations",
-    "href": "block_2_session_1_r_programming.html#hands-on-block-2-task-2-trying-out-different-representations",
-    "title": "Hacking for Science",
-    "section": "Hands on: Block 2, Task 2 – Trying out different representations",
-    "text": "Hands on: Block 2, Task 2 – Trying out different representations\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
-  },
-  {
-    "objectID": "block_2_session_2_programming_w_data.html#section",
-    "href": "block_2_session_2_programming_w_data.html#section",
+    "objectID": "block_2_session_1_r_programming.html#section",
+    "href": "block_2_session_1_r_programming.html#section",
     "title": "Hacking for Science",
     "section": "",
     "text": "“Don’t get bored by the process.”\n\n– Chris Bosh (11x NBA Allstar, 2x NBA champion) on The Knowledge Project podcast."
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#todays-goal-see-r-as-a-programming-language",
-    "href": "block_2_session_2_programming_w_data.html#todays-goal-see-r-as-a-programming-language",
+    "objectID": "block_2_session_1_r_programming.html#todays-goal-see-r-as-a-programming-language",
+    "href": "block_2_session_1_r_programming.html#todays-goal-see-r-as-a-programming-language",
     "title": "Hacking for Science",
     "section": "Today’s Goal: See R as a Programming Language",
     "text": "Today’s Goal: See R as a Programming Language"
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#section-1",
-    "href": "block_2_session_2_programming_w_data.html#section-1",
+    "objectID": "block_2_session_1_r_programming.html#section-1",
+    "href": "block_2_session_1_r_programming.html#section-1",
     "title": "Hacking for Science",
     "section": "",
     "text": "📜 Scripts (Experimental)"
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#section-2",
-    "href": "block_2_session_2_programming_w_data.html#section-2",
+    "objectID": "block_2_session_1_r_programming.html#section-2",
+    "href": "block_2_session_1_r_programming.html#section-2",
     "title": "Hacking for Science",
     "section": "",
     "text": "📜 Scripts (Experimental)\n⬇️\n♻️ Functions (Reusable)"
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#section-3",
-    "href": "block_2_session_2_programming_w_data.html#section-3",
+    "objectID": "block_2_session_1_r_programming.html#section-3",
+    "href": "block_2_session_1_r_programming.html#section-3",
     "title": "Hacking for Science",
     "section": "",
     "text": "📜 Scripts (Experimental)\n⬇️\n♻️ Functions (Reusable)\n⬇️\n📦 Packages (Deployable)"
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#vector",
-    "href": "block_2_session_2_programming_w_data.html#vector",
+    "objectID": "block_2_session_1_r_programming.html#vector",
+    "href": "block_2_session_1_r_programming.html#vector",
     "title": "Hacking for Science",
     "section": "Vector",
     "text": "Vector\n\n\n\na <- 1\nb <- c(1,2,6,20,30,40,100,200,300)\nd <- 1:10\na\n\n[1] 1\n\nb\n\n[1]   1   2   6  20  30  40 100 200 300\n\nd\n\n [1]  1  2  3  4  5  6  7  8  9 10\n\n\n\n\nscalar: vector of length one.\nall elements have the same data type -> coercion to smallest common denominator."
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#matrix",
-    "href": "block_2_session_2_programming_w_data.html#matrix",
+    "objectID": "block_2_session_1_r_programming.html#matrix",
+    "href": "block_2_session_1_r_programming.html#matrix",
     "title": "Hacking for Science",
     "section": "Matrix",
     "text": "Matrix\n\n\n\nm <- matrix(b, nrow = 3)\nm\n\n     [,1] [,2] [,3]\n[1,]    1   20  100\n[2,]    2   30  200\n[3,]    6   40  300\n\n\n\n\ntwo dimensional.\nall columns are of the same length.\nall elements have the same data type."
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#data.frames",
-    "href": "block_2_session_2_programming_w_data.html#data.frames",
+    "objectID": "block_2_session_1_r_programming.html#data.frames",
+    "href": "block_2_session_1_r_programming.html#data.frames",
     "title": "Hacking for Science",
     "section": "Data.frames",
     "text": "Data.frames\n\n\n\nd <- data.frame(col1 = b[1:3],\n                col2 = b[4:6],\n                col3 = letters[1:3])\nd\n\n  col1 col2 col3\n1    1   20    a\n2    2   30    b\n3    6   40    c\n\n\n\n\ntwo dimensional.\nall columns are of the same length.\nelements may have different data types."
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#lists",
-    "href": "block_2_session_2_programming_w_data.html#lists",
+    "objectID": "block_2_session_1_r_programming.html#lists",
+    "href": "block_2_session_1_r_programming.html#lists",
     "title": "Hacking for Science",
     "section": "Lists",
     "text": "Lists\n\n\n\nl <- list(element1 = a,\n          element2 = m, \n          element3 = d)\nl\n\n$element1\n[1] 1\n\n$element2\n     [,1] [,2] [,3]\n[1,]    1   20  100\n[2,]    2   30  200\n[3,]    6   40  300\n\n$element3\n  col1 col2 col3\n1    1   20    a\n2    2   30    b\n3    6   40    c\n\n\n\n\nmay be nested\nmay contain different data types"
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#environments",
-    "href": "block_2_session_2_programming_w_data.html#environments",
+    "objectID": "block_2_session_1_r_programming.html#environments",
+    "href": "block_2_session_1_r_programming.html#environments",
     "title": "Hacking for Science",
     "section": "Environments",
     "text": "Environments\n\ne <- new.env()\ne$cow <- \"moooooo.\"\ne$duck <- \"quack.\"\ne$dog <- \"woof.\"\n\nls()\n\n[1] \"a\" \"b\" \"d\" \"e\" \"l\" \"m\"\n\nls(e)\n\n[1] \"cow\"  \"dog\"  \"duck\"\n\nget(\"dog\", envir = e)\n\n[1] \"woof.\""
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#environments-cd",
-    "href": "block_2_session_2_programming_w_data.html#environments-cd",
+    "objectID": "block_2_session_1_r_programming.html#environments-cd",
+    "href": "block_2_session_1_r_programming.html#environments-cd",
     "title": "Hacking for Science",
     "section": "Environments c’d",
     "text": "Environments c’d\n\nBe aware of lexical scoping (look up of variables in parent environments when they can’t be found in the current environment) when working with functions.\nThe section on environment basics in Hadley Wickham’s Advanced R is a good, applied introduction.\nHow R Searches and Finds Stuff goes much further down the rabbit hole."
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#functions",
-    "href": "block_2_session_2_programming_w_data.html#functions",
+    "objectID": "block_2_session_1_r_programming.html#functions",
+    "href": "block_2_session_1_r_programming.html#functions",
     "title": "Hacking for Science",
     "section": "Functions",
     "text": "Functions\n\nname_of_the_function <- function(parameter_1, parameter_2){\n  # function body \n  \n  s <- parameter_1 + parameter_2\n  \n  # R does *need* a return statement\n  # it returns the last statement that is not\n  # assigned to a variable using the assignment operator `<-` \n  return(s)\n  \n  # NOTE an R function can only return ONE object (!)\n}"
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#script-vs.-function-call-vs.-definition",
-    "href": "block_2_session_2_programming_w_data.html#script-vs.-function-call-vs.-definition",
+    "objectID": "block_2_session_1_r_programming.html#script-vs.-function-call-vs.-definition",
+    "href": "block_2_session_1_r_programming.html#script-vs.-function-call-vs.-definition",
     "title": "Hacking for Science",
     "section": "Script vs. Function – Call vs. Definition",
     "text": "Script vs. Function – Call vs. Definition\n\n\n\nset.seed(123)\nd1 <- rnorm(1000)\nd2 <- rnorm(1000)\n\nd1_mean <- mean(d1)\nd1_sd <- sd(d1)\nd1_q <- quantile(d1)\ndesc_stats_d1 <- \n  list(d1_mean = d1_mean,\n       d1_sd = d1_sd,\n       d1_q = d1_q)\n\nd2_mean <- mean(d2)\nd2_sd <- sd(d2)\nd2_q <- quantile(d2)\ndesc_stats_d2 <- \n  list(d2_mean = d2_mean,\n       d2_sd = d2_sd,\n       d2_q = d2_q)"
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#script-vs.-function-call-vs.-definition-1",
-    "href": "block_2_session_2_programming_w_data.html#script-vs.-function-call-vs.-definition-1",
+    "objectID": "block_2_session_1_r_programming.html#script-vs.-function-call-vs.-definition-1",
+    "href": "block_2_session_1_r_programming.html#script-vs.-function-call-vs.-definition-1",
     "title": "Hacking for Science",
     "section": "Script vs. Function – Call vs. Definition",
     "text": "Script vs. Function – Call vs. Definition\n\n\n\nset.seed(123)\nd1 <- rnorm(1000)\nd2 <- rnorm(1000)\n\nd1_mean <- mean(d1)\nd1_sd <- sd(d1)\nd1_q <- quantile(d1)\ndesc_stats_d1 <- \n  list(d1_mean = d1_mean,\n       d1_sd = d1_sd,\n       d1_q = d1_q)\n\nd2_mean <- mean(d2)\nd2_sd <- sd(d2)\nd2_q <- quantile(d2)\ndesc_stats_d2 <- \n  list(d2_mean = d2_mean,\n       d2_sd = d2_sd,\n       d2_q = d2_q)\n\n\n\ncreate_basic_desc <- function(distr){\n  out <- list(\n    mean = mean(distr),\n    sd = sd(distr),\n    quantiles = quantile(distr)\n  )\n  out\n}"
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#script-vs.-function-call-vs.-definition-2",
-    "href": "block_2_session_2_programming_w_data.html#script-vs.-function-call-vs.-definition-2",
+    "objectID": "block_2_session_1_r_programming.html#script-vs.-function-call-vs.-definition-2",
+    "href": "block_2_session_1_r_programming.html#script-vs.-function-call-vs.-definition-2",
     "title": "Hacking for Science",
     "section": "Script vs. Function – Call vs. Definition",
     "text": "Script vs. Function – Call vs. Definition\n\n\n\nset.seed(123)\nd1 <- rnorm(1000)\nd2 <- rnorm(1000)\n\nd1_mean <- mean(d1)\nd1_sd <- sd(d1)\nd1_q <- quantile(d1)\ndesc_stats_d1 <- \n  list(d1_mean = d1_mean,\n       d1_sd = d1_sd,\n       d1_q = d1_q)\n\nd2_mean <- mean(d2)\nd2_sd <- sd(d2)\nd2_q <- quantile(d2)\ndesc_stats_d2 <- \n  list(d2_mean = d2_mean,\n       d2_sd = d2_sd,\n       d2_q = d2_q)\n\n\n\ncreate_basic_desc <- function(distr){\n  out <- list(\n    mean = mean(distr),\n    sd = sd(distr),\n    quantiles = quantile(distr)\n  )\n  out\n}\n\ncreate_basic_desc(d1)\n\n$mean\n[1] 0.01612787\n\n$sd\n[1] 0.991695\n\n$quantiles\n          0%          25%          50%          75%         100% \n-2.809774679 -0.628324243  0.009209639  0.664601867  3.241039935"
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#documentation-of-functions",
-    "href": "block_2_session_2_programming_w_data.html#documentation-of-functions",
+    "objectID": "block_2_session_1_r_programming.html#documentation-of-functions",
+    "href": "block_2_session_1_r_programming.html#documentation-of-functions",
     "title": "Hacking for Science",
     "section": "Documentation of Functions",
     "text": "Documentation of Functions\n\n\n\n#' Create Basic Descriptive Statistics\n#'\n#' Creates means, standard deviations and\n#' default quantiles from an numeric input vector. \n#' \n#' @param distr numeric vector \n#' @export \ncreate_basic_desc <- function(distr){\n  out <- list(\n    mean = mean(distr),\n    sd = sd(distr),\n    quantiles = quantile(distr)\n  )\n  out\n}\n\n\n\nRoxygen documentation can be rendered .Rd and .html\npackages require documentation of every exported function"
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#section-4",
-    "href": "block_2_session_2_programming_w_data.html#section-4",
+    "objectID": "block_2_session_1_r_programming.html#section-4",
+    "href": "block_2_session_1_r_programming.html#section-4",
     "title": "Hacking for Science",
     "section": "",
     "text": "me: “How to name things?”"
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#section-5",
-    "href": "block_2_session_2_programming_w_data.html#section-5",
+    "objectID": "block_2_session_1_r_programming.html#section-5",
+    "href": "block_2_session_1_r_programming.html#section-5",
     "title": "Hacking for Science",
     "section": "",
     "text": "me: “How to name things?”\n\n\nGoogle: “About 5’260’000’000 results (0.71 seconds)”"
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#whassssssup-i_am_a_snake",
-    "href": "block_2_session_2_programming_w_data.html#whassssssup-i_am_a_snake",
+    "objectID": "block_2_session_1_r_programming.html#whassssssup-i_am_a_snake",
+    "href": "block_2_session_1_r_programming.html#whassssssup-i_am_a_snake",
     "title": "Hacking for Science",
     "section": "Whassssssup, i_am_a_snake!",
     "text": "Whassssssup, i_am_a_snake!\n\nfrequently occurs in: file and folder names, function names in R and Python."
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#howdie-jesuisunchameau",
-    "href": "block_2_session_2_programming_w_data.html#howdie-jesuisunchameau",
+    "objectID": "block_2_session_1_r_programming.html#howdie-jesuisunchameau",
+    "href": "block_2_session_1_r_programming.html#howdie-jesuisunchameau",
     "title": "Hacking for Science",
     "section": "Howdie, JeSuisUnChameau!",
     "text": "Howdie, JeSuisUnChameau!\n\nfrequently occurs in: class names (mostly UpperCamelCase)."
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#hello-i-am-a-kebap",
-    "href": "block_2_session_2_programming_w_data.html#hello-i-am-a-kebap",
+    "objectID": "block_2_session_1_r_programming.html#hello-i-am-a-kebap",
+    "href": "block_2_session_1_r_programming.html#hello-i-am-a-kebap",
     "title": "Hacking for Science",
     "section": "Hello, i-am-a-kebap!",
     "text": "Hello, i-am-a-kebap!\n\nfrequently occurs in: folder, file and repository names."
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#functional-programming",
-    "href": "block_2_session_2_programming_w_data.html#functional-programming",
+    "objectID": "block_2_session_1_r_programming.html#functional-programming",
+    "href": "block_2_session_1_r_programming.html#functional-programming",
     "title": "Hacking for Science",
     "section": "Functional Programming",
     "text": "Functional Programming\n\n\n\nds_list <- list(iris = iris,\n                mtcars = mtcars)\nlapply(ds_list, summary)\n\nAnonymous Functions\n\nlapply(ds_list, function(x){\n  sprintf(\n    \"The dataset contains %d observations.\",\n    nrow(x))\n})\n\n\n\n\n$iris\n[1] 150\n\n$mtcars\n[1] 32\n\n\nAnonymous Functions\n\n\n$iris\n[1] \"The dataset contains 150 observations.\"\n\n$mtcars\n[1] \"The dataset contains 32 observations.\""
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#functional-programming-1",
-    "href": "block_2_session_2_programming_w_data.html#functional-programming-1",
+    "objectID": "block_2_session_1_r_programming.html#functional-programming-1",
+    "href": "block_2_session_1_r_programming.html#functional-programming-1",
     "title": "Hacking for Science",
     "section": "Functional Programming",
     "text": "Functional Programming\n\nfor more elaborate examples, such as function factories, take a read the Functional Programming Chapter of Hadley Wickham’s book.\nNote how R is dynamically typed."
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#trycatch",
-    "href": "block_2_session_2_programming_w_data.html#trycatch",
+    "objectID": "block_2_session_1_r_programming.html#trycatch",
+    "href": "block_2_session_1_r_programming.html#trycatch",
     "title": "Hacking for Science",
     "section": "TryCatch",
     "text": "TryCatch\nWithout Safety Net\n\ndo_numeric_op <- function(a,b){\n  out <- (a + b)*a\n  message(sprintf(\n    \"'%s', '%s' were your inputs.\",\n    a,b)\n    )\n  out\n}\n\n\ndo_numeric_op(1,\"a\")\n\n“Error in a + b : non-numeric argument to binary operator Calls: […]”"
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#try-catch",
-    "href": "block_2_session_2_programming_w_data.html#try-catch",
+    "objectID": "block_2_session_1_r_programming.html#try-catch",
+    "href": "block_2_session_1_r_programming.html#try-catch",
     "title": "Hacking for Science",
     "section": "Try Catch",
     "text": "Try Catch\nWith Safety Net\n\ndo_numeric_op <- function(a,b){\n  \n  tryCatch({\n    return((a + b)*a)\n  \n  }, error = function(e) message(\n    \"Operation went wrong, but function is alive.\"\n    )\n  )\n  sprintf(\"'%s', '%s' were your inputs.\", a,b)\n}"
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#tips",
-    "href": "block_2_session_2_programming_w_data.html#tips",
+    "objectID": "block_2_session_1_r_programming.html#tips",
+    "href": "block_2_session_1_r_programming.html#tips",
     "title": "Hacking for Science",
     "section": "Tips",
     "text": "Tips\n\nDocument Before You Start, e.g., write a vignette outline\nuse pseudo code or comments to structure\ndo not comment on WHAT you do but WHY you do it\nPeer programming in the beginning (make sure to switch who’s on the driver’s seat)\nReproducible Research (include data)"
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#hands-on-the-akqjt-task",
-    "href": "block_2_session_2_programming_w_data.html#hands-on-the-akqjt-task",
+    "objectID": "block_2_session_1_r_programming.html#hands-on-the-akqjt-task",
+    "href": "block_2_session_1_r_programming.html#hands-on-the-akqjt-task",
     "title": "Hacking for Science",
     "section": "Hands on: The AKQJT task",
     "text": "Hands on: The AKQJT task"
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#folder-structure",
-    "href": "block_2_session_2_programming_w_data.html#folder-structure",
+    "objectID": "block_2_session_1_r_programming.html#folder-structure",
+    "href": "block_2_session_1_r_programming.html#folder-structure",
     "title": "Hacking for Science",
     "section": "Folder Structure",
     "text": "Folder Structure\n\nR function definitions\nman references (functions and datasets)\ndocs Articles for GitHub Pages\nvignettes Articles’ source, elaborate documentation source\ninst additional material, installed with package, e.g., sql files\nsrc source code that needs to be compiled, e.g., C++\ntests automated tests (basic idea in DevOps Carpentry), often created with a testing framework such as testthat or tinytest"
   },
   {
-    "objectID": "block_2_session_2_programming_w_data.html#further-conventions-ideas",
-    "href": "block_2_session_2_programming_w_data.html#further-conventions-ideas",
+    "objectID": "block_2_session_1_r_programming.html#further-conventions-ideas",
+    "href": "block_2_session_1_r_programming.html#further-conventions-ideas",
     "title": "Hacking for Science",
     "section": "Further Conventions & Ideas",
     "text": "Further Conventions & Ideas\n\nIn addition every package needs DESCRIPTION and NAMESPACE file.\nstart with an sandbox.R file in the root folder (may be moved to inst/ later on.).\nmove functions to the R/ folder once they get more mature (documentation, tested)\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#simulation",
+    "href": "block_2_session_2_programming_w_data.html#simulation",
+    "title": "Hacking for Science",
+    "section": "Simulation",
+    "text": "Simulation"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#logging-tracking",
+    "href": "block_2_session_2_programming_w_data.html#logging-tracking",
+    "title": "Hacking for Science",
+    "section": "Logging / Tracking",
+    "text": "Logging / Tracking"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#surveys",
+    "href": "block_2_session_2_programming_w_data.html#surveys",
+    "title": "Hacking for Science",
+    "section": "Surveys",
+    "text": "Surveys"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#apis-web-scraping",
+    "href": "block_2_session_2_programming_w_data.html#apis-web-scraping",
+    "title": "Hacking for Science",
+    "section": "APIs & Web Scraping",
+    "text": "APIs & Web Scraping"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#what-dgps-have-you-worked-with-what-dgps-do-you-expect-to-face-in-your-work",
+    "href": "block_2_session_2_programming_w_data.html#what-dgps-have-you-worked-with-what-dgps-do-you-expect-to-face-in-your-work",
+    "title": "Hacking for Science",
+    "section": "What DGPs Have You Worked With? What DGPs Do You Expect to Face in Your Work?",
+    "text": "What DGPs Have You Worked With? What DGPs Do You Expect to Face in Your Work?"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#data-management-memory-files-databases",
+    "href": "block_2_session_2_programming_w_data.html#data-management-memory-files-databases",
+    "title": "Hacking for Science",
+    "section": "Data Management: Memory, Files, Databases",
+    "text": "Data Management: Memory, Files, Databases"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#types-of-data-time-series",
+    "href": "block_2_session_2_programming_w_data.html#types-of-data-time-series",
+    "title": "Hacking for Science",
+    "section": "Types of Data: Time Series",
+    "text": "Types of Data: Time Series"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#types-of-data-rectangular-datasets",
+    "href": "block_2_session_2_programming_w_data.html#types-of-data-rectangular-datasets",
+    "title": "Hacking for Science",
+    "section": "Types of Data: Rectangular Datasets",
+    "text": "Types of Data: Rectangular Datasets"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#types-of-data-nested-data",
+    "href": "block_2_session_2_programming_w_data.html#types-of-data-nested-data",
+    "title": "Hacking for Science",
+    "section": "Types of Data: Nested Data",
+    "text": "Types of Data: Nested Data"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#hands-on-block-2-task-2-trying-out-different-representations",
+    "href": "block_2_session_2_programming_w_data.html#hands-on-block-2-task-2-trying-out-different-representations",
+    "title": "Hacking for Science",
+    "section": "Hands on: Block 2, Task 2 – Trying out different representations",
+    "text": "Hands on: Block 2, Task 2 – Trying out different representations\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
   }
 ]

@@ -28,6 +28,70 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css" id="theme">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -327,49 +391,511 @@
 
 <section id="title-slide" class="center">
   <h1 class="title">Hacking for Science</h1>
-  <p class="subtitle">Block 2, Session 1: R Programming 101</p>
+  <p class="subtitle">Block 2, Session 2: Programming with Data</p>
   <p class="author">Matt Bannert (<a href="https://twitter.com/whatsgoodio"><span class="citation" data-cites="whatsgoodio">@whatsgoodio</span></a>)</p>
 </section>
 
+<section id="section" class="slide level2 center">
+<h2></h2>
+<blockquote>
+<p>“Don’t get bored by the process.”</p>
+</blockquote>
+<p>– Chris Bosh (11x NBA Allstar, 2x NBA champion) on The Knowledge Project podcast.</p>
+</section>
+<section id="todays-goal-see-r-as-a-programming-language" class="slide level2 center">
+<h2>Today’s Goal: See R as a Programming Language</h2>
+<!-- Go past "understand" in blooms Taxonomy: remember, understand, apply, analyze, evaluate, create -->
+</section>
+<section id="section-1" class="slide level2 center">
+<h2></h2>
+<p>📜 Scripts (Experimental)</p>
+</section>
+<section id="section-2" class="slide level2 center">
+<h2></h2>
+<p>📜 Scripts (Experimental)</p>
+<p>⬇️</p>
+<p>♻️ Functions (Reusable)</p>
+</section>
+<section id="section-3" class="slide level2 center">
+<h2></h2>
+<p>📜 Scripts (Experimental)</p>
+<p>⬇️</p>
+<p>♻️ Functions (Reusable)</p>
+<p>⬇️</p>
+<p>📦 Packages (Deployable)</p>
+</section>
 <section>
-<section id="data-generating-processes-in-science" class="title-slide slide level1 center">
-<h1>Data Generating Processes in Science</h1>
+<section id="r-building-blocks" class="title-slide slide level1 center">
+<h1>R Building Blocks</h1>
 
 </section>
-<section id="simulation" class="slide level2">
-<h2>Simulation</h2>
+<section id="vector" class="slide level2">
+<h2>Vector</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>a <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>b <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">6</span>,<span class="dv">20</span>,<span class="dv">30</span>,<span class="dv">40</span>,<span class="dv">100</span>,<span class="dv">200</span>,<span class="dv">300</span>)</span>
+<span id="cb1-3"><a href="#cb1-3"></a>d <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>b</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]   1   2   6  20  30  40 100 200 300</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>d</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1]  1  2  3  4  5  6  7  8  9 10</code></pre>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>scalar: vector of length one.</li>
+<li>all elements have the same data type -&gt; coercion to smallest common denominator.</li>
+</ul>
+</div>
+</div>
 </section>
-<section id="logging-tracking" class="slide level2">
-<h2>Logging / Tracking</h2>
+<section id="matrix" class="slide level2">
+<h2>Matrix</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>m <span class="ot">&lt;-</span> <span class="fu">matrix</span>(b, <span class="at">nrow =</span> <span class="dv">3</span>)</span>
+<span id="cb7-2"><a href="#cb7-2"></a>m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     [,1] [,2] [,3]
+[1,]    1   20  100
+[2,]    2   30  200
+[3,]    6   40  300</code></pre>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>two dimensional.</li>
+<li>all columns are of the <em>same length</em>.</li>
+<li>all elements have the <em>same data type</em>.</li>
+</ul>
+</div>
+</div>
 </section>
-<section id="surveys" class="slide level2">
-<h2>Surveys</h2>
+<section id="data.frames" class="slide level2">
+<h2>Data.frames</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>d <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">col1 =</span> b[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>],</span>
+<span id="cb9-2"><a href="#cb9-2"></a>                <span class="at">col2 =</span> b[<span class="dv">4</span><span class="sc">:</span><span class="dv">6</span>],</span>
+<span id="cb9-3"><a href="#cb9-3"></a>                <span class="at">col3 =</span> letters[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>])</span>
+<span id="cb9-4"><a href="#cb9-4"></a>d</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  col1 col2 col3
+1    1   20    a
+2    2   30    b
+3    6   40    c</code></pre>
+</div>
+</div>
+</div><div class="column" style="width:40%;">
+<ul>
+<li>two dimensional.</li>
+<li>all columns are of the <em>same length</em>.</li>
+<li>elements may have <em>different data types</em>.</li>
+</ul>
+</div>
+</div>
 </section>
-<section id="apis-web-scraping" class="slide level2">
-<h2>APIs &amp; Web Scraping</h2>
+<section id="lists" class="slide level2">
+<h2>Lists</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a>l <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">element1 =</span> a,</span>
+<span id="cb11-2"><a href="#cb11-2"></a>          <span class="at">element2 =</span> m, </span>
+<span id="cb11-3"><a href="#cb11-3"></a>          <span class="at">element3 =</span> d)</span>
+<span id="cb11-4"><a href="#cb11-4"></a>l</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$element1
+[1] 1
+
+$element2
+     [,1] [,2] [,3]
+[1,]    1   20  100
+[2,]    2   30  200
+[3,]    6   40  300
+
+$element3
+  col1 col2 col3
+1    1   20    a
+2    2   30    b
+3    6   40    c</code></pre>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>may be nested</li>
+<li>may contain different data types</li>
+</ul>
+</div>
+</div>
 </section>
-<section id="what-dgps-have-you-worked-with-what-dgps-do-you-expect-to-face-in-your-work" class="slide level2 center">
-<h2>What DGPs Have You Worked With? What DGPs Do You Expect to Face in Your Work?</h2>
+<section id="environments" class="slide level2">
+<h2>Environments</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a>e <span class="ot">&lt;-</span> <span class="fu">new.env</span>()</span>
+<span id="cb13-2"><a href="#cb13-2"></a>e<span class="sc">$</span>cow <span class="ot">&lt;-</span> <span class="st">"moooooo."</span></span>
+<span id="cb13-3"><a href="#cb13-3"></a>e<span class="sc">$</span>duck <span class="ot">&lt;-</span> <span class="st">"quack."</span></span>
+<span id="cb13-4"><a href="#cb13-4"></a>e<span class="sc">$</span>dog <span class="ot">&lt;-</span> <span class="st">"woof."</span></span>
+<span id="cb13-5"><a href="#cb13-5"></a></span>
+<span id="cb13-6"><a href="#cb13-6"></a><span class="fu">ls</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "a" "b" "d" "e" "l" "m"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a><span class="fu">ls</span>(e)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "cow"  "dog"  "duck"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a><span class="fu">get</span>(<span class="st">"dog"</span>, <span class="at">envir =</span> e)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "woof."</code></pre>
+</div>
+</div>
+</section>
+<section id="environments-cd" class="slide level2">
+<h2>Environments c’d</h2>
+<ul>
+<li><p>Be aware of lexical scoping (look up of variables in parent environments when they can’t be found in the current environment) when working with functions.</p></li>
+<li><p>The section on <a href="http://adv-r.had.co.nz/Environments.html">environment basics in Hadley Wickham’s Advanced R</a> is a good, applied introduction.</p></li>
+<li><p><a href="http://blog.obeautifulcode.com/R/How-R-Searches-And-Finds-Stuff/">How R Searches and Finds Stuff</a> goes much further down the rabbit hole.</p></li>
+</ul>
+</section>
+<section id="functions" class="slide level2">
+<h2>Functions</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a>name_of_the_function <span class="ot">&lt;-</span> <span class="cf">function</span>(parameter_1, parameter_2){</span>
+<span id="cb19-2"><a href="#cb19-2"></a>  <span class="co"># function body </span></span>
+<span id="cb19-3"><a href="#cb19-3"></a>  </span>
+<span id="cb19-4"><a href="#cb19-4"></a>  s <span class="ot">&lt;-</span> parameter_1 <span class="sc">+</span> parameter_2</span>
+<span id="cb19-5"><a href="#cb19-5"></a>  </span>
+<span id="cb19-6"><a href="#cb19-6"></a>  <span class="co"># R does *need* a return statement</span></span>
+<span id="cb19-7"><a href="#cb19-7"></a>  <span class="co"># it returns the last statement that is not</span></span>
+<span id="cb19-8"><a href="#cb19-8"></a>  <span class="co"># assigned to a variable using the assignment operator `&lt;-` </span></span>
+<span id="cb19-9"><a href="#cb19-9"></a>  <span class="fu">return</span>(s)</span>
+<span id="cb19-10"><a href="#cb19-10"></a>  </span>
+<span id="cb19-11"><a href="#cb19-11"></a>  <span class="co"># </span><span class="al">NOTE</span><span class="co"> an R function can only return ONE object (!)</span></span>
+<span id="cb19-12"><a href="#cb19-12"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section></section>
 <section>
-<section id="repesenting-data" class="title-slide slide level1 center">
-<h1>Repesenting Data</h1>
+<section id="running-code" class="title-slide slide level1 center">
+<h1>Running Code</h1>
 
 </section>
-<section id="data-management-memory-files-databases" class="slide level2">
-<h2>Data Management: Memory, Files, Databases</h2>
+<section id="script-vs.-function-call-vs.-definition" class="slide level2">
+<h2>Script vs.&nbsp;Function – Call vs.&nbsp;Definition</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb20-2"><a href="#cb20-2"></a>d1 <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">1000</span>)</span>
+<span id="cb20-3"><a href="#cb20-3"></a>d2 <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">1000</span>)</span>
+<span id="cb20-4"><a href="#cb20-4"></a></span>
+<span id="cb20-5"><a href="#cb20-5"></a>d1_mean <span class="ot">&lt;-</span> <span class="fu">mean</span>(d1)</span>
+<span id="cb20-6"><a href="#cb20-6"></a>d1_sd <span class="ot">&lt;-</span> <span class="fu">sd</span>(d1)</span>
+<span id="cb20-7"><a href="#cb20-7"></a>d1_q <span class="ot">&lt;-</span> <span class="fu">quantile</span>(d1)</span>
+<span id="cb20-8"><a href="#cb20-8"></a>desc_stats_d1 <span class="ot">&lt;-</span> </span>
+<span id="cb20-9"><a href="#cb20-9"></a>  <span class="fu">list</span>(<span class="at">d1_mean =</span> d1_mean,</span>
+<span id="cb20-10"><a href="#cb20-10"></a>       <span class="at">d1_sd =</span> d1_sd,</span>
+<span id="cb20-11"><a href="#cb20-11"></a>       <span class="at">d1_q =</span> d1_q)</span>
+<span id="cb20-12"><a href="#cb20-12"></a></span>
+<span id="cb20-13"><a href="#cb20-13"></a>d2_mean <span class="ot">&lt;-</span> <span class="fu">mean</span>(d2)</span>
+<span id="cb20-14"><a href="#cb20-14"></a>d2_sd <span class="ot">&lt;-</span> <span class="fu">sd</span>(d2)</span>
+<span id="cb20-15"><a href="#cb20-15"></a>d2_q <span class="ot">&lt;-</span> <span class="fu">quantile</span>(d2)</span>
+<span id="cb20-16"><a href="#cb20-16"></a>desc_stats_d2 <span class="ot">&lt;-</span> </span>
+<span id="cb20-17"><a href="#cb20-17"></a>  <span class="fu">list</span>(<span class="at">d2_mean =</span> d2_mean,</span>
+<span id="cb20-18"><a href="#cb20-18"></a>       <span class="at">d2_sd =</span> d2_sd,</span>
+<span id="cb20-19"><a href="#cb20-19"></a>       <span class="at">d2_q =</span> d2_q)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div><div class="column" style="width:40%;">
+
+</div>
+</div>
 </section>
-<section id="types-of-data-time-series" class="slide level2">
-<h2>Types of Data: Time Series</h2>
+<section id="script-vs.-function-call-vs.-definition-1" class="slide level2">
+<h2>Script vs.&nbsp;Function – Call vs.&nbsp;Definition</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb21-2"><a href="#cb21-2"></a>d1 <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">1000</span>)</span>
+<span id="cb21-3"><a href="#cb21-3"></a>d2 <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">1000</span>)</span>
+<span id="cb21-4"><a href="#cb21-4"></a></span>
+<span id="cb21-5"><a href="#cb21-5"></a>d1_mean <span class="ot">&lt;-</span> <span class="fu">mean</span>(d1)</span>
+<span id="cb21-6"><a href="#cb21-6"></a>d1_sd <span class="ot">&lt;-</span> <span class="fu">sd</span>(d1)</span>
+<span id="cb21-7"><a href="#cb21-7"></a>d1_q <span class="ot">&lt;-</span> <span class="fu">quantile</span>(d1)</span>
+<span id="cb21-8"><a href="#cb21-8"></a>desc_stats_d1 <span class="ot">&lt;-</span> </span>
+<span id="cb21-9"><a href="#cb21-9"></a>  <span class="fu">list</span>(<span class="at">d1_mean =</span> d1_mean,</span>
+<span id="cb21-10"><a href="#cb21-10"></a>       <span class="at">d1_sd =</span> d1_sd,</span>
+<span id="cb21-11"><a href="#cb21-11"></a>       <span class="at">d1_q =</span> d1_q)</span>
+<span id="cb21-12"><a href="#cb21-12"></a></span>
+<span id="cb21-13"><a href="#cb21-13"></a>d2_mean <span class="ot">&lt;-</span> <span class="fu">mean</span>(d2)</span>
+<span id="cb21-14"><a href="#cb21-14"></a>d2_sd <span class="ot">&lt;-</span> <span class="fu">sd</span>(d2)</span>
+<span id="cb21-15"><a href="#cb21-15"></a>d2_q <span class="ot">&lt;-</span> <span class="fu">quantile</span>(d2)</span>
+<span id="cb21-16"><a href="#cb21-16"></a>desc_stats_d2 <span class="ot">&lt;-</span> </span>
+<span id="cb21-17"><a href="#cb21-17"></a>  <span class="fu">list</span>(<span class="at">d2_mean =</span> d2_mean,</span>
+<span id="cb21-18"><a href="#cb21-18"></a>       <span class="at">d2_sd =</span> d2_sd,</span>
+<span id="cb21-19"><a href="#cb21-19"></a>       <span class="at">d2_q =</span> d2_q)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a>create_basic_desc <span class="ot">&lt;-</span> <span class="cf">function</span>(distr){</span>
+<span id="cb22-2"><a href="#cb22-2"></a>  out <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb22-3"><a href="#cb22-3"></a>    <span class="at">mean =</span> <span class="fu">mean</span>(distr),</span>
+<span id="cb22-4"><a href="#cb22-4"></a>    <span class="at">sd =</span> <span class="fu">sd</span>(distr),</span>
+<span id="cb22-5"><a href="#cb22-5"></a>    <span class="at">quantiles =</span> <span class="fu">quantile</span>(distr)</span>
+<span id="cb22-6"><a href="#cb22-6"></a>  )</span>
+<span id="cb22-7"><a href="#cb22-7"></a>  out</span>
+<span id="cb22-8"><a href="#cb22-8"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
 </section>
-<section id="types-of-data-rectangular-datasets" class="slide level2">
-<h2>Types of Data: Rectangular Datasets</h2>
+<section id="script-vs.-function-call-vs.-definition-2" class="slide level2">
+<h2>Script vs.&nbsp;Function – Call vs.&nbsp;Definition</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb23-2"><a href="#cb23-2"></a>d1 <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">1000</span>)</span>
+<span id="cb23-3"><a href="#cb23-3"></a>d2 <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">1000</span>)</span>
+<span id="cb23-4"><a href="#cb23-4"></a></span>
+<span id="cb23-5"><a href="#cb23-5"></a>d1_mean <span class="ot">&lt;-</span> <span class="fu">mean</span>(d1)</span>
+<span id="cb23-6"><a href="#cb23-6"></a>d1_sd <span class="ot">&lt;-</span> <span class="fu">sd</span>(d1)</span>
+<span id="cb23-7"><a href="#cb23-7"></a>d1_q <span class="ot">&lt;-</span> <span class="fu">quantile</span>(d1)</span>
+<span id="cb23-8"><a href="#cb23-8"></a>desc_stats_d1 <span class="ot">&lt;-</span> </span>
+<span id="cb23-9"><a href="#cb23-9"></a>  <span class="fu">list</span>(<span class="at">d1_mean =</span> d1_mean,</span>
+<span id="cb23-10"><a href="#cb23-10"></a>       <span class="at">d1_sd =</span> d1_sd,</span>
+<span id="cb23-11"><a href="#cb23-11"></a>       <span class="at">d1_q =</span> d1_q)</span>
+<span id="cb23-12"><a href="#cb23-12"></a></span>
+<span id="cb23-13"><a href="#cb23-13"></a>d2_mean <span class="ot">&lt;-</span> <span class="fu">mean</span>(d2)</span>
+<span id="cb23-14"><a href="#cb23-14"></a>d2_sd <span class="ot">&lt;-</span> <span class="fu">sd</span>(d2)</span>
+<span id="cb23-15"><a href="#cb23-15"></a>d2_q <span class="ot">&lt;-</span> <span class="fu">quantile</span>(d2)</span>
+<span id="cb23-16"><a href="#cb23-16"></a>desc_stats_d2 <span class="ot">&lt;-</span> </span>
+<span id="cb23-17"><a href="#cb23-17"></a>  <span class="fu">list</span>(<span class="at">d2_mean =</span> d2_mean,</span>
+<span id="cb23-18"><a href="#cb23-18"></a>       <span class="at">d2_sd =</span> d2_sd,</span>
+<span id="cb23-19"><a href="#cb23-19"></a>       <span class="at">d2_q =</span> d2_q)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a>create_basic_desc <span class="ot">&lt;-</span> <span class="cf">function</span>(distr){</span>
+<span id="cb24-2"><a href="#cb24-2"></a>  out <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb24-3"><a href="#cb24-3"></a>    <span class="at">mean =</span> <span class="fu">mean</span>(distr),</span>
+<span id="cb24-4"><a href="#cb24-4"></a>    <span class="at">sd =</span> <span class="fu">sd</span>(distr),</span>
+<span id="cb24-5"><a href="#cb24-5"></a>    <span class="at">quantiles =</span> <span class="fu">quantile</span>(distr)</span>
+<span id="cb24-6"><a href="#cb24-6"></a>  )</span>
+<span id="cb24-7"><a href="#cb24-7"></a>  out</span>
+<span id="cb24-8"><a href="#cb24-8"></a>}</span>
+<span id="cb24-9"><a href="#cb24-9"></a></span>
+<span id="cb24-10"><a href="#cb24-10"></a><span class="fu">create_basic_desc</span>(d1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$mean
+[1] 0.01612787
+
+$sd
+[1] 0.991695
+
+$quantiles
+          0%          25%          50%          75%         100% 
+-2.809774679 -0.628324243  0.009209639  0.664601867  3.241039935 </code></pre>
+</div>
+</div>
+</div>
+</div>
 </section>
-<section id="types-of-data-nested-data" class="slide level2">
-<h2>Types of Data: Nested Data</h2>
+<section id="documentation-of-functions" class="slide level2">
+<h2>Documentation of Functions</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1"></a><span class="co">#' Create Basic Descriptive Statistics</span></span>
+<span id="cb26-2"><a href="#cb26-2"></a><span class="co">#'</span></span>
+<span id="cb26-3"><a href="#cb26-3"></a><span class="co">#' Creates means, standard deviations and</span></span>
+<span id="cb26-4"><a href="#cb26-4"></a><span class="co">#' default quantiles from an numeric input vector. </span></span>
+<span id="cb26-5"><a href="#cb26-5"></a><span class="co">#' </span></span>
+<span id="cb26-6"><a href="#cb26-6"></a><span class="co">#' @param distr numeric vector </span></span>
+<span id="cb26-7"><a href="#cb26-7"></a><span class="co">#' @export </span></span>
+<span id="cb26-8"><a href="#cb26-8"></a>create_basic_desc <span class="ot">&lt;-</span> <span class="cf">function</span>(distr){</span>
+<span id="cb26-9"><a href="#cb26-9"></a>  out <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb26-10"><a href="#cb26-10"></a>    <span class="at">mean =</span> <span class="fu">mean</span>(distr),</span>
+<span id="cb26-11"><a href="#cb26-11"></a>    <span class="at">sd =</span> <span class="fu">sd</span>(distr),</span>
+<span id="cb26-12"><a href="#cb26-12"></a>    <span class="at">quantiles =</span> <span class="fu">quantile</span>(distr)</span>
+<span id="cb26-13"><a href="#cb26-13"></a>  )</span>
+<span id="cb26-14"><a href="#cb26-14"></a>  out</span>
+<span id="cb26-15"><a href="#cb26-15"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div><div class="column" style="width:40%;">
+<ul>
+<li>Roxygen documentation can be rendered .Rd and .html</li>
+<li>packages require documentation of every exported function</li>
+</ul>
+</div>
+</div>
+</section></section>
+<section>
+<section id="naming" class="title-slide slide level1 center">
+<h1>Naming</h1>
+
 </section>
-<section id="hands-on-block-2-task-2-trying-out-different-representations" class="slide level2 center">
-<h2>Hands on: <a href="https://github.com/h4sci/h4sci-tasks/issues/6">Block 2, Task 2 – Trying out different representations</a></h2>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<blockquote>
+<p>me: “How to name things?”</p>
+</blockquote>
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<blockquote>
+<p>me: “How to name things?”</p>
+</blockquote>
+<blockquote>
+<p>Google: “About 5’260’000’000 results (0.71 seconds)”</p>
+</blockquote>
+</section>
+<section id="whassssssup-i_am_a_snake" class="slide level2">
+<h2>Whassssssup, i_am_a_snake!</h2>
+
+<img data-src="img/snake.png" class="r-stretch"><p>frequently occurs in: file and folder names, function names in R and Python.</p>
+</section>
+<section id="howdie-jesuisunchameau" class="slide level2">
+<h2>Howdie, JeSuisUnChameau!</h2>
+
+<img data-src="img/camel.png" class="r-stretch"><p>frequently occurs in: class names (mostly UpperCamelCase).</p>
+</section>
+<section id="hello-i-am-a-kebap" class="slide level2">
+<h2>Hello, i-am-a-kebap!</h2>
+
+<img data-src="https://upload.wikimedia.org/wikipedia/commons/b/b2/A_Berlin_style_D%C3%B6ner_with_a_glass_of_beer_on_side.jpg" class="r-stretch"><p>frequently occurs in: folder, file and repository names.</p>
+</section>
+<section id="functional-programming" class="slide level2">
+<h2>Functional Programming</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1"></a>ds_list <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">iris =</span> iris,</span>
+<span id="cb27-2"><a href="#cb27-2"></a>                <span class="at">mtcars =</span> mtcars)</span>
+<span id="cb27-3"><a href="#cb27-3"></a><span class="fu">lapply</span>(ds_list, summary)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Anonymous Functions</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a><span class="fu">lapply</span>(ds_list, <span class="cf">function</span>(x){</span>
+<span id="cb28-2"><a href="#cb28-2"></a>  <span class="fu">sprintf</span>(</span>
+<span id="cb28-3"><a href="#cb28-3"></a>    <span class="st">"The dataset contains %d observations."</span>,</span>
+<span id="cb28-4"><a href="#cb28-4"></a>    <span class="fu">nrow</span>(x))</span>
+<span id="cb28-5"><a href="#cb28-5"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div><div class="column" style="width:40%;">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>$iris
+[1] 150
+
+$mtcars
+[1] 32</code></pre>
+</div>
+</div>
+<p>Anonymous Functions</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>$iris
+[1] "The dataset contains 150 observations."
+
+$mtcars
+[1] "The dataset contains 32 observations."</code></pre>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="functional-programming-1" class="slide level2">
+<h2>Functional Programming</h2>
+<ul>
+<li><p>for more elaborate examples, such as function factories, take a read the <a href="http://adv-r.had.co.nz/Functional-programming.html">Functional Programming Chapter</a> of Hadley Wickham’s book.</p></li>
+<li><p>Note how R is <em>dynamically typed</em>.</p></li>
+</ul>
+</section>
+<section id="trycatch" class="slide level2">
+<h2>TryCatch</h2>
+<p>Without Safety Net</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a>do_numeric_op <span class="ot">&lt;-</span> <span class="cf">function</span>(a,b){</span>
+<span id="cb31-2"><a href="#cb31-2"></a>  out <span class="ot">&lt;-</span> (a <span class="sc">+</span> b)<span class="sc">*</span>a</span>
+<span id="cb31-3"><a href="#cb31-3"></a>  <span class="fu">message</span>(<span class="fu">sprintf</span>(</span>
+<span id="cb31-4"><a href="#cb31-4"></a>    <span class="st">"'%s', '%s' were your inputs."</span>,</span>
+<span id="cb31-5"><a href="#cb31-5"></a>    a,b)</span>
+<span id="cb31-6"><a href="#cb31-6"></a>    )</span>
+<span id="cb31-7"><a href="#cb31-7"></a>  out</span>
+<span id="cb31-8"><a href="#cb31-8"></a>}</span>
+<span id="cb31-9"><a href="#cb31-9"></a></span>
+<span id="cb31-10"><a href="#cb31-10"></a></span>
+<span id="cb31-11"><a href="#cb31-11"></a><span class="fu">do_numeric_op</span>(<span class="dv">1</span>,<span class="st">"a"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>“Error in a + b : non-numeric argument to binary operator Calls: […]”</p>
+</section>
+<section id="try-catch" class="slide level2">
+<h2>Try Catch</h2>
+<p>With Safety Net</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1"></a>do_numeric_op <span class="ot">&lt;-</span> <span class="cf">function</span>(a,b){</span>
+<span id="cb32-2"><a href="#cb32-2"></a>  </span>
+<span id="cb32-3"><a href="#cb32-3"></a>  <span class="fu">tryCatch</span>({</span>
+<span id="cb32-4"><a href="#cb32-4"></a>    <span class="fu">return</span>((a <span class="sc">+</span> b)<span class="sc">*</span>a)</span>
+<span id="cb32-5"><a href="#cb32-5"></a>  </span>
+<span id="cb32-6"><a href="#cb32-6"></a>  }, <span class="at">error =</span> <span class="cf">function</span>(e) <span class="fu">message</span>(</span>
+<span id="cb32-7"><a href="#cb32-7"></a>    <span class="st">"Operation went wrong, but function is alive."</span></span>
+<span id="cb32-8"><a href="#cb32-8"></a>    )</span>
+<span id="cb32-9"><a href="#cb32-9"></a>  )</span>
+<span id="cb32-10"><a href="#cb32-10"></a>  <span class="fu">sprintf</span>(<span class="st">"'%s', '%s' were your inputs."</span>, a,b)</span>
+<span id="cb32-11"><a href="#cb32-11"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="tips" class="slide level2">
+<h2>Tips</h2>
+<ul>
+<li>Document Before You Start, e.g., write a vignette outline</li>
+<li>use pseudo code or comments to structure</li>
+<li>do not comment on WHAT you do but WHY you do it</li>
+<li>Peer programming in the beginning (make sure to switch who’s on the driver’s seat)</li>
+<li>Reproducible Research (include data)</li>
+</ul>
+</section>
+<section id="hands-on-the-akqjt-task" class="slide level2 center">
+<h2><a href="https://github.com/h4sci/h4sci-tasks/issues/5">Hands on: The AKQJT task</a></h2>
+</section></section>
+<section>
+<section id="packaging" class="title-slide slide level1 center">
+<h1>Packaging</h1>
+
+</section>
+<section id="folder-structure" class="slide level2">
+<h2>Folder Structure</h2>
+<ul>
+<li><strong>R</strong> function definitions</li>
+<li><strong>man</strong> references (functions and datasets)</li>
+<li><strong>docs</strong> Articles for GitHub Pages</li>
+<li><strong>vignettes</strong> Articles’ source, elaborate documentation source</li>
+<li><strong>inst</strong> additional material, installed with package, e.g., sql files</li>
+<li><strong>src</strong> source code that needs to be compiled, e.g., C++</li>
+<li><strong>tests</strong> automated tests (<a href="https://devops-carpentry.github.io/book/programming.html#testing">basic idea in DevOps Carpentry</a>), often created with a testing framework such as <a href="https://cran.r-project.org/web/packages/testthat/index.html">testthat</a> or <a href="https://cran.r-project.org/web/packages/tinytest/index.html">tinytest</a></li>
+</ul>
+</section>
+<section id="further-conventions-ideas" class="slide level2">
+<h2>Further Conventions &amp; Ideas</h2>
+<ul>
+<li>In addition every package needs DESCRIPTION and NAMESPACE file.</li>
+<li>start with an <em>sandbox.R</em> file in the root folder (may be moved to inst/ later on.).</li>
+<li>move functions to the R/ folder once they get more mature (documentation, tested)</li>
+</ul>
 
 <div class="footer footer-default">
 <p>Hacking for Science by Dr.&nbsp;Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></p>
@@ -588,6 +1114,48 @@
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          // dispatch for htmlwidgets
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for reveal
+        if (window.Reveal) {
+          window.Reveal.addEventListener("slidechanged", function(event) {
+            fireSlideChanged(event.previousSlide, event.currentSlide);
+          });
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
