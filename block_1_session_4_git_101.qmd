@@ -54,6 +54,15 @@ Git is a decentralized version control system.
 
 ![](img/decentralized.png)
 
+## A Warning Before You Start
+
+![](img/how_to_quit_vim.png){fig-align="center" height="500"}
+
+::: footer
+Source: [onsizzle](https://pics.onsizzle.com/simon-brunning-brunns-finally-managed-to-quit-vim-the-solution-29657696.png)
+:::
+
+
 
 ## Break Out Session 1:<br> Task 1 Moving Around {.center}
 

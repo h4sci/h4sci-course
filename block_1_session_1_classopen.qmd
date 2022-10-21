@@ -7,9 +7,31 @@ chalkboard: true
 footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)"
 ---
 
+
 ## Hi, I'm Matt.
 
-![](img/matt.jpeg){fig-align="center" height="600"}
+:::: {.columns}
+
+
+::: {.column width="60%" }
+
+- Data Analytics Engineering [@cynkra](https://cynkra.com)
+
+- formerly: architecture of KOF (ETH) data pipelines
+
+- global coordinator for the useR! conference
+
+:::
+
+
+::: {.column width="40%" }
+
+![](img/matt.jpeg){fig-align="center" height="400"}
+
+:::
+
+::::
+
 
 ## James Bond Start 
 
@@ -102,95 +124,6 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 - [R Studio Server](https://teaching.kof.ethz.ch/auth-sign-in) (only available to enrolled ETH students during semester) 
 - [Slack Workspace](https://h4sci.slack.com/) (invite only) 
 - Zoom Live Sessions (only available to ETH students)
-
-
-# Survey Results: Our Starting Point(s)
-
-```{r,echo=FALSE,warning=FALSE,message=FALSE}
-library(ggplot2)
-library(data.table)
-library(RPostgres)
-library(quanteda)
-
-preprocess <- function(df, pattern){
-  pattern_id <- paste0("id|group|",pattern)
-  subs <- df[,grepl(pattern_id, names(df))]
-  names(subs) <- gsub(pattern,"",names(subs))
-  dt <- as.data.table(subs)
-  m <- melt(dt, id.vars = c("id","cgroup"))
-  m
-}
-
-fcon <- file("../intro-survey/.pgpass","r")
-    con <-  dbConnect(drv = Postgres(), dbname = "kofdb", user = "shiny",
-                       host = "archivedb.kof.ethz.ch",
-                      password = readLines(fcon, warn = FALSE))
-o <- dbExecute(con,"SET SEARCH_PATH=teaching")
-
-res <- dbGetQuery(con,"SELECT * FROM responses WHERE year = 2022")
-
-dbDisconnect(con)
-
-```
-
-
-## Survey Results: General
-
-```{r, echo=FALSE}
-
-words <- gsub(" vs. |,,", ",",paste(res$general,collapse = ","))
-
-quanteda.textplots::textplot_wordcloud(dfm(words,remove = ","),
-                             color = rev(viridis::viridis_pal()(6)),
-                             min_count = 1)
-
-
-```
-
-
-
-
-## Survey Results: Languages
-
-```{r, echo=FALSE, fig.width=14}
-
-lang <- preprocess(res, "l_")
-gg_lang <- ggplot(data = lang)
-gg_lang +
-  geom_bar(aes(x = as.factor(value), fill = variable)) +
-  facet_wrap("variable", nrow = 2) + 
-  theme_minimal() +
-  theme(panel.grid.major.x = element_blank(),
-        panel.spacing = unit(4, "lines"),
-        text = element_text(size=15)) +
-  scale_x_discrete(name ="Language",
-                   limits=factor(1:5)) +
-  scale_fill_viridis_d()
-
-
-
-```
-
-
-
-## Survey Results: Workflow
-
-```{r, echo=FALSE, fig.width=14}
-
-wf <- preprocess(res, "w_")
-gg_lang <- ggplot(data = wf)
-gg_lang +
-  geom_bar(aes(x = as.factor(value), fill = variable)) +
-  facet_wrap("variable", nrow = 1) +
-  theme_minimal() +
-  theme(panel.grid.major.x = element_blank(),
-        panel.spacing = unit(4, "lines"),
-        text = element_text(size=15)) +
-  scale_x_discrete(name ="Language",
-                   limits=factor(1:5)) +
-  scale_fill_viridis_d()
-
-
 
 ```
 

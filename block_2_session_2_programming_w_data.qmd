@@ -66,7 +66,7 @@ rnorm(3)
 
 ### Process
 
-- webservers,
+- webservers
 - mobile phones
 - IoT devices
 - tracking tools, e.g., Google Analytics
@@ -167,7 +167,7 @@ rnorm(3)
 ## What DGPs Have You Worked With? What DGPs Do You Expect to Face in Your Work? {.center}
 
 
-# Repesenting Data
+# Representing Data
 
 ## Data Management: Memory, Files, Databases {.center}
 
@@ -260,20 +260,28 @@ to another.
 
 
 
-## Types of Data: Rectangular Datasets
-
-:::: {.columns}
-
-::: {.column width="60%" }
-
-:::
-
-::: {.column width="40%" }
-
-:::
+## Types of Data: Rectangular Datasets {.center}
 
 
-::::
+
+## Cross Sectional Data
+
+```{r}
+head(mtcars)
+
+```
+
+- multiple variables
+- one period
+
+
+## Panel Data
+
+- multiple variables
+- longitudinal
+- e.g., German Socio Economic Panel (GSOEP)
+
+
 
 
 
@@ -284,9 +292,22 @@ to another.
 
 ::: {.column width="60%" }
 
+```{r}
+l <- list()
+l$element1 <- 2
+l$element2 <- head(mtcars[,1:3],4)
+l
+```
+
 :::
 
 ::: {.column width="40%" }
+
+examples:
+
+- [meta information](https://github.com/swissdata/demo), sector classification (hierarchical), GDP components, translations, attributes, properties,
+- [Geo spatial data](https://github.com/mbannert/maps/blob/master/ch_bfs_regions.geojson)
+
 
 :::
 
@@ -295,6 +316,278 @@ to another.
 
 
 ## Hands on: [Block 2, Task 2 -- Trying out different representations](https://github.com/h4sci/h4sci-tasks/issues/6) {.center}
+
+
+# R Three Ecosystems to Manipulate Data
+
+
+## Base R
+
+:::: {.columns}
+
+::: {.column width="40%" }
+
+- vectors, matrices, data.frames 
+- no extensions needed
+- much better than its marketing
+- split, apply, combine approach
+
+:::
+
+::: {.column width="60%" }
+
+
+```{r}
+by_cyl <- split(mtcars, mtcars$cyl)
+out <- lapply(by_cyl,
+              function(x) summary(
+                lm(mpg~.,data = x)
+                )
+              )
+
+str(out, max.level = 1)
+
+```
+
+:::
+
+
+::::
+
+
+## data.table
+
+- [CRAN package](https://cran.r-project.org/web/packages/data.table/index.html)
+- written by Matt Dowle et al.
+- fastest ecosystem, including fwrite/fread for fast disk i/o 
+
+
+```{r, message=FALSE,warning=FALSE, }
+library(data.table)
+dt <- fread("../data/simulated_survey.csv")
+head(dt)
+
+```
+
+## data.table c'd
+
+```{r, message=FALSE,warning=FALSE, eval=FALSE}
+# i, j, by
+dt[, obs_avg := rowMeans(.SD), .SDcols = c("basic", "advanced", "structure")]
+head(dt)
+
+```
+
+
+- SQL reminiscent concept and syntax
+- works with pointers / reference -> it changes objects in place
+
+
+## tidyverse
+
+- dplyr, tibble, .... 
+- [best documentation](https://www.tidyverse.org/)
+- fast
+- uses references, too
+- very popular for interactive use
+- pipe operator: %>% (base R got a pipe in the meantime, too)
+- pretty printing
+
+
+## tidyverse
+
+
+```{r, message=FALSE,warning=FALSE}
+library(dplyr)
+mtcars %>% 
+  filter(cyl > 4) %>% 
+  nrow()
+
+
+```
+
+
+## Block 2, Task 3: [Three R Ecosystems to Manipulate Data](https://github.com/h4sci/h4sci-tasks/issues/7) {.center}
+
+
+
+
+# Databases (DBMS)
+
+## When to Use a Database ? {.center}
+
+## Passive Use
+
+- direct access 
+- no API
+- flexible queries needed
+
+
+## Active Use (in the sense of setting it up, running it)
+
+- as a backend, e.g., survey (transactional database)
+- in research projects when you want to share data inside your lab
+- when you need to restrict access at different levels
+- to expose data through an API (to external collaborators or the public)
+- need to [integrate with different systems / tools and programming languages](https://github.com/mbannert/timeseriesdb/blob/ca3939a5686f0e68bc3d5cb828d0891795a4eac3/inst/sql/create_functions_collections.sql#L63)
+- specific operations, e.g., spatial data
+
+
+
+## Which DBMS Should I Use ?
+
+
+1. **relational** DBMS should be the **default choice**, don't believe me? Believe [him](https://blog.jooq.org/tag/mongodb/). Note, you can use json inside SQL DBs 
+as well. 
+
+2. Which relational DBMS should I Use? 
+- SQLite is for prototypes and mobile phones
+- MySQL is for kids
+- PostgreSQL, MS SQL and Oracle are at the same level for many science
+applications
+
+
+## Can You Explain 'Relational'
+
+
+![](img/timeseriesdb_1_0.png)
+
+
+## Are There Any Disadvantages of Databases?
+
+- You have to maintain them, even if you don't need them
+- more setup overhead: dev and production system(s) needed
+- solid, free solutions are only temporal
+- you need an interface for collaborators who don't speak SQL
+- some really, really, really big datasets may ask for specific methods
+
+
+# Getting Started with Relational Databases (RDBMS)
+
+## Hosting
+
+- localhost (dev only)
+- docker environment 
+- university VM
+- homeserver
+- cloud (either VM and install on your own, or DB specific Cloud)
+
+## Client
+
+- install drivers locally at OS level
+- install client library (R packages are usually wrappers around C interfaces)
+
+## Design
+
+- integrity (think primary key, foreign key for starters) 
+- Draw up a design... [dbdiagram.io](https://dbdiagram.io/) is a fun tool,
+paper & pencil also work pretty well
+
+
+## Start Simple, Catch a Breath of SQL Air with SQLite
+
+
+```{r}
+library(RSQLite)
+db_path = "../data/h4sci.sqlite3"
+con <- dbConnect(RSQLite::SQLite(), db_path)
+dbWriteTable(con, dbQuoteIdentifier(con,"mtcars"), mtcars, overwrite = T)
+dbWriteTable(con, dbQuoteIdentifier(con,"flowers"), iris, overwrite = T)
+
+dbGetQuery(con, "SELECT * FROM flowers LIMIT 3")
+
+
+```
+
+Note: Foreign Key Handling is [very limited in SQLite](https://stackoverflow.com/questions/1884818/how-do-i-add-a-foreign-key-to-an-existing-sqlite-table). 
+
+
+## Example Query
+
+```{r}
+dbGetQuery(con, "SELECT * FROM mtcars WHERE mpg > 30")
+```
+
+## Database Access
+
+
+```{r,eval=FALSE}
+
+library(RSQLite)
+db_path = "../data/h4sci.sqlite3"
+con <- dbConnect(RSQLite::SQLite(),
+                 db_path)
+
+
+```
+
+
+
+```{r, eval=FALSE}
+library(RPostgres)
+con <-  dbConnect(drv = Postgres(),
+                  dbname = "postgres",
+                  user = "postgres",
+                  host = "some.server.or.ip",
+                  password = .rs.askForPassword(
+                    "enter your pw"
+                    )
+                  )
+
+```
+
+
+- Essentially the same interface (DBI)
+- server, files are abstracted away
+- (remote) url
+- host, password, port etc. needed for Postgres
+
+
+
+## Basic SQL Syntax
+
+```sql
+SELECT * FROM schema.table;
+
+INSERT INTO schema.table VALUES ('abc',2,3);
+
+SELECT name, salary FROM staff
+WHERE position = 'manager'
+ORDER BY salary DESC;
+
+
+```
+
+- '*' SELECTs all data from a given table
+- INSERTs values to a table while checking integrity (data types)
+- SELECTs name and salary from table staff for all managers and 
+orders the output by salary from highest to lowest
+
+
+## Further Reads
+
+- [SQLite Tutorial](https://www.sqlitetutorial.net/)
+- [PostgreSQL 15 Documentation](https://www.postgresql.org/docs/12/index.html) (Jump in at 'table basics')
+- [Vignettes of the {dm} package](https://cran.r-project.org/web/packages/dm/index.html), in particular the [data.frame to dm part](https://cran.r-project.org/web/packages/dm/vignettes/howto-dm-df.html)
+
+
+
+## Hands on: Block 2, Task 4: [A Little SQL](https://github.com/h4sci/h4sci-tasks/issues/8) {.center}
+
+
+## How to Work with an Application Programming Interface (API)
+
+1. RTFM
+
+2. Experiment 'per pedes'
+
+3. Write a Wrapper if it does not exist
+
+4. Use the Wrapper
+
+
+Here is [an R example](https://github.com/h4sci/h4sci-tasks/blob/main/demo/met_api.R) to get `r emojifont::emoji("umbrella") ` images from the 
+MET collection. 
 
 
 
