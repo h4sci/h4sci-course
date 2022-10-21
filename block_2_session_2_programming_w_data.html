@@ -28,6 +28,70 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css" id="theme">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -327,7 +391,7 @@
 
 <section id="title-slide" class="center">
   <h1 class="title">Hacking for Science</h1>
-  <p class="subtitle">Block 2, Session 1: R Programming 101</p>
+  <p class="subtitle">Block 2, Session 2: Programming with Data</p>
   <p class="author">Matt Bannert (<a href="https://twitter.com/whatsgoodio"><span class="citation" data-cites="whatsgoodio">@whatsgoodio</span></a>)</p>
 </section>
 
@@ -338,38 +402,520 @@
 </section>
 <section id="simulation" class="slide level2">
 <h2>Simulation</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<h3 id="why">Why</h3>
+<ul>
+<li>Analyzing Complex Systems</li>
+<li>Demos</li>
+<li>Proposals / Grants</li>
+<li>reproducible examples, <a href="https://reprex.tidyverse.org/">reprex R package</a></li>
+</ul>
+</div><div class="column" style="width:60%;">
+<h3 id="process">Process</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">rnorm</span>(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] -0.5604756 -0.2301775  1.5587083</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="fu">rnorm</span>(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] -0.6264538  0.1836433 -0.8356286</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="fu">rnorm</span>(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] -0.5604756 -0.2301775  1.5587083</code></pre>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="logging-tracking" class="slide level2">
 <h2>Logging / Tracking</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<h3 id="process-1">Process</h3>
+<ul>
+<li>webservers</li>
+<li>mobile phones</li>
+<li>IoT devices</li>
+<li>tracking tools, e.g., Google Analytics</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<h3 id="form-of-resulting-data">Form of Resulting Data</h3>
+<ul>
+<li>text files</li>
+<li>granular</li>
+<li>event based</li>
+<li>biased (tracking)</li>
+</ul>
+</div>
+</div>
 </section>
 <section id="surveys" class="slide level2">
 <h2>Surveys</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li>multi mode surveys (paper / online forms)</li>
+<li>Recordings</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<h3 id="form-of-resulting-data-1">Form of Resulting Data</h3>
+<ul>
+<li>rectangular data (1-line-1-observation)</li>
+<li>text</li>
+<li>cross sectional</li>
+<li>longitudinal data</li>
+</ul>
+</div>
+</div>
 </section>
 <section id="apis-web-scraping" class="slide level2">
 <h2>APIs &amp; Web Scraping</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<h3 id="process-2">Process</h3>
+<ul>
+<li>Automated, regular updates</li>
+<li>Transformation of structured data into analysis friendly datasets (regular expressions, DOM extraction)</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<h3 id="form-of-resulting-data-2">Form of Resulting Data</h3>
+<ul>
+<li>text strings</li>
+<li>nested data</li>
+<li>standardized data</li>
+</ul>
+</div>
+</div>
 </section>
 <section id="what-dgps-have-you-worked-with-what-dgps-do-you-expect-to-face-in-your-work" class="slide level2 center">
 <h2>What DGPs Have You Worked With? What DGPs Do You Expect to Face in Your Work?</h2>
 </section></section>
 <section>
-<section id="repesenting-data" class="title-slide slide level1 center">
-<h1>Repesenting Data</h1>
+<section id="representing-data" class="title-slide slide level1 center">
+<h1>Representing Data</h1>
 
 </section>
-<section id="data-management-memory-files-databases" class="slide level2">
+<section id="data-management-memory-files-databases" class="slide level2 center">
 <h2>Data Management: Memory, Files, Databases</h2>
+</section>
+<section id="in-memory" class="slide level2">
+<h2>In Memory</h2>
+<ul>
+<li>vector</li>
+<li>matrix</li>
+<li>data.frame / data.table / tibble</li>
+<li>list</li>
+<li>environment</li>
+</ul>
+</section>
+<section id="on-disk" class="slide level2">
+<h2>On Disk</h2>
+<ul>
+<li>.RData</li>
+<li>.parquet</li>
+<li>feather</li>
+<li>.xlsx</li>
+<li>.csv</li>
+<li>.json</li>
+<li>.xml</li>
+</ul>
+</section>
+<section id="in-a-database" class="slide level2">
+<h2>In a Database</h2>
+<ul>
+<li>interface</li>
+<li>query language, e.g., SQL</li>
+</ul>
 </section>
 <section id="types-of-data-time-series" class="slide level2">
 <h2>Types of Data: Time Series</h2>
+<style>
+.smaller {
+  font-size: .55em
+}
+
+
+</style>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="fu">library</span>(kofdata)</span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="fu">library</span>(tstools)</span>
+<span id="cb7-3"><a href="#cb7-3"></a></span>
+<span id="cb7-4"><a href="#cb7-4"></a>tsl <span class="ot">&lt;-</span> <span class="fu">window</span>(<span class="fu">get_time_series</span>(<span class="st">"ch.kof.barometer"</span>))</span>
+<span id="cb7-5"><a href="#cb7-5"></a><span class="fu">tsplot</span>(<span class="st">"KOF Barometer"</span> <span class="ot">=</span> </span>
+<span id="cb7-6"><a href="#cb7-6"></a>         <span class="fu">window</span>(tsl<span class="sc">$</span>ch.kof.barometer,</span>
+<span id="cb7-7"><a href="#cb7-7"></a>                <span class="at">start =</span> <span class="fu">c</span>(<span class="dv">2010</span>,<span class="dv">1</span>))</span>
+<span id="cb7-8"><a href="#cb7-8"></a>       )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img data-src="block_2_session_2_programming_w_data_files/figure-revealjs/unnamed-chunk-2-1.png" width="960"></p>
+</div>
+</div>
+</div><div class="column smaller" style="width:40%;">
+<p><strong>in memory</strong></p>
+<ul>
+<li>ts</li>
+<li>xts</li>
+<li>tsibble</li>
+<li>zoo</li>
+</ul>
+<blockquote>
+<p>(!) Try out the <code>tsbox</code> R package to easily switch from one representation to another.</p>
+</blockquote>
+<p><strong>on disk</strong></p>
+<ul>
+<li><a href="https://github.com/swissdata/demo">.csv</a> (long format, wide format)</li>
+<li><a href="https://www.nsdp.admin.ch/variable/72.xml">.xml</a></li>
+<li>.json</li>
+<li>.RData</li>
+</ul>
+</div>
+</div>
 </section>
-<section id="types-of-data-rectangular-datasets" class="slide level2">
+<section id="types-of-data-rectangular-datasets" class="slide level2 center">
 <h2>Types of Data: Rectangular Datasets</h2>
+</section>
+<section id="cross-sectional-data" class="slide level2">
+<h2>Cross Sectional Data</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">head</span>(mtcars)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                   mpg cyl disp  hp drat    wt  qsec vs am gear carb
+Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre>
+</div>
+</div>
+<ul>
+<li>multiple variables</li>
+<li>one period</li>
+</ul>
+</section>
+<section id="panel-data" class="slide level2">
+<h2>Panel Data</h2>
+<ul>
+<li>multiple variables</li>
+<li>longitudinal</li>
+<li>e.g., German Socio Economic Panel (GSOEP)</li>
+</ul>
 </section>
 <section id="types-of-data-nested-data" class="slide level2">
 <h2>Types of Data: Nested Data</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a>l <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb10-2"><a href="#cb10-2"></a>l<span class="sc">$</span>element1 <span class="ot">&lt;-</span> <span class="dv">2</span></span>
+<span id="cb10-3"><a href="#cb10-3"></a>l<span class="sc">$</span>element2 <span class="ot">&lt;-</span> <span class="fu">head</span>(mtcars[,<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>],<span class="dv">4</span>)</span>
+<span id="cb10-4"><a href="#cb10-4"></a>l</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$element1
+[1] 2
+
+$element2
+                mpg cyl disp
+Mazda RX4      21.0   6  160
+Mazda RX4 Wag  21.0   6  160
+Datsun 710     22.8   4  108
+Hornet 4 Drive 21.4   6  258</code></pre>
+</div>
+</div>
+</div><div class="column" style="width:40%;">
+<p>examples:</p>
+<ul>
+<li><a href="https://github.com/swissdata/demo">meta information</a>, sector classification (hierarchical), GDP components, translations, attributes, properties,</li>
+<li><a href="https://github.com/mbannert/maps/blob/master/ch_bfs_regions.geojson">Geo spatial data</a></li>
+</ul>
+</div>
+</div>
 </section>
 <section id="hands-on-block-2-task-2-trying-out-different-representations" class="slide level2 center">
 <h2>Hands on: <a href="https://github.com/h4sci/h4sci-tasks/issues/6">Block 2, Task 2 – Trying out different representations</a></h2>
+</section></section>
+<section>
+<section id="r-three-ecosystems-to-manipulate-data" class="title-slide slide level1 center">
+<h1>R Three Ecosystems to Manipulate Data</h1>
+
+</section>
+<section id="base-r" class="slide level2">
+<h2>Base R</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li>vectors, matrices, data.frames</li>
+<li>no extensions needed</li>
+<li>much better than its marketing</li>
+<li>split, apply, combine approach</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a>by_cyl <span class="ot">&lt;-</span> <span class="fu">split</span>(mtcars, mtcars<span class="sc">$</span>cyl)</span>
+<span id="cb12-2"><a href="#cb12-2"></a>out <span class="ot">&lt;-</span> <span class="fu">lapply</span>(by_cyl,</span>
+<span id="cb12-3"><a href="#cb12-3"></a>              <span class="cf">function</span>(x) <span class="fu">summary</span>(</span>
+<span id="cb12-4"><a href="#cb12-4"></a>                <span class="fu">lm</span>(mpg<span class="sc">~</span>.,<span class="at">data =</span> x)</span>
+<span id="cb12-5"><a href="#cb12-5"></a>                )</span>
+<span id="cb12-6"><a href="#cb12-6"></a>              )</span>
+<span id="cb12-7"><a href="#cb12-7"></a></span>
+<span id="cb12-8"><a href="#cb12-8"></a><span class="fu">str</span>(out, <span class="at">max.level =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>List of 3
+ $ 4:List of 11
+  ..- attr(*, "class")= chr "summary.lm"
+ $ 6:List of 11
+  ..- attr(*, "class")= chr "summary.lm"
+ $ 8:List of 11
+  ..- attr(*, "class")= chr "summary.lm"</code></pre>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="data.table" class="slide level2">
+<h2>data.table</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/data.table/index.html">CRAN package</a></li>
+<li>written by Matt Dowle et al.</li>
+<li>fastest ecosystem, including fwrite/fread for fast disk i/o</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">library</span>(data.table)</span>
+<span id="cb14-2"><a href="#cb14-2"></a>dt <span class="ot">&lt;-</span> <span class="fu">fread</span>(<span class="st">"../data/simulated_survey.csv"</span>)</span>
+<span id="cb14-3"><a href="#cb14-3"></a><span class="fu">head</span>(dt)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   basic advanced structure id
+1:     2        3         3  1
+2:     3        5         3  2
+3:     3        3         5  3
+4:     4        3         2  4
+5:     5        4         3  5
+6:     3        4         2  6</code></pre>
+</div>
+</div>
+</section>
+<section id="data.table-cd" class="slide level2">
+<h2>data.table c’d</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a><span class="co"># i, j, by</span></span>
+<span id="cb16-2"><a href="#cb16-2"></a>dt[, obs_avg <span class="sc">:</span><span class="er">=</span> <span class="fu">rowMeans</span>(.SD), .SDcols <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"basic"</span>, <span class="st">"advanced"</span>, <span class="st">"structure"</span>)]</span>
+<span id="cb16-3"><a href="#cb16-3"></a><span class="fu">head</span>(dt)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>SQL reminiscent concept and syntax</li>
+<li>works with pointers / reference -&gt; it changes objects in place</li>
+</ul>
+</section>
+<section id="tidyverse" class="slide level2">
+<h2>tidyverse</h2>
+<ul>
+<li>dplyr, tibble, ….</li>
+<li><a href="https://www.tidyverse.org/">best documentation</a></li>
+<li>fast</li>
+<li>uses references, too</li>
+<li>very popular for interactive use</li>
+<li>pipe operator: %&gt;% (base R got a pipe in the meantime, too)</li>
+<li>pretty printing</li>
+</ul>
+</section>
+<section id="tidyverse-1" class="slide level2">
+<h2>tidyverse</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb17-2"><a href="#cb17-2"></a>mtcars <span class="sc">%&gt;%</span> </span>
+<span id="cb17-3"><a href="#cb17-3"></a>  <span class="fu">filter</span>(cyl <span class="sc">&gt;</span> <span class="dv">4</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb17-4"><a href="#cb17-4"></a>  <span class="fu">nrow</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 21</code></pre>
+</div>
+</div>
+</section>
+<section id="block-2-task-3-three-r-ecosystems-to-manipulate-data" class="slide level2 center">
+<h2>Block 2, Task 3: <a href="https://github.com/h4sci/h4sci-tasks/issues/7">Three R Ecosystems to Manipulate Data</a></h2>
+</section></section>
+<section>
+<section id="databases-dbms" class="title-slide slide level1 center">
+<h1>Databases (DBMS)</h1>
+
+</section>
+<section id="when-to-use-a-database" class="slide level2 center">
+<h2>When to Use a Database ?</h2>
+</section>
+<section id="passive-use" class="slide level2">
+<h2>Passive Use</h2>
+<ul>
+<li>direct access</li>
+<li>no API</li>
+<li>flexible queries needed</li>
+</ul>
+</section>
+<section id="active-use-in-the-sense-of-setting-it-up-running-it" class="slide level2">
+<h2>Active Use (in the sense of setting it up, running it)</h2>
+<ul>
+<li>as a backend, e.g., survey (transactional database)</li>
+<li>in research projects when you want to share data inside your lab</li>
+<li>when you need to restrict access at different levels</li>
+<li>to expose data through an API (to external collaborators or the public)</li>
+<li>need to <a href="https://github.com/mbannert/timeseriesdb/blob/ca3939a5686f0e68bc3d5cb828d0891795a4eac3/inst/sql/create_functions_collections.sql#L63">integrate with different systems / tools and programming languages</a></li>
+<li>specific operations, e.g., spatial data</li>
+</ul>
+</section>
+<section id="which-dbms-should-i-use" class="slide level2">
+<h2>Which DBMS Should I Use ?</h2>
+<ol type="1">
+<li><p><strong>relational</strong> DBMS should be the <strong>default choice</strong>, don’t believe me? Believe <a href="https://blog.jooq.org/tag/mongodb/">him</a>. Note, you can use json inside SQL DBs as well.</p></li>
+<li><p>Which relational DBMS should I Use?</p></li>
+</ol>
+<ul>
+<li>SQLite is for prototypes and mobile phones</li>
+<li>MySQL is for kids</li>
+<li>PostgreSQL, MS SQL and Oracle are at the same level for many science applications</li>
+</ul>
+</section>
+<section id="can-you-explain-relational" class="slide level2">
+<h2>Can You Explain ‘Relational’</h2>
+
+<img data-src="img/timeseriesdb_1_0.png" class="r-stretch"></section>
+<section id="are-there-any-disadvantages-of-databases" class="slide level2">
+<h2>Are There Any Disadvantages of Databases?</h2>
+<ul>
+<li>You have to maintain them, even if you don’t need them</li>
+<li>more setup overhead: dev and production system(s) needed</li>
+<li>solid, free solutions are only temporal</li>
+<li>you need an interface for collaborators who don’t speak SQL</li>
+<li>some really, really, really big datasets may ask for specific methods</li>
+</ul>
+</section></section>
+<section>
+<section id="getting-started-with-relational-databases-rdbms" class="title-slide slide level1 center">
+<h1>Getting Started with Relational Databases (RDBMS)</h1>
+
+</section>
+<section id="hosting" class="slide level2">
+<h2>Hosting</h2>
+<ul>
+<li>localhost (dev only)</li>
+<li>docker environment</li>
+<li>university VM</li>
+<li>homeserver</li>
+<li>cloud (either VM and install on your own, or DB specific Cloud)</li>
+</ul>
+</section>
+<section id="client" class="slide level2">
+<h2>Client</h2>
+<ul>
+<li>install drivers locally at OS level</li>
+<li>install client library (R packages are usually wrappers around C interfaces)</li>
+</ul>
+</section>
+<section id="design" class="slide level2">
+<h2>Design</h2>
+<ul>
+<li>integrity (think primary key, foreign key for starters)</li>
+<li>Draw up a design… <a href="https://dbdiagram.io/">dbdiagram.io</a> is a fun tool, paper &amp; pencil also work pretty well</li>
+</ul>
+</section>
+<section id="start-simple-catch-a-breath-of-sql-air-with-sqlite" class="slide level2">
+<h2>Start Simple, Catch a Breath of SQL Air with SQLite</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a><span class="fu">library</span>(RSQLite)</span>
+<span id="cb19-2"><a href="#cb19-2"></a>db_path <span class="ot">=</span> <span class="st">"../data/h4sci.sqlite3"</span></span>
+<span id="cb19-3"><a href="#cb19-3"></a>con <span class="ot">&lt;-</span> <span class="fu">dbConnect</span>(RSQLite<span class="sc">::</span><span class="fu">SQLite</span>(), db_path)</span>
+<span id="cb19-4"><a href="#cb19-4"></a><span class="fu">dbWriteTable</span>(con, <span class="fu">dbQuoteIdentifier</span>(con,<span class="st">"mtcars"</span>), mtcars, <span class="at">overwrite =</span> T)</span>
+<span id="cb19-5"><a href="#cb19-5"></a><span class="fu">dbWriteTable</span>(con, <span class="fu">dbQuoteIdentifier</span>(con,<span class="st">"flowers"</span>), iris, <span class="at">overwrite =</span> T)</span>
+<span id="cb19-6"><a href="#cb19-6"></a></span>
+<span id="cb19-7"><a href="#cb19-7"></a><span class="fu">dbGetQuery</span>(con, <span class="st">"SELECT * FROM flowers LIMIT 3"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+1          5.1         3.5          1.4         0.2  setosa
+2          4.9         3.0          1.4         0.2  setosa
+3          4.7         3.2          1.3         0.2  setosa</code></pre>
+</div>
+</div>
+<p>Note: Foreign Key Handling is <a href="https://stackoverflow.com/questions/1884818/how-do-i-add-a-foreign-key-to-an-existing-sqlite-table">very limited in SQLite</a>.</p>
+</section>
+<section id="example-query" class="slide level2">
+<h2>Example Query</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a><span class="fu">dbGetQuery</span>(con, <span class="st">"SELECT * FROM mtcars WHERE mpg &gt; 30"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   mpg cyl disp  hp drat    wt  qsec vs am gear carb
+1 32.4   4 78.7  66 4.08 2.200 19.47  1  1    4    1
+2 30.4   4 75.7  52 4.93 1.615 18.52  1  1    4    2
+3 33.9   4 71.1  65 4.22 1.835 19.90  1  1    4    1
+4 30.4   4 95.1 113 3.77 1.513 16.90  1  1    5    2</code></pre>
+</div>
+</div>
+</section>
+<section id="database-access" class="slide level2">
+<h2>Database Access</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a><span class="fu">library</span>(RSQLite)</span>
+<span id="cb23-2"><a href="#cb23-2"></a>db_path <span class="ot">=</span> <span class="st">"../data/h4sci.sqlite3"</span></span>
+<span id="cb23-3"><a href="#cb23-3"></a>con <span class="ot">&lt;-</span> <span class="fu">dbConnect</span>(RSQLite<span class="sc">::</span><span class="fu">SQLite</span>(),</span>
+<span id="cb23-4"><a href="#cb23-4"></a>                 db_path)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a><span class="fu">library</span>(RPostgres)</span>
+<span id="cb24-2"><a href="#cb24-2"></a>con <span class="ot">&lt;-</span>  <span class="fu">dbConnect</span>(<span class="at">drv =</span> <span class="fu">Postgres</span>(),</span>
+<span id="cb24-3"><a href="#cb24-3"></a>                  <span class="at">dbname =</span> <span class="st">"postgres"</span>,</span>
+<span id="cb24-4"><a href="#cb24-4"></a>                  <span class="at">user =</span> <span class="st">"postgres"</span>,</span>
+<span id="cb24-5"><a href="#cb24-5"></a>                  <span class="at">host =</span> <span class="st">"some.server.or.ip"</span>,</span>
+<span id="cb24-6"><a href="#cb24-6"></a>                  <span class="at">password =</span> <span class="fu">.rs.askForPassword</span>(</span>
+<span id="cb24-7"><a href="#cb24-7"></a>                    <span class="st">"enter your pw"</span></span>
+<span id="cb24-8"><a href="#cb24-8"></a>                    )</span>
+<span id="cb24-9"><a href="#cb24-9"></a>                  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Essentially the same interface (DBI)</li>
+<li>server, files are abstracted away</li>
+<li>(remote) url</li>
+<li>host, password, port etc. needed for Postgres</li>
+</ul>
+</section>
+<section id="basic-sql-syntax" class="slide level2">
+<h2>Basic SQL Syntax</h2>
+<div class="sourceCode" id="cb25"><pre class="sourceCode numberSource sql number-lines code-with-copy"><code class="sourceCode sql"><span id="cb25-1"><a href="#cb25-1"></a><span class="kw">SELECT</span> <span class="op">*</span> <span class="kw">FROM</span> <span class="kw">schema</span>.<span class="kw">table</span>;</span>
+<span id="cb25-2"><a href="#cb25-2"></a></span>
+<span id="cb25-3"><a href="#cb25-3"></a><span class="kw">INSERT</span> <span class="kw">INTO</span> <span class="kw">schema</span>.<span class="kw">table</span> <span class="kw">VALUES</span> (<span class="st">'abc'</span>,<span class="dv">2</span>,<span class="dv">3</span>);</span>
+<span id="cb25-4"><a href="#cb25-4"></a></span>
+<span id="cb25-5"><a href="#cb25-5"></a><span class="kw">SELECT</span> name, salary <span class="kw">FROM</span> staff</span>
+<span id="cb25-6"><a href="#cb25-6"></a><span class="kw">WHERE</span> position <span class="op">=</span> <span class="st">'manager'</span></span>
+<span id="cb25-7"><a href="#cb25-7"></a><span class="kw">ORDER</span> <span class="kw">BY</span> salary <span class="kw">DESC</span>;</span>
+<span id="cb25-8"><a href="#cb25-8"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>’*’ SELECTs all data from a given table</li>
+<li>INSERTs values to a table while checking integrity (data types)</li>
+<li>SELECTs name and salary from table staff for all managers and orders the output by salary from highest to lowest</li>
+</ul>
+</section>
+<section id="further-reads" class="slide level2">
+<h2>Further Reads</h2>
+<ul>
+<li><a href="https://www.sqlitetutorial.net/">SQLite Tutorial</a></li>
+<li><a href="https://www.postgresql.org/docs/12/index.html">PostgreSQL 15 Documentation</a> (Jump in at ‘table basics’)</li>
+<li><a href="https://cran.r-project.org/web/packages/dm/index.html">Vignettes of the {dm} package</a>, in particular the <a href="https://cran.r-project.org/web/packages/dm/vignettes/howto-dm-df.html">data.frame to dm part</a></li>
+</ul>
+</section>
+<section id="hands-on-block-2-task-4-a-little-sql" class="slide level2 center">
+<h2>Hands on: Block 2, Task 4: <a href="https://github.com/h4sci/h4sci-tasks/issues/8">A Little SQL</a></h2>
+</section>
+<section id="how-to-work-with-an-application-programming-interface-api" class="slide level2">
+<h2>How to Work with an Application Programming Interface (API)</h2>
+<ol type="1">
+<li><p>RTFM</p></li>
+<li><p>Experiment ‘per pedes’</p></li>
+<li><p>Write a Wrapper if it does not exist</p></li>
+<li><p>Use the Wrapper</p></li>
+</ol>
+<p>Here is <a href="https://github.com/h4sci/h4sci-tasks/blob/main/demo/met_api.R">an R example</a> to get ☔️ images from the MET collection.</p>
 
 <div class="footer footer-default">
 <p>Hacking for Science by Dr.&nbsp;Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></p>
@@ -588,6 +1134,48 @@
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          // dispatch for htmlwidgets
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for reveal
+        if (window.Reveal) {
+          window.Reveal.addEventListener("slidechanged", function(event) {
+            fireSlideChanged(event.previousSlide, event.currentSlide);
+          });
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

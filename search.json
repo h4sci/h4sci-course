@@ -536,28 +536,28 @@
     "href": "block_2_session_2_programming_w_data.html#simulation",
     "title": "Hacking for Science",
     "section": "Simulation",
-    "text": "Simulation"
+    "text": "Simulation\n\n\nWhy\n\nAnalyzing Complex Systems\nDemos\nProposals / Grants\nreproducible examples, reprex R package\n\n\nProcess\n\nset.seed(123)\nrnorm(3)\n\n[1] -0.5604756 -0.2301775  1.5587083\n\nset.seed(1)\nrnorm(3)\n\n[1] -0.6264538  0.1836433 -0.8356286\n\nset.seed(123)\nrnorm(3)\n\n[1] -0.5604756 -0.2301775  1.5587083"
   },
   {
     "objectID": "block_2_session_2_programming_w_data.html#logging-tracking",
     "href": "block_2_session_2_programming_w_data.html#logging-tracking",
     "title": "Hacking for Science",
     "section": "Logging / Tracking",
-    "text": "Logging / Tracking"
+    "text": "Logging / Tracking\n\n\nProcess\n\nwebservers\nmobile phones\nIoT devices\ntracking tools, e.g., Google Analytics\n\n\nForm of Resulting Data\n\ntext files\ngranular\nevent based\nbiased (tracking)"
   },
   {
     "objectID": "block_2_session_2_programming_w_data.html#surveys",
     "href": "block_2_session_2_programming_w_data.html#surveys",
     "title": "Hacking for Science",
     "section": "Surveys",
-    "text": "Surveys"
+    "text": "Surveys\n\n\n\nmulti mode surveys (paper / online forms)\nRecordings\n\n\nForm of Resulting Data\n\nrectangular data (1-line-1-observation)\ntext\ncross sectional\nlongitudinal data"
   },
   {
     "objectID": "block_2_session_2_programming_w_data.html#apis-web-scraping",
     "href": "block_2_session_2_programming_w_data.html#apis-web-scraping",
     "title": "Hacking for Science",
     "section": "APIs & Web Scraping",
-    "text": "APIs & Web Scraping"
+    "text": "APIs & Web Scraping\n\n\nProcess\n\nAutomated, regular updates\nTransformation of structured data into analysis friendly datasets (regular expressions, DOM extraction)\n\n\nForm of Resulting Data\n\ntext strings\nnested data\nstandardized data"
   },
   {
     "objectID": "block_2_session_2_programming_w_data.html#what-dgps-have-you-worked-with-what-dgps-do-you-expect-to-face-in-your-work",
@@ -574,11 +574,32 @@
     "text": "Data Management: Memory, Files, Databases"
   },
   {
+    "objectID": "block_2_session_2_programming_w_data.html#in-memory",
+    "href": "block_2_session_2_programming_w_data.html#in-memory",
+    "title": "Hacking for Science",
+    "section": "In Memory",
+    "text": "In Memory\n\nvector\nmatrix\ndata.frame / data.table / tibble\nlist\nenvironment"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#on-disk",
+    "href": "block_2_session_2_programming_w_data.html#on-disk",
+    "title": "Hacking for Science",
+    "section": "On Disk",
+    "text": "On Disk\n\n.RData\n.parquet\nfeather\n.xlsx\n.csv\n.json\n.xml"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#in-a-database",
+    "href": "block_2_session_2_programming_w_data.html#in-a-database",
+    "title": "Hacking for Science",
+    "section": "In a Database",
+    "text": "In a Database\n\ninterface\nquery language, e.g., SQL"
+  },
+  {
     "objectID": "block_2_session_2_programming_w_data.html#types-of-data-time-series",
     "href": "block_2_session_2_programming_w_data.html#types-of-data-time-series",
     "title": "Hacking for Science",
     "section": "Types of Data: Time Series",
-    "text": "Types of Data: Time Series"
+    "text": "Types of Data: Time Series\n\n\n\n\nlibrary(kofdata)\nlibrary(tstools)\n\ntsl <- window(get_time_series(\"ch.kof.barometer\"))\ntsplot(\"KOF Barometer\" = \n         window(tsl$ch.kof.barometer,\n                start = c(2010,1))\n       )\n\n\n\n\n\nin memory\n\nts\nxts\ntsibble\nzoo\n\n\n(!) Try out the tsbox R package to easily switch from one representation to another.\n\non disk\n\n.csv (long format, wide format)\n.xml\n.json\n.RData"
   },
   {
     "objectID": "block_2_session_2_programming_w_data.html#types-of-data-rectangular-datasets",
@@ -588,17 +609,185 @@
     "text": "Types of Data: Rectangular Datasets"
   },
   {
+    "objectID": "block_2_session_2_programming_w_data.html#cross-sectional-data",
+    "href": "block_2_session_2_programming_w_data.html#cross-sectional-data",
+    "title": "Hacking for Science",
+    "section": "Cross Sectional Data",
+    "text": "Cross Sectional Data\n\nhead(mtcars)\n\n                   mpg cyl disp  hp drat    wt  qsec vs am gear carb\nMazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2\nValiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1\n\n\n\nmultiple variables\none period"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#panel-data",
+    "href": "block_2_session_2_programming_w_data.html#panel-data",
+    "title": "Hacking for Science",
+    "section": "Panel Data",
+    "text": "Panel Data\n\nmultiple variables\nlongitudinal\ne.g., German Socio Economic Panel (GSOEP)"
+  },
+  {
     "objectID": "block_2_session_2_programming_w_data.html#types-of-data-nested-data",
     "href": "block_2_session_2_programming_w_data.html#types-of-data-nested-data",
     "title": "Hacking for Science",
     "section": "Types of Data: Nested Data",
-    "text": "Types of Data: Nested Data"
+    "text": "Types of Data: Nested Data\n\n\n\nl <- list()\nl$element1 <- 2\nl$element2 <- head(mtcars[,1:3],4)\nl\n\n$element1\n[1] 2\n\n$element2\n                mpg cyl disp\nMazda RX4      21.0   6  160\nMazda RX4 Wag  21.0   6  160\nDatsun 710     22.8   4  108\nHornet 4 Drive 21.4   6  258\n\n\n\nexamples:\n\nmeta information, sector classification (hierarchical), GDP components, translations, attributes, properties,\nGeo spatial data"
   },
   {
     "objectID": "block_2_session_2_programming_w_data.html#hands-on-block-2-task-2-trying-out-different-representations",
     "href": "block_2_session_2_programming_w_data.html#hands-on-block-2-task-2-trying-out-different-representations",
     "title": "Hacking for Science",
     "section": "Hands on: Block 2, Task 2 – Trying out different representations",
-    "text": "Hands on: Block 2, Task 2 – Trying out different representations\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
+    "text": "Hands on: Block 2, Task 2 – Trying out different representations"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#base-r",
+    "href": "block_2_session_2_programming_w_data.html#base-r",
+    "title": "Hacking for Science",
+    "section": "Base R",
+    "text": "Base R\n\n\n\nvectors, matrices, data.frames\nno extensions needed\nmuch better than its marketing\nsplit, apply, combine approach\n\n\n\nby_cyl <- split(mtcars, mtcars$cyl)\nout <- lapply(by_cyl,\n              function(x) summary(\n                lm(mpg~.,data = x)\n                )\n              )\n\nstr(out, max.level = 1)\n\nList of 3\n $ 4:List of 11\n  ..- attr(*, \"class\")= chr \"summary.lm\"\n $ 6:List of 11\n  ..- attr(*, \"class\")= chr \"summary.lm\"\n $ 8:List of 11\n  ..- attr(*, \"class\")= chr \"summary.lm\""
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#data.table",
+    "href": "block_2_session_2_programming_w_data.html#data.table",
+    "title": "Hacking for Science",
+    "section": "data.table",
+    "text": "data.table\n\nCRAN package\nwritten by Matt Dowle et al.\nfastest ecosystem, including fwrite/fread for fast disk i/o\n\n\nlibrary(data.table)\ndt <- fread(\"../data/simulated_survey.csv\")\nhead(dt)\n\n   basic advanced structure id\n1:     2        3         3  1\n2:     3        5         3  2\n3:     3        3         5  3\n4:     4        3         2  4\n5:     5        4         3  5\n6:     3        4         2  6"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#data.table-cd",
+    "href": "block_2_session_2_programming_w_data.html#data.table-cd",
+    "title": "Hacking for Science",
+    "section": "data.table c’d",
+    "text": "data.table c’d\n\n# i, j, by\ndt[, obs_avg := rowMeans(.SD), .SDcols = c(\"basic\", \"advanced\", \"structure\")]\nhead(dt)\n\n\nSQL reminiscent concept and syntax\nworks with pointers / reference -> it changes objects in place"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#tidyverse",
+    "href": "block_2_session_2_programming_w_data.html#tidyverse",
+    "title": "Hacking for Science",
+    "section": "tidyverse",
+    "text": "tidyverse\n\ndplyr, tibble, ….\nbest documentation\nfast\nuses references, too\nvery popular for interactive use\npipe operator: %>% (base R got a pipe in the meantime, too)\npretty printing"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#tidyverse-1",
+    "href": "block_2_session_2_programming_w_data.html#tidyverse-1",
+    "title": "Hacking for Science",
+    "section": "tidyverse",
+    "text": "tidyverse\n\nlibrary(dplyr)\nmtcars %>% \n  filter(cyl > 4) %>% \n  nrow()\n\n[1] 21"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#block-2-task-3-three-r-ecosystems-to-manipulate-data",
+    "href": "block_2_session_2_programming_w_data.html#block-2-task-3-three-r-ecosystems-to-manipulate-data",
+    "title": "Hacking for Science",
+    "section": "Block 2, Task 3: Three R Ecosystems to Manipulate Data",
+    "text": "Block 2, Task 3: Three R Ecosystems to Manipulate Data"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#when-to-use-a-database",
+    "href": "block_2_session_2_programming_w_data.html#when-to-use-a-database",
+    "title": "Hacking for Science",
+    "section": "When to Use a Database ?",
+    "text": "When to Use a Database ?"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#passive-use",
+    "href": "block_2_session_2_programming_w_data.html#passive-use",
+    "title": "Hacking for Science",
+    "section": "Passive Use",
+    "text": "Passive Use\n\ndirect access\nno API\nflexible queries needed"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#active-use-in-the-sense-of-setting-it-up-running-it",
+    "href": "block_2_session_2_programming_w_data.html#active-use-in-the-sense-of-setting-it-up-running-it",
+    "title": "Hacking for Science",
+    "section": "Active Use (in the sense of setting it up, running it)",
+    "text": "Active Use (in the sense of setting it up, running it)\n\nas a backend, e.g., survey (transactional database)\nin research projects when you want to share data inside your lab\nwhen you need to restrict access at different levels\nto expose data through an API (to external collaborators or the public)\nneed to integrate with different systems / tools and programming languages\nspecific operations, e.g., spatial data"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#which-dbms-should-i-use",
+    "href": "block_2_session_2_programming_w_data.html#which-dbms-should-i-use",
+    "title": "Hacking for Science",
+    "section": "Which DBMS Should I Use ?",
+    "text": "Which DBMS Should I Use ?\n\nrelational DBMS should be the default choice, don’t believe me? Believe him. Note, you can use json inside SQL DBs as well.\nWhich relational DBMS should I Use?\n\n\nSQLite is for prototypes and mobile phones\nMySQL is for kids\nPostgreSQL, MS SQL and Oracle are at the same level for many science applications"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#can-you-explain-relational",
+    "href": "block_2_session_2_programming_w_data.html#can-you-explain-relational",
+    "title": "Hacking for Science",
+    "section": "Can You Explain ‘Relational’",
+    "text": "Can You Explain ‘Relational’"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#are-there-any-disadvantages-of-databases",
+    "href": "block_2_session_2_programming_w_data.html#are-there-any-disadvantages-of-databases",
+    "title": "Hacking for Science",
+    "section": "Are There Any Disadvantages of Databases?",
+    "text": "Are There Any Disadvantages of Databases?\n\nYou have to maintain them, even if you don’t need them\nmore setup overhead: dev and production system(s) needed\nsolid, free solutions are only temporal\nyou need an interface for collaborators who don’t speak SQL\nsome really, really, really big datasets may ask for specific methods"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#hosting",
+    "href": "block_2_session_2_programming_w_data.html#hosting",
+    "title": "Hacking for Science",
+    "section": "Hosting",
+    "text": "Hosting\n\nlocalhost (dev only)\ndocker environment\nuniversity VM\nhomeserver\ncloud (either VM and install on your own, or DB specific Cloud)"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#client",
+    "href": "block_2_session_2_programming_w_data.html#client",
+    "title": "Hacking for Science",
+    "section": "Client",
+    "text": "Client\n\ninstall drivers locally at OS level\ninstall client library (R packages are usually wrappers around C interfaces)"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#design",
+    "href": "block_2_session_2_programming_w_data.html#design",
+    "title": "Hacking for Science",
+    "section": "Design",
+    "text": "Design\n\nintegrity (think primary key, foreign key for starters)\nDraw up a design… dbdiagram.io is a fun tool, paper & pencil also work pretty well"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#start-simple-catch-a-breath-of-sql-air-with-sqlite",
+    "href": "block_2_session_2_programming_w_data.html#start-simple-catch-a-breath-of-sql-air-with-sqlite",
+    "title": "Hacking for Science",
+    "section": "Start Simple, Catch a Breath of SQL Air with SQLite",
+    "text": "Start Simple, Catch a Breath of SQL Air with SQLite\n\nlibrary(RSQLite)\ndb_path = \"../data/h4sci.sqlite3\"\ncon <- dbConnect(RSQLite::SQLite(), db_path)\ndbWriteTable(con, dbQuoteIdentifier(con,\"mtcars\"), mtcars, overwrite = T)\ndbWriteTable(con, dbQuoteIdentifier(con,\"flowers\"), iris, overwrite = T)\n\ndbGetQuery(con, \"SELECT * FROM flowers LIMIT 3\")\n\n  Sepal.Length Sepal.Width Petal.Length Petal.Width Species\n1          5.1         3.5          1.4         0.2  setosa\n2          4.9         3.0          1.4         0.2  setosa\n3          4.7         3.2          1.3         0.2  setosa\n\n\nNote: Foreign Key Handling is very limited in SQLite."
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#example-query",
+    "href": "block_2_session_2_programming_w_data.html#example-query",
+    "title": "Hacking for Science",
+    "section": "Example Query",
+    "text": "Example Query\n\ndbGetQuery(con, \"SELECT * FROM mtcars WHERE mpg > 30\")\n\n   mpg cyl disp  hp drat    wt  qsec vs am gear carb\n1 32.4   4 78.7  66 4.08 2.200 19.47  1  1    4    1\n2 30.4   4 75.7  52 4.93 1.615 18.52  1  1    4    2\n3 33.9   4 71.1  65 4.22 1.835 19.90  1  1    4    1\n4 30.4   4 95.1 113 3.77 1.513 16.90  1  1    5    2"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#database-access",
+    "href": "block_2_session_2_programming_w_data.html#database-access",
+    "title": "Hacking for Science",
+    "section": "Database Access",
+    "text": "Database Access\n\nlibrary(RSQLite)\ndb_path = \"../data/h4sci.sqlite3\"\ncon <- dbConnect(RSQLite::SQLite(),\n                 db_path)\n\n\nlibrary(RPostgres)\ncon <-  dbConnect(drv = Postgres(),\n                  dbname = \"postgres\",\n                  user = \"postgres\",\n                  host = \"some.server.or.ip\",\n                  password = .rs.askForPassword(\n                    \"enter your pw\"\n                    )\n                  )\n\n\nEssentially the same interface (DBI)\nserver, files are abstracted away\n(remote) url\nhost, password, port etc. needed for Postgres"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#basic-sql-syntax",
+    "href": "block_2_session_2_programming_w_data.html#basic-sql-syntax",
+    "title": "Hacking for Science",
+    "section": "Basic SQL Syntax",
+    "text": "Basic SQL Syntax\nSELECT * FROM schema.table;\n\nINSERT INTO schema.table VALUES ('abc',2,3);\n\nSELECT name, salary FROM staff\nWHERE position = 'manager'\nORDER BY salary DESC;\n\n\n’*’ SELECTs all data from a given table\nINSERTs values to a table while checking integrity (data types)\nSELECTs name and salary from table staff for all managers and orders the output by salary from highest to lowest"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#further-reads",
+    "href": "block_2_session_2_programming_w_data.html#further-reads",
+    "title": "Hacking for Science",
+    "section": "Further Reads",
+    "text": "Further Reads\n\nSQLite Tutorial\nPostgreSQL 15 Documentation (Jump in at ‘table basics’)\nVignettes of the {dm} package, in particular the data.frame to dm part"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#hands-on-block-2-task-4-a-little-sql",
+    "href": "block_2_session_2_programming_w_data.html#hands-on-block-2-task-4-a-little-sql",
+    "title": "Hacking for Science",
+    "section": "Hands on: Block 2, Task 4: A Little SQL",
+    "text": "Hands on: Block 2, Task 4: A Little SQL"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#how-to-work-with-an-application-programming-interface-api",
+    "href": "block_2_session_2_programming_w_data.html#how-to-work-with-an-application-programming-interface-api",
+    "title": "Hacking for Science",
+    "section": "How to Work with an Application Programming Interface (API)",
+    "text": "How to Work with an Application Programming Interface (API)\n\nRTFM\nExperiment ‘per pedes’\nWrite a Wrapper if it does not exist\nUse the Wrapper\n\nHere is an R example to get ☔️ images from the MET collection.\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
   }
 ]
