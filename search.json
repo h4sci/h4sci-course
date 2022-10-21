@@ -697,7 +697,14 @@
     "href": "block_2_session_2_programming_w_data.html#active-use-in-the-sense-of-setting-it-up-running-it",
     "title": "Hacking for Science",
     "section": "Active Use (in the sense of setting it up, running it)",
-    "text": "Active Use (in the sense of setting it up, running it)\n\nas a backend, e.g., survey (transactional database)\nin research projects when you want to share data inside your lab\nwhen you need to restrict access at different levels\nto expose data through an API (to external collaborators or the public)\nneed to integrate with different systems / tools and programming languages\nspecific operations, e.g., spatial data"
+    "text": "Active Use (in the sense of setting it up, running it)\n\nas a backend, e.g., survey (transactional database)\nin research projects when you want to share data inside your lab\nwhen you need to restrict access at different levels"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#active-use-cd",
+    "href": "block_2_session_2_programming_w_data.html#active-use-cd",
+    "title": "Hacking for Science",
+    "section": "Active Use c’d",
+    "text": "Active Use c’d\n\nto expose data through an API (to external collaborators or the public)\nneed to integrate with different systems / tools and programming languages\nspecific operations, e.g., spatial data"
   },
   {
     "objectID": "block_2_session_2_programming_w_data.html#which-dbms-should-i-use",
@@ -760,7 +767,7 @@
     "href": "block_2_session_2_programming_w_data.html#database-access",
     "title": "Hacking for Science",
     "section": "Database Access",
-    "text": "Database Access\n\nlibrary(RSQLite)\ndb_path = \"../data/h4sci.sqlite3\"\ncon <- dbConnect(RSQLite::SQLite(),\n                 db_path)\n\n\nlibrary(RPostgres)\ncon <-  dbConnect(drv = Postgres(),\n                  dbname = \"postgres\",\n                  user = \"postgres\",\n                  host = \"some.server.or.ip\",\n                  password = .rs.askForPassword(\n                    \"enter your pw\"\n                    )\n                  )\n\n\nEssentially the same interface (DBI)\nserver, files are abstracted away\n(remote) url\nhost, password, port etc. needed for Postgres"
+    "text": "Database Access\n\nlibrary(RSQLite)\ndb_path = \"../data/h4sci.sqlite3\"\ncon <- dbConnect(RSQLite::SQLite(),\n                 db_path)\n\n\nlibrary(RPostgres)\ncon <-  dbConnect(drv = Postgres(),\n                  dbname = \"postgres\",\n                  user = \"postgres\",\n                  host = \"some.server.or.ip\",\n                  password = .rs.askForPassword(\n                    \"enter your pw\"\n                    )\n                  )\n\n\nEssentially the same interface (DBI)\nserver, files are abstracted away\nhost, password, port etc. needed for Postgres"
   },
   {
     "objectID": "block_2_session_2_programming_w_data.html#basic-sql-syntax",
