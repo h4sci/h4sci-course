@@ -1,0 +1,77 @@
+---
+title: "Hacking for Science"
+subtitle: "Block 3, Session 1: A Glimpse of DevOps"
+author: "Matt Bannert ([@whatsgoodio](https://twitter.com/whatsgoodio))"
+format: revealjs
+chalkboard: true
+echo: true
+footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)"
+---
+
+
+## Today's Goals {.center}
+
+- Terminology & Context
+- Find an Infrastructure for Team Projects
+
+
+## {.center}
+
+![](img/server-thinking.jpg){fig-align="center"}
+
+## {.center}
+
+![](img/listen.jpg){fig-align="center"}
+
+
+## {.center}
+
+![](img/cloud.png){fig-align="center"}
+
+
+## {.center}
+
+![](img/overkill.png){fig-align="center"}
+
+
+## {.center}
+
+![](img/overload.jpg){fig-align="center"}
+
+
+## {.center}
+
+![](img/inefficient.png){fig-align="center"}
+
+## Dimensions of Resources {.center}
+
+
+## Dimensions of Resources {.center}
+
+
+## Persistency
+
+![](img/quit_py.png){fig-align="center"}
+
+![](img/quit_r.png){fig-align="center"}
+
+## Availability
+
+![](img/server-setup1.jpg){fig-align="center"}
+
+## Availability
+
+![](img/server-setup2.jpg){fig-align="center"}
+
+
+## Availability
+
+![](img/server-setup3.jpg){fig-align="center"}
+
+
+
+
+
+
+
+
