@@ -9,6 +9,18 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 ---
 
 
+<style>
+.small{
+font-size:.5em;
+}
+.smaller{
+font-size:.7em;
+}
+
+</style>
+
+
+
 ## Today's Goals {.center}
 
 - find infrastructure for team projects
@@ -32,8 +44,229 @@ Examples: devops-carpentry.github.io/book, mbannert.github.io/timeseriesdb
 
 
 
-# Introduction to GitHub Actions {.center}
+# Introduction to GitHub Actions
 
 
-# Introduction to Shiny {.center}
+## What is GitHub Actions?
+
+- [GitHub's CI/CD tool](https://github.com/features/actions)
+- similar to Gitlab CI/CD
+
+
+## Example Outline
+
+- Prepare a task you want to run, e.g., an R script.
+- Configure an environment AND workflow in a simple .yaml text file
+- Push the file to a hidden folder .github/workflows (this won't be necessary if you edited the file directly on github0
+- Use the GitHub web GUI to monitor the process.
+
+
+
+## https://crontab.guru/ {.center}
+
+cronjobs - execute on schedule. [GitHub Actions docs](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#onschedule)
+
+
+
+
+# Introduction to Shiny
+
+
+## server.R (Why Do I have to Do All the Work ?) {.center}
+
+
+![](img/overload.jpg)
+
+  
+
+
+## ui.R (I may be late, but I look gooooooood.) {.center}
+  
+![](img/johnny.jpg)
+
+
+
+## What Does the shiny Framework Do for Us?
+
+
+1. create HTML/CSS/Javascript code
+2. start/run a (local) webserver
+3. communication between the R session and the browser
+
+
+
+## A minimal note on HTML
+
+- Markup language
+- content is wrapped in tags
+
+```
+<a href="http://somedestination.com">some link</a>
+<b>this is bold</b>
+<i>this is italic</i>
+<div class="some-class">a class with a style</div>
+```
+
+=> shiny functions create these wraps for us.
+
+
+
+
+## Breaking Down the Hello World App
+
+
+:::: {.columns}
+
+::: {.column width="60%" .smaller}
+
+
+
+### ui.R
+
+
+```{r,eval=FALSE,echo=TRUE}
+library(shiny)
+shinyUI(fluidPage(
+  titlePanel("A random normal"),
+  # Sidebar with a slider input for number of bins 
+  sidebarLayout(
+    sidebarPanel(
+      sliderInput("obs",
+                  "Number of obs:",
+                  min = 1,
+                  max = 1000,
+                  value = 100)
+    ),
+    mainPanel(
+      plotOutput("randomPlot")
+    )
+  )
+))
+```
+
+:::
+
+::: {.column width="50%"}
+
+
+:::
+
+::::
+
+
+
+## Breaking Down the Hello World App
+
+
+:::: {.columns }
+
+
+::: {.column width="50%" .smaller}
+
+
+### ui.R
+
+
+```{r,eval=FALSE,echo=TRUE}
+library(shiny)
+shinyUI(fluidPage(
+  titlePanel("A random normal"),
+  # Sidebar with a slider input for number of bins 
+  sidebarLayout(
+    sidebarPanel(
+      sliderInput("obs",
+                  "Number of obs:",
+                  min = 1,
+                  max = 1000,
+                  value = 100)
+    ),
+    mainPanel(
+      plotOutput("randomPlot")
+    )
+  )
+))
+```
+
+:::
+
+::: {.column width="50%" .smaller}
+
+
+### server.R
+
+```{r,eval=FALSE,echo=TRUE}
+shinyServer(function(input, output) {
+    output$randomPlot <- renderPlot({
+    hist(rnorm(input$obs),
+         col = 'darkgray',
+         border = 'white')
+  })
+})
+```
+
+
+:::
+
+::::
+
+
+
+## Planning the App
+
+**This course: dashboard structure**
+
+- sidebar
+- topbar
+- main panel
+- menu buttons / sub pages
+
+
+
+## The shinydashboard package
+
+![](img/blank_dashboard.png)
+
+```{r,eval=FALSE,echo=TRUE}
+library(shinydashboard)
+dashboardPage(
+  dashboardHeader(),
+  dashboardSidebar(),
+  dashboardBody()
+)
+```
+
+
+## Are you ready for to build a real app? {.center}
+
+[Take the official quiz by rstudio.com!](https://shiny.rstudio.com/tutorial/quiz/)
+
+
+
+## Mastering Shiny
+
+
+![https://twitter.com/hadleywickham/status/1329498817113321472](img/hadley.png)
+
+
+
+
+
+## More Shiny Resources {.smaller}
+
+
+### Basics
+
+- [Shiny Tutorial](http://shiny.rstudio.com/tutorial/)
+- [Shiny Dashboards](https://rstudio.github.io/shinydashboard/)
+
+### UIs / Gallery
+
+- [Shiny Gallery](http://shiny.rstudio.com/gallery/)
+- [Semantic UI (advanced)](https://github.com/Appsilon/shiny.semantic)
+
+
+### Advanced Reads
+
+- [Mastering Shiny (Hadley Wickham)](https://mastering-shiny.org/)
+- [Engineering Shiny (Colin Fay et al.)](https://engineering-shiny.org/)
 

@@ -22,7 +22,7 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 
 [Block 3, Session 1: A Glimpse of Devops](block_3_session_1_terminology_n_context.html)
 
-[Block 3, Session 2: Infrastructure for Team Prokectse222](block_3_session_2_infra_for_team_projects.html)
+[Block 3, Session 2: Infrastructure for Team Projects](block_3_session_2_infra_for_team_projects.html)
 
 
 
