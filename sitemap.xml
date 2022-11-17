@@ -2,30 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://h4sci.github.io/h4sci-course/block_1_session_1_classopen.html</loc>
-    <lastmod>2022-10-21T07:35:07.904Z</lastmod>
+    <lastmod>2022-11-17T07:59:55.510Z</lastmod>
   </url>
   <url>
     <loc>https://h4sci.github.io/h4sci-course/block_1_session_2_big_picture.html</loc>
-    <lastmod>2022-10-21T07:35:08.397Z</lastmod>
+    <lastmod>2022-11-17T07:59:56.009Z</lastmod>
+  </url>
+  <url>
+    <loc>https://h4sci.github.io/h4sci-course/block_3_session_2_infra_for_team_projects.html</loc>
+    <lastmod>2022-11-17T07:59:56.391Z</lastmod>
   </url>
   <url>
     <loc>https://h4sci.github.io/h4sci-course/block_1_session_3_git_requirements.html</loc>
-    <lastmod>2022-10-21T07:35:08.857Z</lastmod>
+    <lastmod>2022-11-17T07:59:56.807Z</lastmod>
   </url>
   <url>
     <loc>https://h4sci.github.io/h4sci-course/index.html</loc>
-    <lastmod>2022-10-21T07:35:09.230Z</lastmod>
+    <lastmod>2022-11-17T07:59:57.174Z</lastmod>
+  </url>
+  <url>
+    <loc>https://h4sci.github.io/h4sci-course/notes-block-3.html</loc>
+    <lastmod>2022-11-17T07:59:59.121Z</lastmod>
   </url>
   <url>
     <loc>https://h4sci.github.io/h4sci-course/block_1_session_4_git_101.html</loc>
-    <lastmod>2022-10-21T07:35:09.567Z</lastmod>
+    <lastmod>2022-11-17T07:59:59.552Z</lastmod>
+  </url>
+  <url>
+    <loc>https://h4sci.github.io/h4sci-course/block_3_session_1_terminology_n_context.html</loc>
+    <lastmod>2022-11-17T08:00:00.908Z</lastmod>
   </url>
   <url>
     <loc>https://h4sci.github.io/h4sci-course/block_2_session_1_r_programming.html</loc>
-    <lastmod>2022-10-21T07:35:11.082Z</lastmod>
+    <lastmod>2022-11-17T08:00:02.532Z</lastmod>
   </url>
   <url>
     <loc>https://h4sci.github.io/h4sci-course/block_2_session_2_programming_w_data.html</loc>
-    <lastmod>2022-10-21T07:35:15.417Z</lastmod>
+    <lastmod>2022-11-17T08:00:07.004Z</lastmod>
   </url>
 </urlset>

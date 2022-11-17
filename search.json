@@ -224,6 +224,20 @@
     "text": "“Premature optimization is the root of all evil.”\n\n– Donald Knuth\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
   },
   {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#todays-goals",
+    "href": "block_3_session_2_infra_for_team_projects.html#todays-goals",
+    "title": "Hacking for Science",
+    "section": "Today’s Goals",
+    "text": "Today’s Goals\n\nfind infrastructure for team projects\nbuild teams"
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#github-pages-in-a-nutshell",
+    "href": "block_3_session_2_infra_for_team_projects.html#github-pages-in-a-nutshell",
+    "title": "Hacking for Science",
+    "section": "Github Pages in a Nutshell",
+    "text": "Github Pages in a Nutshell\n\nevery github repository can opt to have a repository specific website\nGitHub Pages is designed to document and/or market the software developed in the repo the URL pattern is: user.github.io/repository-name\nGitHub Pages sites either reside on a separate gh-pages branch or in the docs folder on the main branch.\nGitHub Pages can be activated through the Github GUI\nGitHub Pages can host either .md files or .html webpages (including .js and .css)\n\nExamples: devops-carpentry.github.io/book, mbannert.github.io/timeseriesdb"
+  },
+  {
     "objectID": "block_1_session_3_git_requirements.html#section",
     "href": "block_1_session_3_git_requirements.html#section",
     "title": "Hacking for Science",
@@ -249,7 +263,14 @@
     "href": "index.html#table-of-contents",
     "title": "Hacking for Science",
     "section": "Table of Contents",
-    "text": "Table of Contents\nBlock 1, Session 1: Class Is Open. C’mon in.\nBlock 1, Session 2: The Big Picture\nBlock 1, Session 3: Git Requirements\nBlock 1, Session 4: Git 101\nBlock 2, Session 1: R Programming 101\nBlock 2, Session 2: Programming with Data\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
+    "text": "Table of Contents\nBlock 1, Session 1: Class Is Open. C’mon in.\nBlock 1, Session 2: The Big Picture\nBlock 1, Session 3: Git Requirements\nBlock 1, Session 4: Git 101\nBlock 2, Session 1: R Programming 101\nBlock 2, Session 2: Programming with Data\nBlock 3, Session 1: A Glimpse of Devops\nBlock 3, Session 2: Infrastructure for Team Prokectse222\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
+  },
+  {
+    "objectID": "notes-block-3.html",
+    "href": "notes-block-3.html",
+    "title": "",
+    "section": "",
+    "text": "databases\nprogramming questions (met API ?)"
   },
   {
     "objectID": "block_1_session_4_git_101.html#section",
@@ -327,6 +348,181 @@
     "title": "Hacking for Science",
     "section": "Break Out Session 2: Task 2 & 3 First Collab & Merge Conflict Drill",
     "text": "Break Out Session 2: Task 2 & 3 First Collab & Merge Conflict Drill\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#todays-goals",
+    "href": "block_3_session_1_terminology_n_context.html#todays-goals",
+    "title": "Hacking for Science",
+    "section": "Today’s Goals",
+    "text": "Today’s Goals\n\nCatch a Glimpse of Development and Operations\nTerminology & Context\nGet an idea of apt infrastructure for team projects"
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#resources-and-what-to-look-for",
+    "href": "block_3_session_1_terminology_n_context.html#resources-and-what-to-look-for",
+    "title": "Hacking for Science",
+    "section": "Resources –  And What to Look For …",
+    "text": "Resources –  And What to Look For …"
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#size",
+    "href": "block_3_session_1_terminology_n_context.html#size",
+    "title": "Hacking for Science",
+    "section": "Size",
+    "text": "Size"
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#persistency",
+    "href": "block_3_session_1_terminology_n_context.html#persistency",
+    "title": "Hacking for Science",
+    "section": "Persistency",
+    "text": "Persistency"
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#availability-exposure",
+    "href": "block_3_session_1_terminology_n_context.html#availability-exposure",
+    "title": "Hacking for Science",
+    "section": "Availability & Exposure",
+    "text": "Availability & Exposure"
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#data-science-webserver-example",
+    "href": "block_3_session_1_terminology_n_context.html#data-science-webserver-example",
+    "title": "Hacking for Science",
+    "section": "Data Science Webserver Example",
+    "text": "Data Science Webserver Example"
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#data-science-webserver-example-1",
+    "href": "block_3_session_1_terminology_n_context.html#data-science-webserver-example-1",
+    "title": "Hacking for Science",
+    "section": "Data Science Webserver Example",
+    "text": "Data Science Webserver Example"
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#common-servers",
+    "href": "block_3_session_1_terminology_n_context.html#common-servers",
+    "title": "Hacking for Science",
+    "section": "Common Servers",
+    "text": "Common Servers\n\n\n\n\n \n  \n    name \n    common ports \n    description \n  \n \n\n  \n    Apache \n    80, 443 \n    Basic Webserver \n  \n  \n    nginx \n    80, 443 \n    Webserver, Reverse Proxy \n  \n  \n    Postgres \n    5432 \n    Database \n  \n  \n    RStudio Server \n    8787 \n    RStudio made available through a web browser \n  \n  \n    Shiny Server \n    3838 \n    A webserver for shiny apps"
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#reproducibility",
+    "href": "block_3_session_1_terminology_n_context.html#reproducibility",
+    "title": "Hacking for Science",
+    "section": "Reproducibility",
+    "text": "Reproducibility"
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#section-7",
+    "href": "block_3_session_1_terminology_n_context.html#section-7",
+    "title": "Hacking for Science",
+    "section": "",
+    "text": "Do not forget that hosting requires a development strategy."
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#on-premise-in-house",
+    "href": "block_3_session_1_terminology_n_context.html#on-premise-in-house",
+    "title": "Hacking for Science",
+    "section": "On Premise (in house)",
+    "text": "On Premise (in house)\n\nETH Gitlab\nGitea\nteaching.kof.ethz.ch\nshiny server"
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#saas-software-as-a-service",
+    "href": "block_3_session_1_terminology_n_context.html#saas-software-as-a-service",
+    "title": "Hacking for Science",
+    "section": "SaaS (software as a service)",
+    "text": "SaaS (software as a service)"
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#saas-software-as-a-service-serverless",
+    "href": "block_3_session_1_terminology_n_context.html#saas-software-as-a-service-serverless",
+    "title": "Hacking for Science",
+    "section": "SaaS (software as a service) / Serverless",
+    "text": "SaaS (software as a service) / Serverless\n\n\nExamples\n\nOverleaf\nshinyapps.io\nGoogle NLP\n\n\nAdvantages\n\nHassle free (Hosting)\nOnboarding of non-hackers easier\ntransparent pricing models\n\nDisadvantages\n\nBlackbox\nVendor Lock-in depending on pricing model and software\nRelatively Expensive per Unit"
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#the-cloud",
+    "href": "block_3_session_1_terminology_n_context.html#the-cloud",
+    "title": "Hacking for Science",
+    "section": "The Cloud",
+    "text": "The Cloud"
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#common-cloud-products",
+    "href": "block_3_session_1_terminology_n_context.html#common-cloud-products",
+    "title": "Hacking for Science",
+    "section": "Common Cloud Products",
+    "text": "Common Cloud Products\nBasic VMs\ne.g., Google Compute Engine, Microsoft Azure Cloud VMs\nSingle Purpose Environments\nDocker hosts, e.g., Google Kubernetes Engine, Azure Kubernetes Service (AKS)\nReady Made Services\nAI & machine learning products, e.g., Google Cloud AutoML, SQL Cloud Hosting"
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#section-8",
+    "href": "block_3_session_1_terminology_n_context.html#section-8",
+    "title": "Hacking for Science",
+    "section": "",
+    "text": "A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another\n\n–docker.com, what is a container ?"
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#excursion-docker-in-one-slide",
+    "href": "block_3_session_1_terminology_n_context.html#excursion-docker-in-one-slide",
+    "title": "Hacking for Science",
+    "section": "Excursion: Docker in one Slide",
+    "text": "Excursion: Docker in one Slide\n\nsingle purpose, application focused virtualization\nimages: blueprints for containers\nRegistries: store images\nDocker files are text based configs from which images are created.\nImages can be stacked, so we can build on existing images\nDocker containers run on a Docker Host / Docker Desktop or in Docker Cluster like Docker Swarm or Kubernetes."
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#a-basic-docker-file-r-with-postgres-driver",
+    "href": "block_3_session_1_terminology_n_context.html#a-basic-docker-file-r-with-postgres-driver",
+    "title": "Hacking for Science",
+    "section": "A Basic Docker File: R with Postgres Driver",
+    "text": "A Basic Docker File: R with Postgres Driver\nFROM rocker/r-ver:4.2.0 as deps\nRUN apt-get update && apt-get install -y \\\nlibpq-dev \\\nlibcurl4-openssl-dev \\\nlibxml2-dev \\\nlibssl1.0-dev \\\nlibssh-dev\nStart and log into the container…\n# start the container in the background\ndocker run -it -d  --name pgr_container pgr\n\n# log into the running container, use bash\ndocker exec -it pgr_container /bin/bash"
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#what-is-docker-good-for",
+    "href": "block_3_session_1_terminology_n_context.html#what-is-docker-good-for",
+    "title": "Hacking for Science",
+    "section": "What Is Docker Good for?",
+    "text": "What Is Docker Good for?"
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#test-stack-conserve-setups",
+    "href": "block_3_session_1_terminology_n_context.html#test-stack-conserve-setups",
+    "title": "Hacking for Science",
+    "section": "Test Stack, Conserve Setups",
+    "text": "Test Stack, Conserve Setups\ne.g., PostgreSQL version on docker hub"
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#run-applications-wo-side-effects",
+    "href": "block_3_session_1_terminology_n_context.html#run-applications-wo-side-effects",
+    "title": "Hacking for Science",
+    "section": "Run Applications w/o Side Effects",
+    "text": "Run Applications w/o Side Effects"
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#develop-home-run-in-the-cloud",
+    "href": "block_3_session_1_terminology_n_context.html#develop-home-run-in-the-cloud",
+    "title": "Hacking for Science",
+    "section": "Develop @home, Run in the Cloud",
+    "text": "Develop @home, Run in the Cloud"
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#two-docker-based-examples",
+    "href": "block_3_session_1_terminology_n_context.html#two-docker-based-examples",
+    "title": "Hacking for Science",
+    "section": "Two Docker Based Examples",
+    "text": "Two Docker Based Examples"
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#shiny-server",
+    "href": "block_3_session_1_terminology_n_context.html#shiny-server",
+    "title": "Hacking for Science",
+    "section": "Shiny Server",
+    "text": "Shiny Server\n docker run --rm -p 1234:3838 rocker/shiny"
+  },
+  {
+    "objectID": "block_3_session_1_terminology_n_context.html#postgres-server",
+    "href": "block_3_session_1_terminology_n_context.html#postgres-server",
+    "title": "Hacking for Science",
+    "section": "Postgres Server",
+    "text": "Postgres Server\ndocker run --rm  --name pg-docker -e POSTGRES_PASSWORD=postgres -d -p 1111:5432 \n-v local/path:/var/lib/postgresql/data  postgres:11\n\n-d: run as daemon, i.e., terminal window available\n-e: pass on an environment parameter, in this case a password\n-p: port forwarding: host port:docker port\n-v: Mount for persistent storage\n(!): To make the two containers talk to each other, consider docker compose.\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
   },
   {
     "objectID": "block_2_session_1_r_programming.html#section",
@@ -711,7 +907,21 @@
     "href": "block_2_session_2_programming_w_data.html#which-dbms-should-i-use",
     "title": "Hacking for Science",
     "section": "Which DBMS Should I Use ?",
-    "text": "Which DBMS Should I Use ?\n\nrelational DBMS should be the default choice, don’t believe me? Believe him. Note, you can use json inside SQL DBs as well.\nWhich relational DBMS should I Use?\n\n\nSQLite is for prototypes and mobile phones\nMySQL is for kids\nPostgreSQL, MS SQL and Oracle are at the same level for many science applications"
+    "text": "Which DBMS Should I Use ?"
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#which-dbms-should-i-use-1",
+    "href": "block_2_session_2_programming_w_data.html#which-dbms-should-i-use-1",
+    "title": "Hacking for Science",
+    "section": "Which DBMS Should I Use ?",
+    "text": "Which DBMS Should I Use ?\n\nrelational DBMS should be the default choice, don’t believe me? Believe him. Note, you can use json inside SQL DBs as well."
+  },
+  {
+    "objectID": "block_2_session_2_programming_w_data.html#which-dbms-should-i-use-2",
+    "href": "block_2_session_2_programming_w_data.html#which-dbms-should-i-use-2",
+    "title": "Hacking for Science",
+    "section": "Which DBMS Should I Use ?",
+    "text": "Which DBMS Should I Use ?\n\nWhich relational DBMS should I Use?\n\n\nSQLite is for prototypes and mobile phones\nMySQL is for kids\nPostgreSQL, MS SQL and Oracle are at the same level for many science applications"
   },
   {
     "objectID": "block_2_session_2_programming_w_data.html#can-you-explain-relational",

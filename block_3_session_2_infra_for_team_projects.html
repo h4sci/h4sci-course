@@ -9,7 +9,7 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.1.251">
 
-  <meta name="author" content="@whatsgoodio">
+  <meta name="author" content="Matt Bannert (@whatsgoodio)">
   <title>Hacking for Science</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -33,6 +33,8 @@
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
@@ -325,37 +327,40 @@
 
 <section id="title-slide" class="center">
   <h1 class="title">Hacking for Science</h1>
-  <p class="subtitle">Course Slides, Table of Content, 2022</p>
-  <p class="author"><a href="https://twitter.com/whatsgoodio"><span class="citation" data-cites="whatsgoodio">@whatsgoodio</span></a></p>
+  <p class="subtitle">Block 3, Session 2: Infrastructure for Team Projects</p>
+  <p class="author">Matt Bannert (<a href="https://twitter.com/whatsgoodio"><span class="citation" data-cites="whatsgoodio">@whatsgoodio</span></a>)</p>
 </section>
 
-<section id="table-of-contents" class="slide level2">
-<h2>Table of Contents</h2>
-<p><a href="block_1_session_1_classopen.html">Block 1, Session 1: Class Is Open. C’mon in.</a></p>
-<p><a href="block_1_session_2_big_picture.html">Block 1, Session 2: The Big Picture</a></p>
-<p><a href="block_1_session_3_git_requirements.html">Block 1, Session 3: Git Requirements</a></p>
-<p><a href="block_1_session_4_git_101.html">Block 1, Session 4: Git 101</a></p>
-<p><a href="block_2_session_1_r_programming.html">Block 2, Session 1: R Programming 101</a></p>
-<p><a href="block_2_session_2_programming_w_data.html">Block 2, Session 2: Programming with Data</a></p>
-<p><a href="block_3_session_1_terminology_n_context.html">Block 3, Session 1: A Glimpse of Devops</a></p>
-<p><a href="block_3_session_2_infra_for_team_projects.html">Block 3, Session 2: Infrastructure for Team Prokectse222</a></p>
-<!--
+<section id="todays-goals" class="slide level2 center">
+<h2>Today’s Goals</h2>
+<ul>
+<li>find infrastructure for team projects</li>
+<li>build teams</li>
+</ul>
+</section>
+<section>
+<section id="introduction-to-github-pages" class="title-slide slide level1 center">
+<h1>Introduction to GitHub Pages</h1>
 
+</section>
+<section id="github-pages-in-a-nutshell" class="slide level2">
+<h2>Github Pages in a Nutshell</h2>
+<ul>
+<li>every github repository can opt to have a repository specific website</li>
+<li>GitHub Pages is designed to document and/or market the software developed in the repo the URL pattern is: user.github.io/repository-name</li>
+<li>GitHub Pages sites either reside on a separate gh-pages branch or in the docs folder on the main branch.</li>
+<li>GitHub Pages can be activated through the Github GUI</li>
+<li>GitHub Pages can host either .md files or .html webpages (including .js and .css)</li>
+</ul>
+<p>Examples: devops-carpentry.github.io/book, mbannert.github.io/timeseriesdb</p>
+</section></section>
+<section id="introduction-to-github-actions" class="title-slide slide level1 center">
+<h1>Introduction to GitHub Actions</h1>
 
+</section>
 
-
-
-
-[Block 2, Session 1: R Programming 101](block2_session_1.html)
-
-[Block 2, Session 2: Programming with data](block2_session_2.html)
-
-[Block 3, Session 1: Infrastructure: Terminology and Contextualization](block3_session_1.html)
-
-[Block 3, Session 2: Infrastructure for the Semester Projects](block3_session_2.html)
-
-
--->
+<section id="introduction-to-shiny" class="title-slide slide level1 center">
+<h1>Introduction to Shiny</h1>
 
 <div class="footer footer-default">
 <p>Hacking for Science by Dr.&nbsp;Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></p>
@@ -371,6 +376,7 @@
   <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
   <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -392,7 +398,8 @@
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -563,7 +570,7 @@
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
           RevealMath,
           RevealNotes,
