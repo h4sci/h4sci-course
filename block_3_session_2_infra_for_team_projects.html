@@ -28,6 +28,70 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css" id="theme">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -331,6 +395,18 @@
   <p class="author">Matt Bannert (<a href="https://twitter.com/whatsgoodio"><span class="citation" data-cites="whatsgoodio">@whatsgoodio</span></a>)</p>
 </section>
 
+<section class="slide level2">
+
+<style>
+.small{
+font-size:.5em;
+}
+.smaller{
+font-size:.7em;
+}
+
+</style>
+</section>
 <section id="todays-goals" class="slide level2 center">
 <h2>Today’s Goals</h2>
 <ul>
@@ -354,18 +430,183 @@
 </ul>
 <p>Examples: devops-carpentry.github.io/book, mbannert.github.io/timeseriesdb</p>
 </section></section>
+<section>
 <section id="introduction-to-github-actions" class="title-slide slide level1 center">
 <h1>Introduction to GitHub Actions</h1>
 
 </section>
-
+<section id="what-is-github-actions" class="slide level2">
+<h2>What is GitHub Actions?</h2>
+<ul>
+<li><a href="https://github.com/features/actions">GitHub’s CI/CD tool</a></li>
+<li>similar to Gitlab CI/CD</li>
+</ul>
+</section>
+<section id="example-outline" class="slide level2">
+<h2>Example Outline</h2>
+<ul>
+<li>Prepare a task you want to run, e.g., an R script.</li>
+<li>Configure an environment AND workflow in a simple .yaml text file</li>
+<li>Push the file to a hidden folder .github/workflows (this won’t be necessary if you edited the file directly on github0</li>
+<li>Use the GitHub web GUI to monitor the process.</li>
+</ul>
+</section>
+<section id="httpscrontab.guru" class="slide level2 center">
+<h2>https://crontab.guru/</h2>
+<p>cronjobs - execute on schedule. <a href="https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#onschedule">GitHub Actions docs</a></p>
+</section></section>
+<section>
 <section id="introduction-to-shiny" class="title-slide slide level1 center">
 <h1>Introduction to Shiny</h1>
+
+</section>
+<section id="server.r-why-do-i-have-to-do-all-the-work" class="slide level2 center">
+<h2>server.R (Why Do I have to Do All the Work ?)</h2>
+
+<img data-src="img/overload.jpg" class="r-stretch"></section>
+<section id="ui.r-i-may-be-late-but-i-look-gooooooood." class="slide level2 center">
+<h2>ui.R (I may be late, but I look gooooooood.)</h2>
+
+<img data-src="img/johnny.jpg" class="r-stretch"></section>
+<section id="what-does-the-shiny-framework-do-for-us" class="slide level2">
+<h2>What Does the shiny Framework Do for Us?</h2>
+<ol type="1">
+<li>create HTML/CSS/Javascript code</li>
+<li>start/run a (local) webserver</li>
+<li>communication between the R session and the browser</li>
+</ol>
+</section>
+<section id="a-minimal-note-on-html" class="slide level2">
+<h2>A minimal note on HTML</h2>
+<ul>
+<li>Markup language</li>
+<li>content is wrapped in tags</li>
+</ul>
+<pre><code>&lt;a href="http://somedestination.com"&gt;some link&lt;/a&gt;
+&lt;b&gt;this is bold&lt;/b&gt;
+&lt;i&gt;this is italic&lt;/i&gt;
+&lt;div class="some-class"&gt;a class with a style&lt;/div&gt;</code></pre>
+<p>=&gt; shiny functions create these wraps for us.</p>
+</section>
+<section id="breaking-down-the-hello-world-app" class="slide level2">
+<h2>Breaking Down the Hello World App</h2>
+<div class="columns">
+<div class="column smaller" style="width:60%;">
+<h3 id="ui.r">ui.R</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">library</span>(shiny)</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="fu">shinyUI</span>(<span class="fu">fluidPage</span>(</span>
+<span id="cb2-3"><a href="#cb2-3"></a>  <span class="fu">titlePanel</span>(<span class="st">"A random normal"</span>),</span>
+<span id="cb2-4"><a href="#cb2-4"></a>  <span class="co"># Sidebar with a slider input for number of bins </span></span>
+<span id="cb2-5"><a href="#cb2-5"></a>  <span class="fu">sidebarLayout</span>(</span>
+<span id="cb2-6"><a href="#cb2-6"></a>    <span class="fu">sidebarPanel</span>(</span>
+<span id="cb2-7"><a href="#cb2-7"></a>      <span class="fu">sliderInput</span>(<span class="st">"obs"</span>,</span>
+<span id="cb2-8"><a href="#cb2-8"></a>                  <span class="st">"Number of obs:"</span>,</span>
+<span id="cb2-9"><a href="#cb2-9"></a>                  <span class="at">min =</span> <span class="dv">1</span>,</span>
+<span id="cb2-10"><a href="#cb2-10"></a>                  <span class="at">max =</span> <span class="dv">1000</span>,</span>
+<span id="cb2-11"><a href="#cb2-11"></a>                  <span class="at">value =</span> <span class="dv">100</span>)</span>
+<span id="cb2-12"><a href="#cb2-12"></a>    ),</span>
+<span id="cb2-13"><a href="#cb2-13"></a>    <span class="fu">mainPanel</span>(</span>
+<span id="cb2-14"><a href="#cb2-14"></a>      <span class="fu">plotOutput</span>(<span class="st">"randomPlot"</span>)</span>
+<span id="cb2-15"><a href="#cb2-15"></a>    )</span>
+<span id="cb2-16"><a href="#cb2-16"></a>  )</span>
+<span id="cb2-17"><a href="#cb2-17"></a>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div><div class="column" style="width:50%;">
+
+</div>
+</div>
+</section>
+<section id="breaking-down-the-hello-world-app-1" class="slide level2">
+<h2>Breaking Down the Hello World App</h2>
+<div class="columns">
+<div class="column smaller" style="width:50%;">
+<h3 id="ui.r-1">ui.R</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">library</span>(shiny)</span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="fu">shinyUI</span>(<span class="fu">fluidPage</span>(</span>
+<span id="cb3-3"><a href="#cb3-3"></a>  <span class="fu">titlePanel</span>(<span class="st">"A random normal"</span>),</span>
+<span id="cb3-4"><a href="#cb3-4"></a>  <span class="co"># Sidebar with a slider input for number of bins </span></span>
+<span id="cb3-5"><a href="#cb3-5"></a>  <span class="fu">sidebarLayout</span>(</span>
+<span id="cb3-6"><a href="#cb3-6"></a>    <span class="fu">sidebarPanel</span>(</span>
+<span id="cb3-7"><a href="#cb3-7"></a>      <span class="fu">sliderInput</span>(<span class="st">"obs"</span>,</span>
+<span id="cb3-8"><a href="#cb3-8"></a>                  <span class="st">"Number of obs:"</span>,</span>
+<span id="cb3-9"><a href="#cb3-9"></a>                  <span class="at">min =</span> <span class="dv">1</span>,</span>
+<span id="cb3-10"><a href="#cb3-10"></a>                  <span class="at">max =</span> <span class="dv">1000</span>,</span>
+<span id="cb3-11"><a href="#cb3-11"></a>                  <span class="at">value =</span> <span class="dv">100</span>)</span>
+<span id="cb3-12"><a href="#cb3-12"></a>    ),</span>
+<span id="cb3-13"><a href="#cb3-13"></a>    <span class="fu">mainPanel</span>(</span>
+<span id="cb3-14"><a href="#cb3-14"></a>      <span class="fu">plotOutput</span>(<span class="st">"randomPlot"</span>)</span>
+<span id="cb3-15"><a href="#cb3-15"></a>    )</span>
+<span id="cb3-16"><a href="#cb3-16"></a>  )</span>
+<span id="cb3-17"><a href="#cb3-17"></a>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div><div class="column smaller" style="width:50%;">
+<h3 id="server.r">server.R</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">shinyServer</span>(<span class="cf">function</span>(input, output) {</span>
+<span id="cb4-2"><a href="#cb4-2"></a>    output<span class="sc">$</span>randomPlot <span class="ot">&lt;-</span> <span class="fu">renderPlot</span>({</span>
+<span id="cb4-3"><a href="#cb4-3"></a>    <span class="fu">hist</span>(<span class="fu">rnorm</span>(input<span class="sc">$</span>obs),</span>
+<span id="cb4-4"><a href="#cb4-4"></a>         <span class="at">col =</span> <span class="st">'darkgray'</span>,</span>
+<span id="cb4-5"><a href="#cb4-5"></a>         <span class="at">border =</span> <span class="st">'white'</span>)</span>
+<span id="cb4-6"><a href="#cb4-6"></a>  })</span>
+<span id="cb4-7"><a href="#cb4-7"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="planning-the-app" class="slide level2">
+<h2>Planning the App</h2>
+<p><strong>This course: dashboard structure</strong></p>
+<ul>
+<li>sidebar</li>
+<li>topbar</li>
+<li>main panel</li>
+<li>menu buttons / sub pages</li>
+</ul>
+</section>
+<section id="the-shinydashboard-package" class="slide level2">
+<h2>The shinydashboard package</h2>
+
+<img data-src="img/blank_dashboard.png" class="r-stretch"><div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">library</span>(shinydashboard)</span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="fu">dashboardPage</span>(</span>
+<span id="cb5-3"><a href="#cb5-3"></a>  <span class="fu">dashboardHeader</span>(),</span>
+<span id="cb5-4"><a href="#cb5-4"></a>  <span class="fu">dashboardSidebar</span>(),</span>
+<span id="cb5-5"><a href="#cb5-5"></a>  <span class="fu">dashboardBody</span>()</span>
+<span id="cb5-6"><a href="#cb5-6"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="are-you-ready-for-to-build-a-real-app" class="slide level2 center">
+<h2>Are you ready for to build a real app?</h2>
+<p><a href="https://shiny.rstudio.com/tutorial/quiz/">Take the official quiz by rstudio.com!</a></p>
+</section>
+<section id="mastering-shiny" class="slide level2">
+<h2>Mastering Shiny</h2>
+
+<img data-src="img/hadley.png" class="r-stretch quarto-figure-center"><p class="caption">https://twitter.com/hadleywickham/status/1329498817113321472</p></section>
+<section id="more-shiny-resources" class="slide level2 smaller">
+<h2>More Shiny Resources</h2>
+<h3 id="basics">Basics</h3>
+<ul>
+<li><a href="http://shiny.rstudio.com/tutorial/">Shiny Tutorial</a></li>
+<li><a href="https://rstudio.github.io/shinydashboard/">Shiny Dashboards</a></li>
+</ul>
+<h3 id="uis-gallery">UIs / Gallery</h3>
+<ul>
+<li><a href="http://shiny.rstudio.com/gallery/">Shiny Gallery</a></li>
+<li><a href="https://github.com/Appsilon/shiny.semantic">Semantic UI (advanced)</a></li>
+</ul>
+<h3 id="advanced-reads">Advanced Reads</h3>
+<ul>
+<li><a href="https://mastering-shiny.org/">Mastering Shiny (Hadley Wickham)</a></li>
+<li><a href="https://engineering-shiny.org/">Engineering Shiny (Colin Fay et al.)</a></li>
+</ul>
 
 <div class="footer footer-default">
 <p>Hacking for Science by Dr.&nbsp;Matthias Bannert is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></p>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
@@ -579,6 +820,48 @@
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          // dispatch for htmlwidgets
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for reveal
+        if (window.Reveal) {
+          window.Reveal.addEventListener("slidechanged", function(event) {
+            fireSlideChanged(event.previousSlide, event.currentSlide);
+          });
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
