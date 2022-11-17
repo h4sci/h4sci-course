@@ -8,11 +8,24 @@ echo: true
 footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)"
 ---
 
+<style>
+.small{
+font-size:.5em;
+}
+.smaller{
+font-size:.7em;
+}
+
+</style>
+
 
 ## Today's Goals {.center}
 
+
+- Catch a Glimpse of Development and Operations
 - Terminology & Context
-- Find an Infrastructure for Team Projects
+- Get an idea of apt infrastructure for team projects
+
 
 
 ## {.center}
@@ -31,6 +44,20 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 
 ## {.center}
 
+![](img/inefficient.png){fig-align="center"}
+
+
+
+
+## Resources -- <br> And What to Look For ... {.center}
+
+
+## Size {.center}
+
+
+
+## {.center}
+
 ![](img/overkill.png){fig-align="center"}
 
 
@@ -39,15 +66,6 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 ![](img/overload.jpg){fig-align="center"}
 
 
-## {.center}
-
-![](img/inefficient.png){fig-align="center"}
-
-## Dimensions of Resources {.center}
-
-
-## Dimensions of Resources {.center}
-
 
 ## Persistency
 
@@ -55,18 +73,245 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 
 ![](img/quit_r.png){fig-align="center"}
 
-## Availability
+
+## Availability & Exposure {.center}
+
+
+
+## Data Science Webserver Example
 
 ![](img/server-setup1.jpg){fig-align="center"}
 
-## Availability
+## 
 
 ![](img/server-setup2.jpg){fig-align="center"}
 
 
-## Availability
+## Data Science Webserver Example
 
 ![](img/server-setup3.jpg){fig-align="center"}
+
+## Common Servers
+
+```{r, echo=FALSE}
+library(dplyr)
+library(kableExtra)
+tri <- tribble(
+  ~ name, ~ "common ports", ~ description ,
+  "Apache", "80, 443", "Basic Webserver",
+  "nginx", "80, 443", "Webserver, Reverse Proxy",
+  "Postgres", "5432", "Database",
+  "RStudio Server", "8787", "RStudio made available through a web browser",
+  "Shiny Server", "3838", "A webserver for shiny apps"
+)
+
+kable(tri)
+
+
+```
+
+
+## Reproducibility {.center}
+
+![](img/version_error.png)
+
+
+
+# Hosting Options
+
+
+
+
+
+## {.center}
+
+>Do not forget that hosting requires a development strategy. 
+
+
+## On Premise (in house)
+
+- [ETH Gitlab](https://gitlab.ethz.ch/)
+- [Gitea](https://gitea.io/en-us/)
+- [teaching.kof.ethz.ch](https://teaching.kof.ethz.ch/auth-sign-in)
+- [shiny server](https://rstudio.com/products/shiny/shiny-server/)
+
+
+## SaaS (software as a service) {.center}
+
+
+## SaaS (software as a service) / Serverless
+
+
+:::: {.columns}
+
+
+::: {.column width="40%" .smaller}
+
+
+### Examples
+
+- [Overleaf](https://www.overleaf.com/)
+- [shinyapps.io](https://www.shinyapps.io/)
+- [Google NLP](https://cloud.google.com/natural-language/)
+
+
+:::
+
+::: {.column width="60%" .smaller}
+
+
+### Advantages
+
+- Hassle free (Hosting)
+- Onboarding of non-hackers easier
+- transparent pricing models
+
+
+### Disadvantages
+
+
+
+- Blackbox
+- Vendor Lock-in depending on pricing model and software
+- Relatively Expensive per Unit
+
+:::
+
+::::
+
+
+## The Cloud {.center}
+
+
+## Common Cloud Products
+
+
+### Basic VMs
+
+e.g., Google Compute Engine, Microsoft Azure Cloud VMs
+
+
+### Single Purpose Environments
+
+Docker hosts, e.g., Google Kubernetes Engine, Azure Kubernetes Service (AKS)
+
+
+### Ready Made Services
+
+AI & machine learning products, e.g., Google Cloud AutoML, SQL Cloud Hosting
+
+
+
+# Containers - Building Blocks of Modern Infrastructure
+
+
+## {.center}
+
+>A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another
+
+*--docker.com, what is a container ?*
+
+
+## Excursion: Docker in one Slide
+
+- single purpose, application focused virtualization
+- **images: blueprints** for **containers**
+- **Registries**: store images
+- Docker files are text based configs from which images are created.
+- Images can be stacked, so we can build on existing images
+- Docker containers run on a Docker Host / Docker Desktop or in Docker Cluster like Docker Swarm or Kubernetes.
+
+
+
+## A Basic Docker File: R with Postgres Driver
+
+```sh
+FROM rocker/r-ver:4.2.0 as deps
+RUN apt-get update && apt-get install -y \
+libpq-dev \
+libcurl4-openssl-dev \
+libxml2-dev \
+libssl1.0-dev \
+libssh-dev
+```
+
+Start and log into the container... 
+
+```sh
+# start the container in the background
+docker run -it -d  --name pgr_container pgr
+
+# log into the running container, use bash
+docker exec -it pgr_container /bin/bash
+```
+
+<!--
+a docker solution without docker desktop
+https://www.viget.com/articles/how-to-use-docker-on-os-x-the-missing-guide/
+-->
+
+
+
+## What Is Docker Good for? {.center}
+
+
+## Test Stack, Conserve Setups {.center} 
+
+e.g., [PostgreSQL version on docker hub](https://hub.docker.com/_/postgres) 
+
+
+## Run Applications w/o Side Effects {.center}
+
+
+## Develop @home, Run in the Cloud {.center}
+
+
+
+## Two Docker Based Examples {.center}
+
+
+
+## Shiny Server {.center}
+
+```
+ docker run --rm -p 1234:3838 rocker/shiny
+
+```
+  
+  
+## Postgres Server  
+  
+```
+docker run --rm  --name pg-docker -e POSTGRES_PASSWORD=postgres -d -p 1111:5432 
+-v local/path:/var/lib/postgresql/data  postgres:11
+
+```
+
+-d: run as daemon, i.e., terminal window available
+
+-e: pass on an environment parameter, in this case a password 
+
+-p: port forwarding: host port:docker port
+
+-v: Mount for persistent storage
+
+
+(!): To make the two containers talk to each other, [consider docker compose](https://devops-carpentry.github.io/book/infrastructure.html#docker-compose---manage-multiple-containers).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

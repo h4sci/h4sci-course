@@ -438,17 +438,23 @@ mtcars %>%
 
 
 
-## Which DBMS Should I Use ?
+## Which DBMS Should I Use ? {.center}
 
+
+## Which DBMS Should I Use ? 
 
 1. **relational** DBMS should be the **default choice**, don't believe me? Believe [him](https://blog.jooq.org/tag/mongodb/). Note, you can use json inside SQL DBs 
 as well. 
 
-2. Which relational DBMS should I Use? 
+
+## Which DBMS Should I Use ? 
+
+2. Which **relational** DBMS should I Use? 
 - SQLite is for prototypes and mobile phones
 - MySQL is for kids
 - PostgreSQL, MS SQL and Oracle are at the same level for many science
 applications
+
 
 
 ## Can You Explain 'Relational'

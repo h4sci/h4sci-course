@@ -7,6 +7,6 @@ intro-survey/.pgpass
 notes/
 deploy_shinyappsio.R
 gc.json
-
+.DS_Store
 
 /.quarto/

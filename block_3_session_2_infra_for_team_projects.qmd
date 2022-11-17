@@ -1,0 +1,39 @@
+---
+title: "Hacking for Science"
+subtitle: "Block 3, Session 2: Infrastructure for Team Projects"
+author: "Matt Bannert ([@whatsgoodio](https://twitter.com/whatsgoodio))"
+format: revealjs
+chalkboard: true
+echo: true
+footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)"
+---
+
+
+## Today's Goals {.center}
+
+- find infrastructure for team projects
+- build teams
+
+
+
+# Introduction to GitHub Pages 
+
+
+## Github Pages in a Nutshell
+
+- every github repository can opt to have a repository specific website
+- GitHub Pages is designed to document and/or market the software developed in the repo
+the URL pattern is: user.github.io/repository-name
+- GitHub Pages sites either reside on a separate gh-pages branch or in the docs folder on the main branch.
+- GitHub Pages can be activated through the Github GUI
+- GitHub Pages can host either .md files or .html webpages (including .js and .css)
+
+Examples: devops-carpentry.github.io/book, mbannert.github.io/timeseriesdb
+
+
+
+# Introduction to GitHub Actions {.center}
+
+
+# Introduction to Shiny {.center}
+
