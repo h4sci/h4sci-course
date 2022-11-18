@@ -9,6 +9,11 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 ---
 
 
+
+
+## Today's Goals {.center}
+
+
 <style>
 .small{
 font-size:.5em;
@@ -20,15 +25,19 @@ font-size:.7em;
 </style>
 
 
-
-## Today's Goals {.center}
-
 - find infrastructure for team projects
 - build teams
 
 
 
 # Introduction to GitHub Pages 
+
+
+## Examples {.center}
+
+- **personal repository page**: [mbannert.github.io/timeseriesdb](https://mbannert.github.io/timeseriesdb)
+- **organization repository page**: [devops-carpentry.github.io/book](https://devops-carpentry.github.io/book)
+- **organization page**: [h4sci.github.io](https://h4sci.github.io)
 
 
 ## Github Pages in a Nutshell
@@ -40,7 +49,7 @@ the URL pattern is: user.github.io/repository-name
 - GitHub Pages can be activated through the Github GUI
 - GitHub Pages can host either .md files or .html webpages (including .js and .css)
 
-Examples: devops-carpentry.github.io/book, mbannert.github.io/timeseriesdb
+
 
 
 
