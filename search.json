@@ -228,14 +228,21 @@
     "href": "block_3_session_2_infra_for_team_projects.html#todays-goals",
     "title": "Hacking for Science",
     "section": "Today’s Goals",
-    "text": "Today’s Goals\n\nfind infrastructure for team projects\nbuild teams"
+    "text": "Today’s Goals\n\n\nfind infrastructure for team projects\nbuild teams"
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#examples",
+    "href": "block_3_session_2_infra_for_team_projects.html#examples",
+    "title": "Hacking for Science",
+    "section": "Examples",
+    "text": "Examples\n\npersonal repository page: mbannert.github.io/timeseriesdb\norganization repository page: devops-carpentry.github.io/book\norganization page: h4sci.github.io"
   },
   {
     "objectID": "block_3_session_2_infra_for_team_projects.html#github-pages-in-a-nutshell",
     "href": "block_3_session_2_infra_for_team_projects.html#github-pages-in-a-nutshell",
     "title": "Hacking for Science",
     "section": "Github Pages in a Nutshell",
-    "text": "Github Pages in a Nutshell\n\nevery github repository can opt to have a repository specific website\nGitHub Pages is designed to document and/or market the software developed in the repo the URL pattern is: user.github.io/repository-name\nGitHub Pages sites either reside on a separate gh-pages branch or in the docs folder on the main branch.\nGitHub Pages can be activated through the Github GUI\nGitHub Pages can host either .md files or .html webpages (including .js and .css)\n\nExamples: devops-carpentry.github.io/book, mbannert.github.io/timeseriesdb"
+    "text": "Github Pages in a Nutshell\n\nevery github repository can opt to have a repository specific website\nGitHub Pages is designed to document and/or market the software developed in the repo the URL pattern is: user.github.io/repository-name\nGitHub Pages sites either reside on a separate gh-pages branch or in the docs folder on the main branch.\nGitHub Pages can be activated through the Github GUI\nGitHub Pages can host either .md files or .html webpages (including .js and .css)"
   },
   {
     "objectID": "block_3_session_2_infra_for_team_projects.html#what-is-github-actions",
