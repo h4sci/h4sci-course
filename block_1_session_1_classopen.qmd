@@ -2,35 +2,14 @@
 title: "Hacking for Science"
 subtitle: "Block 1, Session 1: Class is Open. C'mon in."
 author: "Matt Bannert ([@whatsgoodio](https://twitter.com/whatsgoodio))"
-format: revealjs
+format: 
+    revealjs:
+        logo: img/h4sci-logo.png
 chalkboard: true
 footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)"
 ---
 
 
-## Hi, I'm Matt.
-
-:::: {.columns}
-
-
-::: {.column width="60%" }
-
-- Data Analytics Engineering [@cynkra](https://cynkra.com)
-
-- formerly: architecture of KOF (ETH) data pipelines
-
-- global coordinator for the useR! conference
-
-:::
-
-
-::: {.column width="40%" }
-
-![](img/matt.jpeg){fig-align="center" height="400"}
-
-:::
-
-::::
 
 
 ## James Bond Start 
@@ -40,6 +19,33 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 ::: footer
 [via GIPHY (not CC-BY-NC-SA licensed)](https://giphy.com/gifs/james-bond-007-Mz6oZpw81uKQg)
 :::
+
+
+
+## Hi, I'm Matt.
+
+:::: {.columns}
+
+
+::: {.column width="60%" }
+
+- Advanced Analytics at Helsana 
+
+- formerly: Sales Lead [@cynkra](https://cynkra.com), architecture of KOF (ETH) data pipelines
+
+- global coordinator for the useR! conference
+
+:::
+
+
+::: {.column width="40%" }
+
+![](img/matt.jpg){fig-align="center" height="400"}
+
+:::
+
+::::
+
 
 ## Markdown / Quarto {.center}
 
@@ -81,28 +87,28 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 ## Schedule: Block 1 {.center}
 
 
-29.09.	10-13	The Big Picture
+26.09.	10-13	The Big Picture
 
-30.9.	10-14	Git & Workflows
+27.9.	10-14	Git & Workflows
 
 ## Schedule: Block 2 {.center}
 
-20.10.	10-13	R Programming Crash Course
+24.10.	10-13	R Programming Crash Course
 
-21.10.	10-14	Programming with Data
+25.10.	10-14	Programming with Data
 
 ## Schedule: Block 3 {.center}
 
 
-17.11.	10-13	Infrastructure
+21.11.	10-13	Infrastructure
 
-18.11.	10-14	Infrastructure
+22.11.	10-14	Infrastructure
 
 ## Schedule: Block 4 {.center}
 
-01.12.	10-13	Semester Projects
+05.12.	10-13	Semester Projects
 
-02.12.	10-14	Semester Projects
+06.12.	10-14	Semester Projects
 
 
 # Course Resources
@@ -111,18 +117,17 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 ## Read Online
 
 - [h4sci Slides](https://h4sci.github.io/h4sci-course)
-- [DevOps Carpentry free Online Book](https://h4sci.github.io/h4sci-book)
+- [Research Sofware Engineering - A Guide to Open Source Ecosystem (Online Book)](https://rse-book.github.io)
 - [Tasks & Exercises](https://github.com/h4sci/h4sci-tasks)
 
 ## Source
 
 - [Slides: https://github.com/h4sci/h4sci-course](https://github.com/h4sci/h4sci-course)
-- [Book: https://github.com/devops-carpentry/book](https://github.com/devops-carpentry/book)
+- [Book: https://github.com/rse-book](https://github.com/devops-carpentry/book)
 
 ## Community
 
-- [R Studio Server](https://teaching.kof.ethz.ch/auth-sign-in) (only available to enrolled ETH students during semester) 
-- [Slack Workspace](https://h4sci.slack.com/) (invite only) 
+- [Matrix Chat Space](https://h4sci.slack.com/) (invite only) 
 - Zoom Live Sessions (only available to ETH students)
 
 ```
