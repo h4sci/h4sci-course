@@ -21,6 +21,14 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 :::
 
 
+## Markdown / Quarto {.center}
+
+
+## git / GitHub / GitHub Actions {.center}
+
+
+## Swissdata 1.0 {.center}
+
 
 ## Hi, I'm Matt.
 
@@ -31,9 +39,11 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 
 - Advanced Analytics at Helsana 
 
-- formerly: Sales Lead [@cynkra](https://cynkra.com), architecture of KOF (ETH) data pipelines
+- Research Software Engineering and Economic Data (RSEED) at KOF Lab ETH Zurich 
 
-- global coordinator for the useR! conference
+- formerly: Sales Lead [@cynkra](https://cynkra.com)
+
+- active in the open source community, e.g., former global coordinator for the useR! conference
 
 :::
 
@@ -46,14 +56,6 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 
 ::::
 
-
-## Markdown / Quarto {.center}
-
-
-## git version control {.center}
-
-
-## Swissdata 1.0 {.center}
 
 
 ## [Background Survey](https://graphs.kof.ethz.ch/h4sci-survey/) {.center}
@@ -127,8 +129,8 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 
 ## Community
 
-- [Matrix Chat Space](https://h4sci.slack.com/) (invite only) 
-- Zoom Live Sessions (only available to ETH students)
+- Matrix Chat Space (#h4sci:staffchat.ethz.ch) (element.io is recommended as a client)
+- Zoom Live Sessions (only available to enrolled students)
 
 ```
 

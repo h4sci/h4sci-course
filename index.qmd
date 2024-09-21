@@ -1,6 +1,6 @@
 ---
 title: "Hacking for Science"
-subtitle: "Course Slides, Table of Content, 2022"
+subtitle: "Course Slides, Table of Content, 2024"
 author: "[@whatsgoodio](https://twitter.com/whatsgoodio)"
 format: revealjs
 footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)"
@@ -11,6 +11,8 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 [Block 1, Session 1: Class Is Open. C'mon in.](block_1_session_1_classopen.html)
 
 [Block 1, Session 2: The Big Picture](block_1_session_2_big_picture.html)
+
+<!--
 
 [Block 1, Session 3: Git Requirements](block_1_session_3_git_requirements.html)
 
@@ -25,6 +27,10 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 [Block 3, Session 2: Infrastructure for Team Projects](block_3_session_2_infra_for_team_projects.html)
 
 
+[Block 4, Mini-Input: Project Management 101](block_4_input.html)
+
+
+-->
 
 <!--
 

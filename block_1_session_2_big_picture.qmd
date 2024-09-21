@@ -10,7 +10,7 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 
 ## {.center}
 
-Book Chapter: [Stack - A Developer's Toolkit](https://devops-carpentry.github.io/book/stack-developer-toolkit.html)
+Book Chapter: [Stack - A Developer's Toolkit](https://rse-book.github.io/stack-developer-toolkit.html)
 
 
 ## {.center}
