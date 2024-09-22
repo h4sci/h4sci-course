@@ -10,8 +10,6 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 ---
 
 
-
-
 ## James Bond Start 
 
 <iframe src="https://giphy.com/embed/Mz6oZpw81uKQg" width="480" height="363" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
@@ -23,11 +21,10 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 
 ## Markdown / Quarto {.center}
 
+## AI Integration {.center}
 
-## git / GitHub / GitHub Actions {.center}
+## Containers / Docker {.center}
 
-
-## Swissdata 1.0 {.center}
 
 
 ## Hi, I'm Matt.
@@ -58,7 +55,7 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 
 
 
-## [Background Survey](https://graphs.kof.ethz.ch/h4sci-survey/) {.center}
+## [Background Survey](https://h4sci.kof.ethz.ch/) {.center}
 
 
 # Overall Course Outline
@@ -84,6 +81,14 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 [via GIPHY (not CC-BY-NC-SA licensed)](https://giphy.com/gifs/lfc-friday-feeling-klopp-jrgen-1zkMbX7k4nd1AM4i4k)
 :::
 
+
+## Approach: Flipped Classroom
+
+<center><iframe src="https://giphy.com/embed/l0HlUND0GA3ehpj1K" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></center>
+
+::: footer
+[via GIPHY](https://giphy.com/gifs/southparkgifs-l0HlUND0GA3ehpj1K)
+:::
 
 
 ## Schedule: Block 1 {.center}
@@ -132,7 +137,7 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 - Matrix Chat Space (#h4sci:staffchat.ethz.ch) (element.io is recommended as a client)
 - Zoom Live Sessions (only available to enrolled students)
 
-```
+
 
 
 
@@ -150,15 +155,8 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 ## 3. Applied Data Handling /w Programming Language {.center}
 
 
-## Example Benchmark: Create a Production Pipeline {.center}
+## Example Benchmark: [Create a Production Pipeline](https://github.com/h4sci/h4sci-gha-demo) {.center}
 
-## Approach: Flipped Classroom
-
-<center><iframe src="https://giphy.com/embed/l0HlUND0GA3ehpj1K" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></center>
-
-::: footer
-[via GIPHY](https://giphy.com/gifs/southparkgifs-l0HlUND0GA3ehpj1K)
-:::
 
 ## Invidual Introduction {.center}
 

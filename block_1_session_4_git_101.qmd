@@ -2,7 +2,9 @@
 title: "Hacking for Science"
 subtitle: "Block 1, Session 4: Git 101"
 author: "Matt Bannert ([@whatsgoodio](https://twitter.com/whatsgoodio))"
-format: revealjs
+format: 
+    revealjs:
+        logo: img/h4sci-logo.png
 chalkboard: true
 footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)"
 ---

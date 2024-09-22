@@ -2,15 +2,12 @@
 title: "Hacking for Science"
 subtitle: "Block 1, Session 2: The Big Picture"
 author: "Matt Bannert ([@whatsgoodio](https://twitter.com/whatsgoodio))"
-format: revealjs
+format: 
+    revealjs:
+        logo: img/h4sci-logo.png
 chalkboard: true
 footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)"
 ---
-
-
-## {.center}
-
-Book Chapter: [Stack - A Developer's Toolkit](https://rse-book.github.io/stack-developer-toolkit.html)
 
 
 ## {.center}
@@ -21,9 +18,17 @@ Book Chapter: [Stack - A Developer's Toolkit](https://rse-book.github.io/stack-d
 <a href="https://azure.microsoft.com/en-us/"><img src="logos/azure.png" width = "80px"></a> <a href="https://d3js.org"><img src="logos/d3.png" width = "80px"></a><a href="https://docker.com"><img src="logos/docker.png" width = "80px"></a> <img src="logos/git.png" width = "80px"> <img src="logos/github.png" width = "80px"> <img src="logos/hadoop.png" width = "80px"><a href="https://highcharts.com"><img src="logos/highcharts.png" width = "80px"></a> <img src="logos/julia.png" width = "80px"> <img src="logos/matlab.png" width = "80px"> <img src="logos/mongodb.png" width = "80px"> <img src="logos/pandas.png" width = "80px"> <img src="logos/postgresql.png" width = "80px"> <img src="logos/python.png" width = "80px"> <img src="logos/rstats.png" width = "80px"> <img src="logos/rstudio.png" width = "80px"></div>
 
 
+
 ## How to Compose the Right Toolbox? {.center}
 
-[![](img/picktools.jpg)](https://devops-carpentry.github.io/book/stack-developer-toolkit.html "Choose Your Tools"){fig-align="center"}
+[![](img/picktools.jpg)](https://rse-book.github.io/stack-developer-toolkit.html "Choose Your Tools"){fig-align="center"}
+
+
+
+## {.center}
+
+Book Chapter: [Stack - A Developer's Toolkit](https://rse-book.github.io/stack-developer-toolkit.html)
+
 
 
 
