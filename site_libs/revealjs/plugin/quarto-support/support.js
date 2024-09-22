@@ -4,6 +4,20 @@ window.QuartoSupport = function () {
     return /print-pdf/gi.test(window.location.search);
   }
 
+  // helper for theme toggling
+  function toggleBackgroundTheme(el, onDarkBackground, onLightBackground) {
+    if (onDarkBackground) {
+      el.classList.add('has-dark-background')
+    } else {
+      el.classList.remove('has-dark-background')
+    }
+    if (onLightBackground) {
+      el.classList.add('has-light-background')
+    } else {
+      el.classList.remove('has-light-background')
+    }
+  }
+
   // implement controlsAudo
   function controlsAuto(deck) {
     const config = deck.getConfig();
@@ -53,8 +67,13 @@ window.QuartoSupport = function () {
             }
 
             // if the deck is in an iframe we want to open it externally
+            // (don't do this when in vscode though as it has its own
+            // handler for opening links externally that will be play)
             const iframe = window.location !== window.parent.location;
-            if (iframe) {
+            if (
+              iframe &&
+              !window.location.search.includes("quartoPreviewReqId=")
+            ) {
               ev.preventDefault();
               ev.stopImmediatePropagation();
               window.open(url, "_blank");
@@ -106,8 +125,19 @@ window.QuartoSupport = function () {
     }
   }
 
-  // add footer text
-  function addFooter(deck) {
+  // tweak slide-number element
+  function tweakSlideNumber(deck) {
+    deck.on("slidechanged", function (ev) {
+      const revealParent = deck.getRevealElement();
+      const slideNumberEl = revealParent.querySelector(".slide-number");
+      const onDarkBackground = Reveal.getSlideBackground(ev.indexh, ev.indexv).classList.contains('has-dark-background');
+      const onLightBackground = Reveal.getSlideBackground(ev.indexh, ev.indexv).classList.contains('has-light-background');
+      toggleBackgroundTheme(slideNumberEl, onDarkBackground, onLightBackground);
+    })
+  }
+
+   // add footer text
+   function addFooter(deck) {
     const revealParent = deck.getRevealElement();
     const defaultFooterDiv = document.querySelector(".footer-default");
     if (defaultFooterDiv) {
@@ -122,13 +152,17 @@ window.QuartoSupport = function () {
             prevSlideFooter.remove();
           }
           const currentSlideFooter = ev.currentSlide.querySelector(".footer");
+          const onDarkBackground = Reveal.getSlideBackground(ev.indexh, ev.indexv).classList.contains('has-dark-background')
+          const onLightBackground = Reveal.getSlideBackground(ev.indexh, ev.indexv).classList.contains('has-light-background')
           if (currentSlideFooter) {
             defaultFooterDiv.style.display = "none";
             const slideFooter = currentSlideFooter.cloneNode(true);
             handleLinkClickEvents(deck, slideFooter);
             deck.getRevealElement().appendChild(slideFooter);
+            toggleBackgroundTheme(slideFooter, onDarkBackground, onLightBackground)
           } else {
             defaultFooterDiv.style.display = "block";
+            toggleBackgroundTheme(defaultFooterDiv, onDarkBackground, onLightBackground)
           }
         });
       }
@@ -227,6 +261,46 @@ window.QuartoSupport = function () {
     }
   }
 
+  function handleSlideChanges(deck) {
+    // dispatch for htmlwidgets
+    const fireSlideEnter = () => {
+      const event = window.document.createEvent("Event");
+      event.initEvent("slideenter", true, true);
+      window.document.dispatchEvent(event);
+    };
+
+    const fireSlideChanged = (previousSlide, currentSlide) => {
+      fireSlideEnter();
+
+      // dispatch for shiny
+      if (window.jQuery) {
+        if (previousSlide) {
+          window.jQuery(previousSlide).trigger("hidden");
+        }
+        if (currentSlide) {
+          window.jQuery(currentSlide).trigger("shown");
+        }
+      }
+    };
+
+    // fire slideEnter for tabby tab activations (for htmlwidget resize behavior)
+    document.addEventListener("tabby", fireSlideEnter, false);
+
+    deck.on("slidechanged", function (event) {
+      fireSlideChanged(event.previousSlide, event.currentSlide);
+    });
+  }
+
+  function workaroundMermaidDistance(deck) {
+    if (window.document.querySelector("pre.mermaid-js")) {
+      const slideCount = deck.getTotalSlides();
+      deck.configure({
+        mobileViewDistance: slideCount,
+        viewDistance: slideCount,
+      });
+    }
+  }
+
   return {
     id: "quarto-support",
     init: function (deck) {
@@ -235,9 +309,12 @@ window.QuartoSupport = function () {
       fixupForPrint(deck);
       applyGlobalStyles(deck);
       addLogoImage(deck);
+      tweakSlideNumber(deck);
       addFooter(deck);
       addChalkboardButtons(deck);
       handleTabbyClicks();
+      handleSlideChanges(deck);
+      workaroundMermaidDistance(deck);
     },
   };
 };

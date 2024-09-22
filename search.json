@@ -1,381 +1,269 @@
 [
   {
-    "objectID": "block_1_session_1_classopen.html#hi-im-matt.",
-    "href": "block_1_session_1_classopen.html#hi-im-matt.",
-    "title": "Hacking for Science",
-    "section": "Hi, I’m Matt.",
-    "text": "Hi, I’m Matt.\n\n\n\nData Analytics Engineering @cynkra\nformerly: architecture of KOF (ETH) data pipelines\nglobal coordinator for the useR! conference"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#james-bond-start",
-    "href": "block_1_session_1_classopen.html#james-bond-start",
-    "title": "Hacking for Science",
-    "section": "James Bond Start",
-    "text": "James Bond Start\n\n\n\nvia GIPHY (not CC-BY-NC-SA licensed)"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#markdown-quarto",
-    "href": "block_1_session_1_classopen.html#markdown-quarto",
-    "title": "Hacking for Science",
-    "section": "Markdown / Quarto",
-    "text": "Markdown / Quarto"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#git-version-control",
-    "href": "block_1_session_1_classopen.html#git-version-control",
-    "title": "Hacking for Science",
-    "section": "git version control",
-    "text": "git version control"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#swissdata-1.0",
-    "href": "block_1_session_1_classopen.html#swissdata-1.0",
-    "title": "Hacking for Science",
-    "section": "Swissdata 1.0",
-    "text": "Swissdata 1.0"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#background-survey",
-    "href": "block_1_session_1_classopen.html#background-survey",
-    "title": "Hacking for Science",
-    "section": "Background Survey",
-    "text": "Background Survey"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#section",
-    "href": "block_1_session_1_classopen.html#section",
-    "title": "Hacking for Science",
-    "section": "",
-    "text": "via GIPHY (not CC-BY-NC-SA licensed)"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#coaching",
-    "href": "block_1_session_1_classopen.html#coaching",
-    "title": "Hacking for Science",
-    "section": "Coaching",
-    "text": "Coaching\n\n\n\n\n\nvia GIPHY (not CC-BY-NC-SA licensed)"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#schedule-block-1",
-    "href": "block_1_session_1_classopen.html#schedule-block-1",
-    "title": "Hacking for Science",
-    "section": "Schedule: Block 1",
-    "text": "Schedule: Block 1\n29.09. 10-13 The Big Picture\n30.9. 10-14 Git & Workflows"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#schedule-block-2",
-    "href": "block_1_session_1_classopen.html#schedule-block-2",
-    "title": "Hacking for Science",
-    "section": "Schedule: Block 2",
-    "text": "Schedule: Block 2\n20.10. 10-13 R Programming Crash Course\n21.10. 10-14 Programming with Data"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#schedule-block-3",
-    "href": "block_1_session_1_classopen.html#schedule-block-3",
-    "title": "Hacking for Science",
-    "section": "Schedule: Block 3",
-    "text": "Schedule: Block 3\n17.11. 10-13 Infrastructure\n18.11. 10-14 Infrastructure"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#schedule-block-4",
-    "href": "block_1_session_1_classopen.html#schedule-block-4",
-    "title": "Hacking for Science",
-    "section": "Schedule: Block 4",
-    "text": "Schedule: Block 4\n01.12. 10-13 Semester Projects\n02.12. 10-14 Semester Projects"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#read-online",
-    "href": "block_1_session_1_classopen.html#read-online",
-    "title": "Hacking for Science",
-    "section": "Read Online",
-    "text": "Read Online\n\nh4sci Slides\nDevOps Carpentry free Online Book\nTasks & Exercises"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#source",
-    "href": "block_1_session_1_classopen.html#source",
-    "title": "Hacking for Science",
-    "section": "Source",
-    "text": "Source\n\nSlides: https://github.com/h4sci/h4sci-course\nBook: https://github.com/devops-carpentry/book"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#community",
-    "href": "block_1_session_1_classopen.html#community",
-    "title": "Hacking for Science",
-    "section": "Community",
-    "text": "Community\n\nR Studio Server (only available to enrolled ETH students during semester)\nSlack Workspace (invite only)\nZoom Live Sessions (only available to ETH students)\n\n```"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#evaluate-the-role-of-components-in-the-tech-stack",
-    "href": "block_1_session_1_classopen.html#evaluate-the-role-of-components-in-the-tech-stack",
-    "title": "Hacking for Science",
-    "section": "1. Evaluate the Role of Components in the Tech Stack",
-    "text": "1. Evaluate the Role of Components in the Tech Stack"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#carpentry-level-version-control-dev-workflows",
-    "href": "block_1_session_1_classopen.html#carpentry-level-version-control-dev-workflows",
-    "title": "Hacking for Science",
-    "section": "2. Carpentry Level Version Control + Dev Workflows",
-    "text": "2. Carpentry Level Version Control + Dev Workflows"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#applied-data-handling-w-programming-language",
-    "href": "block_1_session_1_classopen.html#applied-data-handling-w-programming-language",
-    "title": "Hacking for Science",
-    "section": "3. Applied Data Handling /w Programming Language",
-    "text": "3. Applied Data Handling /w Programming Language"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#example-benchmark-create-a-production-pipeline",
-    "href": "block_1_session_1_classopen.html#example-benchmark-create-a-production-pipeline",
-    "title": "Hacking for Science",
-    "section": "Example Benchmark: Create a Production Pipeline",
-    "text": "Example Benchmark: Create a Production Pipeline"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#approach-flipped-classroom",
-    "href": "block_1_session_1_classopen.html#approach-flipped-classroom",
-    "title": "Hacking for Science",
-    "section": "Approach: Flipped Classroom",
-    "text": "Approach: Flipped Classroom\n\n\n\n\n\nvia GIPHY"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#invidual-introduction",
-    "href": "block_1_session_1_classopen.html#invidual-introduction",
-    "title": "Hacking for Science",
-    "section": "Invidual Introduction",
-    "text": "Invidual Introduction\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
-  },
-  {
-    "objectID": "block_1_session_2_big_picture.html#section",
-    "href": "block_1_session_2_big_picture.html#section",
-    "title": "Hacking for Science",
-    "section": "",
-    "text": "Book Chapter: Stack - A Developer’s Toolkit"
-  },
-  {
-    "objectID": "block_1_session_2_big_picture.html#how-to-compose-the-right-toolbox",
-    "href": "block_1_session_2_big_picture.html#how-to-compose-the-right-toolbox",
-    "title": "Hacking for Science",
-    "section": "How to Compose the Right Toolbox?",
-    "text": "How to Compose the Right Toolbox?"
-  },
-  {
-    "objectID": "block_1_session_2_big_picture.html#editors-and-ides",
-    "href": "block_1_session_2_big_picture.html#editors-and-ides",
-    "title": "Hacking for Science",
-    "section": "Editors and IDEs",
-    "text": "Editors and IDEs\n\n\n\n\n\n\n\nPeople: “Oh, you’re such a wizard.” Me: “No, just a carpenter.”\nIDEs: VS Code, R Studio, pyCharm Text Editors: Atom, Sublime, Notepad++, Text Wrangler"
-  },
-  {
-    "objectID": "block_1_session_2_big_picture.html#programming-languages-compiled-vs.-interpreted",
-    "href": "block_1_session_2_big_picture.html#programming-languages-compiled-vs.-interpreted",
-    "title": "Hacking for Science",
-    "section": "Programming Languages: Compiled vs. Interpreted",
-    "text": "Programming Languages: Compiled vs. Interpreted"
-  },
-  {
-    "objectID": "block_1_session_2_big_picture.html#version-control",
-    "href": "block_1_session_2_big_picture.html#version-control",
-    "title": "Hacking for Science",
-    "section": "Version Control",
-    "text": "Version Control\n\n\nGit is NOT GitHub\nGit is NOT GitHub\nGit is NOT GitHub\nGit is NOT GitHub\nGit is NOT GitHub\n\nVersion Control Systems\n\ngit\nSVN\nCVS\nmercurial\n\nGit Platforms (git + web GUI + PM tools)\n\nGitHub\nGitLab\nBitbucket\n\ngitea is a self-hosted service (run a platform on your own server)."
-  },
-  {
-    "objectID": "block_1_session_2_big_picture.html#data-management",
-    "href": "block_1_session_2_big_picture.html#data-management",
-    "title": "Hacking for Science",
-    "section": "Data Management",
-    "text": "Data Management\n\n\nRelational Database Management Systems (RDBMS)\n\nOracle\nMicrosoft SQL Server\nPostgreSQL\nMySQL\nSQLite\n…\n\n\nNon-Relational Databases\n\nMongoDB\nRedis\nRedshift\n…"
-  },
-  {
-    "objectID": "block_1_session_2_big_picture.html#infrastructure-on-premise-saas-cloud",
-    "href": "block_1_session_2_big_picture.html#infrastructure-on-premise-saas-cloud",
-    "title": "Hacking for Science",
-    "section": "Infrastructure: On Premise, SaaS, Cloud",
-    "text": "Infrastructure: On Premise, SaaS, Cloud"
-  },
-  {
-    "objectID": "block_1_session_2_big_picture.html#automation",
-    "href": "block_1_session_2_big_picture.html#automation",
-    "title": "Hacking for Science",
-    "section": "Automation",
-    "text": "Automation\n\n\nProcess Automation\n\nCronjobs\nApache Airflow\n\nRelease Automation\n\nGitlab CI\nGitHub Actions\nDrone\n\nInfrastructure Automation\n\nTerraform\nAnsible\nHelm"
-  },
-  {
-    "objectID": "block_1_session_2_big_picture.html#communication-community-resources",
-    "href": "block_1_session_2_big_picture.html#communication-community-resources",
-    "title": "Hacking for Science",
-    "section": "Communication, Community & Resources",
-    "text": "Communication, Community & Resources\n\ncommunity groups: RLadies, WhyR, MiR, Forwards, AfricaR, the carpentries, local R user groups\nmailing lists\nSlack (RSE, Zurich R User Group), Discord, matrix\nDocumentation, Content Aggregators, e.g., CTV, Python Graph Gallery\nbig book of R\nStackoverflow.com"
-  },
-  {
-    "objectID": "block_1_session_2_big_picture.html#publishing",
-    "href": "block_1_session_2_big_picture.html#publishing",
-    "title": "Hacking for Science",
-    "section": "Publishing",
-    "text": "Publishing"
-  },
-  {
-    "objectID": "block_1_session_2_big_picture.html#section-2",
-    "href": "block_1_session_2_big_picture.html#section-2",
-    "title": "Hacking for Science",
-    "section": "",
-    "text": "“Premature optimization is the root of all evil.”\n\n– Donald Knuth\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
-  },
-  {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#todays-goals",
-    "href": "block_3_session_2_infra_for_team_projects.html#todays-goals",
-    "title": "Hacking for Science",
-    "section": "Today’s Goals",
-    "text": "Today’s Goals\n\n\nfind infrastructure for team projects\nbuild teams"
-  },
-  {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#examples",
-    "href": "block_3_session_2_infra_for_team_projects.html#examples",
-    "title": "Hacking for Science",
-    "section": "Examples",
-    "text": "Examples\n\npersonal repository page: mbannert.github.io/timeseriesdb\norganization repository page: devops-carpentry.github.io/book\norganization page: h4sci.github.io"
-  },
-  {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#github-pages-in-a-nutshell",
-    "href": "block_3_session_2_infra_for_team_projects.html#github-pages-in-a-nutshell",
-    "title": "Hacking for Science",
-    "section": "Github Pages in a Nutshell",
-    "text": "Github Pages in a Nutshell\n\nevery github repository can opt to have a repository specific website\nGitHub Pages is designed to document and/or market the software developed in the repo the URL pattern is: user.github.io/repository-name\nGitHub Pages sites either reside on a separate gh-pages branch or in the docs folder on the main branch.\nGitHub Pages can be activated through the Github GUI\nGitHub Pages can host either .md files or .html webpages (including .js and .css)"
-  },
-  {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#what-is-github-actions",
-    "href": "block_3_session_2_infra_for_team_projects.html#what-is-github-actions",
-    "title": "Hacking for Science",
-    "section": "What is GitHub Actions?",
-    "text": "What is GitHub Actions?\n\nGitHub’s CI/CD tool\nsimilar to Gitlab CI/CD"
-  },
-  {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#example-outline",
-    "href": "block_3_session_2_infra_for_team_projects.html#example-outline",
-    "title": "Hacking for Science",
-    "section": "Example Outline",
-    "text": "Example Outline\n\nPrepare a task you want to run, e.g., an R script.\nConfigure an environment AND workflow in a simple .yaml text file\nPush the file to a hidden folder .github/workflows (this won’t be necessary if you edited the file directly on github0\nUse the GitHub web GUI to monitor the process."
-  },
-  {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#httpscrontab.guru",
-    "href": "block_3_session_2_infra_for_team_projects.html#httpscrontab.guru",
-    "title": "Hacking for Science",
-    "section": "https://crontab.guru/",
-    "text": "https://crontab.guru/\ncronjobs - execute on schedule. GitHub Actions docs"
-  },
-  {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#server.r-why-do-i-have-to-do-all-the-work",
-    "href": "block_3_session_2_infra_for_team_projects.html#server.r-why-do-i-have-to-do-all-the-work",
-    "title": "Hacking for Science",
-    "section": "server.R (Why Do I have to Do All the Work ?)",
-    "text": "server.R (Why Do I have to Do All the Work ?)"
-  },
-  {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#ui.r-i-may-be-late-but-i-look-gooooooood.",
-    "href": "block_3_session_2_infra_for_team_projects.html#ui.r-i-may-be-late-but-i-look-gooooooood.",
-    "title": "Hacking for Science",
-    "section": "ui.R (I may be late, but I look gooooooood.)",
-    "text": "ui.R (I may be late, but I look gooooooood.)"
-  },
-  {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#what-does-the-shiny-framework-do-for-us",
-    "href": "block_3_session_2_infra_for_team_projects.html#what-does-the-shiny-framework-do-for-us",
-    "title": "Hacking for Science",
-    "section": "What Does the shiny Framework Do for Us?",
-    "text": "What Does the shiny Framework Do for Us?\n\ncreate HTML/CSS/Javascript code\nstart/run a (local) webserver\ncommunication between the R session and the browser"
-  },
-  {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#a-minimal-note-on-html",
-    "href": "block_3_session_2_infra_for_team_projects.html#a-minimal-note-on-html",
-    "title": "Hacking for Science",
-    "section": "A minimal note on HTML",
-    "text": "A minimal note on HTML\n\nMarkup language\ncontent is wrapped in tags\n\n<a href=\"http://somedestination.com\">some link</a>\n<b>this is bold</b>\n<i>this is italic</i>\n<div class=\"some-class\">a class with a style</div>\n=> shiny functions create these wraps for us."
-  },
-  {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#breaking-down-the-hello-world-app",
-    "href": "block_3_session_2_infra_for_team_projects.html#breaking-down-the-hello-world-app",
-    "title": "Hacking for Science",
-    "section": "Breaking Down the Hello World App",
-    "text": "Breaking Down the Hello World App\n\n\nui.R\n\nlibrary(shiny)\nshinyUI(fluidPage(\n  titlePanel(\"A random normal\"),\n  # Sidebar with a slider input for number of bins \n  sidebarLayout(\n    sidebarPanel(\n      sliderInput(\"obs\",\n                  \"Number of obs:\",\n                  min = 1,\n                  max = 1000,\n                  value = 100)\n    ),\n    mainPanel(\n      plotOutput(\"randomPlot\")\n    )\n  )\n))"
-  },
-  {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#breaking-down-the-hello-world-app-1",
-    "href": "block_3_session_2_infra_for_team_projects.html#breaking-down-the-hello-world-app-1",
-    "title": "Hacking for Science",
-    "section": "Breaking Down the Hello World App",
-    "text": "Breaking Down the Hello World App\n\n\nui.R\n\nlibrary(shiny)\nshinyUI(fluidPage(\n  titlePanel(\"A random normal\"),\n  # Sidebar with a slider input for number of bins \n  sidebarLayout(\n    sidebarPanel(\n      sliderInput(\"obs\",\n                  \"Number of obs:\",\n                  min = 1,\n                  max = 1000,\n                  value = 100)\n    ),\n    mainPanel(\n      plotOutput(\"randomPlot\")\n    )\n  )\n))\n\n\nserver.R\n\nshinyServer(function(input, output) {\n    output$randomPlot <- renderPlot({\n    hist(rnorm(input$obs),\n         col = 'darkgray',\n         border = 'white')\n  })\n})"
-  },
-  {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#planning-the-app",
-    "href": "block_3_session_2_infra_for_team_projects.html#planning-the-app",
-    "title": "Hacking for Science",
-    "section": "Planning the App",
-    "text": "Planning the App\nThis course: dashboard structure\n\nsidebar\ntopbar\nmain panel\nmenu buttons / sub pages"
-  },
-  {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#the-shinydashboard-package",
-    "href": "block_3_session_2_infra_for_team_projects.html#the-shinydashboard-package",
-    "title": "Hacking for Science",
-    "section": "The shinydashboard package",
-    "text": "The shinydashboard package\n\n\nlibrary(shinydashboard)\ndashboardPage(\n  dashboardHeader(),\n  dashboardSidebar(),\n  dashboardBody()\n)"
-  },
-  {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#are-you-ready-for-to-build-a-real-app",
-    "href": "block_3_session_2_infra_for_team_projects.html#are-you-ready-for-to-build-a-real-app",
-    "title": "Hacking for Science",
-    "section": "Are you ready for to build a real app?",
-    "text": "Are you ready for to build a real app?\nTake the official quiz by rstudio.com!"
-  },
-  {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#mastering-shiny",
-    "href": "block_3_session_2_infra_for_team_projects.html#mastering-shiny",
-    "title": "Hacking for Science",
-    "section": "Mastering Shiny",
-    "text": "Mastering Shiny\n\nhttps://twitter.com/hadleywickham/status/1329498817113321472"
-  },
-  {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#more-shiny-resources",
-    "href": "block_3_session_2_infra_for_team_projects.html#more-shiny-resources",
-    "title": "Hacking for Science",
-    "section": "More Shiny Resources",
-    "text": "More Shiny Resources\nBasics\n\nShiny Tutorial\nShiny Dashboards\n\nUIs / Gallery\n\nShiny Gallery\nSemantic UI (advanced)\n\nAdvanced Reads\n\nMastering Shiny (Hadley Wickham)\nEngineering Shiny (Colin Fay et al.)\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
-  },
-  {
-    "objectID": "block_1_session_3_git_requirements.html#section",
-    "href": "block_1_session_3_git_requirements.html#section",
-    "title": "Hacking for Science",
-    "section": "",
-    "text": "‘With SSH keys, you can connect to remote git repositories without supplying your username or password at each visit’\n\n– docs.github.com"
-  },
-  {
-    "objectID": "block_1_session_3_git_requirements.html#connect-to-remote-repositories-like-a-hacker-youtube",
-    "href": "block_1_session_3_git_requirements.html#connect-to-remote-repositories-like-a-hacker-youtube",
-    "title": "Hacking for Science",
-    "section": "Connect to Remote Repositories Like a Hacker (Youtube)",
-    "text": "Connect to Remote Repositories Like a Hacker (Youtube)"
-  },
-  {
-    "objectID": "block_1_session_3_git_requirements.html#rsa-key-pair-authentication-case-study-in-devops-carpentry",
-    "href": "block_1_session_3_git_requirements.html#rsa-key-pair-authentication-case-study-in-devops-carpentry",
-    "title": "Hacking for Science",
-    "section": "RSA Key Pair Authentication Case Study in DevOps Carpentry",
-    "text": "RSA Key Pair Authentication Case Study in DevOps Carpentry\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
-  },
-  {
-    "objectID": "index.html#table-of-contents",
-    "href": "index.html#table-of-contents",
-    "title": "Hacking for Science",
-    "section": "Table of Contents",
-    "text": "Table of Contents\nBlock 1, Session 1: Class Is Open. C’mon in.\nBlock 1, Session 2: The Big Picture\nBlock 1, Session 3: Git Requirements\nBlock 1, Session 4: Git 101\nBlock 2, Session 1: R Programming 101\nBlock 2, Session 2: Programming with Data\nBlock 3, Session 1: A Glimpse of Devops\nBlock 3, Session 2: Infrastructure for Team Projects\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
-  },
-  {
-    "objectID": "notes-block-3.html",
-    "href": "notes-block-3.html",
+    "objectID": "2023-exam.html",
+    "href": "2023-exam.html",
     "title": "",
     "section": "",
-    "text": "databases\nprogramming questions (met API ?)"
+    "text": "https://github.com/vioannis/eu-funding\nJan 18, 2023\n\nYucan\nLeonie\nIoannis"
+  },
+  {
+    "objectID": "2023-exam.html#eu-funding-data-github-actions-more",
+    "href": "2023-exam.html#eu-funding-data-github-actions-more",
+    "title": "",
+    "section": "",
+    "text": "https://github.com/vioannis/eu-funding\nJan 18, 2023\n\nYucan\nLeonie\nIoannis"
+  },
+  {
+    "objectID": "2023-exam.html#bsfl",
+    "href": "2023-exam.html#bsfl",
+    "title": "",
+    "section": "BSFL",
+    "text": "BSFL\n\nAdrian\nJana\nRoman\n\n\nGoals\n\ncode to package, ‘schlanker’\nlike the readme, contribution\nfunctions well understood"
+  },
+  {
+    "objectID": "2023-exam.html#isaac",
+    "href": "2023-exam.html#isaac",
+    "title": "",
+    "section": "Isaac",
+    "text": "Isaac\nhttps://drive.google.com/file/d/146mnQlGW7r1PsAZzgVL_IOEy-piFRnBX/view?usp=sharing\nAlso here is the link to the github repo: https://github.com/isaacjeffersonlee/asvz-booker"
+  },
+  {
+    "objectID": "2023-exam.html#pseudonymize",
+    "href": "2023-exam.html#pseudonymize",
+    "title": "",
+    "section": "pseudonymize",
+    "text": "pseudonymize\n\nFlavia\nKristina"
+  },
+  {
+    "objectID": "2023-exam.html#shiny-project",
+    "href": "2023-exam.html#shiny-project",
+    "title": "",
+    "section": "shiny project",
+    "text": "shiny project\nhttps://github.com/hamed-93/Shinyproject\n\nHamed\nEileen\nJonas"
+  },
+  {
+    "objectID": "2023-exam.html#ects",
+    "href": "2023-exam.html#ects",
+    "title": "",
+    "section": "ECTS",
+    "text": "ECTS\nDing Yucan 21-904-453 Dr MAVT\nHug Flavia Madleina 12-728-515 Dr MTEC Heim Jana Alice 16-923-047\nFuhrmann Adrian Julius 18-941-468 Dr HEST, Lebensm.-Wiss. Lee Isaac Jefferson 22-908-727 Mobilität Mathematik\nMehranfar Hamed 20-901-021 Dr BAUG, Bauing.\nSchmitt Jonas 20-950-275 Dr MTEC\nSchüpbach Kristina 14-116-040 Dr MTEC\nSendker Leonie Gesine Vergioglou Ioannis 17-940-446 Dr GESS\nWagner Christian 21-903-430 Dr MTEC Keller Roman 13-938-139 Dr MTEC Eileen Ziehmann Florin Laurent Serge Nicolas 13-941-273 Dr MTEC\nDerksen Laurenz 19-954-700 Dr GESS Baschung David Toni Ivo 03-914-181 Dr MTEC\nTriebold Nicolas Yanas Christoph 17-924-614 Maschineningenieurwiss. MSc 02\nSewani Hitesh 22-944-193 Energy Sc and Technology MSc 01"
+  },
+  {
+    "objectID": "2023-exam.html#ects-1",
+    "href": "2023-exam.html#ects-1",
+    "title": "",
+    "section": "?? ECTS",
+    "text": "?? ECTS"
+  },
+  {
+    "objectID": "2023-exam.html#expected-no-ects",
+    "href": "2023-exam.html#expected-no-ects",
+    "title": "",
+    "section": "Expected No ECTS",
+    "text": "Expected No ECTS\nGiovannelli Anna Chiara 19-903-384 Dr PHYS Choulilitsa Evangelia 21-900-550 Dr PHYS\nChow    Li San  17-953-019  Hörer/in (gebührenpflichtig)            \n        \nde Vries    Anna Mariël 17-907-916  Dr MAVT                     \nKurtulus    Adnan   19-903-145  Dr ITET         \nLüthi   Manuel Werner   04-057-360  Hörer/in ETH Bereich (g.frei)           \nRen Xiaoyao 22-738-520  Fachstudent/in UZH          \n        \nTripathi    Ardhendu Shekhar    18-902-460  Dr ITET                 \nYener   Yagmur  21-904-545  Dr ITET"
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#section",
+    "href": "block_2_session_1_r_programming.html#section",
+    "title": "Hacking for Science",
+    "section": "",
+    "text": "“Don’t get bored by the process.”\n\n– Chris Bosh (11x NBA Allstar, 2x NBA champion) on The Knowledge Project podcast."
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#todays-goal-see-r-as-a-programming-language",
+    "href": "block_2_session_1_r_programming.html#todays-goal-see-r-as-a-programming-language",
+    "title": "Hacking for Science",
+    "section": "Today’s Goal: See R as a Programming Language",
+    "text": "Today’s Goal: See R as a Programming Language"
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#section-1",
+    "href": "block_2_session_1_r_programming.html#section-1",
+    "title": "Hacking for Science",
+    "section": "",
+    "text": "📜 Scripts (Experimental)"
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#section-2",
+    "href": "block_2_session_1_r_programming.html#section-2",
+    "title": "Hacking for Science",
+    "section": "",
+    "text": "📜 Scripts (Experimental)\n⬇️\n♻️ Functions (Reusable)"
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#section-3",
+    "href": "block_2_session_1_r_programming.html#section-3",
+    "title": "Hacking for Science",
+    "section": "",
+    "text": "📜 Scripts (Experimental)\n⬇️\n♻️ Functions (Reusable)\n⬇️\n📦 Packages (Deployable)"
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#vector",
+    "href": "block_2_session_1_r_programming.html#vector",
+    "title": "Hacking for Science",
+    "section": "Vector",
+    "text": "Vector\n\n\n\na &lt;- 1\nb &lt;- c(1,2,6,20,30,40,100,200,300)\nd &lt;- 1:10\na\n\n[1] 1\n\nb\n\n[1]   1   2   6  20  30  40 100 200 300\n\nd\n\n [1]  1  2  3  4  5  6  7  8  9 10\n\n\n\n\nscalar: vector of length one.\nall elements have the same data type -&gt; coercion to smallest common denominator."
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#matrix",
+    "href": "block_2_session_1_r_programming.html#matrix",
+    "title": "Hacking for Science",
+    "section": "Matrix",
+    "text": "Matrix\n\n\n\nm &lt;- matrix(b, nrow = 3)\nm\n\n     [,1] [,2] [,3]\n[1,]    1   20  100\n[2,]    2   30  200\n[3,]    6   40  300\n\n\n\n\ntwo dimensional.\nall columns are of the same length.\nall elements have the same data type."
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#data.frames",
+    "href": "block_2_session_1_r_programming.html#data.frames",
+    "title": "Hacking for Science",
+    "section": "Data.frames",
+    "text": "Data.frames\n\n\n\nd &lt;- data.frame(col1 = b[1:3],\n                col2 = b[4:6],\n                col3 = letters[1:3])\nd\n\n  col1 col2 col3\n1    1   20    a\n2    2   30    b\n3    6   40    c\n\n\n\n\ntwo dimensional.\nall columns are of the same length.\nelements may have different data types."
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#lists",
+    "href": "block_2_session_1_r_programming.html#lists",
+    "title": "Hacking for Science",
+    "section": "Lists",
+    "text": "Lists\n\n\n\nl &lt;- list(element1 = a,\n          element2 = m, \n          element3 = d)\nl\n\n$element1\n[1] 1\n\n$element2\n     [,1] [,2] [,3]\n[1,]    1   20  100\n[2,]    2   30  200\n[3,]    6   40  300\n\n$element3\n  col1 col2 col3\n1    1   20    a\n2    2   30    b\n3    6   40    c\n\n\n\n\nmay be nested\nmay contain different data types"
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#environments",
+    "href": "block_2_session_1_r_programming.html#environments",
+    "title": "Hacking for Science",
+    "section": "Environments",
+    "text": "Environments\n\ne &lt;- new.env()\ne$cow &lt;- \"moooooo.\"\ne$duck &lt;- \"quack.\"\ne$dog &lt;- \"woof.\"\n\nls()\n\n[1] \"a\" \"b\" \"d\" \"e\" \"l\" \"m\"\n\nls(e)\n\n[1] \"cow\"  \"dog\"  \"duck\"\n\nget(\"dog\", envir = e)\n\n[1] \"woof.\""
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#environments-cd",
+    "href": "block_2_session_1_r_programming.html#environments-cd",
+    "title": "Hacking for Science",
+    "section": "Environments c’d",
+    "text": "Environments c’d\n\nBe aware of lexical scoping (look up of variables in parent environments when they can’t be found in the current environment) when working with functions.\nThe section on environment basics in Hadley Wickham’s Advanced R is a good, applied introduction.\nHow R Searches and Finds Stuff goes much further down the rabbit hole."
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#functions",
+    "href": "block_2_session_1_r_programming.html#functions",
+    "title": "Hacking for Science",
+    "section": "Functions",
+    "text": "Functions\n\nname_of_the_function &lt;- function(parameter_1, parameter_2){\n  # function body \n  \n  s &lt;- parameter_1 + parameter_2\n  \n  # R does *need* a return statement\n  # it returns the last statement that is not\n  # assigned to a variable using the assignment operator `&lt;-` \n  return(s)\n  \n  # NOTE an R function can only return ONE object (!)\n}"
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#script-vs.-function-call-vs.-definition",
+    "href": "block_2_session_1_r_programming.html#script-vs.-function-call-vs.-definition",
+    "title": "Hacking for Science",
+    "section": "Script vs. Function – Call vs. Definition",
+    "text": "Script vs. Function – Call vs. Definition\n\n\n\nset.seed(123)\nd1 &lt;- rnorm(1000)\nd2 &lt;- rnorm(1000)\n\nd1_mean &lt;- mean(d1)\nd1_sd &lt;- sd(d1)\nd1_q &lt;- quantile(d1)\ndesc_stats_d1 &lt;- \n  list(d1_mean = d1_mean,\n       d1_sd = d1_sd,\n       d1_q = d1_q)\n\nd2_mean &lt;- mean(d2)\nd2_sd &lt;- sd(d2)\nd2_q &lt;- quantile(d2)\ndesc_stats_d2 &lt;- \n  list(d2_mean = d2_mean,\n       d2_sd = d2_sd,\n       d2_q = d2_q)"
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#script-vs.-function-call-vs.-definition-1",
+    "href": "block_2_session_1_r_programming.html#script-vs.-function-call-vs.-definition-1",
+    "title": "Hacking for Science",
+    "section": "Script vs. Function – Call vs. Definition",
+    "text": "Script vs. Function – Call vs. Definition\n\n\n\nset.seed(123)\nd1 &lt;- rnorm(1000)\nd2 &lt;- rnorm(1000)\n\nd1_mean &lt;- mean(d1)\nd1_sd &lt;- sd(d1)\nd1_q &lt;- quantile(d1)\ndesc_stats_d1 &lt;- \n  list(d1_mean = d1_mean,\n       d1_sd = d1_sd,\n       d1_q = d1_q)\n\nd2_mean &lt;- mean(d2)\nd2_sd &lt;- sd(d2)\nd2_q &lt;- quantile(d2)\ndesc_stats_d2 &lt;- \n  list(d2_mean = d2_mean,\n       d2_sd = d2_sd,\n       d2_q = d2_q)\n\n\n\ncreate_basic_desc &lt;- function(distr){\n  out &lt;- list(\n    mean = mean(distr),\n    sd = sd(distr),\n    quantiles = quantile(distr)\n  )\n  out\n}"
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#script-vs.-function-call-vs.-definition-2",
+    "href": "block_2_session_1_r_programming.html#script-vs.-function-call-vs.-definition-2",
+    "title": "Hacking for Science",
+    "section": "Script vs. Function – Call vs. Definition",
+    "text": "Script vs. Function – Call vs. Definition\n\n\n\nset.seed(123)\nd1 &lt;- rnorm(1000)\nd2 &lt;- rnorm(1000)\n\nd1_mean &lt;- mean(d1)\nd1_sd &lt;- sd(d1)\nd1_q &lt;- quantile(d1)\ndesc_stats_d1 &lt;- \n  list(d1_mean = d1_mean,\n       d1_sd = d1_sd,\n       d1_q = d1_q)\n\nd2_mean &lt;- mean(d2)\nd2_sd &lt;- sd(d2)\nd2_q &lt;- quantile(d2)\ndesc_stats_d2 &lt;- \n  list(d2_mean = d2_mean,\n       d2_sd = d2_sd,\n       d2_q = d2_q)\n\n\n\ncreate_basic_desc &lt;- function(distr){\n  out &lt;- list(\n    mean = mean(distr),\n    sd = sd(distr),\n    quantiles = quantile(distr)\n  )\n  out\n}\n\ncreate_basic_desc(d1)\n\n$mean\n[1] 0.01612787\n\n$sd\n[1] 0.991695\n\n$quantiles\n          0%          25%          50%          75%         100% \n-2.809774679 -0.628324243  0.009209639  0.664601867  3.241039935"
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#documentation-of-functions",
+    "href": "block_2_session_1_r_programming.html#documentation-of-functions",
+    "title": "Hacking for Science",
+    "section": "Documentation of Functions",
+    "text": "Documentation of Functions\n\n\n\n#' Create Basic Descriptive Statistics\n#'\n#' Creates means, standard deviations and\n#' default quantiles from an numeric input vector. \n#' \n#' @param distr numeric vector \n#' @export \ncreate_basic_desc &lt;- function(distr){\n  out &lt;- list(\n    mean = mean(distr),\n    sd = sd(distr),\n    quantiles = quantile(distr)\n  )\n  out\n}\n\n\n\nRoxygen documentation can be rendered .Rd and .html\npackages require documentation of every exported function"
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#section-4",
+    "href": "block_2_session_1_r_programming.html#section-4",
+    "title": "Hacking for Science",
+    "section": "",
+    "text": "me: “How to name things?”"
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#section-5",
+    "href": "block_2_session_1_r_programming.html#section-5",
+    "title": "Hacking for Science",
+    "section": "",
+    "text": "me: “How to name things?”\n\n\nGoogle: “About 5’260’000’000 results (0.71 seconds)”"
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#whassssssup-i_am_a_snake",
+    "href": "block_2_session_1_r_programming.html#whassssssup-i_am_a_snake",
+    "title": "Hacking for Science",
+    "section": "Whassssssup, i_am_a_snake!",
+    "text": "Whassssssup, i_am_a_snake!\n\nfrequently occurs in: file and folder names, function names in R and Python."
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#howdie-jesuisunchameau",
+    "href": "block_2_session_1_r_programming.html#howdie-jesuisunchameau",
+    "title": "Hacking for Science",
+    "section": "Howdie, JeSuisUnChameau!",
+    "text": "Howdie, JeSuisUnChameau!\n\nfrequently occurs in: class names (mostly UpperCamelCase)."
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#hello-i-am-a-kebap",
+    "href": "block_2_session_1_r_programming.html#hello-i-am-a-kebap",
+    "title": "Hacking for Science",
+    "section": "Hello, i-am-a-kebap!",
+    "text": "Hello, i-am-a-kebap!\n\nfrequently occurs in: folder, file and repository names."
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#functional-programming",
+    "href": "block_2_session_1_r_programming.html#functional-programming",
+    "title": "Hacking for Science",
+    "section": "Functional Programming",
+    "text": "Functional Programming\n\n\n\nds_list &lt;- list(iris = iris,\n                mtcars = mtcars)\nlapply(ds_list, summary)\n\nAnonymous Functions\n\nlapply(ds_list, function(x){\n  sprintf(\n    \"The dataset contains %d observations.\",\n    nrow(x))\n})\n\n\n\n\n$iris\n[1] 150\n\n$mtcars\n[1] 32\n\n\nAnonymous Functions\n\n\n$iris\n[1] \"The dataset contains 150 observations.\"\n\n$mtcars\n[1] \"The dataset contains 32 observations.\""
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#functional-programming-1",
+    "href": "block_2_session_1_r_programming.html#functional-programming-1",
+    "title": "Hacking for Science",
+    "section": "Functional Programming",
+    "text": "Functional Programming\n\nfor more elaborate examples, such as function factories, take a read the Functional Programming Chapter of Hadley Wickham’s book.\nNote how R is dynamically typed."
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#trycatch",
+    "href": "block_2_session_1_r_programming.html#trycatch",
+    "title": "Hacking for Science",
+    "section": "TryCatch",
+    "text": "TryCatch\nWithout Safety Net\n\ndo_numeric_op &lt;- function(a,b){\n  out &lt;- (a + b)*a\n  message(sprintf(\n    \"'%s', '%s' were your inputs.\",\n    a,b)\n    )\n  out\n}\n\n\ndo_numeric_op(1,\"a\")\n\n“Error in a + b : non-numeric argument to binary operator Calls: […]”"
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#try-catch",
+    "href": "block_2_session_1_r_programming.html#try-catch",
+    "title": "Hacking for Science",
+    "section": "Try Catch",
+    "text": "Try Catch\nWith Safety Net\n\ndo_numeric_op &lt;- function(a,b){\n  \n  tryCatch({\n    return((a + b)*a)\n  \n  }, error = function(e) message(\n    \"Operation went wrong, but function is alive.\"\n    )\n  )\n  sprintf(\"'%s', '%s' were your inputs.\", a,b)\n}"
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#tips",
+    "href": "block_2_session_1_r_programming.html#tips",
+    "title": "Hacking for Science",
+    "section": "Tips",
+    "text": "Tips\n\nDocument Before You Start, e.g., write a vignette outline\nuse pseudo code or comments to structure\ndo not comment on WHAT you do but WHY you do it\nPeer programming in the beginning (make sure to switch who’s on the driver’s seat)\nReproducible Research (include data)"
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#hands-on-the-akqjt-task",
+    "href": "block_2_session_1_r_programming.html#hands-on-the-akqjt-task",
+    "title": "Hacking for Science",
+    "section": "Hands on: The AKQJT task",
+    "text": "Hands on: The AKQJT task"
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#folder-structure",
+    "href": "block_2_session_1_r_programming.html#folder-structure",
+    "title": "Hacking for Science",
+    "section": "Folder Structure",
+    "text": "Folder Structure\n\nR function definitions\nman references (functions and datasets)\ndocs Articles for GitHub Pages\nvignettes Articles’ source, elaborate documentation source\ninst additional material, installed with package, e.g., sql files\nsrc source code that needs to be compiled, e.g., C++\ntests automated tests (basic idea in DevOps Carpentry), often created with a testing framework such as testthat or tinytest"
+  },
+  {
+    "objectID": "block_2_session_1_r_programming.html#further-conventions-ideas",
+    "href": "block_2_session_1_r_programming.html#further-conventions-ideas",
+    "title": "Hacking for Science",
+    "section": "Further Conventions & Ideas",
+    "text": "Further Conventions & Ideas\n\nIn addition every package needs DESCRIPTION and NAMESPACE file.\nstart with an sandbox.R file in the root folder (may be moved to inst/ later on.).\nmove functions to the R/ folder once they get more mature (documentation, tested)\n\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
   },
   {
     "objectID": "block_1_session_4_git_101.html#section",
@@ -452,7 +340,483 @@
     "href": "block_1_session_4_git_101.html#break-out-session-2-task-2-3-first-collab-merge-conflict-drill",
     "title": "Hacking for Science",
     "section": "Break Out Session 2: Task 2 & 3 First Collab & Merge Conflict Drill",
-    "text": "Break Out Session 2: Task 2 & 3 First Collab & Merge Conflict Drill\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
+    "text": "Break Out Session 2: Task 2 & 3 First Collab & Merge Conflict Drill\n\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
+  },
+  {
+    "objectID": "block_4_input.html#todays-goals",
+    "href": "block_4_input.html#todays-goals",
+    "title": "Hacking for Science",
+    "section": "Today’s Goals",
+    "text": "Today’s Goals\n\n\nintroduce basic ideas\ncreate point of reference\nsuggestion for an applied approach"
+  },
+  {
+    "objectID": "block_4_input.html#references-concepts-behind-my-approach",
+    "href": "block_4_input.html#references-concepts-behind-my-approach",
+    "title": "Hacking for Science",
+    "section": "References (Concepts Behind my Approach)",
+    "text": "References (Concepts Behind my Approach)\n\nGTD (Getting Things Done) by David Allen\nSCRUM and KANBAN vs. Waterfall"
+  },
+  {
+    "objectID": "block_4_input.html#elements",
+    "href": "block_4_input.html#elements",
+    "title": "Hacking for Science",
+    "section": "Elements",
+    "text": "Elements\n\nprojects\nbacklog (issue tracker)\nboard (swimlanes): backlog, open, progress, review (PR), done\nmilestones\n\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
+  },
+  {
+    "objectID": "block_1_session_3_git_requirements.html#section",
+    "href": "block_1_session_3_git_requirements.html#section",
+    "title": "Hacking for Science",
+    "section": "",
+    "text": "‘With SSH keys, you can connect to remote git repositories without supplying your username or password at each visit’\n\n– docs.github.com"
+  },
+  {
+    "objectID": "block_1_session_3_git_requirements.html#connect-to-remote-repositories-like-a-hacker-youtube",
+    "href": "block_1_session_3_git_requirements.html#connect-to-remote-repositories-like-a-hacker-youtube",
+    "title": "Hacking for Science",
+    "section": "Connect to Remote Repositories Like a Hacker (Youtube)",
+    "text": "Connect to Remote Repositories Like a Hacker (Youtube)"
+  },
+  {
+    "objectID": "block_1_session_3_git_requirements.html#rsa-key-pair-authentication-case-study-in-devops-carpentry",
+    "href": "block_1_session_3_git_requirements.html#rsa-key-pair-authentication-case-study-in-devops-carpentry",
+    "title": "Hacking for Science",
+    "section": "RSA Key Pair Authentication Case Study in DevOps Carpentry",
+    "text": "RSA Key Pair Authentication Case Study in DevOps Carpentry\n\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
+  },
+  {
+    "objectID": "block_1_session_2_big_picture.html#how-to-compose-the-right-toolbox",
+    "href": "block_1_session_2_big_picture.html#how-to-compose-the-right-toolbox",
+    "title": "Hacking for Science",
+    "section": "How to Compose the Right Toolbox?",
+    "text": "How to Compose the Right Toolbox?"
+  },
+  {
+    "objectID": "block_1_session_2_big_picture.html#section-1",
+    "href": "block_1_session_2_big_picture.html#section-1",
+    "title": "Hacking for Science",
+    "section": "",
+    "text": "Book Chapter: Stack - A Developer’s Toolkit"
+  },
+  {
+    "objectID": "block_1_session_2_big_picture.html#editors-and-ides",
+    "href": "block_1_session_2_big_picture.html#editors-and-ides",
+    "title": "Hacking for Science",
+    "section": "Editors and IDEs",
+    "text": "Editors and IDEs\n\n\n\n\n\n\n\nPeople: “Oh, you’re such a wizard.” Me: “No, just a carpenter.”\nIDEs: VS Code, R Studio, pyCharm Text Editors: Atom, Sublime, Notepad++, Text Wrangler"
+  },
+  {
+    "objectID": "block_1_session_2_big_picture.html#programming-languages-compiled-vs.-interpreted",
+    "href": "block_1_session_2_big_picture.html#programming-languages-compiled-vs.-interpreted",
+    "title": "Hacking for Science",
+    "section": "Programming Languages: Compiled vs. Interpreted",
+    "text": "Programming Languages: Compiled vs. Interpreted"
+  },
+  {
+    "objectID": "block_1_session_2_big_picture.html#version-control",
+    "href": "block_1_session_2_big_picture.html#version-control",
+    "title": "Hacking for Science",
+    "section": "Version Control",
+    "text": "Version Control\n\n\nGit is NOT GitHub\nGit is NOT GitHub\nGit is NOT GitHub\nGit is NOT GitHub\nGit is NOT GitHub\n\nVersion Control Systems\n\ngit\nSVN\nCVS\nmercurial\n\nGit Platforms (git + web GUI + PM tools)\n\nGitHub\nGitLab\nBitbucket\n\ngitea is a self-hosted service (run a platform on your own server)."
+  },
+  {
+    "objectID": "block_1_session_2_big_picture.html#data-management",
+    "href": "block_1_session_2_big_picture.html#data-management",
+    "title": "Hacking for Science",
+    "section": "Data Management",
+    "text": "Data Management\n\n\nRelational Database Management Systems (RDBMS)\n\nOracle\nMicrosoft SQL Server\nPostgreSQL\nMySQL\nSQLite\n…\n\n\nNon-Relational Databases\n\nMongoDB\nRedis\nRedshift\n…"
+  },
+  {
+    "objectID": "block_1_session_2_big_picture.html#infrastructure-on-premise-saas-cloud",
+    "href": "block_1_session_2_big_picture.html#infrastructure-on-premise-saas-cloud",
+    "title": "Hacking for Science",
+    "section": "Infrastructure: On Premise, SaaS, Cloud",
+    "text": "Infrastructure: On Premise, SaaS, Cloud"
+  },
+  {
+    "objectID": "block_1_session_2_big_picture.html#automation",
+    "href": "block_1_session_2_big_picture.html#automation",
+    "title": "Hacking for Science",
+    "section": "Automation",
+    "text": "Automation\n\n\nProcess Automation\n\nCronjobs\nApache Airflow\n\nRelease Automation\n\nGitlab CI\nGitHub Actions\nDrone\n\nInfrastructure Automation\n\nTerraform\nAnsible\nHelm"
+  },
+  {
+    "objectID": "block_1_session_2_big_picture.html#communication-community-resources",
+    "href": "block_1_session_2_big_picture.html#communication-community-resources",
+    "title": "Hacking for Science",
+    "section": "Communication, Community & Resources",
+    "text": "Communication, Community & Resources\n\ncommunity groups: RLadies, WhyR, MiR, Forwards, AfricaR, the carpentries, local R user groups\nmailing lists\nSlack (RSE, Zurich R User Group), Discord, matrix\nDocumentation, Content Aggregators, e.g., CTV, Python Graph Gallery\nbig book of R\nStackoverflow.com"
+  },
+  {
+    "objectID": "block_1_session_2_big_picture.html#publishing",
+    "href": "block_1_session_2_big_picture.html#publishing",
+    "title": "Hacking for Science",
+    "section": "Publishing",
+    "text": "Publishing"
+  },
+  {
+    "objectID": "block_1_session_2_big_picture.html#section-2",
+    "href": "block_1_session_2_big_picture.html#section-2",
+    "title": "Hacking for Science",
+    "section": "",
+    "text": "“Premature optimization is the root of all evil.”\n\n– Donald Knuth\n\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#james-bond-start",
+    "href": "block_1_session_1_classopen.html#james-bond-start",
+    "title": "Hacking for Science",
+    "section": "James Bond Start",
+    "text": "James Bond Start\n\n\n\nvia GIPHY (not CC-BY-NC-SA licensed)"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#markdown-quarto",
+    "href": "block_1_session_1_classopen.html#markdown-quarto",
+    "title": "Hacking for Science",
+    "section": "Markdown / Quarto",
+    "text": "Markdown / Quarto"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#ai-integration",
+    "href": "block_1_session_1_classopen.html#ai-integration",
+    "title": "Hacking for Science",
+    "section": "AI Integration",
+    "text": "AI Integration"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#containers-docker",
+    "href": "block_1_session_1_classopen.html#containers-docker",
+    "title": "Hacking for Science",
+    "section": "Containers / Docker",
+    "text": "Containers / Docker"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#hi-im-matt.",
+    "href": "block_1_session_1_classopen.html#hi-im-matt.",
+    "title": "Hacking for Science",
+    "section": "Hi, I’m Matt.",
+    "text": "Hi, I’m Matt.\n\n\n\nAdvanced Analytics at Helsana\nResearch Software Engineering and Economic Data (RSEED) at KOF Lab ETH Zurich\nformerly: Sales Lead @cynkra\nactive in the open source community, e.g., former global coordinator for the useR! conference"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#background-survey",
+    "href": "block_1_session_1_classopen.html#background-survey",
+    "title": "Hacking for Science",
+    "section": "Background Survey",
+    "text": "Background Survey"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#section",
+    "href": "block_1_session_1_classopen.html#section",
+    "title": "Hacking for Science",
+    "section": "",
+    "text": "via GIPHY (not CC-BY-NC-SA licensed)"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#coaching",
+    "href": "block_1_session_1_classopen.html#coaching",
+    "title": "Hacking for Science",
+    "section": "Coaching",
+    "text": "Coaching\n\n\n\n\n\nvia GIPHY (not CC-BY-NC-SA licensed)"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#approach-flipped-classroom",
+    "href": "block_1_session_1_classopen.html#approach-flipped-classroom",
+    "title": "Hacking for Science",
+    "section": "Approach: Flipped Classroom",
+    "text": "Approach: Flipped Classroom\n\n\n\n\n\nvia GIPHY"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#schedule-block-1",
+    "href": "block_1_session_1_classopen.html#schedule-block-1",
+    "title": "Hacking for Science",
+    "section": "Schedule: Block 1",
+    "text": "Schedule: Block 1\n26.09. 10-13 The Big Picture\n27.9. 10-14 Git & Workflows"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#schedule-block-2",
+    "href": "block_1_session_1_classopen.html#schedule-block-2",
+    "title": "Hacking for Science",
+    "section": "Schedule: Block 2",
+    "text": "Schedule: Block 2\n24.10. 10-13 R Programming Crash Course\n25.10. 10-14 Programming with Data"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#schedule-block-3",
+    "href": "block_1_session_1_classopen.html#schedule-block-3",
+    "title": "Hacking for Science",
+    "section": "Schedule: Block 3",
+    "text": "Schedule: Block 3\n21.11. 10-13 Infrastructure\n22.11. 10-14 Infrastructure"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#schedule-block-4",
+    "href": "block_1_session_1_classopen.html#schedule-block-4",
+    "title": "Hacking for Science",
+    "section": "Schedule: Block 4",
+    "text": "Schedule: Block 4\n05.12. 10-13 Semester Projects\n06.12. 10-14 Semester Projects"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#read-online",
+    "href": "block_1_session_1_classopen.html#read-online",
+    "title": "Hacking for Science",
+    "section": "Read Online",
+    "text": "Read Online\n\nh4sci Slides\nResearch Sofware Engineering - A Guide to Open Source Ecosystem (Online Book)\nTasks & Exercises"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#source",
+    "href": "block_1_session_1_classopen.html#source",
+    "title": "Hacking for Science",
+    "section": "Source",
+    "text": "Source\n\nSlides: https://github.com/h4sci/h4sci-course\nBook: https://github.com/rse-book"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#community",
+    "href": "block_1_session_1_classopen.html#community",
+    "title": "Hacking for Science",
+    "section": "Community",
+    "text": "Community\n\nMatrix Chat Space (#h4sci:staffchat.ethz.ch) (element.io is recommended as a client)\nZoom Live Sessions (only available to enrolled students)"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#evaluate-the-role-of-components-in-the-tech-stack",
+    "href": "block_1_session_1_classopen.html#evaluate-the-role-of-components-in-the-tech-stack",
+    "title": "Hacking for Science",
+    "section": "1. Evaluate the Role of Components in the Tech Stack",
+    "text": "1. Evaluate the Role of Components in the Tech Stack"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#carpentry-level-version-control-dev-workflows",
+    "href": "block_1_session_1_classopen.html#carpentry-level-version-control-dev-workflows",
+    "title": "Hacking for Science",
+    "section": "2. Carpentry Level Version Control + Dev Workflows",
+    "text": "2. Carpentry Level Version Control + Dev Workflows"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#applied-data-handling-w-programming-language",
+    "href": "block_1_session_1_classopen.html#applied-data-handling-w-programming-language",
+    "title": "Hacking for Science",
+    "section": "3. Applied Data Handling /w Programming Language",
+    "text": "3. Applied Data Handling /w Programming Language"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#example-benchmark-create-a-production-pipeline",
+    "href": "block_1_session_1_classopen.html#example-benchmark-create-a-production-pipeline",
+    "title": "Hacking for Science",
+    "section": "Example Benchmark: Create a Production Pipeline",
+    "text": "Example Benchmark: Create a Production Pipeline"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#invidual-introduction",
+    "href": "block_1_session_1_classopen.html#invidual-introduction",
+    "title": "Hacking for Science",
+    "section": "Invidual Introduction",
+    "text": "Invidual Introduction\n\n\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#todays-goals",
+    "href": "block_3_session_2_infra_for_team_projects.html#todays-goals",
+    "title": "Hacking for Science",
+    "section": "Today’s Goals",
+    "text": "Today’s Goals\n\n\nfind infrastructure for team projects\nbuild teams"
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#examples",
+    "href": "block_3_session_2_infra_for_team_projects.html#examples",
+    "title": "Hacking for Science",
+    "section": "Examples",
+    "text": "Examples\n\npersonal repository page: mbannert.github.io/timeseriesdb\norganization repository page: devops-carpentry.github.io/book\norganization page: h4sci.github.io"
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#github-pages-in-a-nutshell",
+    "href": "block_3_session_2_infra_for_team_projects.html#github-pages-in-a-nutshell",
+    "title": "Hacking for Science",
+    "section": "Github Pages in a Nutshell",
+    "text": "Github Pages in a Nutshell\n\nevery github repository can opt to have a repository specific website\nGitHub Pages is designed to document and/or market the software developed in the repo the URL pattern is: user.github.io/repository-name\nGitHub Pages sites either reside on a separate gh-pages branch or in the docs folder on the main branch.\nGitHub Pages can be activated through the Github GUI\nGitHub Pages can host either .md files or .html webpages (including .js and .css)"
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#what-is-github-actions",
+    "href": "block_3_session_2_infra_for_team_projects.html#what-is-github-actions",
+    "title": "Hacking for Science",
+    "section": "What is GitHub Actions?",
+    "text": "What is GitHub Actions?\n\nGitHub’s CI/CD tool\nsimilar to Gitlab CI/CD"
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#example-outline",
+    "href": "block_3_session_2_infra_for_team_projects.html#example-outline",
+    "title": "Hacking for Science",
+    "section": "Example Outline",
+    "text": "Example Outline\n\nPrepare a task you want to run, e.g., an R script.\nConfigure an environment AND workflow in a simple .yaml text file\nPush the file to a hidden folder .github/workflows (this won’t be necessary if you edited the file directly on github0\nUse the GitHub web GUI to monitor the process."
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#httpscrontab.guru",
+    "href": "block_3_session_2_infra_for_team_projects.html#httpscrontab.guru",
+    "title": "Hacking for Science",
+    "section": "https://crontab.guru/",
+    "text": "https://crontab.guru/\ncronjobs - execute on schedule. GitHub Actions docs"
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#server.r-why-do-i-have-to-do-all-the-work",
+    "href": "block_3_session_2_infra_for_team_projects.html#server.r-why-do-i-have-to-do-all-the-work",
+    "title": "Hacking for Science",
+    "section": "server.R (Why Do I have to Do All the Work ?)",
+    "text": "server.R (Why Do I have to Do All the Work ?)"
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#ui.r-i-may-be-late-but-i-look-gooooooood.",
+    "href": "block_3_session_2_infra_for_team_projects.html#ui.r-i-may-be-late-but-i-look-gooooooood.",
+    "title": "Hacking for Science",
+    "section": "ui.R (I may be late, but I look gooooooood.)",
+    "text": "ui.R (I may be late, but I look gooooooood.)"
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#what-does-the-shiny-framework-do-for-us",
+    "href": "block_3_session_2_infra_for_team_projects.html#what-does-the-shiny-framework-do-for-us",
+    "title": "Hacking for Science",
+    "section": "What Does the shiny Framework Do for Us?",
+    "text": "What Does the shiny Framework Do for Us?\n\ncreate HTML/CSS/Javascript code\nstart/run a (local) webserver\ncommunication between the R session and the browser"
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#a-minimal-note-on-html",
+    "href": "block_3_session_2_infra_for_team_projects.html#a-minimal-note-on-html",
+    "title": "Hacking for Science",
+    "section": "A minimal note on HTML",
+    "text": "A minimal note on HTML\n\nMarkup language\ncontent is wrapped in tags\n\n&lt;a href=\"http://somedestination.com\"&gt;some link&lt;/a&gt;\n&lt;b&gt;this is bold&lt;/b&gt;\n&lt;i&gt;this is italic&lt;/i&gt;\n&lt;div class=\"some-class\"&gt;a class with a style&lt;/div&gt;\n=&gt; shiny functions create these wraps for us."
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#breaking-down-the-hello-world-app",
+    "href": "block_3_session_2_infra_for_team_projects.html#breaking-down-the-hello-world-app",
+    "title": "Hacking for Science",
+    "section": "Breaking Down the Hello World App",
+    "text": "Breaking Down the Hello World App\n\n\nui.R\n\nlibrary(shiny)\nshinyUI(fluidPage(\n  titlePanel(\"A random normal\"),\n  # Sidebar with a slider input for number of bins \n  sidebarLayout(\n    sidebarPanel(\n      sliderInput(\"obs\",\n                  \"Number of obs:\",\n                  min = 1,\n                  max = 1000,\n                  value = 100)\n    ),\n    mainPanel(\n      plotOutput(\"randomPlot\")\n    )\n  )\n))"
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#breaking-down-the-hello-world-app-1",
+    "href": "block_3_session_2_infra_for_team_projects.html#breaking-down-the-hello-world-app-1",
+    "title": "Hacking for Science",
+    "section": "Breaking Down the Hello World App",
+    "text": "Breaking Down the Hello World App\n\n\nui.R\n\nlibrary(shiny)\nshinyUI(fluidPage(\n  titlePanel(\"A random normal\"),\n  # Sidebar with a slider input for number of bins \n  sidebarLayout(\n    sidebarPanel(\n      sliderInput(\"obs\",\n                  \"Number of obs:\",\n                  min = 1,\n                  max = 1000,\n                  value = 100)\n    ),\n    mainPanel(\n      plotOutput(\"randomPlot\")\n    )\n  )\n))\n\n\nserver.R\n\nshinyServer(function(input, output) {\n    output$randomPlot &lt;- renderPlot({\n    hist(rnorm(input$obs),\n         col = 'darkgray',\n         border = 'white')\n  })\n})"
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#planning-the-app",
+    "href": "block_3_session_2_infra_for_team_projects.html#planning-the-app",
+    "title": "Hacking for Science",
+    "section": "Planning the App",
+    "text": "Planning the App\nThis course: dashboard structure\n\nsidebar\ntopbar\nmain panel\nmenu buttons / sub pages"
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#the-shinydashboard-package",
+    "href": "block_3_session_2_infra_for_team_projects.html#the-shinydashboard-package",
+    "title": "Hacking for Science",
+    "section": "The shinydashboard package",
+    "text": "The shinydashboard package\n\n\nlibrary(shinydashboard)\ndashboardPage(\n  dashboardHeader(),\n  dashboardSidebar(),\n  dashboardBody()\n)"
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#are-you-ready-for-to-build-a-real-app",
+    "href": "block_3_session_2_infra_for_team_projects.html#are-you-ready-for-to-build-a-real-app",
+    "title": "Hacking for Science",
+    "section": "Are you ready for to build a real app?",
+    "text": "Are you ready for to build a real app?\nTake the official quiz by rstudio.com!"
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#mastering-shiny",
+    "href": "block_3_session_2_infra_for_team_projects.html#mastering-shiny",
+    "title": "Hacking for Science",
+    "section": "Mastering Shiny",
+    "text": "Mastering Shiny\n\nhttps://twitter.com/hadleywickham/status/1329498817113321472"
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#more-shiny-resources",
+    "href": "block_3_session_2_infra_for_team_projects.html#more-shiny-resources",
+    "title": "Hacking for Science",
+    "section": "More Shiny Resources",
+    "text": "More Shiny Resources\nBasics\n\nShiny Tutorial\nShiny Dashboards\n\nUIs / Gallery\n\nShiny Gallery\nSemantic UI (advanced)\n\nAdvanced Reads\n\nMastering Shiny (Hadley Wickham)\nEngineering Shiny (Colin Fay et al.)\n\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
+  },
+  {
+    "objectID": "index.html#table-of-contents",
+    "href": "index.html#table-of-contents",
+    "title": "Hacking for Science",
+    "section": "Table of Contents",
+    "text": "Table of Contents\nBlock 1, Session 1: Class Is Open. C’mon in.\nBlock 1, Session 2: The Big Picture\n\n\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
+  },
+  {
+    "objectID": "students2022.html",
+    "href": "students2022.html",
+    "title": "Semester Projects",
+    "section": "",
+    "text": "set up slack channels for all teams\nswissdata\ninput project management\nKurtulus Adnan 19-903-145 Dr ITET (CERN, start with analysis, get more familar )\neverybody should have a repo before the december block.\n\n\n\nFuhrmann Adrian Julius 18-941-468 Dr HEST, Lebensm.-Wiss. (Based in Singapore, ETH, insects) Keller Roman 13-938-139 Dr MTEC Heim Jana Alice 16-923-047 Biomedical Engineering MSc Vertiefung Molecular Bioengineering (digital health startup, confronted with\nnext step: mbannert clean up repo\n\n\n\nHug Flavia Madleina 12-728-515 Dr MTEC (KOF) Schüpbach Kristina 14-116-040 Dr MTEC\nshow their repo, outline strategy\n\n\n\nVergioglou Ioannis 17-940-446 Dr GESS (R for 5 years, bad at workflow, visualization) Sendker Leonie Gesine 20-949-202 Umweltingenieurwiss. MSc Vertiefung Wasserwirtschaft 05 Ding Yucan 21-904-453 Dr MAVT\nLee Isaac Jefferson 22-908-727 Mobilität Mathematik (pipelines, automation, deployment, little R, familiar /w ) Florin Laurent Serge Nicolas 13-941-273 Dr MTEC Wagner Christian 21-903-430 Dr MTEC (1st year, R skills, learn valuable )\n\n\n\nDerksen Laurenz 19-954-700 Dr GESS Baschung David Toni Ivo 03-914-181 Dr MTEC\n\n\n\nMehranfar Hamed 20-901-021 Dr BAUG, Bauing. (railway network, read other people’s code, no R, matlab, python) Sewani Hitesh 22-944-193 Energy Sc and Technology MSc 01\nReporting Ziehmann Eileen Joana 16-915-332 Dr MTEC Schmitt Jonas 20-950-275 Dr MTEC\n\n\n\nGiovannelli Anna Chiara 19-903-384 Dr PHYS (medical physics, ) Choulilitsa Evangelia 21-900-550 Dr PHYS (Paul Scherer, colleague Anna Chiara, decent programmer, big infrastructure, no clue about R,)\n\n\n\nTriebold Nicolas Yanas Christoph 17-924-614 Maschineningenieurwiss. MSc 02\n\n\n\nBurkard Johannes 12-919-304 Dr HEST, Lebensm.-Wiss. (sensor data, python) Wang Yaru 20-741-443 Fachstudent/in UZH Yener Yagmur 21-904-545 Dr ITET Hu Shijie 21-957-436 Science, Technol. + Policy MSc 03 Shah Syed Salik 22-710-776 Fachstudent/in UZH Lee Pratintip 21-737-242 UZH MNF Biologie Lüthi Manuel Werner 04-057-360 Hörer/in ETH Bereich (g.frei) de Vries Anna Mariël 17-907-916 Dr MAVT Zhang Chao 21-951-728 Science, Technol. + Policy MSc 03 Strauch Eric Ruben 15-933-435 Manag, Technol. + Ökonomie MSc (Cpp, computational methods, skills, coding in teams, data science workflow)\n\n\n\nChow Li San 17-953-019 Hörer/in (gebührenpflichtig) Gong Meilin 16-945-420 Mathematik BSc 07 Perez Simba Byron Patricio 20-941-894 Dr HEST, Lebensm.-Wiss. Ren Xiaoyao 22-738-520 Fachstudent/in UZH Rossi Teele Emilie 22-714-349 Fachstudent/in UZH Shang Haoliang 19-953-009 Elektrotech. + Inf.tech. BSc 07 Tripathi Ardhendu Shekhar 18-902-460 Dr ITET Waddell Leander Morris 16-726-788 Lebensmittelwiss. MSc Vertiefung in Food Quality and Safety Wang Yixuan 22-739-551 Fachstudent/in UZH\n\n\n\n\nLaurent (EFV, involved in )\nLaurenz (public policy group, hate speech, social media, API calling, automating scripts)\nLee\nRoman (last year, coming back)\nshije\nYagmur\nYucan\n\nYucan Hi guys, sorry I am out of the office now, it is noisy and the internet is not stable to do a self introduction in video. Thus, I would like to do it in text. My name is Yucan Ding and I am a first year PhD student in ETH in mechanical engineering, especially in nuclear engineering and thermal hydraulic field. I am proficient in Python while not familiar with R, I would like to take this chance to enhance my coding skills. Glad to work with you guys!\nZhang Hi sorry I cant speak because Im in the library. Im a second-year student in Science, Technology and Policy master with minor in energy, and Im generally interested in data management and the infrastructure around it, I would be glad to see their applications in the industry, probably I will try to use the knowledge for a project related to the energy market.\n\n\n\n\n\n\nuser created : student01 / dFRLGdQy user created : student02 / 4VCh8CJF user created : student03 / zlGnpr5X user created : student04 / Oc4CN4kk user created : student05 / ixyK1Rnq user created : student06 / 7IzgeWk3 user created : student07 / kSZhGnqQ user created : student08 / HJjQyZqk user created : student09 / bySYlx0m user created : student10 / 9NKwDpBx user created : student11 / QL0G2IDx user created : student12 / qJUl6GpI user created : student13 / 5529JFED user created : student14 / EFSt9WPu user created : student15 / Vpdn6JJt jana user created : student16 / HUNjIkiW\nuser created : student17 / PavuWDPQ user created : student18 / HeMGRWCn user created : student19 / FdjsYBqE user created : student20 / hbZXVTid user created : student21 / UEDtoZiK user created : student22 / 7iWSKCY7 user created : student23 / 45S0P2r1 user created : student24 / Nsq8X0GS user created : student25 / xRgG1UTh user created : student26 / isGedzwf user created : student27 / dNV1yuL2 user created : student28 / VkPK7p0L user created : student29 / 5trT1u8o user created : student30 / SED7XFYG user created : student31 / U9f4qjNP user created : student32 / nPDH5ctc user created : student33 / FSC7ZkyO user created : student34 / C0gOkUZe user created : student35 / RiGOtXto user created : student36 / wzPq1Pz3 user created : student37 / RlMF4nd8 user created : student38 / LmgjCObc user created : student39 / cV3kuQPZ user created : student40 / pBbQEM9P user created : student41 / sX9Wsom5 user created : student42 / iDN6jMt3\nsent user created : student43 / vqFjWx4X user created : student44 / HUZJRT6G user created : student45 / nwc1zO09\n(Isaac last one, )"
+  },
+  {
+    "objectID": "students2022.html#black-soldier-fly-larvae",
+    "href": "students2022.html#black-soldier-fly-larvae",
+    "title": "Semester Projects",
+    "section": "",
+    "text": "Fuhrmann Adrian Julius 18-941-468 Dr HEST, Lebensm.-Wiss. (Based in Singapore, ETH, insects) Keller Roman 13-938-139 Dr MTEC Heim Jana Alice 16-923-047 Biomedical Engineering MSc Vertiefung Molecular Bioengineering (digital health startup, confronted with\nnext step: mbannert clean up repo"
+  },
+  {
+    "objectID": "students2022.html#kof-project",
+    "href": "students2022.html#kof-project",
+    "title": "Semester Projects",
+    "section": "",
+    "text": "Hug Flavia Madleina 12-728-515 Dr MTEC (KOF) Schüpbach Kristina 14-116-040 Dr MTEC\nshow their repo, outline strategy"
+  },
+  {
+    "objectID": "students2022.html#scraping-apis-github-actions",
+    "href": "students2022.html#scraping-apis-github-actions",
+    "title": "Semester Projects",
+    "section": "",
+    "text": "Vergioglou Ioannis 17-940-446 Dr GESS (R for 5 years, bad at workflow, visualization) Sendker Leonie Gesine 20-949-202 Umweltingenieurwiss. MSc Vertiefung Wasserwirtschaft 05 Ding Yucan 21-904-453 Dr MAVT\nLee Isaac Jefferson 22-908-727 Mobilität Mathematik (pipelines, automation, deployment, little R, familiar /w ) Florin Laurent Serge Nicolas 13-941-273 Dr MTEC Wagner Christian 21-903-430 Dr MTEC (1st year, R skills, learn valuable )"
+  },
+  {
+    "objectID": "students2022.html#academic-twitter-package-contribution",
+    "href": "students2022.html#academic-twitter-package-contribution",
+    "title": "Semester Projects",
+    "section": "",
+    "text": "Derksen Laurenz 19-954-700 Dr GESS Baschung David Toni Ivo 03-914-181 Dr MTEC"
+  },
+  {
+    "objectID": "students2022.html#shiny-reporting",
+    "href": "students2022.html#shiny-reporting",
+    "title": "Semester Projects",
+    "section": "",
+    "text": "Mehranfar Hamed 20-901-021 Dr BAUG, Bauing. (railway network, read other people’s code, no R, matlab, python) Sewani Hitesh 22-944-193 Energy Sc and Technology MSc 01\nReporting Ziehmann Eileen Joana 16-915-332 Dr MTEC Schmitt Jonas 20-950-275 Dr MTEC"
+  },
+  {
+    "objectID": "students2022.html#lab-presentation---coaching",
+    "href": "students2022.html#lab-presentation---coaching",
+    "title": "Semester Projects",
+    "section": "",
+    "text": "Giovannelli Anna Chiara 19-903-384 Dr PHYS (medical physics, ) Choulilitsa Evangelia 21-900-550 Dr PHYS (Paul Scherer, colleague Anna Chiara, decent programmer, big infrastructure, no clue about R,)"
+  },
+  {
+    "objectID": "students2022.html#docker-group",
+    "href": "students2022.html#docker-group",
+    "title": "Semester Projects",
+    "section": "",
+    "text": "Triebold Nicolas Yanas Christoph 17-924-614 Maschineningenieurwiss. MSc 02"
+  },
+  {
+    "objectID": "students2022.html#showed-up",
+    "href": "students2022.html#showed-up",
+    "title": "Semester Projects",
+    "section": "",
+    "text": "Burkard Johannes 12-919-304 Dr HEST, Lebensm.-Wiss. (sensor data, python) Wang Yaru 20-741-443 Fachstudent/in UZH Yener Yagmur 21-904-545 Dr ITET Hu Shijie 21-957-436 Science, Technol. + Policy MSc 03 Shah Syed Salik 22-710-776 Fachstudent/in UZH Lee Pratintip 21-737-242 UZH MNF Biologie Lüthi Manuel Werner 04-057-360 Hörer/in ETH Bereich (g.frei) de Vries Anna Mariël 17-907-916 Dr MAVT Zhang Chao 21-951-728 Science, Technol. + Policy MSc 03 Strauch Eric Ruben 15-933-435 Manag, Technol. + Ökonomie MSc (Cpp, computational methods, skills, coding in teams, data science workflow)"
+  },
+  {
+    "objectID": "students2022.html#maybes",
+    "href": "students2022.html#maybes",
+    "title": "Semester Projects",
+    "section": "",
+    "text": "Chow Li San 17-953-019 Hörer/in (gebührenpflichtig) Gong Meilin 16-945-420 Mathematik BSc 07 Perez Simba Byron Patricio 20-941-894 Dr HEST, Lebensm.-Wiss. Ren Xiaoyao 22-738-520 Fachstudent/in UZH Rossi Teele Emilie 22-714-349 Fachstudent/in UZH Shang Haoliang 19-953-009 Elektrotech. + Inf.tech. BSc 07 Tripathi Ardhendu Shekhar 18-902-460 Dr ITET Waddell Leander Morris 16-726-788 Lebensmittelwiss. MSc Vertiefung in Food Quality and Safety Wang Yixuan 22-739-551 Fachstudent/in UZH"
+  },
+  {
+    "objectID": "students2022.html#tomorrow",
+    "href": "students2022.html#tomorrow",
+    "title": "Semester Projects",
+    "section": "",
+    "text": "Laurent (EFV, involved in )\nLaurenz (public policy group, hate speech, social media, API calling, automating scripts)\nLee\nRoman (last year, coming back)\nshije\nYagmur\nYucan\n\nYucan Hi guys, sorry I am out of the office now, it is noisy and the internet is not stable to do a self introduction in video. Thus, I would like to do it in text. My name is Yucan Ding and I am a first year PhD student in ETH in mechanical engineering, especially in nuclear engineering and thermal hydraulic field. I am proficient in Python while not familiar with R, I would like to take this chance to enhance my coding skills. Glad to work with you guys!\nZhang Hi sorry I cant speak because Im in the library. Im a second-year student in Science, Technology and Policy master with minor in energy, and Im generally interested in data management and the infrastructure around it, I would be glad to see their applications in the industry, probably I will try to use the knowledge for a project related to the energy market."
+  },
+  {
+    "objectID": "students2022.html#r-studio-users",
+    "href": "students2022.html#r-studio-users",
+    "title": "Semester Projects",
+    "section": "",
+    "text": "user created : student01 / dFRLGdQy user created : student02 / 4VCh8CJF user created : student03 / zlGnpr5X user created : student04 / Oc4CN4kk user created : student05 / ixyK1Rnq user created : student06 / 7IzgeWk3 user created : student07 / kSZhGnqQ user created : student08 / HJjQyZqk user created : student09 / bySYlx0m user created : student10 / 9NKwDpBx user created : student11 / QL0G2IDx user created : student12 / qJUl6GpI user created : student13 / 5529JFED user created : student14 / EFSt9WPu user created : student15 / Vpdn6JJt jana user created : student16 / HUNjIkiW\nuser created : student17 / PavuWDPQ user created : student18 / HeMGRWCn user created : student19 / FdjsYBqE user created : student20 / hbZXVTid user created : student21 / UEDtoZiK user created : student22 / 7iWSKCY7 user created : student23 / 45S0P2r1 user created : student24 / Nsq8X0GS user created : student25 / xRgG1UTh user created : student26 / isGedzwf user created : student27 / dNV1yuL2 user created : student28 / VkPK7p0L user created : student29 / 5trT1u8o user created : student30 / SED7XFYG user created : student31 / U9f4qjNP user created : student32 / nPDH5ctc user created : student33 / FSC7ZkyO user created : student34 / C0gOkUZe user created : student35 / RiGOtXto user created : student36 / wzPq1Pz3 user created : student37 / RlMF4nd8 user created : student38 / LmgjCObc user created : student39 / cV3kuQPZ user created : student40 / pBbQEM9P user created : student41 / sX9Wsom5 user created : student42 / iDN6jMt3\nsent user created : student43 / vqFjWx4X user created : student44 / HUZJRT6G user created : student45 / nwc1zO09\n(Isaac last one, )"
   },
   {
     "objectID": "block_3_session_1_terminology_n_context.html#todays-goals",
@@ -508,7 +872,7 @@
     "href": "block_3_session_1_terminology_n_context.html#common-servers",
     "title": "Hacking for Science",
     "section": "Common Servers",
-    "text": "Common Servers\n\n\n\n\n \n  \n    name \n    common ports \n    description \n  \n \n\n  \n    Apache \n    80, 443 \n    Basic Webserver \n  \n  \n    nginx \n    80, 443 \n    Webserver, Reverse Proxy \n  \n  \n    Postgres \n    5432 \n    Database \n  \n  \n    RStudio Server \n    8787 \n    RStudio made available through a web browser \n  \n  \n    Shiny Server \n    3838 \n    A webserver for shiny apps"
+    "text": "Common Servers\n\n\n\n\n\n\n\n\n\n\nname\ncommon ports\ndescription\n\n\n\n\nApache\n80, 443\nBasic Webserver\n\n\nnginx\n80, 443\nWebserver, Reverse Proxy\n\n\nPostgres\n5432\nDatabase\n\n\nRStudio Server\n8787\nRStudio made available through a web browser\n\n\nShiny Server\n3838\nA webserver for shiny apps"
   },
   {
     "objectID": "block_3_session_1_terminology_n_context.html#reproducibility",
@@ -627,210 +991,7 @@
     "href": "block_3_session_1_terminology_n_context.html#postgres-server",
     "title": "Hacking for Science",
     "section": "Postgres Server",
-    "text": "Postgres Server\ndocker run --rm  --name pg-docker -e POSTGRES_PASSWORD=postgres -d -p 1111:5432 \n-v local/path:/var/lib/postgresql/data  postgres:11\n\n-d: run as daemon, i.e., terminal window available\n-e: pass on an environment parameter, in this case a password\n-p: port forwarding: host port:docker port\n-v: Mount for persistent storage\n(!): To make the two containers talk to each other, consider docker compose.\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#section",
-    "href": "block_2_session_1_r_programming.html#section",
-    "title": "Hacking for Science",
-    "section": "",
-    "text": "“Don’t get bored by the process.”\n\n– Chris Bosh (11x NBA Allstar, 2x NBA champion) on The Knowledge Project podcast."
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#todays-goal-see-r-as-a-programming-language",
-    "href": "block_2_session_1_r_programming.html#todays-goal-see-r-as-a-programming-language",
-    "title": "Hacking for Science",
-    "section": "Today’s Goal: See R as a Programming Language",
-    "text": "Today’s Goal: See R as a Programming Language"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#section-1",
-    "href": "block_2_session_1_r_programming.html#section-1",
-    "title": "Hacking for Science",
-    "section": "",
-    "text": "📜 Scripts (Experimental)"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#section-2",
-    "href": "block_2_session_1_r_programming.html#section-2",
-    "title": "Hacking for Science",
-    "section": "",
-    "text": "📜 Scripts (Experimental)\n⬇️\n♻️ Functions (Reusable)"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#section-3",
-    "href": "block_2_session_1_r_programming.html#section-3",
-    "title": "Hacking for Science",
-    "section": "",
-    "text": "📜 Scripts (Experimental)\n⬇️\n♻️ Functions (Reusable)\n⬇️\n📦 Packages (Deployable)"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#vector",
-    "href": "block_2_session_1_r_programming.html#vector",
-    "title": "Hacking for Science",
-    "section": "Vector",
-    "text": "Vector\n\n\n\na <- 1\nb <- c(1,2,6,20,30,40,100,200,300)\nd <- 1:10\na\n\n[1] 1\n\nb\n\n[1]   1   2   6  20  30  40 100 200 300\n\nd\n\n [1]  1  2  3  4  5  6  7  8  9 10\n\n\n\n\nscalar: vector of length one.\nall elements have the same data type -> coercion to smallest common denominator."
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#matrix",
-    "href": "block_2_session_1_r_programming.html#matrix",
-    "title": "Hacking for Science",
-    "section": "Matrix",
-    "text": "Matrix\n\n\n\nm <- matrix(b, nrow = 3)\nm\n\n     [,1] [,2] [,3]\n[1,]    1   20  100\n[2,]    2   30  200\n[3,]    6   40  300\n\n\n\n\ntwo dimensional.\nall columns are of the same length.\nall elements have the same data type."
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#data.frames",
-    "href": "block_2_session_1_r_programming.html#data.frames",
-    "title": "Hacking for Science",
-    "section": "Data.frames",
-    "text": "Data.frames\n\n\n\nd <- data.frame(col1 = b[1:3],\n                col2 = b[4:6],\n                col3 = letters[1:3])\nd\n\n  col1 col2 col3\n1    1   20    a\n2    2   30    b\n3    6   40    c\n\n\n\n\ntwo dimensional.\nall columns are of the same length.\nelements may have different data types."
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#lists",
-    "href": "block_2_session_1_r_programming.html#lists",
-    "title": "Hacking for Science",
-    "section": "Lists",
-    "text": "Lists\n\n\n\nl <- list(element1 = a,\n          element2 = m, \n          element3 = d)\nl\n\n$element1\n[1] 1\n\n$element2\n     [,1] [,2] [,3]\n[1,]    1   20  100\n[2,]    2   30  200\n[3,]    6   40  300\n\n$element3\n  col1 col2 col3\n1    1   20    a\n2    2   30    b\n3    6   40    c\n\n\n\n\nmay be nested\nmay contain different data types"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#environments",
-    "href": "block_2_session_1_r_programming.html#environments",
-    "title": "Hacking for Science",
-    "section": "Environments",
-    "text": "Environments\n\ne <- new.env()\ne$cow <- \"moooooo.\"\ne$duck <- \"quack.\"\ne$dog <- \"woof.\"\n\nls()\n\n[1] \"a\" \"b\" \"d\" \"e\" \"l\" \"m\"\n\nls(e)\n\n[1] \"cow\"  \"dog\"  \"duck\"\n\nget(\"dog\", envir = e)\n\n[1] \"woof.\""
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#environments-cd",
-    "href": "block_2_session_1_r_programming.html#environments-cd",
-    "title": "Hacking for Science",
-    "section": "Environments c’d",
-    "text": "Environments c’d\n\nBe aware of lexical scoping (look up of variables in parent environments when they can’t be found in the current environment) when working with functions.\nThe section on environment basics in Hadley Wickham’s Advanced R is a good, applied introduction.\nHow R Searches and Finds Stuff goes much further down the rabbit hole."
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#functions",
-    "href": "block_2_session_1_r_programming.html#functions",
-    "title": "Hacking for Science",
-    "section": "Functions",
-    "text": "Functions\n\nname_of_the_function <- function(parameter_1, parameter_2){\n  # function body \n  \n  s <- parameter_1 + parameter_2\n  \n  # R does *need* a return statement\n  # it returns the last statement that is not\n  # assigned to a variable using the assignment operator `<-` \n  return(s)\n  \n  # NOTE an R function can only return ONE object (!)\n}"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#script-vs.-function-call-vs.-definition",
-    "href": "block_2_session_1_r_programming.html#script-vs.-function-call-vs.-definition",
-    "title": "Hacking for Science",
-    "section": "Script vs. Function – Call vs. Definition",
-    "text": "Script vs. Function – Call vs. Definition\n\n\n\nset.seed(123)\nd1 <- rnorm(1000)\nd2 <- rnorm(1000)\n\nd1_mean <- mean(d1)\nd1_sd <- sd(d1)\nd1_q <- quantile(d1)\ndesc_stats_d1 <- \n  list(d1_mean = d1_mean,\n       d1_sd = d1_sd,\n       d1_q = d1_q)\n\nd2_mean <- mean(d2)\nd2_sd <- sd(d2)\nd2_q <- quantile(d2)\ndesc_stats_d2 <- \n  list(d2_mean = d2_mean,\n       d2_sd = d2_sd,\n       d2_q = d2_q)"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#script-vs.-function-call-vs.-definition-1",
-    "href": "block_2_session_1_r_programming.html#script-vs.-function-call-vs.-definition-1",
-    "title": "Hacking for Science",
-    "section": "Script vs. Function – Call vs. Definition",
-    "text": "Script vs. Function – Call vs. Definition\n\n\n\nset.seed(123)\nd1 <- rnorm(1000)\nd2 <- rnorm(1000)\n\nd1_mean <- mean(d1)\nd1_sd <- sd(d1)\nd1_q <- quantile(d1)\ndesc_stats_d1 <- \n  list(d1_mean = d1_mean,\n       d1_sd = d1_sd,\n       d1_q = d1_q)\n\nd2_mean <- mean(d2)\nd2_sd <- sd(d2)\nd2_q <- quantile(d2)\ndesc_stats_d2 <- \n  list(d2_mean = d2_mean,\n       d2_sd = d2_sd,\n       d2_q = d2_q)\n\n\n\ncreate_basic_desc <- function(distr){\n  out <- list(\n    mean = mean(distr),\n    sd = sd(distr),\n    quantiles = quantile(distr)\n  )\n  out\n}"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#script-vs.-function-call-vs.-definition-2",
-    "href": "block_2_session_1_r_programming.html#script-vs.-function-call-vs.-definition-2",
-    "title": "Hacking for Science",
-    "section": "Script vs. Function – Call vs. Definition",
-    "text": "Script vs. Function – Call vs. Definition\n\n\n\nset.seed(123)\nd1 <- rnorm(1000)\nd2 <- rnorm(1000)\n\nd1_mean <- mean(d1)\nd1_sd <- sd(d1)\nd1_q <- quantile(d1)\ndesc_stats_d1 <- \n  list(d1_mean = d1_mean,\n       d1_sd = d1_sd,\n       d1_q = d1_q)\n\nd2_mean <- mean(d2)\nd2_sd <- sd(d2)\nd2_q <- quantile(d2)\ndesc_stats_d2 <- \n  list(d2_mean = d2_mean,\n       d2_sd = d2_sd,\n       d2_q = d2_q)\n\n\n\ncreate_basic_desc <- function(distr){\n  out <- list(\n    mean = mean(distr),\n    sd = sd(distr),\n    quantiles = quantile(distr)\n  )\n  out\n}\n\ncreate_basic_desc(d1)\n\n$mean\n[1] 0.01612787\n\n$sd\n[1] 0.991695\n\n$quantiles\n          0%          25%          50%          75%         100% \n-2.809774679 -0.628324243  0.009209639  0.664601867  3.241039935"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#documentation-of-functions",
-    "href": "block_2_session_1_r_programming.html#documentation-of-functions",
-    "title": "Hacking for Science",
-    "section": "Documentation of Functions",
-    "text": "Documentation of Functions\n\n\n\n#' Create Basic Descriptive Statistics\n#'\n#' Creates means, standard deviations and\n#' default quantiles from an numeric input vector. \n#' \n#' @param distr numeric vector \n#' @export \ncreate_basic_desc <- function(distr){\n  out <- list(\n    mean = mean(distr),\n    sd = sd(distr),\n    quantiles = quantile(distr)\n  )\n  out\n}\n\n\n\nRoxygen documentation can be rendered .Rd and .html\npackages require documentation of every exported function"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#section-4",
-    "href": "block_2_session_1_r_programming.html#section-4",
-    "title": "Hacking for Science",
-    "section": "",
-    "text": "me: “How to name things?”"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#section-5",
-    "href": "block_2_session_1_r_programming.html#section-5",
-    "title": "Hacking for Science",
-    "section": "",
-    "text": "me: “How to name things?”\n\n\nGoogle: “About 5’260’000’000 results (0.71 seconds)”"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#whassssssup-i_am_a_snake",
-    "href": "block_2_session_1_r_programming.html#whassssssup-i_am_a_snake",
-    "title": "Hacking for Science",
-    "section": "Whassssssup, i_am_a_snake!",
-    "text": "Whassssssup, i_am_a_snake!\n\nfrequently occurs in: file and folder names, function names in R and Python."
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#howdie-jesuisunchameau",
-    "href": "block_2_session_1_r_programming.html#howdie-jesuisunchameau",
-    "title": "Hacking for Science",
-    "section": "Howdie, JeSuisUnChameau!",
-    "text": "Howdie, JeSuisUnChameau!\n\nfrequently occurs in: class names (mostly UpperCamelCase)."
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#hello-i-am-a-kebap",
-    "href": "block_2_session_1_r_programming.html#hello-i-am-a-kebap",
-    "title": "Hacking for Science",
-    "section": "Hello, i-am-a-kebap!",
-    "text": "Hello, i-am-a-kebap!\n\nfrequently occurs in: folder, file and repository names."
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#functional-programming",
-    "href": "block_2_session_1_r_programming.html#functional-programming",
-    "title": "Hacking for Science",
-    "section": "Functional Programming",
-    "text": "Functional Programming\n\n\n\nds_list <- list(iris = iris,\n                mtcars = mtcars)\nlapply(ds_list, summary)\n\nAnonymous Functions\n\nlapply(ds_list, function(x){\n  sprintf(\n    \"The dataset contains %d observations.\",\n    nrow(x))\n})\n\n\n\n\n$iris\n[1] 150\n\n$mtcars\n[1] 32\n\n\nAnonymous Functions\n\n\n$iris\n[1] \"The dataset contains 150 observations.\"\n\n$mtcars\n[1] \"The dataset contains 32 observations.\""
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#functional-programming-1",
-    "href": "block_2_session_1_r_programming.html#functional-programming-1",
-    "title": "Hacking for Science",
-    "section": "Functional Programming",
-    "text": "Functional Programming\n\nfor more elaborate examples, such as function factories, take a read the Functional Programming Chapter of Hadley Wickham’s book.\nNote how R is dynamically typed."
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#trycatch",
-    "href": "block_2_session_1_r_programming.html#trycatch",
-    "title": "Hacking for Science",
-    "section": "TryCatch",
-    "text": "TryCatch\nWithout Safety Net\n\ndo_numeric_op <- function(a,b){\n  out <- (a + b)*a\n  message(sprintf(\n    \"'%s', '%s' were your inputs.\",\n    a,b)\n    )\n  out\n}\n\n\ndo_numeric_op(1,\"a\")\n\n“Error in a + b : non-numeric argument to binary operator Calls: […]”"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#try-catch",
-    "href": "block_2_session_1_r_programming.html#try-catch",
-    "title": "Hacking for Science",
-    "section": "Try Catch",
-    "text": "Try Catch\nWith Safety Net\n\ndo_numeric_op <- function(a,b){\n  \n  tryCatch({\n    return((a + b)*a)\n  \n  }, error = function(e) message(\n    \"Operation went wrong, but function is alive.\"\n    )\n  )\n  sprintf(\"'%s', '%s' were your inputs.\", a,b)\n}"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#tips",
-    "href": "block_2_session_1_r_programming.html#tips",
-    "title": "Hacking for Science",
-    "section": "Tips",
-    "text": "Tips\n\nDocument Before You Start, e.g., write a vignette outline\nuse pseudo code or comments to structure\ndo not comment on WHAT you do but WHY you do it\nPeer programming in the beginning (make sure to switch who’s on the driver’s seat)\nReproducible Research (include data)"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#hands-on-the-akqjt-task",
-    "href": "block_2_session_1_r_programming.html#hands-on-the-akqjt-task",
-    "title": "Hacking for Science",
-    "section": "Hands on: The AKQJT task",
-    "text": "Hands on: The AKQJT task"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#folder-structure",
-    "href": "block_2_session_1_r_programming.html#folder-structure",
-    "title": "Hacking for Science",
-    "section": "Folder Structure",
-    "text": "Folder Structure\n\nR function definitions\nman references (functions and datasets)\ndocs Articles for GitHub Pages\nvignettes Articles’ source, elaborate documentation source\ninst additional material, installed with package, e.g., sql files\nsrc source code that needs to be compiled, e.g., C++\ntests automated tests (basic idea in DevOps Carpentry), often created with a testing framework such as testthat or tinytest"
-  },
-  {
-    "objectID": "block_2_session_1_r_programming.html#further-conventions-ideas",
-    "href": "block_2_session_1_r_programming.html#further-conventions-ideas",
-    "title": "Hacking for Science",
-    "section": "Further Conventions & Ideas",
-    "text": "Further Conventions & Ideas\n\nIn addition every package needs DESCRIPTION and NAMESPACE file.\nstart with an sandbox.R file in the root folder (may be moved to inst/ later on.).\nmove functions to the R/ folder once they get more mature (documentation, tested)\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
+    "text": "Postgres Server\ndocker run --rm  --name pg-docker -e POSTGRES_PASSWORD=postgres -d -p 1111:5432 \n-v local/path:/var/lib/postgresql/data  postgres:11\n\n-d: run as daemon, i.e., terminal window available\n-e: pass on an environment parameter, in this case a password\n-p: port forwarding: host port:docker port\n-v: Mount for persistent storage\n(!): To make the two containers talk to each other, consider docker compose.\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
   },
   {
     "objectID": "block_2_session_2_programming_w_data.html#simulation",
@@ -900,7 +1061,7 @@
     "href": "block_2_session_2_programming_w_data.html#types-of-data-time-series",
     "title": "Hacking for Science",
     "section": "Types of Data: Time Series",
-    "text": "Types of Data: Time Series\n\n\n\n\nlibrary(kofdata)\nlibrary(tstools)\n\ntsl <- window(get_time_series(\"ch.kof.barometer\"))\ntsplot(\"KOF Barometer\" = \n         window(tsl$ch.kof.barometer,\n                start = c(2010,1))\n       )\n\n\n\n\n\nin memory\n\nts\nxts\ntsibble\nzoo\n\n\n(!) Try out the tsbox R package to easily switch from one representation to another.\n\non disk\n\n.csv (long format, wide format)\n.xml\n.json\n.RData"
+    "text": "Types of Data: Time Series\n\n\n\n\nlibrary(kofdata)\nlibrary(tstools)\n\ntsl &lt;- window(get_time_series(\"ch.kof.barometer\"))\ntsplot(\"KOF Barometer\" = \n         window(tsl$ch.kof.barometer,\n                start = c(2010,1))\n       )\n\n\n\n\n\n\n\n\n\nin memory\n\nts\nxts\ntsibble\nzoo\n\n\n(!) Try out the tsbox R package to easily switch from one representation to another.\n\non disk\n\n.csv (long format, wide format)\n.xml\n.json\n.RData"
   },
   {
     "objectID": "block_2_session_2_programming_w_data.html#types-of-data-rectangular-datasets",
@@ -928,7 +1089,7 @@
     "href": "block_2_session_2_programming_w_data.html#types-of-data-nested-data",
     "title": "Hacking for Science",
     "section": "Types of Data: Nested Data",
-    "text": "Types of Data: Nested Data\n\n\n\nl <- list()\nl$element1 <- 2\nl$element2 <- head(mtcars[,1:3],4)\nl\n\n$element1\n[1] 2\n\n$element2\n                mpg cyl disp\nMazda RX4      21.0   6  160\nMazda RX4 Wag  21.0   6  160\nDatsun 710     22.8   4  108\nHornet 4 Drive 21.4   6  258\n\n\n\nexamples:\n\nmeta information, sector classification (hierarchical), GDP components, translations, attributes, properties,\nGeo spatial data"
+    "text": "Types of Data: Nested Data\n\n\n\nl &lt;- list()\nl$element1 &lt;- 2\nl$element2 &lt;- head(mtcars[,1:3],4)\nl\n\n$element1\n[1] 2\n\n$element2\n                mpg cyl disp\nMazda RX4      21.0   6  160\nMazda RX4 Wag  21.0   6  160\nDatsun 710     22.8   4  108\nHornet 4 Drive 21.4   6  258\n\n\n\nexamples:\n\nmeta information, sector classification (hierarchical), GDP components, translations, attributes, properties,\nGeo spatial data"
   },
   {
     "objectID": "block_2_session_2_programming_w_data.html#hands-on-block-2-task-2-trying-out-different-representations",
@@ -942,35 +1103,35 @@
     "href": "block_2_session_2_programming_w_data.html#base-r",
     "title": "Hacking for Science",
     "section": "Base R",
-    "text": "Base R\n\n\n\nvectors, matrices, data.frames\nno extensions needed\nmuch better than its marketing\nsplit, apply, combine approach\n\n\n\nby_cyl <- split(mtcars, mtcars$cyl)\nout <- lapply(by_cyl,\n              function(x) summary(\n                lm(mpg~.,data = x)\n                )\n              )\n\nstr(out, max.level = 1)\n\nList of 3\n $ 4:List of 11\n  ..- attr(*, \"class\")= chr \"summary.lm\"\n $ 6:List of 11\n  ..- attr(*, \"class\")= chr \"summary.lm\"\n $ 8:List of 11\n  ..- attr(*, \"class\")= chr \"summary.lm\""
+    "text": "Base R\n\n\n\nvectors, matrices, data.frames\nno extensions needed\nmuch better than its marketing\nsplit, apply, combine approach\n\n\n\nby_cyl &lt;- split(mtcars, mtcars$cyl)\nout &lt;- lapply(by_cyl,\n              function(x) summary(\n                lm(mpg~.,data = x)\n                )\n              )\n\nstr(out, max.level = 1)\n\nList of 3\n $ 4:List of 11\n  ..- attr(*, \"class\")= chr \"summary.lm\"\n $ 6:List of 11\n  ..- attr(*, \"class\")= chr \"summary.lm\"\n $ 8:List of 11\n  ..- attr(*, \"class\")= chr \"summary.lm\""
   },
   {
     "objectID": "block_2_session_2_programming_w_data.html#data.table",
     "href": "block_2_session_2_programming_w_data.html#data.table",
     "title": "Hacking for Science",
     "section": "data.table",
-    "text": "data.table\n\nCRAN package\nwritten by Matt Dowle et al.\nfastest ecosystem, including fwrite/fread for fast disk i/o\n\n\nlibrary(data.table)\ndt <- fread(\"../data/simulated_survey.csv\")\nhead(dt)\n\n   basic advanced structure id\n1:     2        3         3  1\n2:     3        5         3  2\n3:     3        3         5  3\n4:     4        3         2  4\n5:     5        4         3  5\n6:     3        4         2  6"
+    "text": "data.table\n\nCRAN package\nwritten by Matt Dowle et al.\nfastest ecosystem, including fwrite/fread for fast disk i/o\n\n\nlibrary(data.table)\ndt &lt;- fread(\"../data/simulated_survey.csv\")\nhead(dt)\n\n   basic advanced structure    id\n   &lt;int&gt;    &lt;int&gt;     &lt;int&gt; &lt;int&gt;\n1:     2        3         3     1\n2:     3        5         3     2\n3:     3        3         5     3\n4:     4        3         2     4\n5:     5        4         3     5\n6:     3        4         2     6"
   },
   {
     "objectID": "block_2_session_2_programming_w_data.html#data.table-cd",
     "href": "block_2_session_2_programming_w_data.html#data.table-cd",
     "title": "Hacking for Science",
     "section": "data.table c’d",
-    "text": "data.table c’d\n\n# i, j, by\ndt[, obs_avg := rowMeans(.SD), .SDcols = c(\"basic\", \"advanced\", \"structure\")]\nhead(dt)\n\n\nSQL reminiscent concept and syntax\nworks with pointers / reference -> it changes objects in place"
+    "text": "data.table c’d\n\n# i, j, by\ndt[, obs_avg := rowMeans(.SD), .SDcols = c(\"basic\", \"advanced\", \"structure\")]\nhead(dt)\n\n\nSQL reminiscent concept and syntax\nworks with pointers / reference -&gt; it changes objects in place"
   },
   {
     "objectID": "block_2_session_2_programming_w_data.html#tidyverse",
     "href": "block_2_session_2_programming_w_data.html#tidyverse",
     "title": "Hacking for Science",
     "section": "tidyverse",
-    "text": "tidyverse\n\ndplyr, tibble, ….\nbest documentation\nfast\nuses references, too\nvery popular for interactive use\npipe operator: %>% (base R got a pipe in the meantime, too)\npretty printing"
+    "text": "tidyverse\n\ndplyr, tibble, ….\nbest documentation\nfast\nuses references, too\nvery popular for interactive use\npipe operator: %&gt;% (base R got a pipe in the meantime, too)\npretty printing"
   },
   {
     "objectID": "block_2_session_2_programming_w_data.html#tidyverse-1",
     "href": "block_2_session_2_programming_w_data.html#tidyverse-1",
     "title": "Hacking for Science",
     "section": "tidyverse",
-    "text": "tidyverse\n\nlibrary(dplyr)\nmtcars %>% \n  filter(cyl > 4) %>% \n  nrow()\n\n[1] 21"
+    "text": "tidyverse\n\nlibrary(dplyr)\nmtcars %&gt;% \n  filter(cyl &gt; 4) %&gt;% \n  nrow()\n\n[1] 21"
   },
   {
     "objectID": "block_2_session_2_programming_w_data.html#block-2-task-3-three-r-ecosystems-to-manipulate-data",
@@ -1068,21 +1229,21 @@
     "href": "block_2_session_2_programming_w_data.html#start-simple-catch-a-breath-of-sql-air-with-sqlite",
     "title": "Hacking for Science",
     "section": "Start Simple, Catch a Breath of SQL Air with SQLite",
-    "text": "Start Simple, Catch a Breath of SQL Air with SQLite\n\nlibrary(RSQLite)\ndb_path = \"../data/h4sci.sqlite3\"\ncon <- dbConnect(RSQLite::SQLite(), db_path)\ndbWriteTable(con, dbQuoteIdentifier(con,\"mtcars\"), mtcars, overwrite = T)\ndbWriteTable(con, dbQuoteIdentifier(con,\"flowers\"), iris, overwrite = T)\n\ndbGetQuery(con, \"SELECT * FROM flowers LIMIT 3\")\n\n  Sepal.Length Sepal.Width Petal.Length Petal.Width Species\n1          5.1         3.5          1.4         0.2  setosa\n2          4.9         3.0          1.4         0.2  setosa\n3          4.7         3.2          1.3         0.2  setosa\n\n\nNote: Foreign Key Handling is very limited in SQLite."
+    "text": "Start Simple, Catch a Breath of SQL Air with SQLite\n\nlibrary(RSQLite)\ndb_path = \"../data/h4sci.sqlite3\"\ncon &lt;- dbConnect(RSQLite::SQLite(), db_path)\ndbWriteTable(con, dbQuoteIdentifier(con,\"mtcars\"), mtcars, overwrite = T)\ndbWriteTable(con, dbQuoteIdentifier(con,\"flowers\"), iris, overwrite = T)\n\ndbGetQuery(con, \"SELECT * FROM flowers LIMIT 3\")\n\n  Sepal.Length Sepal.Width Petal.Length Petal.Width Species\n1          5.1         3.5          1.4         0.2  setosa\n2          4.9         3.0          1.4         0.2  setosa\n3          4.7         3.2          1.3         0.2  setosa\n\n\nNote: Foreign Key Handling is very limited in SQLite."
   },
   {
     "objectID": "block_2_session_2_programming_w_data.html#example-query",
     "href": "block_2_session_2_programming_w_data.html#example-query",
     "title": "Hacking for Science",
     "section": "Example Query",
-    "text": "Example Query\n\ndbGetQuery(con, \"SELECT * FROM mtcars WHERE mpg > 30\")\n\n   mpg cyl disp  hp drat    wt  qsec vs am gear carb\n1 32.4   4 78.7  66 4.08 2.200 19.47  1  1    4    1\n2 30.4   4 75.7  52 4.93 1.615 18.52  1  1    4    2\n3 33.9   4 71.1  65 4.22 1.835 19.90  1  1    4    1\n4 30.4   4 95.1 113 3.77 1.513 16.90  1  1    5    2"
+    "text": "Example Query\n\ndbGetQuery(con, \"SELECT * FROM mtcars WHERE mpg &gt; 30\")\n\n   mpg cyl disp  hp drat    wt  qsec vs am gear carb\n1 32.4   4 78.7  66 4.08 2.200 19.47  1  1    4    1\n2 30.4   4 75.7  52 4.93 1.615 18.52  1  1    4    2\n3 33.9   4 71.1  65 4.22 1.835 19.90  1  1    4    1\n4 30.4   4 95.1 113 3.77 1.513 16.90  1  1    5    2"
   },
   {
     "objectID": "block_2_session_2_programming_w_data.html#database-access",
     "href": "block_2_session_2_programming_w_data.html#database-access",
     "title": "Hacking for Science",
     "section": "Database Access",
-    "text": "Database Access\n\nlibrary(RSQLite)\ndb_path = \"../data/h4sci.sqlite3\"\ncon <- dbConnect(RSQLite::SQLite(),\n                 db_path)\n\n\nlibrary(RPostgres)\ncon <-  dbConnect(drv = Postgres(),\n                  dbname = \"postgres\",\n                  user = \"postgres\",\n                  host = \"some.server.or.ip\",\n                  password = .rs.askForPassword(\n                    \"enter your pw\"\n                    )\n                  )\n\n\nEssentially the same interface (DBI)\nserver, files are abstracted away\nhost, password, port etc. needed for Postgres"
+    "text": "Database Access\n\nlibrary(RSQLite)\ndb_path = \"../data/h4sci.sqlite3\"\ncon &lt;- dbConnect(RSQLite::SQLite(),\n                 db_path)\n\n\nlibrary(RPostgres)\ncon &lt;-  dbConnect(drv = Postgres(),\n                  dbname = \"postgres\",\n                  user = \"postgres\",\n                  host = \"some.server.or.ip\",\n                  password = .rs.askForPassword(\n                    \"enter your pw\"\n                    )\n                  )\n\n\nEssentially the same interface (DBI)\nserver, files are abstracted away\nhost, password, port etc. needed for Postgres"
   },
   {
     "objectID": "block_2_session_2_programming_w_data.html#basic-sql-syntax",
@@ -1110,6 +1271,6 @@
     "href": "block_2_session_2_programming_w_data.html#how-to-work-with-an-application-programming-interface-api",
     "title": "Hacking for Science",
     "section": "How to Work with an Application Programming Interface (API)",
-    "text": "How to Work with an Application Programming Interface (API)\n\nRTFM\nExperiment ‘per pedes’\nWrite a Wrapper if it does not exist\nUse the Wrapper\n\nHere is an R example to get ☔️ images from the MET collection.\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
+    "text": "How to Work with an Application Programming Interface (API)\n\nRTFM\nExperiment ‘per pedes’\nWrite a Wrapper if it does not exist\nUse the Wrapper\n\nHere is an R example to get ☔️ images from the MET collection.\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
   }
 ]
