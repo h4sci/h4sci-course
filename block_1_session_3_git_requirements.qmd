@@ -20,6 +20,6 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 ## [Connect to Remote Repositories<br> Like a Hacker (Youtube)](https://www.youtube.com/watch?v=oLEhNj17vVI) {.center}
 
 
-## [RSA Key Pair Authentication Case Study in DevOps Carpentry](https://devops-carpentry.github.io/book/case-studies.html#sec-rsa) {.center}
+## [RSA Key Pair Authentication Case Study in DevOps Carpentry](https://rse-book.github.io/case-studies.html#sec-rsa) {.center}
 
 

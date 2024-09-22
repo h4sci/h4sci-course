@@ -19,7 +19,7 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 :::
 
 
-## Markdown / Quarto {.center}
+## [Markdown / Quarto](https://quarto.org/docs/guide/) {.center}
 
 ## AI Integration {.center}
 
