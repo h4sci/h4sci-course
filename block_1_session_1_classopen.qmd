@@ -55,7 +55,15 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 
 
 
-## [Background Survey](https://h4sci.kof.ethz.ch/) {.center}
+## [Background Survey](https://quarto-survey.kof.ethz.ch/) {.center}
+
+```{r, echo=FALSE}
+library(qrcode)
+
+q <- qrcode::qr_code("https://quarto-survey.kof.ethz.ch/")
+plot(q)
+
+```
 
 
 # Overall Course Outline
