@@ -385,81 +385,123 @@
     "text": "RSA Key Pair Authentication Case Study in DevOps Carpentry\n\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
   },
   {
-    "objectID": "block_1_session_2_big_picture.html#how-to-compose-the-right-toolbox",
-    "href": "block_1_session_2_big_picture.html#how-to-compose-the-right-toolbox",
+    "objectID": "block_3_session_2_infra_for_team_projects.html#todays-goals",
+    "href": "block_3_session_2_infra_for_team_projects.html#todays-goals",
     "title": "Hacking for Science",
-    "section": "How to Compose the Right Toolbox?",
-    "text": "How to Compose the Right Toolbox?"
+    "section": "Today’s Goals",
+    "text": "Today’s Goals\n\n\nfind infrastructure for team projects\nbuild teams"
   },
   {
-    "objectID": "block_1_session_2_big_picture.html#section-1",
-    "href": "block_1_session_2_big_picture.html#section-1",
+    "objectID": "block_3_session_2_infra_for_team_projects.html#examples",
+    "href": "block_3_session_2_infra_for_team_projects.html#examples",
     "title": "Hacking for Science",
-    "section": "",
-    "text": "Book Chapter: Stack - A Developer’s Toolkit"
+    "section": "Examples",
+    "text": "Examples\n\npersonal repository page: mbannert.github.io/timeseriesdb\norganization repository page: devops-carpentry.github.io/book\norganization page: h4sci.github.io"
   },
   {
-    "objectID": "block_1_session_2_big_picture.html#editors-and-ides",
-    "href": "block_1_session_2_big_picture.html#editors-and-ides",
+    "objectID": "block_3_session_2_infra_for_team_projects.html#github-pages-in-a-nutshell",
+    "href": "block_3_session_2_infra_for_team_projects.html#github-pages-in-a-nutshell",
     "title": "Hacking for Science",
-    "section": "Editors and IDEs",
-    "text": "Editors and IDEs\n\n\n\n\n\n\n\nPeople: “Oh, you’re such a wizard.” Me: “No, just a carpenter.”\nIDEs: VS Code, R Studio, pyCharm Text Editors: Atom, Sublime, Notepad++, Text Wrangler"
+    "section": "Github Pages in a Nutshell",
+    "text": "Github Pages in a Nutshell\n\nevery github repository can opt to have a repository specific website\nGitHub Pages is designed to document and/or market the software developed in the repo the URL pattern is: user.github.io/repository-name\nGitHub Pages sites either reside on a separate gh-pages branch or in the docs folder on the main branch.\nGitHub Pages can be activated through the Github GUI\nGitHub Pages can host either .md files or .html webpages (including .js and .css)"
   },
   {
-    "objectID": "block_1_session_2_big_picture.html#programming-languages-compiled-vs.-interpreted",
-    "href": "block_1_session_2_big_picture.html#programming-languages-compiled-vs.-interpreted",
+    "objectID": "block_3_session_2_infra_for_team_projects.html#what-is-github-actions",
+    "href": "block_3_session_2_infra_for_team_projects.html#what-is-github-actions",
     "title": "Hacking for Science",
-    "section": "Programming Languages: Compiled vs. Interpreted",
-    "text": "Programming Languages: Compiled vs. Interpreted"
+    "section": "What is GitHub Actions?",
+    "text": "What is GitHub Actions?\n\nGitHub’s CI/CD tool\nsimilar to Gitlab CI/CD"
   },
   {
-    "objectID": "block_1_session_2_big_picture.html#version-control",
-    "href": "block_1_session_2_big_picture.html#version-control",
+    "objectID": "block_3_session_2_infra_for_team_projects.html#example-outline",
+    "href": "block_3_session_2_infra_for_team_projects.html#example-outline",
     "title": "Hacking for Science",
-    "section": "Version Control",
-    "text": "Version Control\n\n\nGit is NOT GitHub\nGit is NOT GitHub\nGit is NOT GitHub\nGit is NOT GitHub\nGit is NOT GitHub\n\nVersion Control Systems\n\ngit\nSVN\nCVS\nmercurial\n\nGit Platforms (git + web GUI + PM tools)\n\nGitHub\nGitLab\nBitbucket\n\ngitea is a self-hosted service (run a platform on your own server)."
+    "section": "Example Outline",
+    "text": "Example Outline\n\nPrepare a task you want to run, e.g., an R script.\nConfigure an environment AND workflow in a simple .yaml text file\nPush the file to a hidden folder .github/workflows (this won’t be necessary if you edited the file directly on github0\nUse the GitHub web GUI to monitor the process."
   },
   {
-    "objectID": "block_1_session_2_big_picture.html#data-management",
-    "href": "block_1_session_2_big_picture.html#data-management",
+    "objectID": "block_3_session_2_infra_for_team_projects.html#httpscrontab.guru",
+    "href": "block_3_session_2_infra_for_team_projects.html#httpscrontab.guru",
     "title": "Hacking for Science",
-    "section": "Data Management",
-    "text": "Data Management\n\n\nRelational Database Management Systems (RDBMS)\n\nOracle\nMicrosoft SQL Server\nPostgreSQL\nMySQL\nSQLite\n…\n\n\nNon-Relational Databases\n\nMongoDB\nRedis\nRedshift\n…"
+    "section": "https://crontab.guru/",
+    "text": "https://crontab.guru/\ncronjobs - execute on schedule. GitHub Actions docs"
   },
   {
-    "objectID": "block_1_session_2_big_picture.html#infrastructure-on-premise-saas-cloud",
-    "href": "block_1_session_2_big_picture.html#infrastructure-on-premise-saas-cloud",
+    "objectID": "block_3_session_2_infra_for_team_projects.html#server.r-why-do-i-have-to-do-all-the-work",
+    "href": "block_3_session_2_infra_for_team_projects.html#server.r-why-do-i-have-to-do-all-the-work",
     "title": "Hacking for Science",
-    "section": "Infrastructure: On Premise, SaaS, Cloud",
-    "text": "Infrastructure: On Premise, SaaS, Cloud"
+    "section": "server.R (Why Do I have to Do All the Work ?)",
+    "text": "server.R (Why Do I have to Do All the Work ?)"
   },
   {
-    "objectID": "block_1_session_2_big_picture.html#automation",
-    "href": "block_1_session_2_big_picture.html#automation",
+    "objectID": "block_3_session_2_infra_for_team_projects.html#ui.r-i-may-be-late-but-i-look-gooooooood.",
+    "href": "block_3_session_2_infra_for_team_projects.html#ui.r-i-may-be-late-but-i-look-gooooooood.",
     "title": "Hacking for Science",
-    "section": "Automation",
-    "text": "Automation\n\n\nProcess Automation\n\nCronjobs\nApache Airflow\n\nRelease Automation\n\nGitlab CI\nGitHub Actions\nDrone\n\nInfrastructure Automation\n\nTerraform\nAnsible\nHelm"
+    "section": "ui.R (I may be late, but I look gooooooood.)",
+    "text": "ui.R (I may be late, but I look gooooooood.)"
   },
   {
-    "objectID": "block_1_session_2_big_picture.html#communication-community-resources",
-    "href": "block_1_session_2_big_picture.html#communication-community-resources",
+    "objectID": "block_3_session_2_infra_for_team_projects.html#what-does-the-shiny-framework-do-for-us",
+    "href": "block_3_session_2_infra_for_team_projects.html#what-does-the-shiny-framework-do-for-us",
     "title": "Hacking for Science",
-    "section": "Communication, Community & Resources",
-    "text": "Communication, Community & Resources\n\ncommunity groups: RLadies, WhyR, MiR, Forwards, AfricaR, the carpentries, local R user groups\nmailing lists\nSlack (RSE, Zurich R User Group), Discord, matrix\nDocumentation, Content Aggregators, e.g., CTV, Python Graph Gallery\nbig book of R\nStackoverflow.com"
+    "section": "What Does the shiny Framework Do for Us?",
+    "text": "What Does the shiny Framework Do for Us?\n\ncreate HTML/CSS/Javascript code\nstart/run a (local) webserver\ncommunication between the R session and the browser"
   },
   {
-    "objectID": "block_1_session_2_big_picture.html#publishing",
-    "href": "block_1_session_2_big_picture.html#publishing",
+    "objectID": "block_3_session_2_infra_for_team_projects.html#a-minimal-note-on-html",
+    "href": "block_3_session_2_infra_for_team_projects.html#a-minimal-note-on-html",
     "title": "Hacking for Science",
-    "section": "Publishing",
-    "text": "Publishing"
+    "section": "A minimal note on HTML",
+    "text": "A minimal note on HTML\n\nMarkup language\ncontent is wrapped in tags\n\n&lt;a href=\"http://somedestination.com\"&gt;some link&lt;/a&gt;\n&lt;b&gt;this is bold&lt;/b&gt;\n&lt;i&gt;this is italic&lt;/i&gt;\n&lt;div class=\"some-class\"&gt;a class with a style&lt;/div&gt;\n=&gt; shiny functions create these wraps for us."
   },
   {
-    "objectID": "block_1_session_2_big_picture.html#section-2",
-    "href": "block_1_session_2_big_picture.html#section-2",
+    "objectID": "block_3_session_2_infra_for_team_projects.html#breaking-down-the-hello-world-app",
+    "href": "block_3_session_2_infra_for_team_projects.html#breaking-down-the-hello-world-app",
     "title": "Hacking for Science",
-    "section": "",
-    "text": "“Premature optimization is the root of all evil.”\n\n– Donald Knuth\n\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
+    "section": "Breaking Down the Hello World App",
+    "text": "Breaking Down the Hello World App\n\n\nui.R\n\nlibrary(shiny)\nshinyUI(fluidPage(\n  titlePanel(\"A random normal\"),\n  # Sidebar with a slider input for number of bins \n  sidebarLayout(\n    sidebarPanel(\n      sliderInput(\"obs\",\n                  \"Number of obs:\",\n                  min = 1,\n                  max = 1000,\n                  value = 100)\n    ),\n    mainPanel(\n      plotOutput(\"randomPlot\")\n    )\n  )\n))"
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#breaking-down-the-hello-world-app-1",
+    "href": "block_3_session_2_infra_for_team_projects.html#breaking-down-the-hello-world-app-1",
+    "title": "Hacking for Science",
+    "section": "Breaking Down the Hello World App",
+    "text": "Breaking Down the Hello World App\n\n\nui.R\n\nlibrary(shiny)\nshinyUI(fluidPage(\n  titlePanel(\"A random normal\"),\n  # Sidebar with a slider input for number of bins \n  sidebarLayout(\n    sidebarPanel(\n      sliderInput(\"obs\",\n                  \"Number of obs:\",\n                  min = 1,\n                  max = 1000,\n                  value = 100)\n    ),\n    mainPanel(\n      plotOutput(\"randomPlot\")\n    )\n  )\n))\n\n\nserver.R\n\nshinyServer(function(input, output) {\n    output$randomPlot &lt;- renderPlot({\n    hist(rnorm(input$obs),\n         col = 'darkgray',\n         border = 'white')\n  })\n})"
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#planning-the-app",
+    "href": "block_3_session_2_infra_for_team_projects.html#planning-the-app",
+    "title": "Hacking for Science",
+    "section": "Planning the App",
+    "text": "Planning the App\nThis course: dashboard structure\n\nsidebar\ntopbar\nmain panel\nmenu buttons / sub pages"
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#the-shinydashboard-package",
+    "href": "block_3_session_2_infra_for_team_projects.html#the-shinydashboard-package",
+    "title": "Hacking for Science",
+    "section": "The shinydashboard package",
+    "text": "The shinydashboard package\n\n\nlibrary(shinydashboard)\ndashboardPage(\n  dashboardHeader(),\n  dashboardSidebar(),\n  dashboardBody()\n)"
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#are-you-ready-for-to-build-a-real-app",
+    "href": "block_3_session_2_infra_for_team_projects.html#are-you-ready-for-to-build-a-real-app",
+    "title": "Hacking for Science",
+    "section": "Are you ready for to build a real app?",
+    "text": "Are you ready for to build a real app?\nTake the official quiz by rstudio.com!"
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#mastering-shiny",
+    "href": "block_3_session_2_infra_for_team_projects.html#mastering-shiny",
+    "title": "Hacking for Science",
+    "section": "Mastering Shiny",
+    "text": "Mastering Shiny\n\nhttps://twitter.com/hadleywickham/status/1329498817113321472"
+  },
+  {
+    "objectID": "block_3_session_2_infra_for_team_projects.html#more-shiny-resources",
+    "href": "block_3_session_2_infra_for_team_projects.html#more-shiny-resources",
+    "title": "Hacking for Science",
+    "section": "More Shiny Resources",
+    "text": "More Shiny Resources\nBasics\n\nShiny Tutorial\nShiny Dashboards\n\nUIs / Gallery\n\nShiny Gallery\nSemantic UI (advanced)\n\nAdvanced Reads\n\nMastering Shiny (Hadley Wickham)\nEngineering Shiny (Colin Fay et al.)\n\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
   },
   {
     "objectID": "block_1_session_1_classopen.html#james-bond-start",
@@ -609,123 +651,116 @@
     "text": "Invidual Introduction\n\n\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
   },
   {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#todays-goals",
-    "href": "block_3_session_2_infra_for_team_projects.html#todays-goals",
+    "objectID": "block_1_session_2_big_picture.html#how-to-compose-the-right-toolbox",
+    "href": "block_1_session_2_big_picture.html#how-to-compose-the-right-toolbox",
     "title": "Hacking for Science",
-    "section": "Today’s Goals",
-    "text": "Today’s Goals\n\n\nfind infrastructure for team projects\nbuild teams"
+    "section": "How to Compose the Right Toolbox?",
+    "text": "How to Compose the Right Toolbox?"
   },
   {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#examples",
-    "href": "block_3_session_2_infra_for_team_projects.html#examples",
+    "objectID": "block_1_session_2_big_picture.html#section-1",
+    "href": "block_1_session_2_big_picture.html#section-1",
     "title": "Hacking for Science",
-    "section": "Examples",
-    "text": "Examples\n\npersonal repository page: mbannert.github.io/timeseriesdb\norganization repository page: devops-carpentry.github.io/book\norganization page: h4sci.github.io"
+    "section": "",
+    "text": "Book Chapter: Stack - A Developer’s Toolkit"
   },
   {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#github-pages-in-a-nutshell",
-    "href": "block_3_session_2_infra_for_team_projects.html#github-pages-in-a-nutshell",
+    "objectID": "block_1_session_2_big_picture.html#editors-and-ides",
+    "href": "block_1_session_2_big_picture.html#editors-and-ides",
     "title": "Hacking for Science",
-    "section": "Github Pages in a Nutshell",
-    "text": "Github Pages in a Nutshell\n\nevery github repository can opt to have a repository specific website\nGitHub Pages is designed to document and/or market the software developed in the repo the URL pattern is: user.github.io/repository-name\nGitHub Pages sites either reside on a separate gh-pages branch or in the docs folder on the main branch.\nGitHub Pages can be activated through the Github GUI\nGitHub Pages can host either .md files or .html webpages (including .js and .css)"
+    "section": "Editors and IDEs",
+    "text": "Editors and IDEs\n\n\n\n\n\n\n\nPeople: “Oh, you’re such a wizard.” Me: “No, just a carpenter.”\nIDEs: VS Code, R Studio, pyCharm Text Editors: Atom, Sublime, Notepad++, Text Wrangler"
   },
   {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#what-is-github-actions",
-    "href": "block_3_session_2_infra_for_team_projects.html#what-is-github-actions",
+    "objectID": "block_1_session_2_big_picture.html#programming-languages-compiled-vs.-interpreted",
+    "href": "block_1_session_2_big_picture.html#programming-languages-compiled-vs.-interpreted",
     "title": "Hacking for Science",
-    "section": "What is GitHub Actions?",
-    "text": "What is GitHub Actions?\n\nGitHub’s CI/CD tool\nsimilar to Gitlab CI/CD"
+    "section": "Programming Languages: Compiled vs. Interpreted",
+    "text": "Programming Languages: Compiled vs. Interpreted"
   },
   {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#example-outline",
-    "href": "block_3_session_2_infra_for_team_projects.html#example-outline",
+    "objectID": "block_1_session_2_big_picture.html#version-control",
+    "href": "block_1_session_2_big_picture.html#version-control",
     "title": "Hacking for Science",
-    "section": "Example Outline",
-    "text": "Example Outline\n\nPrepare a task you want to run, e.g., an R script.\nConfigure an environment AND workflow in a simple .yaml text file\nPush the file to a hidden folder .github/workflows (this won’t be necessary if you edited the file directly on github0\nUse the GitHub web GUI to monitor the process."
+    "section": "Version Control",
+    "text": "Version Control\n\n\nGit is NOT GitHub\nGit is NOT GitHub\nGit is NOT GitHub\nGit is NOT GitHub\nGit is NOT GitHub\n\nVersion Control Systems\n\ngit\nSVN\nCVS\nmercurial\n\nGit Platforms (git + web GUI + PM tools)\n\nGitHub\nGitLab\nBitbucket\n\ngitea is a self-hosted service (run a platform on your own server)."
   },
   {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#httpscrontab.guru",
-    "href": "block_3_session_2_infra_for_team_projects.html#httpscrontab.guru",
+    "objectID": "block_1_session_2_big_picture.html#data-management",
+    "href": "block_1_session_2_big_picture.html#data-management",
     "title": "Hacking for Science",
-    "section": "https://crontab.guru/",
-    "text": "https://crontab.guru/\ncronjobs - execute on schedule. GitHub Actions docs"
+    "section": "Data Management",
+    "text": "Data Management\n\n\nRelational Database Management Systems (RDBMS)\n\nOracle\nMicrosoft SQL Server\nPostgreSQL\nMySQL\nSQLite\n…\n\n\nNon-Relational Databases\n\nMongoDB\nRedis\nRedshift\n…"
   },
   {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#server.r-why-do-i-have-to-do-all-the-work",
-    "href": "block_3_session_2_infra_for_team_projects.html#server.r-why-do-i-have-to-do-all-the-work",
+    "objectID": "block_1_session_2_big_picture.html#infrastructure-on-premise-saas-cloud",
+    "href": "block_1_session_2_big_picture.html#infrastructure-on-premise-saas-cloud",
     "title": "Hacking for Science",
-    "section": "server.R (Why Do I have to Do All the Work ?)",
-    "text": "server.R (Why Do I have to Do All the Work ?)"
+    "section": "Infrastructure: On Premise, SaaS, Cloud",
+    "text": "Infrastructure: On Premise, SaaS, Cloud"
   },
   {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#ui.r-i-may-be-late-but-i-look-gooooooood.",
-    "href": "block_3_session_2_infra_for_team_projects.html#ui.r-i-may-be-late-but-i-look-gooooooood.",
+    "objectID": "block_1_session_2_big_picture.html#automation",
+    "href": "block_1_session_2_big_picture.html#automation",
     "title": "Hacking for Science",
-    "section": "ui.R (I may be late, but I look gooooooood.)",
-    "text": "ui.R (I may be late, but I look gooooooood.)"
+    "section": "Automation",
+    "text": "Automation\n\n\nProcess Automation\n\nCronjobs\nApache Airflow\n\nRelease Automation\n\nGitlab CI\nGitHub Actions\nDrone\n\nInfrastructure Automation\n\nTerraform\nAnsible\nHelm"
   },
   {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#what-does-the-shiny-framework-do-for-us",
-    "href": "block_3_session_2_infra_for_team_projects.html#what-does-the-shiny-framework-do-for-us",
+    "objectID": "block_1_session_2_big_picture.html#communication-community-resources",
+    "href": "block_1_session_2_big_picture.html#communication-community-resources",
     "title": "Hacking for Science",
-    "section": "What Does the shiny Framework Do for Us?",
-    "text": "What Does the shiny Framework Do for Us?\n\ncreate HTML/CSS/Javascript code\nstart/run a (local) webserver\ncommunication between the R session and the browser"
+    "section": "Communication, Community & Resources",
+    "text": "Communication, Community & Resources\n\ncommunity groups: RLadies, WhyR, MiR, Forwards, AfricaR, the carpentries, local R user groups\nmailing lists\nSlack (RSE, Zurich R User Group), Discord, matrix\nDocumentation, Content Aggregators, e.g., CTV, Python Graph Gallery\nbig book of R\nStackoverflow.com"
   },
   {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#a-minimal-note-on-html",
-    "href": "block_3_session_2_infra_for_team_projects.html#a-minimal-note-on-html",
+    "objectID": "block_1_session_2_big_picture.html#publishing",
+    "href": "block_1_session_2_big_picture.html#publishing",
     "title": "Hacking for Science",
-    "section": "A minimal note on HTML",
-    "text": "A minimal note on HTML\n\nMarkup language\ncontent is wrapped in tags\n\n&lt;a href=\"http://somedestination.com\"&gt;some link&lt;/a&gt;\n&lt;b&gt;this is bold&lt;/b&gt;\n&lt;i&gt;this is italic&lt;/i&gt;\n&lt;div class=\"some-class\"&gt;a class with a style&lt;/div&gt;\n=&gt; shiny functions create these wraps for us."
+    "section": "Publishing",
+    "text": "Publishing"
   },
   {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#breaking-down-the-hello-world-app",
-    "href": "block_3_session_2_infra_for_team_projects.html#breaking-down-the-hello-world-app",
+    "objectID": "block_1_session_2_big_picture.html#section-2",
+    "href": "block_1_session_2_big_picture.html#section-2",
     "title": "Hacking for Science",
-    "section": "Breaking Down the Hello World App",
-    "text": "Breaking Down the Hello World App\n\n\nui.R\n\nlibrary(shiny)\nshinyUI(fluidPage(\n  titlePanel(\"A random normal\"),\n  # Sidebar with a slider input for number of bins \n  sidebarLayout(\n    sidebarPanel(\n      sliderInput(\"obs\",\n                  \"Number of obs:\",\n                  min = 1,\n                  max = 1000,\n                  value = 100)\n    ),\n    mainPanel(\n      plotOutput(\"randomPlot\")\n    )\n  )\n))"
+    "section": "",
+    "text": "“Premature optimization is the root of all evil.”\n\n– Donald Knuth\n\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
   },
   {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#breaking-down-the-hello-world-app-1",
-    "href": "block_3_session_2_infra_for_team_projects.html#breaking-down-the-hello-world-app-1",
-    "title": "Hacking for Science",
-    "section": "Breaking Down the Hello World App",
-    "text": "Breaking Down the Hello World App\n\n\nui.R\n\nlibrary(shiny)\nshinyUI(fluidPage(\n  titlePanel(\"A random normal\"),\n  # Sidebar with a slider input for number of bins \n  sidebarLayout(\n    sidebarPanel(\n      sliderInput(\"obs\",\n                  \"Number of obs:\",\n                  min = 1,\n                  max = 1000,\n                  value = 100)\n    ),\n    mainPanel(\n      plotOutput(\"randomPlot\")\n    )\n  )\n))\n\n\nserver.R\n\nshinyServer(function(input, output) {\n    output$randomPlot &lt;- renderPlot({\n    hist(rnorm(input$obs),\n         col = 'darkgray',\n         border = 'white')\n  })\n})"
+    "objectID": "survey_analysis.html#conceptual-foundations",
+    "href": "survey_analysis.html#conceptual-foundations",
+    "title": "Hacking for Science 2024",
+    "section": "Conceptual Foundations",
+    "text": "Conceptual Foundations"
   },
   {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#planning-the-app",
-    "href": "block_3_session_2_infra_for_team_projects.html#planning-the-app",
-    "title": "Hacking for Science",
-    "section": "Planning the App",
-    "text": "Planning the App\nThis course: dashboard structure\n\nsidebar\ntopbar\nmain panel\nmenu buttons / sub pages"
+    "objectID": "survey_analysis.html#reporting",
+    "href": "survey_analysis.html#reporting",
+    "title": "Hacking for Science 2024",
+    "section": "Reporting",
+    "text": "Reporting"
   },
   {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#the-shinydashboard-package",
-    "href": "block_3_session_2_infra_for_team_projects.html#the-shinydashboard-package",
-    "title": "Hacking for Science",
-    "section": "The shinydashboard package",
-    "text": "The shinydashboard package\n\n\nlibrary(shinydashboard)\ndashboardPage(\n  dashboardHeader(),\n  dashboardSidebar(),\n  dashboardBody()\n)"
+    "objectID": "survey_analysis.html#programming-languages",
+    "href": "survey_analysis.html#programming-languages",
+    "title": "Hacking for Science 2024",
+    "section": "Programming Languages",
+    "text": "Programming Languages"
   },
   {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#are-you-ready-for-to-build-a-real-app",
-    "href": "block_3_session_2_infra_for_team_projects.html#are-you-ready-for-to-build-a-real-app",
-    "title": "Hacking for Science",
-    "section": "Are you ready for to build a real app?",
-    "text": "Are you ready for to build a real app?\nTake the official quiz by rstudio.com!"
+    "objectID": "survey_analysis.html#infrastructure",
+    "href": "survey_analysis.html#infrastructure",
+    "title": "Hacking for Science 2024",
+    "section": "Infrastructure",
+    "text": "Infrastructure"
   },
   {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#mastering-shiny",
-    "href": "block_3_session_2_infra_for_team_projects.html#mastering-shiny",
-    "title": "Hacking for Science",
-    "section": "Mastering Shiny",
-    "text": "Mastering Shiny\n\nhttps://twitter.com/hadleywickham/status/1329498817113321472"
-  },
-  {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#more-shiny-resources",
-    "href": "block_3_session_2_infra_for_team_projects.html#more-shiny-resources",
-    "title": "Hacking for Science",
-    "section": "More Shiny Resources",
-    "text": "More Shiny Resources\nBasics\n\nShiny Tutorial\nShiny Dashboards\n\nUIs / Gallery\n\nShiny Gallery\nSemantic UI (advanced)\n\nAdvanced Reads\n\nMastering Shiny (Hadley Wickham)\nEngineering Shiny (Colin Fay et al.)\n\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
+    "objectID": "survey_analysis.html#and-the-winner-is",
+    "href": "survey_analysis.html#and-the-winner-is",
+    "title": "Hacking for Science 2024",
+    "section": "And the Winner is!",
+    "text": "And the Winner is!\n\n\n[1] \"c19a36cb\""
   },
   {
     "objectID": "index.html#table-of-contents",
