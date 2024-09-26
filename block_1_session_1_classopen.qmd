@@ -166,7 +166,7 @@ plot(q)
 ## Example Benchmark: [Create a Production Pipeline](https://github.com/h4sci/h4sci-gha-demo) {.center}
 
 
-## Invidual Introduction {.center}
+## Individual Introductions {.center}
 
 
 
