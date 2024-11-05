@@ -1,7 +1,7 @@
 ---
 title: "Hacking for Science"
 subtitle: "Block 2, Session 1: R Programming 101"
-author: "Matt Bannert ([@whatsgoodio](https://twitter.com/whatsgoodio))"
+author: "Matt Bannert"
 format: revealjs
 chalkboard: true
 echo: true

@@ -99,7 +99,11 @@ rnorm(3)
 
 :::: {.columns}
 
+
 ::: {.column width="40%" }
+
+
+### Types
 
 - multi mode surveys (paper / online forms)
 - Recordings
@@ -190,6 +194,7 @@ rnorm(3)
 - .json
 - .xml
 
+see also: [RSE Book on Data Management](https://rse-book.github.io/data-management.html)
 
 
 ## In a Database
