@@ -732,7 +732,7 @@
     "href": "index.html#table-of-contents",
     "title": "Hacking for Science",
     "section": "Table of Contents",
-    "text": "Table of Contents\nBlock 1, Session 1: Class Is Open. C’mon in.\nBlock 1, Session 2: The Big Picture\n\n\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
+    "text": "Table of Contents\nBlock 1, Session 1: Class Is Open. C’mon in.\nBlock 1, Session 2: The Big Picture\nBlock 1, Session 3: Git Requirements\nBlock 1, Session 4: Git 101\nBlock 2, Session 1: R Programming 101\nBlock 2, Session 2: Programming with data\n\n\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
   },
   {
     "objectID": "students2022.html",
@@ -1012,7 +1012,7 @@
     "href": "block_2_session_2_programming_w_data.html#surveys",
     "title": "Hacking for Science",
     "section": "Surveys",
-    "text": "Surveys\n\n\n\nmulti mode surveys (paper / online forms)\nRecordings\n\n\nForm of Resulting Data\n\nrectangular data (1-line-1-observation)\ntext\ncross sectional\nlongitudinal data"
+    "text": "Surveys\n\n\nTypes\n\nmulti mode surveys (paper / online forms)\nRecordings\n\n\nForm of Resulting Data\n\nrectangular data (1-line-1-observation)\ntext\ncross sectional\nlongitudinal data"
   },
   {
     "objectID": "block_2_session_2_programming_w_data.html#apis-web-scraping",
@@ -1047,7 +1047,7 @@
     "href": "block_2_session_2_programming_w_data.html#on-disk",
     "title": "Hacking for Science",
     "section": "On Disk",
-    "text": "On Disk\n\n.RData\n.parquet\nfeather\n.xlsx\n.csv\n.json\n.xml"
+    "text": "On Disk\n\n.RData\n.parquet\nfeather\n.xlsx\n.csv\n.json\n.xml\n\nsee also: RSE Book on Data Management"
   },
   {
     "objectID": "block_2_session_2_programming_w_data.html#in-a-database",
