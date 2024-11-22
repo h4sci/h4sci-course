@@ -620,7 +620,7 @@
     "href": "block_3_session_2_infra_for_team_projects.html#examples",
     "title": "Hacking for Science",
     "section": "Examples",
-    "text": "Examples\n\npersonal repository page: mbannert.github.io/timeseriesdb\norganization repository page: devops-carpentry.github.io/book\norganization page: h4sci.github.io"
+    "text": "Examples\n\npersonal repository page: mbannert.github.io/timeseriesdb\norganization repository page: https://rse-book.github.io/\norganization page: h4sci.github.io"
   },
   {
     "objectID": "block_3_session_2_infra_for_team_projects.html#github-pages-in-a-nutshell",
@@ -641,7 +641,7 @@
     "href": "block_3_session_2_infra_for_team_projects.html#example-outline",
     "title": "Hacking for Science",
     "section": "Example Outline",
-    "text": "Example Outline\n\nPrepare a task you want to run, e.g., an R script.\nConfigure an environment AND workflow in a simple .yaml text file\nPush the file to a hidden folder .github/workflows (this won’t be necessary if you edited the file directly on github0\nUse the GitHub web GUI to monitor the process."
+    "text": "Example Outline\n\nPrepare a task you want to run, e.g., an R script.\nConfigure an environment AND workflow in a simple .yaml text file\nPush the file to a hidden folder .github/workflows (this won’t be necessary if you edited the file directly on GitHub\nUse the GitHub web GUI to monitor the process."
   },
   {
     "objectID": "block_3_session_2_infra_for_team_projects.html#httpscrontab.guru",
@@ -711,21 +711,14 @@
     "href": "block_3_session_2_infra_for_team_projects.html#are-you-ready-for-to-build-a-real-app",
     "title": "Hacking for Science",
     "section": "Are you ready for to build a real app?",
-    "text": "Are you ready for to build a real app?\nTake the official quiz by rstudio.com!"
-  },
-  {
-    "objectID": "block_3_session_2_infra_for_team_projects.html#mastering-shiny",
-    "href": "block_3_session_2_infra_for_team_projects.html#mastering-shiny",
-    "title": "Hacking for Science",
-    "section": "Mastering Shiny",
-    "text": "Mastering Shiny\n\nhttps://twitter.com/hadleywickham/status/1329498817113321472"
+    "text": "Are you ready for to build a real app?"
   },
   {
     "objectID": "block_3_session_2_infra_for_team_projects.html#more-shiny-resources",
     "href": "block_3_session_2_infra_for_team_projects.html#more-shiny-resources",
     "title": "Hacking for Science",
     "section": "More Shiny Resources",
-    "text": "More Shiny Resources\nBasics\n\nShiny Tutorial\nShiny Dashboards\n\nUIs / Gallery\n\nShiny Gallery\nSemantic UI (advanced)\n\nAdvanced Reads\n\nMastering Shiny (Hadley Wickham)\nEngineering Shiny (Colin Fay et al.)\n\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
+    "text": "More Shiny Resources\nBasics\n\nShiny Tutorial\nShiny Dashboards\n\nUIs / Gallery\n\nShiny Gallery\nRInterface and Unleash Shiny\nbslib\n\nAdvanced Reads\n\nMastering Shiny (Hadley Wickham)\nEngineering Shiny (Colin Fay et al.)\n\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
   },
   {
     "objectID": "index.html#table-of-contents",
@@ -819,6 +812,13 @@
     "text": "user created : student01 / dFRLGdQy user created : student02 / 4VCh8CJF user created : student03 / zlGnpr5X user created : student04 / Oc4CN4kk user created : student05 / ixyK1Rnq user created : student06 / 7IzgeWk3 user created : student07 / kSZhGnqQ user created : student08 / HJjQyZqk user created : student09 / bySYlx0m user created : student10 / 9NKwDpBx user created : student11 / QL0G2IDx user created : student12 / qJUl6GpI user created : student13 / 5529JFED user created : student14 / EFSt9WPu user created : student15 / Vpdn6JJt jana user created : student16 / HUNjIkiW\nuser created : student17 / PavuWDPQ user created : student18 / HeMGRWCn user created : student19 / FdjsYBqE user created : student20 / hbZXVTid user created : student21 / UEDtoZiK user created : student22 / 7iWSKCY7 user created : student23 / 45S0P2r1 user created : student24 / Nsq8X0GS user created : student25 / xRgG1UTh user created : student26 / isGedzwf user created : student27 / dNV1yuL2 user created : student28 / VkPK7p0L user created : student29 / 5trT1u8o user created : student30 / SED7XFYG user created : student31 / U9f4qjNP user created : student32 / nPDH5ctc user created : student33 / FSC7ZkyO user created : student34 / C0gOkUZe user created : student35 / RiGOtXto user created : student36 / wzPq1Pz3 user created : student37 / RlMF4nd8 user created : student38 / LmgjCObc user created : student39 / cV3kuQPZ user created : student40 / pBbQEM9P user created : student41 / sX9Wsom5 user created : student42 / iDN6jMt3\nsent user created : student43 / vqFjWx4X user created : student44 / HUZJRT6G user created : student45 / nwc1zO09\n(Isaac last one, )"
   },
   {
+    "objectID": "block_3_session_1_terminology_n_context.html#review",
+    "href": "block_3_session_1_terminology_n_context.html#review",
+    "title": "Hacking for Science",
+    "section": "review",
+    "text": "review"
+  },
+  {
     "objectID": "block_3_session_1_terminology_n_context.html#todays-goals",
     "href": "block_3_session_1_terminology_n_context.html#todays-goals",
     "title": "Hacking for Science",
@@ -893,7 +893,7 @@
     "href": "block_3_session_1_terminology_n_context.html#on-premise-in-house",
     "title": "Hacking for Science",
     "section": "On Premise (in house)",
-    "text": "On Premise (in house)\n\nETH Gitlab\nGitea\nteaching.kof.ethz.ch\nshiny server"
+    "text": "On Premise (in house)\n\nETH Gitlab\nGitea\nshiny server"
   },
   {
     "objectID": "block_3_session_1_terminology_n_context.html#saas-software-as-a-service",
