@@ -18,6 +18,9 @@ font-size:.7em;
 
 </style>
 
+## [review](https://rse-book.github.io/stack-developer-toolkit.html) {.center}
+
+
 
 ## Today's Goals {.center}
 
@@ -132,7 +135,6 @@ kable(tri)
 
 - [ETH Gitlab](https://gitlab.ethz.ch/)
 - [Gitea](https://gitea.io/en-us/)
-- [teaching.kof.ethz.ch](https://teaching.kof.ethz.ch/auth-sign-in)
 - [shiny server](https://rstudio.com/products/shiny/shiny-server/)
 
 
@@ -152,7 +154,7 @@ kable(tri)
 
 - [Overleaf](https://www.overleaf.com/)
 - [shinyapps.io](https://www.shinyapps.io/)
-- [Google NLP](https://cloud.google.com/natural-language/)
+- [Google NLP](https://cloud.google.com/natural-language/#demo)
 
 
 :::
@@ -296,7 +298,7 @@ docker run --rm  --name pg-docker -e POSTGRES_PASSWORD=postgres -d -p 1111:5432
 -v: Mount for persistent storage
 
 
-(!): To make the two containers talk to each other, [consider docker compose](https://devops-carpentry.github.io/book/infrastructure.html#docker-compose---manage-multiple-containers).
+(!): To make the two containers talk to each other, [consider docker compose](https://rse-book.github.io/infrastructure.html#docker-compose-manage-multiple-containers).
 
 
 
