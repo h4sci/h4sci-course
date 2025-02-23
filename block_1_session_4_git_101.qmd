@@ -65,6 +65,15 @@ Source: [onsizzle](https://pics.onsizzle.com/simon-brunning-brunns-finally-manag
 :::
 
 
+## Take a Minute to Think About Your Folder Structure
+
+![](img/ursus_wehrli.jpg){fig-align="center" height="500"}
+
+::: footer
+Source: [Commons Wikimedia](https://commons.wikimedia.org/wiki/Category:Ursus_Wehrli?uselang=de#/media/File:PINC.8_(May_22,_2007)2.jpg)
+:::
+
+
 
 ## Break Out Session 1:<br> Task 1 Moving Around {.center}
 
