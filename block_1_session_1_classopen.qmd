@@ -1,7 +1,7 @@
 ---
 title: "Hacking for Science"
 subtitle: "Block 1, Session 1: Class is Open. C'mon in."
-author: "Matt Bannert ([@whatsgoodio](https://twitter.com/whatsgoodio))"
+author: "(find us on matrix: #h4sci:staffchat.ethz.ch)"
 format: 
     revealjs:
         logo: img/h4sci-logo.png
@@ -10,7 +10,7 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 ---
 
 
-## James Bond Start 
+## James Bond Start {.center}
 
 <iframe src="https://giphy.com/embed/Mz6oZpw81uKQg" width="480" height="363" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
@@ -27,50 +27,34 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 
 
 
-## Hi, I'm Matt.
-
-:::: {.columns}
-
-
-::: {.column width="60%" }
-
-- Advanced Analytics at Helsana 
-
-- Research Software Engineering and Economic Data (RSEED) at KOF Lab ETH Zurich 
-
-- formerly: Sales Lead [@cynkra](https://cynkra.com)
-
-- active in the open source community, e.g., former global coordinator for the useR! conference
-
-:::
-
-
-::: {.column width="40%" }
-
-![](img/matt.jpg){fig-align="center" height="400"}
-
-:::
-
-::::
-
-
-
-## [Background Survey](https://quarto-survey.kof.ethz.ch/) {.center}
+## [Background Survey](https://h4sci.kof.ethz.ch/) {.center}
 
 ```{r, echo=FALSE}
 library(qrcode)
 
-q <- qrcode::qr_code("https://quarto-survey.kof.ethz.ch/")
+q <- qrcode::qr_code("https://h4sci.kof.ethz.ch/")
 plot(q)
 
 ```
 
+# Course Objectives
 
-# Overall Course Outline
+## 1. Evaluate the Role of Components in the Tech Stack {.center}
 
 
-## 
+## 2. Carpentry Level Version Control + Dev Workflows {.center}
 
+
+## 3. Applied Data Handling /w Programming Language {.center}
+
+
+## Example Benchmark: [Create a Production Pipeline](https://github.com/h4sci/h4sci-gha-demo) {.center}
+
+
+
+# Approach 
+
+##
 
 <center><iframe src="https://giphy.com/embed/l3q2V33TgyQ4hdfna" width="480" height="240" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></center>
 
@@ -102,28 +86,28 @@ plot(q)
 ## Schedule: Block 1 {.center}
 
 
-26.09.	10-13	The Big Picture
+25.09.	10-13	The Big Picture
 
-27.9.	10-14	Git & Workflows
+26.9.	10-14	Git & Workflows
 
 ## Schedule: Block 2 {.center}
 
-24.10.	10-13	R Programming Crash Course
+23.10.	10-13	R Programming Crash Course
 
-25.10.	10-14	Programming with Data
+24.10.	10-14	Programming with Data
 
 ## Schedule: Block 3 {.center}
 
 
-21.11.	10-13	Infrastructure
+20.11.	10-13	Infrastructure
 
-22.11.	10-14	Infrastructure
+21.11.	10-14	Infrastructure
 
 ## Schedule: Block 4 {.center}
 
-05.12.	10-13	Semester Projects
+04.12.	10-13	Semester Projects
 
-06.12.	10-14	Semester Projects
+05.12.	10-14	Semester Projects
 
 
 # Course Resources
@@ -132,7 +116,7 @@ plot(q)
 ## Read Online
 
 - [h4sci Slides](https://h4sci.github.io/h4sci-course)
-- [Research Sofware Engineering - A Guide to Open Source Ecosystem (Online Book)](https://rse-book.github.io)
+- [Research Software Engineering - A Guide to Open Source Ecosystem (Online Book)](https://rse-book.github.io)
 - [Tasks & Exercises](https://github.com/h4sci/h4sci-tasks)
 
 ## Source
@@ -145,28 +129,56 @@ plot(q)
 - Matrix Chat Space (#h4sci:staffchat.ethz.ch) (element.io is recommended as a client)
 - Zoom Live Sessions (only available to enrolled students)
 
+## [The Big Picture](https://h4sci.github.io/h4sci-course/block_1_session_2_big_picture.html#/title-slide) {.center}
 
 
+# The Git Session
 
+## Tomorrow's Git Session 
 
+- 10-12: Self Learning Block: Videos, Book, Trying Out (chat presence). Don't forget to take a break !
+- Quick concept review: 15 min
+- Q&A session (15 min)
+- Breakout Rooms to work on the tasks (45 min)
+- Task Review 30 min
 
-
-
-# Course Objectives
-
-## 1. Evaluate the Role of Components in the Tech Stack {.center}
-
-
-## 2. Carpentry Level Version Control + Dev Workflows {.center}
-
-
-## 3. Applied Data Handling /w Programming Language {.center}
-
-
-## Example Benchmark: [Create a Production Pipeline](https://github.com/h4sci/h4sci-gha-demo) {.center}
 
 
 ## Individual Introductions {.center}
+
+
+## Hi, I'm Matt.
+
+:::: {.columns}
+
+
+::: {.column width="60%" }
+
+- AI & Analytics Services at Helsana 
+
+- Research Software Engineering and Economic Data (RSEED) at KOF Lab ETH Zurich 
+
+- formerly: Sales Lead [@cynkra](https://cynkra.com)
+
+- active in the open source community, e.g., former global coordinator for the useR! conference, currently [Zurich R user group](https://zurich-r-user-group.github.io/)
+
+:::
+
+
+::: {.column width="40%" }
+
+![](img/matt.jpg){fig-align="center" height="400"}
+
+:::
+
+::::
+
+
+
+
+
+
+
 
 
 

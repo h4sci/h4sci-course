@@ -1,7 +1,7 @@
 ---
 title: "Hacking for Science"
 subtitle: "Block 1, Session 3: Git Requirements"
-author: "Matt Bannert ([@whatsgoodio](https://twitter.com/whatsgoodio))"
+author: "Matt Bannert"
 format: 
     revealjs:
         logo: img/h4sci-logo.png
@@ -17,9 +17,9 @@ footer: "Hacking for Science by Dr. Matthias Bannert is licensed under [CC BY-NC
 -- docs.github.com
 
 
-## [Connect to Remote Repositories<br> Like a Hacker (Youtube)](https://www.youtube.com/watch?v=oLEhNj17vVI) {.center}
+## [H4Sci YouTube Channel: SSH Key Pair Authentication](https://www.youtube.com/@hacking-for-science) {.center}
 
 
-## [RSA Key Pair Authentication Case Study in DevOps Carpentry](https://rse-book.github.io/case-studies.html#sec-rsa) {.center}
+## [SSH Key Pair Authentication Case Study in the RSE Book](https://rse-book.github.io/case-studies.html#sec-rsa) {.center}
 
 
