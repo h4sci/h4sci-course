@@ -378,18 +378,18 @@
     "text": "‘With SSH keys, you can connect to remote git repositories without supplying your username or password at each visit’\n\n– docs.github.com"
   },
   {
-    "objectID": "block_1_session_3_git_requirements.html#connect-to-remote-repositories-like-a-hacker-youtube",
-    "href": "block_1_session_3_git_requirements.html#connect-to-remote-repositories-like-a-hacker-youtube",
+    "objectID": "block_1_session_3_git_requirements.html#h4sci-youtube-channel-ssh-key-pair-authentication",
+    "href": "block_1_session_3_git_requirements.html#h4sci-youtube-channel-ssh-key-pair-authentication",
     "title": "Hacking for Science",
-    "section": "Connect to Remote Repositories Like a Hacker (Youtube)",
-    "text": "Connect to Remote Repositories Like a Hacker (Youtube)"
+    "section": "H4Sci YouTube Channel: SSH Key Pair Authentication",
+    "text": "H4Sci YouTube Channel: SSH Key Pair Authentication"
   },
   {
-    "objectID": "block_1_session_3_git_requirements.html#rsa-key-pair-authentication-case-study-in-devops-carpentry",
-    "href": "block_1_session_3_git_requirements.html#rsa-key-pair-authentication-case-study-in-devops-carpentry",
+    "objectID": "block_1_session_3_git_requirements.html#ssh-key-pair-authentication-case-study-in-the-rse-book",
+    "href": "block_1_session_3_git_requirements.html#ssh-key-pair-authentication-case-study-in-the-rse-book",
     "title": "Hacking for Science",
-    "section": "RSA Key Pair Authentication Case Study in DevOps Carpentry",
-    "text": "RSA Key Pair Authentication Case Study in DevOps Carpentry\n\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
+    "section": "SSH Key Pair Authentication Case Study in the RSE Book",
+    "text": "SSH Key Pair Authentication Case Study in the RSE Book\n\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
   },
   {
     "objectID": "block_1_session_2_big_picture.html#how-to-compose-the-right-toolbox",
@@ -497,88 +497,11 @@
     "text": "Containers / Docker"
   },
   {
-    "objectID": "block_1_session_1_classopen.html#hi-im-matt.",
-    "href": "block_1_session_1_classopen.html#hi-im-matt.",
-    "title": "Hacking for Science",
-    "section": "Hi, I’m Matt.",
-    "text": "Hi, I’m Matt.\n\n\n\nAdvanced Analytics at Helsana\nResearch Software Engineering and Economic Data (RSEED) at KOF Lab ETH Zurich\nformerly: Sales Lead @cynkra\nactive in the open source community, e.g., former global coordinator for the useR! conference"
-  },
-  {
     "objectID": "block_1_session_1_classopen.html#background-survey",
     "href": "block_1_session_1_classopen.html#background-survey",
     "title": "Hacking for Science",
     "section": "Background Survey",
     "text": "Background Survey"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#section",
-    "href": "block_1_session_1_classopen.html#section",
-    "title": "Hacking for Science",
-    "section": "",
-    "text": "via GIPHY (not CC-BY-NC-SA licensed)"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#coaching",
-    "href": "block_1_session_1_classopen.html#coaching",
-    "title": "Hacking for Science",
-    "section": "Coaching",
-    "text": "Coaching\n\n\n\n\n\nvia GIPHY (not CC-BY-NC-SA licensed)"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#approach-flipped-classroom",
-    "href": "block_1_session_1_classopen.html#approach-flipped-classroom",
-    "title": "Hacking for Science",
-    "section": "Approach: Flipped Classroom",
-    "text": "Approach: Flipped Classroom\n\n\n\n\n\nvia GIPHY"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#schedule-block-1",
-    "href": "block_1_session_1_classopen.html#schedule-block-1",
-    "title": "Hacking for Science",
-    "section": "Schedule: Block 1",
-    "text": "Schedule: Block 1\n26.09. 10-13 The Big Picture\n27.9. 10-14 Git & Workflows"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#schedule-block-2",
-    "href": "block_1_session_1_classopen.html#schedule-block-2",
-    "title": "Hacking for Science",
-    "section": "Schedule: Block 2",
-    "text": "Schedule: Block 2\n24.10. 10-13 R Programming Crash Course\n25.10. 10-14 Programming with Data"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#schedule-block-3",
-    "href": "block_1_session_1_classopen.html#schedule-block-3",
-    "title": "Hacking for Science",
-    "section": "Schedule: Block 3",
-    "text": "Schedule: Block 3\n21.11. 10-13 Infrastructure\n22.11. 10-14 Infrastructure"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#schedule-block-4",
-    "href": "block_1_session_1_classopen.html#schedule-block-4",
-    "title": "Hacking for Science",
-    "section": "Schedule: Block 4",
-    "text": "Schedule: Block 4\n05.12. 10-13 Semester Projects\n06.12. 10-14 Semester Projects"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#read-online",
-    "href": "block_1_session_1_classopen.html#read-online",
-    "title": "Hacking for Science",
-    "section": "Read Online",
-    "text": "Read Online\n\nh4sci Slides\nResearch Sofware Engineering - A Guide to Open Source Ecosystem (Online Book)\nTasks & Exercises"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#source",
-    "href": "block_1_session_1_classopen.html#source",
-    "title": "Hacking for Science",
-    "section": "Source",
-    "text": "Source\n\nSlides: https://github.com/h4sci/h4sci-course\nBook: https://github.com/rse-book"
-  },
-  {
-    "objectID": "block_1_session_1_classopen.html#community",
-    "href": "block_1_session_1_classopen.html#community",
-    "title": "Hacking for Science",
-    "section": "Community",
-    "text": "Community\n\nMatrix Chat Space (#h4sci:staffchat.ethz.ch) (element.io is recommended as a client)\nZoom Live Sessions (only available to enrolled students)"
   },
   {
     "objectID": "block_1_session_1_classopen.html#evaluate-the-role-of-components-in-the-tech-stack",
@@ -609,11 +532,102 @@
     "text": "Example Benchmark: Create a Production Pipeline"
   },
   {
+    "objectID": "block_1_session_1_classopen.html#section",
+    "href": "block_1_session_1_classopen.html#section",
+    "title": "Hacking for Science",
+    "section": "",
+    "text": "via GIPHY (not CC-BY-NC-SA licensed)"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#coaching",
+    "href": "block_1_session_1_classopen.html#coaching",
+    "title": "Hacking for Science",
+    "section": "Coaching",
+    "text": "Coaching\n\n\n\n\n\nvia GIPHY (not CC-BY-NC-SA licensed)"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#approach-flipped-classroom",
+    "href": "block_1_session_1_classopen.html#approach-flipped-classroom",
+    "title": "Hacking for Science",
+    "section": "Approach: Flipped Classroom",
+    "text": "Approach: Flipped Classroom\n\n\n\n\n\nvia GIPHY"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#schedule-block-1",
+    "href": "block_1_session_1_classopen.html#schedule-block-1",
+    "title": "Hacking for Science",
+    "section": "Schedule: Block 1",
+    "text": "Schedule: Block 1\n25.09. 10-13 The Big Picture\n26.9. 10-14 Git & Workflows"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#schedule-block-2",
+    "href": "block_1_session_1_classopen.html#schedule-block-2",
+    "title": "Hacking for Science",
+    "section": "Schedule: Block 2",
+    "text": "Schedule: Block 2\n23.10. 10-13 R Programming Crash Course\n24.10. 10-14 Programming with Data"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#schedule-block-3",
+    "href": "block_1_session_1_classopen.html#schedule-block-3",
+    "title": "Hacking for Science",
+    "section": "Schedule: Block 3",
+    "text": "Schedule: Block 3\n20.11. 10-13 Infrastructure\n21.11. 10-14 Infrastructure"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#schedule-block-4",
+    "href": "block_1_session_1_classopen.html#schedule-block-4",
+    "title": "Hacking for Science",
+    "section": "Schedule: Block 4",
+    "text": "Schedule: Block 4\n04.12. 10-13 Semester Projects\n05.12. 10-14 Semester Projects"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#read-online",
+    "href": "block_1_session_1_classopen.html#read-online",
+    "title": "Hacking for Science",
+    "section": "Read Online",
+    "text": "Read Online\n\nh4sci Slides\nResearch Software Engineering - A Guide to Open Source Ecosystem (Online Book)\nTasks & Exercises"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#source",
+    "href": "block_1_session_1_classopen.html#source",
+    "title": "Hacking for Science",
+    "section": "Source",
+    "text": "Source\n\nSlides: https://github.com/h4sci/h4sci-course\nBook: https://github.com/rse-book"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#community",
+    "href": "block_1_session_1_classopen.html#community",
+    "title": "Hacking for Science",
+    "section": "Community",
+    "text": "Community\n\nMatrix Chat Space (#h4sci:staffchat.ethz.ch) (element.io is recommended as a client)\nZoom Live Sessions (only available to enrolled students)"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#the-big-picture",
+    "href": "block_1_session_1_classopen.html#the-big-picture",
+    "title": "Hacking for Science",
+    "section": "The Big Picture",
+    "text": "The Big Picture"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#tomorrows-git-session",
+    "href": "block_1_session_1_classopen.html#tomorrows-git-session",
+    "title": "Hacking for Science",
+    "section": "Tomorrow’s Git Session",
+    "text": "Tomorrow’s Git Session\n\n10-12: Self Learning Block: Videos, Book, Trying Out (chat presence). Don’t forget to take a break !\nQuick concept review: 15 min\nQ&A session (15 min)\nBreakout Rooms to work on the tasks (45 min)\nTask Review 30 min"
+  },
+  {
     "objectID": "block_1_session_1_classopen.html#individual-introductions",
     "href": "block_1_session_1_classopen.html#individual-introductions",
     "title": "Hacking for Science",
     "section": "Individual Introductions",
-    "text": "Individual Introductions\n\n\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
+    "text": "Individual Introductions"
+  },
+  {
+    "objectID": "block_1_session_1_classopen.html#hi-im-matt.",
+    "href": "block_1_session_1_classopen.html#hi-im-matt.",
+    "title": "Hacking for Science",
+    "section": "Hi, I’m Matt.",
+    "text": "Hi, I’m Matt.\n\n\n\nAI & Analytics Services at Helsana\nResearch Software Engineering and Economic Data (RSEED) at KOF Lab ETH Zurich\nformerly: Sales Lead @cynkra\nactive in the open source community, e.g., former global coordinator for the useR! conference, currently Zurich R user group\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHacking for Science by Dr. Matthias Bannert is licensed under CC BY-NC-SA 4.0"
   },
   {
     "objectID": "block_3_session_2_infra_for_team_projects.html#todays-goals",
