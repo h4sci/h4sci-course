@@ -611,7 +611,7 @@ do_numeric_op <- function(a,b){
 - **vignettes** Articles' source, elaborate documentation source
 - **inst** additional material, installed with package, e.g., sql files
 - **src** source code that needs to be compiled, e.g., C++
-- **tests** automated tests ([basic idea in DevOps Carpentry](https://devops-carpentry.github.io/book/programming.html#testing)), often created with a testing framework such as [testthat](https://cran.r-project.org/web/packages/testthat/index.html) or [tinytest](https://cran.r-project.org/web/packages/tinytest/index.html)
+- **tests** automated tests ([basic idea in the RSE Book Carpentry](https://rse-book.github.io/programming.html#testing)), often created with a testing framework such as [testthat](https://cran.r-project.org/web/packages/testthat/index.html) or [tinytest](https://cran.r-project.org/web/packages/tinytest/index.html)
 
 ## Further Conventions & Ideas
 
