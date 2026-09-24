@@ -25,18 +25,18 @@ font-size:.7em;
 </style>
 
 
-- find infrastructure for team projects
-- build teams
+- understand the difference between static and dynamic web projects
+- find the stack for team projects
 
 
 
-# Introduction to GitHub Pages 
+# Introduction to GitHub Pages (and other static hosts)
 
 
 ## Examples {.center}
 
 - **personal repository page**: [mbannert.github.io/timeseriesdb](https://mbannert.github.io/timeseriesdb)
-- **organization repository page**: [https://rse-book.github.io/](https://rse-book.github.io/)
+- **organization page**: [https://rse-book.github.io/](https://rse-book.github.io/)
 - **organization page**: [h4sci.github.io](https://h4sci.github.io)
 
 
@@ -48,6 +48,11 @@ the URL pattern is: user.github.io/repository-name
 - GitHub Pages sites either reside on a separate gh-pages branch or in the docs folder on the main branch.
 - GitHub Pages can be activated through the Github GUI
 - GitHub Pages can host either .md files or .html webpages (including .js and .css)
+
+
+## How to Create Content for Static Hosts? {.center}
+
+<!-- show, quarto. show astro cli --> 
 
 
 
