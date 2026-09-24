@@ -2,7 +2,7 @@
 title: "Hacking for Science"
 subtitle: "Block 1, Session 1: Class is Open. C'mon in."
 author: "(find us on matrix: #h4sci:staffchat.ethz.ch)"
-format: 
+format:
     revealjs:
         logo: img/h4sci-logo.png
 chalkboard: true
@@ -52,7 +52,7 @@ plot(q)
 
 
 
-# Approach 
+# Approach
 
 ##
 
@@ -134,7 +134,7 @@ plot(q)
 
 # The Git Session
 
-## Tomorrow's Git Session 
+## Tomorrow's Git Session
 
 - 10-12: Self Learning Block: Videos, Book, Trying Out (chat presence). Don't forget to take a break !
 - Quick concept review: 15 min
@@ -154,13 +154,13 @@ plot(q)
 
 ::: {.column width="60%" }
 
-- AI & Analytics Services at Helsana 
+- AI & Analytics Services at Helsana, formerly Sales Lead [@cynkra](https://cynkra.com)
 
-- Research Software Engineering and Economic Data (RSEED) at KOF Lab ETH Zurich 
+- Research Software Engineering and Economic Data (RSEED) at KOF Lab ETH Zurich
 
-- formerly: Sales Lead [@cynkra](https://cynkra.com)
+- former global coordinator for the useR! conference, currently [Zurich R user group](https://zurich-r-user-group.github.io/)
 
-- active in the open source community, e.g., former global coordinator for the useR! conference, currently [Zurich R user group](https://zurich-r-user-group.github.io/)
+- personal projects: https://alpine-jellyfish.ch
 
 :::
 
